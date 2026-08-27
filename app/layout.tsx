@@ -8,15 +8,19 @@ export const metadata: Metadata = {
   description: "Trainiere Deutsch zielgerichtet auf B1 Niveau. Lesen, Hören, Schreiben, Sprechen, Vokabeln mit Spaced Repetition und B1 Prüfungssimulation.",
 };
 
-export default function RootLayout({
+import { getCurrentUser } from "@/lib/auth/session";
+
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const user = await getCurrentUser();
+
   return (
     <html lang="de">
       <body className="min-h-screen bg-[#F8FAFC] text-[#0F172A] antialiased">
-        <Navbar />
+        <Navbar user={user} />
         <div className="lg:pl-64 flex flex-col min-h-screen">
           <main className="flex-1">{children}</main>
           <Footer />

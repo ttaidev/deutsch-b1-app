@@ -27,8 +27,8 @@ export async function getCurrentUser(): Promise<DemoUser> {
         avatar: "https://i.pinimg.com/736x/e4/e9/42/e4e942729798f81701b9df9b89ff8dad.jpg",
         role: user.role,
         currentLevel: user.profile.currentLevel,
-        xp: 0,
-        streak: 0,
+        xp: user.profile.xp,
+        streak: user.profile.streak,
       };
     }
   } catch (err) {
