@@ -200,6 +200,7 @@ export async function updateUserWordStatus(vocabularyId: string, rating: "AGAIN"
         interval: nextSM2.interval,
         ease: nextSM2.ease,
         status: nextSM2.status,
+      },
     });
 
     await prisma.profile.update({
