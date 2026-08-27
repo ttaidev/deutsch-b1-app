@@ -2,6 +2,7 @@
 
 import { prisma } from "@/lib/db/prisma";
 import { calculateSM2 } from "@/lib/spaced-repetition/sm2";
+import { revalidatePath } from "next/cache";
 
 const COVER_IMAGES: Record<string, string> = {
   "b1-pruefung-wortschatz": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&auto=format&fit=crop",
@@ -29,28 +30,65 @@ const COVER_IMAGES: Record<string, string> = {
 
 export async function getVocabularyDecks() {
   try {
+    const user = await prisma.user.findFirst({
+      where: { email: "gao@deutschb1.de" },
+    });
+    const userId = user?.id || "";
+
+    const userVocabs = await prisma.userVocabulary.findMany({
+      where: { userId },
+    });
+    const vocabStats = new Map();
+    userVocabs.forEach((uv) => {
+      vocabStats.set(uv.vocabularyId, uv);
+    });
+
     const decks = await prisma.vocabularyDeck.findMany({
       include: {
         _count: {
           select: { deckWords: true },
         },
+        deckWords: {
+          select: { vocabularyId: true },
+        },
       },
       orderBy: { createdAt: "asc" },
     });
 
+    const now = new Date();
+
     return decks
       .filter((d) => d._count.deckWords > 0)
-      .map((d) => ({
-        id: d.id,
-        slug: d.slug,
-        title: d.title,
-        description: d.description || "",
-        wordCount: d._count.deckWords,
-        dueCount: Math.floor(Math.random() * 8) + 2,
-        learnedCount: Math.floor(d._count.deckWords * 0.35),
-        isPublic: d.isPublic,
-        coverImage: COVER_IMAGES[d.slug] || "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&auto=format&fit=crop",
-      }));
+      .map((d) => {
+        let due = 0;
+        let learned = 0;
+
+        d.deckWords.forEach((dw) => {
+          const uv = vocabStats.get(dw.vocabularyId);
+          if (uv) {
+            if (uv.status !== "New") learned++;
+            if (new Date(uv.nextReview) <= now) due++;
+          } else {
+            // New word available to learn
+            due++;
+          }
+        });
+
+        // Cap due count to a reasonable daily max per deck
+        due = Math.min(due, 20);
+
+        return {
+          id: d.id,
+          slug: d.slug,
+          title: d.title,
+          description: d.description || "",
+          wordCount: d._count.deckWords,
+          dueCount: due,
+          learnedCount: learned,
+          isPublic: d.isPublic,
+          coverImage: COVER_IMAGES[d.slug] || "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&auto=format&fit=crop",
+        };
+      });
   } catch (err) {
     console.error("Error fetching vocabulary decks:", err);
     return [];
@@ -164,6 +202,9 @@ export async function updateUserWordStatus(vocabularyId: string, rating: "AGAIN"
         status: nextSM2.status,
       },
     });
+
+    revalidatePath("/vokabeln");
+    revalidatePath(`/vokabeln/lernen/[slug]`, "page");
 
     return { success: true, nextSM2 };
   } catch (err) {
