@@ -72,7 +72,8 @@ async function main() {
         }
       });
       
-      const result = JSON.parse(response.text);
+      const resultText = response.text || "{}";
+      const result = JSON.parse(resultText);
       if (result.dictionary) {
         result.dictionary.forEach((item: any) => {
           dictionary[item.word.toLowerCase()] = item;
