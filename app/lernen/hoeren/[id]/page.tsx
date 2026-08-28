@@ -48,7 +48,6 @@ export default function HoerenExerciseDetail({ params }: { params: { id: string 
     setIsSubmitted(true);
     
     try {
-      import('@/lib/utils/sound').then(({ playSuccessSound }) => playSuccessSound());
       localStorage.setItem(`hoeren_progress_${exercise.id}`, `${count}/${exercise.questions.length}`);
       await fetch('/api/progress', {
         method: 'POST',

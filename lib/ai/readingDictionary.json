@@ -1,0 +1,2564 @@
+{
+  "ab": {
+    "word": "ab",
+    "translation": "từ, bắt đầu từ",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "abend": {
+    "word": "abend",
+    "translation": "buổi tối",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "abends": {
+    "word": "abends",
+    "translation": "vào buổi tối",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "aber": {
+    "word": "aber",
+    "translation": "nhưng",
+    "wordType": "Konjunktion",
+    "cefr": "A1"
+  },
+  "absprache": {
+    "word": "absprache",
+    "translation": "sự thỏa thuận, trao đổi",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "abwaschen": {
+    "word": "abwaschen",
+    "translation": "rửa bát đĩa",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "abzustellen": {
+    "word": "abzustellen",
+    "translation": "để đỗ, để xe",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "aktivitäten": {
+    "word": "aktivitäten",
+    "translation": "các hoạt động",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "alle": {
+    "word": "alle",
+    "translation": "tất cả",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "als": {
+    "word": "als",
+    "translation": "với tư cách là, khi",
+    "wordType": "Konjunktion",
+    "cefr": "A2"
+  },
+  "am": {
+    "word": "am",
+    "translation": "vào, ở",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "an": {
+    "word": "an",
+    "translation": "tại, ở",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "anlass": {
+    "word": "anlass",
+    "translation": "dịp, lý do",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "anmelden": {
+    "word": "anmelden",
+    "translation": "đăng ký",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "anmeldungen": {
+    "word": "anmeldungen",
+    "translation": "việc đăng ký, danh sách đăng ký",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "anna": {
+    "word": "anna",
+    "translation": "Anna (tên riêng)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "anstrengend": {
+    "word": "anstrengend",
+    "translation": "vất vả, mệt mỏi",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "arbeit": {
+    "word": "arbeit",
+    "translation": "công việc",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "arbeite": {
+    "word": "arbeite",
+    "translation": "làm việc (tôi làm việc)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "arbeiten": {
+    "word": "arbeiten",
+    "translation": "làm việc",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "auch": {
+    "word": "auch",
+    "translation": "cũng",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "auf": {
+    "word": "auf",
+    "translation": "trên, tại",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "aufgeführt": {
+    "word": "aufgeführt",
+    "translation": "được biểu diễn",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "aufgestellt": {
+    "word": "aufgestellt",
+    "translation": "được lắp đặt, bố trí",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "aufstehen": {
+    "word": "aufstehen",
+    "translation": "thức dậy",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "aus": {
+    "word": "aus",
+    "translation": "từ, ra khỏi",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "b": {
+    "word": "b",
+    "translation": "b (chữ cái / tên lớp 3b)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "balkon": {
+    "word": "balkon",
+    "translation": "ban công",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "band": {
+    "word": "band",
+    "translation": "ban nhạc",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "beachten": {
+    "word": "beachten",
+    "translation": "chú ý, lưu ý",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "beginnt": {
+    "word": "beginnt",
+    "translation": "bắt đầu (nó/anh ấy bắt đầu)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "begleitung": {
+    "word": "begleitung",
+    "translation": "người đi cùng, sự đồng hành",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "beide": {
+    "word": "beide",
+    "translation": "cả hai",
+    "wordType": "Pronomen",
+    "cefr": "A2"
+  },
+  "beim": {
+    "word": "beim",
+    "translation": "khi, tại (khi chuyển nhà)",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "beispiel": {
+    "word": "beispiel",
+    "translation": "ví dụ",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "benutzen": {
+    "word": "benutzen",
+    "translation": "sử dụng",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "benutzung": {
+    "word": "benutzung",
+    "translation": "việc sử dụng",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "bereits": {
+    "word": "bereits",
+    "translation": "đã, rồi",
+    "wordType": "Adverb",
+    "cefr": "B1"
+  },
+  "berlin": {
+    "word": "berlin",
+    "translation": "Béc-lin (thành phố)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "bescheid": {
+    "word": "bescheid",
+    "translation": "thông báo, thông tin",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "besprechen": {
+    "word": "besprechen",
+    "translation": "thảo luận, trao đổi",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "bestehen": {
+    "word": "bestehen",
+    "translation": "sự thành lập, tồn tại",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "besuchen": {
+    "word": "besuchen",
+    "translation": "thăm, tham dự",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "betragen": {
+    "word": "betragen",
+    "translation": "lên tới, có giá trị là",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "betreten": {
+    "word": "betreten",
+    "translation": "đi vào, bước vào",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "bewohner": {
+    "word": "bewohner",
+    "translation": "cư dân",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "bieten": {
+    "word": "bieten",
+    "translation": "cung cấp, có",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "bis": {
+    "word": "bis",
+    "translation": "cho đến",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "bitte": {
+    "word": "bitte",
+    "translation": "xin vui lòng, làm ơn",
+    "wordType": "Partikel",
+    "cefr": "A1"
+  },
+  "bringen": {
+    "word": "bringen",
+    "translation": "mang theo, đem đến",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "buffet": {
+    "word": "buffet",
+    "translation": "tiệc buffet",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "büro": {
+    "word": "büro",
+    "translation": "văn phòng",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "büroalltag": {
+    "word": "büroalltag",
+    "translation": "công việc văn phòng hằng ngày",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "computer": {
+    "word": "computer",
+    "translation": "máy tính",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "container": {
+    "word": "container",
+    "translation": "thùng chứa, công-ten-nơ",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "da": {
+    "word": "da",
+    "translation": "ở đó, vì",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "damit": {
+    "word": "damit",
+    "translation": "để, với điều đó",
+    "wordType": "Konjunktion",
+    "cefr": "B1"
+  },
+  "danken": {
+    "word": "danken",
+    "translation": "cảm ơn",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "darauf": {
+    "word": "darauf",
+    "translation": "về điều đó",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "darf": {
+    "word": "darf",
+    "translation": "được phép (tôi/anh ấy được phép)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "das": {
+    "word": "das",
+    "translation": "cái đó, điều đó",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "dass": {
+    "word": "dass",
+    "translation": "rằng",
+    "wordType": "Konjunktion",
+    "cefr": "A2"
+  },
+  "dauer": {
+    "word": "dauer",
+    "translation": "khoảng thời gian",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "dazu": {
+    "word": "dazu",
+    "translation": "vào đó, cùng với đó",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "dein": {
+    "word": "dein",
+    "translation": "của bạn",
+    "wordType": "Possessivpronomen",
+    "cefr": "A1"
+  },
+  "dem": {
+    "word": "dem",
+    "translation": "cho/ở cái đó",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "den": {
+    "word": "den",
+    "translation": "cái đó",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "der": {
+    "word": "der",
+    "translation": "cái đó",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "des": {
+    "word": "des",
+    "translation": "của cái đó",
+    "wordType": "Artikel",
+    "cefr": "A2"
+  },
+  "deshalb": {
+    "word": "deshalb",
+    "translation": "vì vậy, do đó",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "details": {
+    "word": "details",
+    "translation": "các chi tiết",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "deutsch": {
+    "word": "deutsch",
+    "translation": "tiếng Đức",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "dezember": {
+    "word": "dezember",
+    "translation": "tháng mười hai",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "die": {
+    "word": "die",
+    "translation": "những cái đó",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "diesem": {
+    "word": "diesem",
+    "translation": "này (ở dịp này)",
+    "wordType": "Pronomen",
+    "cefr": "A2"
+  },
+  "diesjährigen": {
+    "word": "diesjährigen",
+    "translation": "của năm nay",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "dinge": {
+    "word": "dinge",
+    "translation": "những đồ vật, những điều",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "dir": {
+    "word": "dir",
+    "translation": "cho bạn",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "direkt": {
+    "word": "direkt",
+    "translation": "ngay bên cạnh, trực tiếp",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "dokumente": {
+    "word": "dokumente",
+    "translation": "các tài liệu",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "doppelseitendruck": {
+    "word": "doppelseitendruck",
+    "translation": "in hai mặt",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "dosenwerfen": {
+    "word": "dosenwerfen",
+    "translation": "trò chơi ném lon",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "dreimal": {
+    "word": "dreimal",
+    "translation": "ba lần",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "drucken": {
+    "word": "drucken",
+    "translation": "in ấn",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "du": {
+    "word": "du",
+    "translation": "bạn",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "dürfen": {
+    "word": "dürfen",
+    "translation": "được phép",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "ebenfalls": {
+    "word": "ebenfalls",
+    "translation": "cũng vậy, cũng như thế",
+    "wordType": "Adverb",
+    "cefr": "B1"
+  },
+  "eigenes": {
+    "word": "eigenes",
+    "translation": "riêng (của riêng mình)",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "ein": {
+    "word": "ein",
+    "translation": "một",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "eine": {
+    "word": "eine",
+    "translation": "một",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "einem": {
+    "word": "einem",
+    "translation": "một",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "einen": {
+    "word": "einen",
+    "translation": "một",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "einer": {
+    "word": "einer",
+    "translation": "một",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "eingangsbereich": {
+    "word": "eingangsbereich",
+    "translation": "khu vực lối vào",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "einige": {
+    "word": "einige",
+    "translation": "một vài, một số",
+    "wordType": "Pronomen",
+    "cefr": "A2"
+  },
+  "einladen": {
+    "word": "einladen",
+    "translation": "mời",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "einnahmen": {
+    "word": "einnahmen",
+    "translation": "doanh thu, khoản thu",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "eltern": {
+    "word": "eltern",
+    "translation": "phụ huynh, cha mẹ",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "elternbeirat": {
+    "word": "elternbeirat",
+    "translation": "ban đại diện phụ huynh",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "ende": {
+    "word": "ende",
+    "translation": "kết thúc, cuối",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "endlich": {
+    "word": "endlich",
+    "translation": "cuối cùng thì",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "erhalten": {
+    "word": "erhalten",
+    "translation": "nhận được",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "erlaubt": {
+    "word": "erlaubt",
+    "translation": "được cho phép",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "erscheinen": {
+    "word": "erscheinen",
+    "translation": "xuất hiện, có mặt",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "erste": {
+    "word": "erste",
+    "translation": "đầu tiên",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "es": {
+    "word": "es",
+    "translation": "nó, có (es gibt)",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "essen": {
+    "word": "essen",
+    "translation": "ăn",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "euro": {
+    "word": "euro",
+    "translation": "đồng Euro",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "fahrradkeller": {
+    "word": "fahrradkeller",
+    "translation": "hầm để xe đạp",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "fahrräder": {
+    "word": "fahrräder",
+    "translation": "những chiếc xe đạp",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "fangen": {
+    "word": "fangen",
+    "translation": "bắt đầu (fangen ... an)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "feier": {
+    "word": "feier",
+    "translation": "bữa tiệc, lễ kỷ niệm",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "feiert": {
+    "word": "feiert",
+    "translation": "ăn mừng, tổ chức (công ty tổ chức)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "fest": {
+    "word": "fest",
+    "translation": "lễ hội, bữa tiệc",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "finden": {
+    "word": "finden",
+    "translation": "tìm thấy",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "findet": {
+    "word": "findet",
+    "translation": "diễn ra (findet statt)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "fische": {
+    "word": "fische",
+    "translation": "những con cá",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "fit": {
+    "word": "fit",
+    "translation": "khỏe mạnh, vừa vặn",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "fitnessstudio": {
+    "word": "fitnessstudio",
+    "translation": "phòng tập thể hình",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "flur": {
+    "word": "flur",
+    "translation": "hành lang",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "freitag": {
+    "word": "freitag",
+    "translation": "thứ Sáu",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "freitagabend": {
+    "word": "freitagabend",
+    "translation": "tối thứ Sáu",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "freitagnachmittag": {
+    "word": "freitagnachmittag",
+    "translation": "chiều thứ Sáu",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "freitags": {
+    "word": "freitags",
+    "translation": "vào các thứ Sáu hàng tuần",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "freue": {
+    "word": "freue",
+    "translation": "vui mừng, mong chờ (tôi mong chờ)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "freuen": {
+    "word": "freuen",
+    "translation": "vui mừng, mong chờ",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "freundlichen": {
+    "word": "freundlichen",
+    "translation": "trân trọng (Liebe Grüße)",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "früh": {
+    "word": "früh",
+    "translation": "sớm",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "frühzeitig": {
+    "word": "frühzeitig",
+    "translation": "sớm, trước thời hạn",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "fährt": {
+    "word": "fährt",
+    "translation": "chạy, đi xe (xe chạy)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "für": {
+    "word": "für",
+    "translation": "cho, dành cho",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "ganztägig": {
+    "word": "ganztägig",
+    "translation": "cả ngày",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "geben": {
+    "word": "geben",
+    "translation": "có (es gibt), cho",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "gebrauch": {
+    "word": "gebrauch",
+    "translation": "sự sử dụng",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "gebucht": {
+    "word": "gebucht",
+    "translation": "đã đặt (phòng/vé)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "geehrte": {
+    "word": "geehrte",
+    "translation": "kính gửi (Sehr geehrte...)",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "gefunden": {
+    "word": "gefunden",
+    "translation": "đã tìm thấy",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "gegen": {
+    "word": "gegen",
+    "translation": "khoảng (thời gian), chống lại",
+    "wordType": "Präposition",
+    "cefr": "A2"
+  },
+  "gehen": {
+    "word": "gehen",
+    "translation": "đi, dành cho (Einnahmen gehen an)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "gehört": {
+    "word": "gehört",
+    "translation": "thuộc về",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "gelten": {
+    "word": "gelten",
+    "translation": "có hiệu lực, áp dụng",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "gemeinschaftsküche": {
+    "word": "gemeinschaftsküche",
+    "translation": "bếp chung",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "gemietet": {
+    "word": "gemietet",
+    "translation": "đã thuê",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "geräte": {
+    "word": "geräte",
+    "translation": "các thiết bị, dụng cụ",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "geräumt": {
+    "word": "geräumt",
+    "translation": "đã được dọn dẹp, thu dọn",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "gesamten": {
+    "word": "gesamten",
+    "translation": "toàn bộ",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "geschirr": {
+    "word": "geschirr",
+    "translation": "chén bát, bát đĩa",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "geschwärmt": {
+    "word": "geschwärmt",
+    "translation": "đã khen ngợi hết lời, say mê",
+    "wordType": "Verb",
+    "cefr": "B2"
+  },
+  "geschäftsführung": {
+    "word": "geschäftsführung",
+    "translation": "ban giám đốc, sự quản lý",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "gesorgt": {
+    "word": "gesorgt",
+    "translation": "được chuẩn bị, lo liệu (ist gesorgt)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "gestattet": {
+    "word": "gestattet",
+    "translation": "được phép",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "gesund": {
+    "word": "gesund",
+    "translation": "khỏe mạnh",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "gewichte": {
+    "word": "gewichte",
+    "translation": "quả tạ, trọng lượng",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "gibt": {
+    "word": "gibt",
+    "translation": "có, đưa ra (chia ở ngôi thứ 3 số ít)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "glasflaschen": {
+    "word": "glasflaschen",
+    "translation": "các chai thủy tinh",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "goethe": {
+    "word": "goethe",
+    "translation": "Goethe (tên riêng)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "großen": {
+    "word": "großen",
+    "translation": "lớn, to",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "grünes": {
+    "word": "grünes",
+    "translation": "xanh lá",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "grüße": {
+    "word": "grüße",
+    "translation": "lời chào",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "grüßen": {
+    "word": "grüßen",
+    "translation": "chào hỏi",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "günstig": {
+    "word": "günstig",
+    "translation": "giá rẻ, hợp lý",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "habe": {
+    "word": "habe",
+    "translation": "có (chia ở ngôi thứ 1 số ít)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "haben": {
+    "word": "haben",
+    "translation": "có",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "hallo": {
+    "word": "hallo",
+    "translation": "xin chào",
+    "wordType": "Interjektion",
+    "cefr": "A1"
+  },
+  "halten": {
+    "word": "halten",
+    "translation": "giữ, dừng lại",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "handtuch": {
+    "word": "handtuch",
+    "translation": "khăn lau, khăn tắm",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "hast": {
+    "word": "hast",
+    "translation": "có (chia ở ngôi thứ 2 số ít)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "hat": {
+    "word": "hat",
+    "translation": "có (chia ở ngôi thứ 3 số ít)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "hausflur": {
+    "word": "hausflur",
+    "translation": "hành lang tòa nhà",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "hausordnung": {
+    "word": "hausordnung",
+    "translation": "nội quy nhà ở",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "hausregeln": {
+    "word": "hausregeln",
+    "translation": "các quy tắc trong nhà",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "haustiere": {
+    "word": "haustiere",
+    "translation": "thú cưng",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "helfen": {
+    "word": "helfen",
+    "translation": "giúp đỡ",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "helfer": {
+    "word": "helfer",
+    "translation": "người giúp đỡ",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "hell": {
+    "word": "hell",
+    "translation": "sáng, sáng sủa",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "herd": {
+    "word": "herd",
+    "translation": "bếp nấu",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "herzlich": {
+    "word": "herzlich",
+    "translation": "trân trọng, chân thành",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "heute": {
+    "word": "heute",
+    "translation": "hôm nay",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "hilfsbereit": {
+    "word": "hilfsbereit",
+    "translation": "sẵn lòng giúp đỡ",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "hof": {
+    "word": "hof",
+    "translation": "sân",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "hotel": {
+    "word": "hotel",
+    "translation": "khách sạn",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "hotels": {
+    "word": "hotels",
+    "translation": "khách sạn (dạng Genitiv/Plural)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "hunden": {
+    "word": "hunden",
+    "translation": "những chú chó (dạng Dativ Plural)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "ich": {
+    "word": "ich",
+    "translation": "tôi",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "ihnen": {
+    "word": "ihnen",
+    "translation": "ngài, họ (dạng Dativ)",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "ihr": {
+    "word": "ihr",
+    "translation": "các bạn, của cô ấy, Ngài",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "ihre": {
+    "word": "ihre",
+    "translation": "của cô ấy, của họ, của Ngài",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "ihren": {
+    "word": "ihren",
+    "translation": "của cô ấy, của họ, của Ngài (dạng Akkusativ/Dativ)",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "im": {
+    "word": "im",
+    "translation": "trong, ở (in dem)",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "immer": {
+    "word": "immer",
+    "translation": "luôn luôn",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "in": {
+    "word": "in",
+    "translation": "trong, ở",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "informationen": {
+    "word": "informationen",
+    "translation": "thông tin",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "intensivkurse": {
+    "word": "intensivkurse",
+    "translation": "các khóa học cấp tốc",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "ist": {
+    "word": "ist",
+    "translation": "là, ở (chia ở ngôi thứ 3 số ít)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "jahreszeiten": {
+    "word": "jahreszeiten",
+    "translation": "các mùa trong năm",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "jeder": {
+    "word": "jeder",
+    "translation": "mỗi, mọi người",
+    "wordType": "Pronomen",
+    "cefr": "A2"
+  },
+  "jetzt": {
+    "word": "jetzt",
+    "translation": "bây giờ",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "job": {
+    "word": "job",
+    "translation": "công việc",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "jubiläumsfeier": {
+    "word": "jubiläumsfeier",
+    "translation": "lễ kỷ niệm",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "juli": {
+    "word": "juli",
+    "translation": "tháng Bảy",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "julian": {
+    "word": "julian",
+    "translation": "Julian (tên riêng)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "jähriges": {
+    "word": "jähriges",
+    "translation": "tuổi, năm (ví dụ: 25-jähriges - kỷ niệm 25 năm)",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "kaffee": {
+    "word": "kaffee",
+    "translation": "cà phê",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "kalt": {
+    "word": "kalt",
+    "translation": "lạnh, chưa bao gồm chi phí phụ (tiền thuê)",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "kannst": {
+    "word": "kannst",
+    "translation": "có thể (chia ở ngôi thứ 2 số ít)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "katzen": {
+    "word": "katzen",
+    "translation": "những con mèo",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "keine": {
+    "word": "keine",
+    "translation": "không có, không",
+    "wordType": "Artikel",
+    "cefr": "A1"
+  },
+  "kinder": {
+    "word": "kinder",
+    "translation": "trẻ em",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "kinderschminken": {
+    "word": "kinderschminken",
+    "translation": "vẽ mặt cho trẻ em",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "klasse": {
+    "word": "klasse",
+    "translation": "lớp học",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "kleidung": {
+    "word": "kleidung",
+    "translation": "quần áo",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "kleine": {
+    "word": "kleine",
+    "translation": "nhỏ",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "kleines": {
+    "word": "kleines",
+    "translation": "nhỏ",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "kollegen": {
+    "word": "kollegen",
+    "translation": "đồng nghiệp",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "kommen": {
+    "word": "kommen",
+    "translation": "đến, tham dự",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "kosten": {
+    "word": "kosten",
+    "translation": "tốn chi phí",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "kostenlos": {
+    "word": "kostenlos",
+    "translation": "miễn phí",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "kostenloses": {
+    "word": "kostenloses",
+    "translation": "miễn phí",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "krankenpflegerin": {
+    "word": "krankenpflegerin",
+    "translation": "nữ điều dưỡng, y tá",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "kuchen": {
+    "word": "kuchen",
+    "translation": "bánh ngọt",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "kurs": {
+    "word": "kurs",
+    "translation": "khóa học",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "kurse": {
+    "word": "kurse",
+    "translation": "các khóa học",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "kursprogramm": {
+    "word": "kursprogramm",
+    "translation": "chương trình khóa học",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "kursteilnehmer": {
+    "word": "kursteilnehmer",
+    "translation": "học viên khóa học",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "können": {
+    "word": "können",
+    "translation": "có thể",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "küche": {
+    "word": "küche",
+    "translation": "nhà bếp",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "lade": {
+    "word": "lade",
+    "translation": "mời, chất hàng (chia ở ngôi thứ 1 số ít)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "laden": {
+    "word": "laden",
+    "translation": "mời",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "legen": {
+    "word": "legen",
+    "translation": "đặt, để nằm",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "lehrbuch": {
+    "word": "lehrbuch",
+    "translation": "sách giáo khoa",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "leibliche": {
+    "word": "leibliche",
+    "translation": "về mặt ăn uống, thể chất",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "leitungswasser": {
+    "word": "leitungswasser",
+    "translation": "nước máy",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "liebe": {
+    "word": "liebe",
+    "translation": "thân mến",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "lieber": {
+    "word": "lieber",
+    "translation": "thân mến (dùng cho nam)",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "liegt": {
+    "word": "liegt",
+    "translation": "nằm ở (chia ở ngôi thứ 3 số ít)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "live": {
+    "word": "live",
+    "translation": "trực tiếp",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "lärm": {
+    "word": "lärm",
+    "translation": "tiếng ồn",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "macht": {
+    "word": "macht",
+    "translation": "làm, tạo ra (chia ở ngôi thứ 3 số ít)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "mal": {
+    "word": "mal",
+    "translation": "lần, chút",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "maria": {
+    "word": "maria",
+    "translation": "Maria (tên riêng)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "marienplatzes": {
+    "word": "marienplatzes",
+    "translation": "quảng trường Marienplatz (dạng Genitiv)",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "markus": {
+    "word": "markus",
+    "translation": "Markus (tên riêng)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "mehr": {
+    "word": "mehr",
+    "translation": "hơn, nữa",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "meine": {
+    "word": "meine",
+    "translation": "của tôi",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "meistens": {
+    "word": "meistens",
+    "translation": "thường thường, đa số",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "mich": {
+    "word": "mich",
+    "translation": "tôi (dạng Akkusativ)",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "miete": {
+    "word": "miete",
+    "translation": "tiền thuê nhà",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "mir": {
+    "word": "mir",
+    "translation": "tôi (dạng Dativ)",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "mit": {
+    "word": "mit",
+    "translation": "với",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "mitarbeiter": {
+    "word": "mitarbeiter",
+    "translation": "nhân viên",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "mitarbeiterinnen": {
+    "word": "mitarbeiterinnen",
+    "translation": "các nữ nhân viên",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "mitglieder": {
+    "word": "mitglieder",
+    "translation": "các thành viên",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "mithilfe": {
+    "word": "mithilfe",
+    "translation": "sự giúp đỡ",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "mitteilen": {
+    "word": "mitteilen",
+    "translation": "thông báo",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "mittwochs": {
+    "word": "mittwochs",
+    "translation": "vào các thứ Tư",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "modus": {
+    "word": "modus",
+    "translation": "chế độ, phương thức",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "monat": {
+    "word": "monat",
+    "translation": "tháng",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "monitore": {
+    "word": "monitore",
+    "translation": "các màn hình",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "montags": {
+    "word": "montags",
+    "translation": "vào các thứ Hai",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "morgens": {
+    "word": "morgens",
+    "translation": "vào buổi sáng",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "musik": {
+    "word": "musik",
+    "translation": "âm nhạc",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "musikalische": {
+    "word": "musikalische",
+    "translation": "thuộc về âm nhạc",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "muss": {
+    "word": "muss",
+    "translation": "phải (chia ở ngôi thứ 1/3 số ít)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "märz": {
+    "word": "märz",
+    "translation": "tháng Ba",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "möchten": {
+    "word": "möchten",
+    "translation": "muốn",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "möglich": {
+    "word": "möglich",
+    "translation": "có thể",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "müll": {
+    "word": "müll",
+    "translation": "rác",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "müllbeutel": {
+    "word": "müllbeutel",
+    "translation": "túi đựng rác",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "mülleimer": {
+    "word": "mülleimer",
+    "translation": "thùng rác",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "münchen": {
+    "word": "münchen",
+    "translation": "thành phố München",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "müssen": {
+    "word": "müssen",
+    "translation": "phải",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "nach": {
+    "word": "nach",
+    "translation": "sau, đến",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "neben": {
+    "word": "neben",
+    "translation": "bên cạnh",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "nett": {
+    "word": "nett",
+    "translation": "tốt bụng, thân thiện",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "neue": {
+    "word": "neue",
+    "translation": "mới",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "neuen": {
+    "word": "neuen",
+    "translation": "mới",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "neues": {
+    "word": "neues",
+    "translation": "mới",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "nicht": {
+    "word": "nicht",
+    "translation": "không",
+    "wordType": "Partikel",
+    "cefr": "A1"
+  },
+  "niveau": {
+    "word": "niveau",
+    "translation": "trình độ",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "notwendig": {
+    "word": "notwendig",
+    "translation": "cần thiết",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "november": {
+    "word": "november",
+    "translation": "tháng Mười Một",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "nur": {
+    "word": "nur",
+    "translation": "chỉ",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "nutzen": {
+    "word": "nutzen",
+    "translation": "sử dụng",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "nächste": {
+    "word": "nächste",
+    "translation": "tiếp theo, tới",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "nächsten": {
+    "word": "nächsten",
+    "translation": "tiếp theo, tới",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "nächster": {
+    "word": "nächster",
+    "translation": "tiếp theo, tới",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "nähe": {
+    "word": "nähe",
+    "translation": "ở gần, khu vực lân cận",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "ob": {
+    "word": "ob",
+    "translation": "liệu xem",
+    "wordType": "Konjunktion",
+    "cefr": "A2"
+  },
+  "oder": {
+    "word": "oder",
+    "translation": "hoặc, hay",
+    "wordType": "Konjunktion",
+    "cefr": "A1"
+  },
+  "oktober": {
+    "word": "oktober",
+    "translation": "tháng Mười",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "online": {
+    "word": "online",
+    "translation": "trực tuyến",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "pack": {
+    "word": "pack",
+    "translation": "đóng gói, gói (dạng mệnh lệnh/gốc)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "papier": {
+    "word": "papier",
+    "translation": "giấy",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "papiers": {
+    "word": "papiers",
+    "translation": "của giấy (dạng Genitiv)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "park": {
+    "word": "park",
+    "translation": "công viên",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "personalabteilung": {
+    "word": "personalabteilung",
+    "translation": "phòng nhân sự",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "pizzaessen": {
+    "word": "pizzaessen",
+    "translation": "tiệc ăn pizza",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "plastik": {
+    "word": "plastik",
+    "translation": "nhựa",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "plastikflaschen": {
+    "word": "plastikflaschen",
+    "translation": "các chai nhựa",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "platz": {
+    "word": "platz",
+    "translation": "chỗ, quảng trường",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "pro": {
+    "word": "pro",
+    "translation": "mỗi, cho mỗi",
+    "wordType": "Präposition",
+    "cefr": "A2"
+  },
+  "projekt": {
+    "word": "projekt",
+    "translation": "dự án",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "prozent": {
+    "word": "prozent",
+    "translation": "phần trăm",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "rabatt": {
+    "word": "rabatt",
+    "translation": "sự giảm giá",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "regelmäßig": {
+    "word": "regelmäßig",
+    "translation": "thường xuyên, đều đặn",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "reichhaltiges": {
+    "word": "reichhaltiges",
+    "translation": "phong phú, dồi dào",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "reinigen": {
+    "word": "reinigen",
+    "translation": "làm sạch, lau chùi",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "reserviert": {
+    "word": "reserviert",
+    "translation": "đã đặt trước",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "restmüll": {
+    "word": "restmüll",
+    "translation": "rác thải còn lại",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "ruf": {
+    "word": "ruf",
+    "translation": "tiếng tăm, sự gọi",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "ruhezeiten": {
+    "word": "ruhezeiten",
+    "translation": "giờ yên tĩnh",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "saal": {
+    "word": "saal",
+    "translation": "hội trường, phòng lớn",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "samstag": {
+    "word": "samstag",
+    "translation": "thứ Bảy",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "sauberen": {
+    "word": "sauberen",
+    "translation": "sạch sẽ",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "schalten": {
+    "word": "schalten",
+    "translation": "bật, chuyển đổi",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "schicht": {
+    "word": "schicht",
+    "translation": "ca làm việc",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "schließen": {
+    "word": "schließen",
+    "translation": "đóng lại",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "schließt": {
+    "word": "schließt",
+    "translation": "đóng (ngôi thứ 3 số ít)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "schneien": {
+    "word": "schneien",
+    "translation": "tuyết rơi",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "schon": {
+    "word": "schon",
+    "translation": "đã, rồi",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "schonen": {
+    "word": "schonen",
+    "translation": "giữ gìn, bảo vệ",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "schule": {
+    "word": "schule",
+    "translation": "trường học",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "schulhof": {
+    "word": "schulhof",
+    "translation": "sân trường",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "schulleitung": {
+    "word": "schulleitung",
+    "translation": "ban giám hiệu",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "schweiß": {
+    "word": "schweiß",
+    "translation": "mồ hôi",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "sehr": {
+    "word": "sehr",
+    "translation": "rất",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "sein": {
+    "word": "sein",
+    "translation": "là, thì, ở / của anh ấy",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "seiten": {
+    "word": "seiten",
+    "translation": "các trang, các phía",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "sekretariat": {
+    "word": "sekretariat",
+    "translation": "văn phòng thư ký",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "sich": {
+    "word": "sich",
+    "translation": "bản thân",
+    "wordType": "Pronomen",
+    "cefr": "A2"
+  },
+  "sie": {
+    "word": "sie",
+    "translation": "cô ấy, họ, Ngài",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "sind": {
+    "word": "sind",
+    "translation": "là, thì, ở (chia ngôi wir/sie/Sie)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "so": {
+    "word": "so",
+    "translation": "như vậy, quá",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "sofort": {
+    "word": "sofort",
+    "translation": "ngay lập tức",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "soll": {
+    "word": "soll",
+    "translation": "nên, phải (chia ngôi ich/er/sie/es)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "sollten": {
+    "word": "sollten",
+    "translation": "nên (dạng giả định/quá khứ)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "sommerfest": {
+    "word": "sommerfest",
+    "translation": "lễ hội mùa hè",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "sonntags": {
+    "word": "sonntags",
+    "translation": "vào các ngày Chủ nhật",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "sorgt": {
+    "word": "sorgt",
+    "translation": "lo liệu, chăm sóc (chia ngôi er/sie/es)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "sowie": {
+    "word": "sowie",
+    "translation": "cũng như",
+    "wordType": "Konjunktion",
+    "cefr": "B1"
+  },
+  "spaß": {
+    "word": "spaß",
+    "translation": "niềm vui, sự thích thú",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "spielgeräte": {
+    "word": "spielgeräte",
+    "translation": "thiết bị trò chơi",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "sportschuhen": {
+    "word": "sportschuhen",
+    "translation": "giày thể thao (dạng Dativ)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "stadtkrankenhaus": {
+    "word": "stadtkrankenhaus",
+    "translation": "bệnh viện thành phố",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "standby": {
+    "word": "standby",
+    "translation": "chế độ chờ",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "statt": {
+    "word": "statt",
+    "translation": "thay vì / diễn ra (trong stattfinden)",
+    "wordType": "Präposition",
+    "cefr": "B1"
+  },
+  "stefan": {
+    "word": "stefan",
+    "translation": "Stefan (tên riêng)",
+    "wordType": "Eigenname",
+    "cefr": "A1"
+  },
+  "stehen": {
+    "word": "stehen",
+    "translation": "đứng",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "stell": {
+    "word": "stell",
+    "translation": "tưởng tượng, đặt (thể mệnh lệnh)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "stellen": {
+    "word": "stellen",
+    "translation": "đặt, để",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "straßenschuhe": {
+    "word": "straßenschuhe",
+    "translation": "giày đi ngoài đường",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "strikt": {
+    "word": "strikt",
+    "translation": "nghiêm ngặt",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "strom": {
+    "word": "strom",
+    "translation": "điện năng, dòng điện",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "studenten": {
+    "word": "studenten",
+    "translation": "các sinh viên",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "telefonieren": {
+    "word": "telefonieren",
+    "translation": "gọi điện thoại",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "teuer": {
+    "word": "teuer",
+    "translation": "đắt",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "theaterstück": {
+    "word": "theaterstück",
+    "translation": "vở kịch",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "thema": {
+    "word": "thema",
+    "translation": "chủ đề",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "tiere": {
+    "word": "tiere",
+    "translation": "các động vật",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "tobias": {
+    "word": "tobias",
+    "translation": "Tobias (tên riêng)",
+    "wordType": "Eigenname",
+    "cefr": "A1"
+  },
+  "training": {
+    "word": "training",
+    "translation": "việc luyện tập",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "trainingsfläche": {
+    "word": "trainingsfläche",
+    "translation": "khu vực tập luyện",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "transporter": {
+    "word": "transporter",
+    "translation": "xe tải nhỏ, xe chuyển đồ",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "treffen": {
+    "word": "treffen",
+    "translation": "gặp mặt",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "trennen": {
+    "word": "trennen",
+    "translation": "phân loại, chia tách",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "uhr": {
+    "word": "uhr",
+    "translation": "giờ, đồng hồ",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "um": {
+    "word": "um",
+    "translation": "vào lúc, xung quanh, để",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "umkleidekabine": {
+    "word": "umkleidekabine",
+    "translation": "phòng thay đồ",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "umwelt": {
+    "word": "umwelt",
+    "translation": "môi trường",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "umzug": {
+    "word": "umzug",
+    "translation": "việc chuyển nhà",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "unbedingt": {
+    "word": "unbedingt",
+    "translation": "nhất định, tuyệt đối",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "und": {
+    "word": "und",
+    "translation": "và",
+    "wordType": "Konjunktion",
+    "cefr": "A1"
+  },
+  "uns": {
+    "word": "uns",
+    "translation": "chúng tôi, chúng ta",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "unser": {
+    "word": "unser",
+    "translation": "của chúng tôi",
+    "wordType": "Possessivpronomen",
+    "cefr": "A1"
+  },
+  "unsere": {
+    "word": "unsere",
+    "translation": "của chúng tôi",
+    "wordType": "Possessivpronomen",
+    "cefr": "A1"
+  },
+  "unserem": {
+    "word": "unserem",
+    "translation": "của chúng tôi (dạng Dativ)",
+    "wordType": "Possessivpronomen",
+    "cefr": "A1"
+  },
+  "unter": {
+    "word": "unter",
+    "translation": "ở dưới, trong số",
+    "wordType": "Präposition",
+    "cefr": "A2"
+  },
+  "unterhaltung": {
+    "word": "unterhaltung",
+    "translation": "sự giải trí, cuộc trò chuyện",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "unternehmen": {
+    "word": "unternehmen",
+    "translation": "doanh nghiệp",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "unvergesslichen": {
+    "word": "unvergesslichen",
+    "translation": "khó quên",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "verboten": {
+    "word": "verboten",
+    "translation": "bị cấm",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "verbraucht": {
+    "word": "verbraucht",
+    "translation": "tiêu thụ, dùng hết",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "verfügung": {
+    "word": "verfügung",
+    "translation": "sự sẵn có (trong zur Verfügung)",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "verkauft": {
+    "word": "verkauft",
+    "translation": "bán (chia ngôi er/sie/es)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "vermeiden": {
+    "word": "vermeiden",
+    "translation": "tránh, né tránh",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "viel": {
+    "word": "viel",
+    "translation": "nhiều",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "viele": {
+    "word": "viele",
+    "translation": "nhiều",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "vielleicht": {
+    "word": "vielleicht",
+    "translation": "có lẽ",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "vier": {
+    "word": "vier",
+    "translation": "bốn",
+    "wordType": "Zahlwort",
+    "cefr": "A1"
+  },
+  "vollständig": {
+    "word": "vollständig",
+    "translation": "hoàn toàn, đầy đủ",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "von": {
+    "word": "von",
+    "translation": "từ, của",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "vor": {
+    "word": "vor",
+    "translation": "trước",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "war": {
+    "word": "war",
+    "translation": "đã là, đã ở (chia ngôi ich/er/sie/es)",
+    "wordType": "Verb",
+    "cefr": "A1"
+  },
+  "warme": {
+    "word": "warme",
+    "translation": "ấm áp",
+    "wordType": "Adjektiv",
+    "cefr": "A1"
+  },
+  "webseite": {
+    "word": "webseite",
+    "translation": "trang web",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "weihnachtsmarkt": {
+    "word": "weihnachtsmarkt",
+    "translation": "chợ Giáng sinh",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "wenn": {
+    "word": "wenn",
+    "translation": "nếu, khi",
+    "wordType": "Konjunktion",
+    "cefr": "A2"
+  },
+  "werden": {
+    "word": "werden",
+    "translation": "trở thành, sẽ",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "wichtige": {
+    "word": "wichtige",
+    "translation": "quan trọng",
+    "wordType": "Adjektiv",
+    "cefr": "A2"
+  },
+  "wie": {
+    "word": "wie",
+    "translation": "như, như thế nào",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "wieder": {
+    "word": "wieder",
+    "translation": "lại, lặp lại",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "wintersemester": {
+    "word": "wintersemester",
+    "translation": "học kỳ mùa đông",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "wir": {
+    "word": "wir",
+    "translation": "chúng tôi, chúng ta",
+    "wordType": "Pronomen",
+    "cefr": "A1"
+  },
+  "wird": {
+    "word": "wird",
+    "translation": "sẽ, trở thành (chia ngôi er/sie/es)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "wirklich": {
+    "word": "wirklich",
+    "translation": "thực sự",
+    "wordType": "Adverb",
+    "cefr": "A2"
+  },
+  "woche": {
+    "word": "woche",
+    "translation": "tuần",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "wochen": {
+    "word": "wochen",
+    "translation": "các tuần",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "wochenende": {
+    "word": "wochenende",
+    "translation": "cuối tuần",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "wohl": {
+    "word": "wohl",
+    "translation": "sự thoải mái, sức khỏe / có lẽ",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "wohnung": {
+    "word": "wohnung",
+    "translation": "căn hộ",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "wollen": {
+    "word": "wollen",
+    "translation": "muốn",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "würstchen": {
+    "word": "würstchen",
+    "translation": "xúc xích nhỏ",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "zeit": {
+    "word": "zeit",
+    "translation": "thời gian",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "zentrum": {
+    "word": "zentrum",
+    "translation": "trung tâm",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "ziehe": {
+    "word": "ziehe",
+    "translation": "chuyển nhà (chia ngôi ich: ziehe um)",
+    "wordType": "Verb",
+    "cefr": "A2"
+  },
+  "zimmer": {
+    "word": "zimmer",
+    "translation": "phòng",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "zimmerlautstärke": {
+    "word": "zimmerlautstärke",
+    "translation": "âm lượng vừa đủ trong phòng",
+    "wordType": "Nomen",
+    "cefr": "B1"
+  },
+  "zimmern": {
+    "word": "zimmern",
+    "translation": "các phòng (dạng Dativ)",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "zu": {
+    "word": "zu",
+    "translation": "tới, quá",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "zug": {
+    "word": "zug",
+    "translation": "tàu hỏa",
+    "wordType": "Nomen",
+    "cefr": "A1"
+  },
+  "zugtickets": {
+    "word": "zugtickets",
+    "translation": "vé tàu",
+    "wordType": "Nomen",
+    "cefr": "A2"
+  },
+  "zum": {
+    "word": "zum",
+    "translation": "tới (zu dem)",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "zur": {
+    "word": "zur",
+    "translation": "tới (zu der)",
+    "wordType": "Präposition",
+    "cefr": "A1"
+  },
+  "zusammen": {
+    "word": "zusammen",
+    "translation": "cùng nhau",
+    "wordType": "Adverb",
+    "cefr": "A1"
+  },
+  "zusätzlich": {
+    "word": "zusätzlich",
+    "translation": "bổ sung, thêm vào",
+    "wordType": "Adjektiv",
+    "cefr": "B1"
+  },
+  "ändern": {
+    "word": "ändern",
+    "translation": "thay đổi",
+    "wordType": "Verb",
+    "cefr": "B1"
+  },
+  "über": {
+    "word": "über",
+    "translation": "trên, về",
+    "wordType": "Präposition",
+    "cefr": "A2"
+  }
+}
