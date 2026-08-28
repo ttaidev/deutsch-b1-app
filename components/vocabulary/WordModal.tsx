@@ -85,17 +85,7 @@ export function WordModal({ wordData, isOpen, onClose, isLoading = false }: Word
                 <p className="text-base font-bold text-slate-800">{wordData.translation}</p>
               </div>
 
-              {wordData.example && (
-                <div>
-                  <span className="text-[11px] font-extrabold uppercase text-slate-400 tracking-wider">Ví dụ câu Tiếng Đức</span>
-                  <p className="text-xs font-medium text-slate-700 italic bg-slate-50 p-3 rounded-xl border border-slate-200 mt-1">
-                    "{wordData.example}"
-                  </p>
-                  {wordData.exampleTrans && (
-                    <p className="text-[11px] text-slate-500 mt-1 pl-1">{wordData.exampleTrans}</p>
-                  )}
-                </div>
-              )}
+              {/* Removed example sentence per user request */}
             </div>
 
             {/* Save to deck selection */}
