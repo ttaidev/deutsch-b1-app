@@ -150,49 +150,55 @@ export async function evaluateSpeaking(
   };
 }
 
-/**
- * AI Vocabulary Auto-completion ("Mit KI ergänzen")
- */
 export async function autoCompleteVocabulary(wordQuery: string): Promise<VocabularyAIEssence> {
   const query = wordQuery.trim();
-  
-  // Intelligent lexicon generator fallback
-  const mockLexicon: Record<string, VocabularyAIEssence> = {
-    "überzeugen": {
-      word: "überzeugen",
-      wordType: "Verb",
-      translation: "thuyết phục",
-      example: "Er konnte den Chef von seiner Idee überzeugen.",
-      exampleTrans: "Anh ấy đã thuyết phục được sếp về ý tưởng của mình.",
-      cefr: "B1",
-    },
-    "bewerbung": {
-      word: "Bewerbung",
-      article: "die",
-      plural: "die Bewerbungen",
-      wordType: "Nomen",
-      translation: "đơn xin việc",
-      example: "Ich habe eine Bewerbung geschickt.",
-      exampleTrans: "Tôi đã gửi một lá đơn xin việc.",
-      cefr: "B1",
-    },
-  };
-
-  const lower = query.toLowerCase();
-  if (mockLexicon[lower]) {
-    return mockLexicon[lower];
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    throw new Error("GEMINI_API_KEY is not set in environment variables");
   }
 
-  // Generic fallback if word is unknown
-  const isCapitalized = query[0] === query[0].toUpperCase();
-  return {
-    word: query,
-    article: isCapitalized ? "die" : undefined,
-    plural: isCapitalized ? `${query}en` : undefined,
-    wordType: isCapitalized ? "Nomen" : "Verb / Adjektiv",
-    translation: `Nghĩa của "${query}" (tiếng Việt)`,
-    example: `Dies ist ein Beispielsatz mit dem Wort ${query}.`,
-    exampleTrans: `Đây là ví dụ sử dụng từ ${query}.`,
-    cefr: "B1",
-  };
+  const ai = new GoogleGenAI({ apiKey });
+
+  const systemInstruction = `Du bist ein Deutschlehrer (Niveau B1).
+Ich gebe dir ein deutsches Wort. Du sollst ein kurzes, präzises Wörterbucheintrag im JSON Format zurückgeben.
+JSON Schema:
+{
+  "word": "das Basiswort (Grundform/Infinitiv, korrekt geschrieben, z.B. groß wenn Nomen)",
+  "article": "der, die oder das (nur bei Nomen, sonst null/leer)",
+  "plural": "die Pluralform mit Artikel (nur bei Nomen, sonst null/leer, z.B. 'die Wohnungen')",
+  "wordType": "Nomen, Verb, Adjektiv, etc.",
+  "translation": "Nghĩa tiếng Việt ngắn gọn, dễ hiểu",
+  "example": "Ein B1-Beispielsatz auf Deutsch mit genau diesem Wort.",
+  "exampleTrans": "Câu ví dụ dịch chuẩn xác sang tiếng Việt.",
+  "cefr": "B1"
+}`;
+
+  const response = await ai.models.generateContent({
+    model: "gemini-3.6-flash",
+    contents: `Wort: ${query}`,
+    config: {
+      systemInstruction,
+      responseMimeType: "application/json",
+      responseSchema: {
+        type: Type.OBJECT,
+        properties: {
+          word: { type: Type.STRING },
+          article: { type: Type.STRING, nullable: true },
+          plural: { type: Type.STRING, nullable: true },
+          wordType: { type: Type.STRING },
+          translation: { type: Type.STRING },
+          example: { type: Type.STRING },
+          exampleTrans: { type: Type.STRING },
+          cefr: { type: Type.STRING }
+        },
+        required: ["word", "wordType", "translation", "example", "exampleTrans", "cefr"]
+      }
+    }
+  });
+
+  if (response.text) {
+    return JSON.parse(response.text) as VocabularyAIEssence;
+  }
+  
+  throw new Error("No response from AI");
 }

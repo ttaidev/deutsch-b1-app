@@ -6,7 +6,7 @@ import Link from "next/link";
 import { WordModal } from "@/components/vocabulary/WordModal";
 import { LESEN_EXERCISES } from "@/lib/lesen/data";
 import { notFound } from "next/navigation";
-import type { VocabularyAIEssence } from "@/lib/ai/evaluator";
+import { type VocabularyAIEssence, autoCompleteVocabulary } from "@/lib/ai/evaluator";
 
 export default function LesenExerciseDetail({ params }: { params: { id: string } }) {
   const exercise = LESEN_EXERCISES.find((ex) => ex.id === params.id);
@@ -19,6 +19,7 @@ export default function LesenExerciseDetail({ params }: { params: { id: string }
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [modalWord, setModalWord] = useState<VocabularyAIEssence | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isTranslating, setIsTranslating] = useState(false);
 
   const readingText = exercise.readingText;
   const questions = exercise.questions;
@@ -28,21 +29,23 @@ export default function LesenExerciseDetail({ params }: { params: { id: string }
     setSelectedAnswers((prev) => ({ ...prev, [qId]: optionKey }));
   };
 
-  const handleWordClick = (word: string) => {
+  const handleWordClick = async (word: string) => {
     const cleanWord = word.replace(/[^a-zA-ZäöüÄÖÜß]/g, "");
-    if (!cleanWord) return;
+    if (!cleanWord || isTranslating) return;
 
-    setModalWord({
-      word: cleanWord,
-      article: cleanWord === "Wohnung" ? "die" : cleanWord === "Anzeige" ? "die" : undefined,
-      plural: cleanWord === "Wohnung" ? "die Wohnungen" : undefined,
-      wordType: "Nomen / Wort",
-      translation: cleanWord === "Wohnung" ? "căn hộ" : cleanWord === "Anzeige" ? "bài đăng / quảng cáo" : `Nghĩa của từ "${cleanWord}"`,
-      example: `Ich habe die ${cleanWord} in der Zeitung gelesen.`,
-      exampleTrans: `Tôi đã đọc ${cleanWord} trên tờ báo.`,
-      cefr: "B1",
-    });
+    setIsTranslating(true);
+    setModalWord(null);
     setIsModalOpen(true);
+    
+    try {
+      const res = await autoCompleteVocabulary(cleanWord);
+      setModalWord(res);
+    } catch (error) {
+      console.error("Lỗi tra từ:", error);
+      setIsModalOpen(false);
+    } finally {
+      setIsTranslating(false);
+    }
   };
 
   // Render text words clickable and handle newlines
@@ -204,6 +207,7 @@ export default function LesenExerciseDetail({ params }: { params: { id: string }
         wordData={modalWord}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
+        isLoading={isTranslating}
       />
     </div>
   );
