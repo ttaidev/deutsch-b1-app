@@ -150,15 +150,23 @@ export default function LesenExerciseDetail({ params }: { params: { id: string }
                     const isSelected = selectedAnswers[q.id] === optKey;
                     const isCorrectOpt = q.correct === optKey;
 
-                    let style = "bg-slate-50 border-slate-200 hover:bg-slate-100 text-slate-700";
-                    if (isSelected) {
-                      style = "bg-primary text-white border-primary";
+                    let style = "bg-white border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/50 hover:shadow-md hover:-translate-y-[1px] text-slate-700";
+                    let circleStyle = "border-slate-300 bg-white group-hover:border-indigo-400";
+                    
+                    if (isSelected && !isSubmitted) {
+                      style = "bg-indigo-600 text-white border-indigo-600 shadow-md shadow-indigo-200";
+                      circleStyle = "border-white bg-indigo-500";
                     }
                     if (isSubmitted) {
                       if (isCorrectOpt) {
-                        style = "bg-emerald-50 text-emerald-800 border-emerald-300 font-bold";
+                        style = "bg-emerald-50 text-emerald-900 border-emerald-400 font-bold shadow-sm ring-1 ring-emerald-200";
+                        circleStyle = "border-emerald-500 bg-emerald-500 text-white";
                       } else if (isSelected && !isCorrectOpt) {
-                        style = "bg-red-50 text-red-800 border-red-300 font-bold";
+                        style = "bg-red-50 text-red-800 border-red-300 font-bold shadow-sm opacity-90";
+                        circleStyle = "border-red-500 bg-red-500 text-white";
+                      } else {
+                        style = "bg-slate-50 border-slate-200 text-slate-400 opacity-60";
+                        circleStyle = "border-slate-200 bg-slate-50";
                       }
                     }
 
@@ -166,9 +174,15 @@ export default function LesenExerciseDetail({ params }: { params: { id: string }
                       <button
                         key={optKey}
                         onClick={() => handleSelectOption(q.id, optKey)}
-                        className={`w-full text-left p-3.5 rounded-2xl border text-xs font-medium transition ${style}`}
+                        disabled={isSubmitted}
+                        className={`group w-full text-left p-4 rounded-xl border-2 text-[14px] leading-snug font-medium transition-all duration-200 ease-out active:scale-[0.99] flex items-center gap-3 ${style}`}
                       >
-                        {opt}
+                        <div className={`flex-shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${circleStyle}`}>
+                          {(isSubmitted && isCorrectOpt) && <CheckCircle2 className="w-3.5 h-3.5" />}
+                          {(isSubmitted && isSelected && !isCorrectOpt) && <XCircle className="w-3.5 h-3.5" />}
+                          {(!isSubmitted && isSelected) && <div className="w-2 h-2 bg-white rounded-full" />}
+                        </div>
+                        <span>{opt}</span>
                       </button>
                     );
                   })}

@@ -118,27 +118,48 @@ export default function HoerenExerciseDetail({ params }: { params: { id: string 
                 </div>
               ) : (
                 <div className="space-y-2">
-                  {q.options?.map((opt) => (
-                    <label
-                      key={opt}
-                      className={`flex items-center gap-3 p-3 rounded-xl border-2 cursor-pointer transition ${
-                        answers[q.id] === opt
-                          ? "border-primary bg-blue-50/50"
-                          : "border-slate-100 hover:border-slate-200 bg-white"
-                      } ${isSubmitted ? "opacity-60 pointer-events-none" : ""}`}
-                    >
-                      <input
-                        type="radio"
-                        name={`q-${q.id}`}
-                        value={opt}
-                        checked={answers[q.id] === opt}
-                        onChange={() => setAnswers({ ...answers, [q.id]: opt })}
-                        className="w-4 h-4 text-primary focus:ring-primary border-slate-300"
-                        disabled={isSubmitted}
-                      />
-                      <span className="text-sm font-medium text-slate-700">{opt}</span>
-                    </label>
-                  ))}
+                  {q.options?.map((opt) => {
+                    const isSelected = answers[q.id] === opt;
+                    const isCorrectOpt = q.correct === opt;
+
+                    let style = "bg-white border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/50 hover:shadow-md hover:-translate-y-[1px] text-slate-700 cursor-pointer";
+                    let circleStyle = "border-slate-300 bg-white group-hover:border-indigo-400";
+                    
+                    if (isSelected && !isSubmitted) {
+                      style = "bg-indigo-600 text-white border-indigo-600 shadow-md shadow-indigo-200 cursor-pointer";
+                      circleStyle = "border-white bg-indigo-500";
+                    }
+                    if (isSubmitted) {
+                      style += " cursor-default hover:translate-y-0 hover:shadow-none";
+                      if (isCorrectOpt) {
+                        style = "bg-emerald-50 text-emerald-900 border-emerald-400 font-bold shadow-sm ring-1 ring-emerald-200 cursor-default";
+                        circleStyle = "border-emerald-500 bg-emerald-500 text-white";
+                      } else if (isSelected && !isCorrectOpt) {
+                        style = "bg-red-50 text-red-800 border-red-300 font-bold shadow-sm opacity-90 cursor-default";
+                        circleStyle = "border-red-500 bg-red-500 text-white";
+                      } else {
+                        style = "bg-slate-50 border-slate-200 text-slate-400 opacity-60 cursor-default";
+                        circleStyle = "border-slate-200 bg-slate-50";
+                      }
+                    }
+
+                    return (
+                      <div
+                        key={opt}
+                        onClick={() => {
+                          if (!isSubmitted) setAnswers({ ...answers, [q.id]: opt });
+                        }}
+                        className={`group w-full text-left p-4 rounded-xl border-2 text-[14px] leading-snug font-medium transition-all duration-200 ease-out active:scale-[0.99] flex items-center gap-3 ${style}`}
+                      >
+                        <div className={`flex-shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${circleStyle}`}>
+                          {(isSubmitted && isCorrectOpt) && <CheckCircle2 className="w-3.5 h-3.5" />}
+                          {(isSubmitted && isSelected && !isCorrectOpt) && <XCircle className="w-3.5 h-3.5" />}
+                          {(!isSubmitted && isSelected) && <div className="w-2 h-2 bg-white rounded-full" />}
+                        </div>
+                        <span>{opt}</span>
+                      </div>
+                    );
+                  })}
                 </div>
               )}
 
