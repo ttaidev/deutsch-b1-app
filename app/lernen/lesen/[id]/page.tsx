@@ -83,6 +83,7 @@ export default function LesenExerciseDetail({ params }: { params: { id: string }
     const score = getCorrectCount();
     
     try {
+      localStorage.setItem(`lesen_progress_${exercise.id}`, `${score}/${questions.length}`);
       await fetch('/api/progress', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

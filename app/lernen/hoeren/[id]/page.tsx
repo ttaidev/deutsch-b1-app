@@ -48,6 +48,7 @@ export default function HoerenExerciseDetail({ params }: { params: { id: string 
     setIsSubmitted(true);
     
     try {
+      localStorage.setItem(`hoeren_progress_${exercise.id}`, `${count}/${exercise.questions.length}`);
       await fetch('/api/progress', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

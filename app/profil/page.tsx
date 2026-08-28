@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { getCurrentUser } from "@/lib/auth/session";
 import { getUserDashboardStats } from "@/lib/db/progress";
 import { User, Flame, Zap, Award, BookOpen, Clock, ShieldCheck } from "lucide-react";
