@@ -276,7 +276,33 @@ export async function autoCompleteVocabulary(wordQuery: string): Promise<Vocabul
   if (lower === "gemietet" || lower === "mieten") return { word: "mieten", wordType: "Verb", translation: "thuê", example: "Ich habe einen Transporter gemietet.", exampleTrans: "Tôi đã thuê một chiếc xe tải.", cefr: "A2" };
   if (lower === "liegen" || lower === "liegt") return { word: "liegen", wordType: "Verb", translation: "nằm ở", example: "Die Wohnung liegt im Zentrum.", exampleTrans: "Căn hộ nằm ở trung tâm.", cefr: "A1" };
 
-  // Smarter generic fallback if word is unknown
+  // Fallback 1: Try free MyMemory Translation API to get real translation without AI costs
+  try {
+    const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(cleanQuery)}&langpair=de|vi`);
+    if (res.ok) {
+      const data = await res.json();
+      const translatedText = data?.responseData?.translatedText;
+      
+      if (translatedText && !translatedText.includes("NO QUERY SPECIFIED") && !translatedText.includes("INVALID")) {
+        const isCapitalized = cleanQuery[0] === cleanQuery[0].toUpperCase();
+        
+        return {
+          word: cleanQuery,
+          article: isCapitalized ? "das" : undefined,
+          plural: isCapitalized ? `${cleanQuery}s` : undefined,
+          wordType: isCapitalized ? "Nomen" : "Wort",
+          translation: translatedText, // Từ MyMemory
+          example: `Er hat das Wort "${cleanQuery}" gelesen.`,
+          exampleTrans: `Anh ấy đã đọc từ "${cleanQuery}".`,
+          cefr: "A1-B1",
+        };
+      }
+    }
+  } catch (e) {
+    console.error("Lỗi gọi MyMemory API:", e);
+  }
+
+  // Fallback 2: Smarter generic fallback if API fails
   const isCapitalized = cleanQuery[0] === cleanQuery[0].toUpperCase();
   
   // Generating a slightly varied example sentence based on word type
