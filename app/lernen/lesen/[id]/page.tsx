@@ -48,14 +48,14 @@ export default function LesenExerciseDetail({ params }: { params: { id: string }
   // Render text words clickable and handle newlines
   const renderInteractiveText = (text: string) => {
     return text.split("\n").map((line, lineIdx) => (
-      <p key={lineIdx} className="mb-3 last:mb-0">
+      <p key={lineIdx} className="mb-5 last:mb-0 text-justify">
         {line.split(" ").map((w, wIdx) => {
           if (!w) return null;
           return (
             <span
               key={`${lineIdx}-${wIdx}`}
               onClick={() => handleWordClick(w)}
-              className="hover:bg-amber-100 hover:text-primary rounded px-0.5 cursor-pointer transition border-b border-dashed border-slate-300 hover:border-accent inline-block mr-1"
+              className="inline-block mr-[5px] px-[2px] cursor-pointer transition-all duration-200 text-slate-800 hover:text-indigo-800 hover:bg-indigo-100/80 rounded-md border-b-2 border-transparent hover:border-indigo-300"
               title="Bấm để tra nghĩa từ vựng & lưu trữ"
             >
               {w}
@@ -107,21 +107,25 @@ export default function LesenExerciseDetail({ params }: { params: { id: string }
           <ArrowLeft className="w-4 h-4" /> Quay lại danh sách bài Đọc
         </Link>
         <span className="text-xs font-bold px-3 py-1 bg-blue-50 text-blue-700 border border-blue-200 rounded-full">
-          Luyện Đọc B1 • Phần 1 (Lesen Teil 1)
+          Luyện Đọc {exercise.level} • {exercise.topic}
         </span>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Left: Interactive Reading Passage */}
-        <div className="lg:col-span-6 bg-white rounded-3xl p-6 border border-slate-200 shadow-md space-y-4">
-          <div className="flex items-center justify-between border-b pb-3">
-            <h2 className="text-lg font-bold text-primary">Bài đọc: Wohnungsbewerbung (Đơn xin thuê nhà)</h2>
-            <span className="text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">
+        <div className="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xl shadow-slate-200/40 space-y-6">
+          <div className="flex items-center justify-between border-b border-slate-100 pb-4">
+            <h2 className="text-xl font-black text-slate-900 flex items-center gap-2">
+              <Bookmark className="w-5 h-5 text-indigo-600" />
+              Bài đọc: {exercise.title}
+            </h2>
+            <span className="text-[11px] font-bold text-indigo-700 bg-indigo-50 border border-indigo-100 px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+              <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
               Mẹo: Bấm vào từ để tra nghĩa
             </span>
           </div>
 
-          <div className="p-4 bg-slate-50 rounded-2xl border border-slate-200 text-sm leading-relaxed text-slate-800 font-serif">
+          <div className="p-6 md:p-8 bg-[#fdfbf7] rounded-2xl border border-[#e8e4d9] shadow-inner text-[16px] leading-[2.2] text-slate-800 font-serif">
             {renderInteractiveText(readingText)}
           </div>
         </div>
