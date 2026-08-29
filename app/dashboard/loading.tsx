@@ -13,9 +13,12 @@ export default function DashboardLoading() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 animate-pulse">
       {/* Loading Message */}
-      <div className="bg-amber-50 text-amber-700 p-4 rounded-2xl flex items-center justify-center gap-3 font-black text-sm border-2 border-amber-200/50 shadow-md">
-        <Sparkles className="w-5 h-5 text-amber-500 animate-spin" />
-        ĐỢI TÍ NHÉ, WEB ĐANG ĐỒNG BỘ DỮ LIỆU...
+      <div className="bg-amber-50 text-amber-700 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 font-black text-sm border-2 border-amber-200/50 shadow-md">
+        <img src="/blue-cat.gif" alt="Loading..." className="w-20 h-20 object-contain rounded-xl" />
+        <div className="flex items-center gap-2">
+          <Sparkles className="w-5 h-5 text-amber-500 animate-spin" />
+          <span>ĐỢI TÍ NHÉ, WEB ĐANG ĐỒNG BỘ DỮ LIỆU...</span>
+        </div>
       </div>
 
       {/* Header Skeleton - Vibrant Gradient */}
