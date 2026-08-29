@@ -16,8 +16,21 @@ export function MicrophoneRecorder({
   onComplete,
 }: MicrophoneRecorderProps) {
   const [phase, setPhase] = useState<"IDLE" | "RECORDING" | "PROCESSING" | "DONE">("IDLE");
+  const [micPermission, setMicPermission] = useState<"UNKNOWN" | "GRANTED" | "DENIED">("UNKNOWN");
   const [transcript, setTranscript] = useState("");
   const [feedback, setFeedback] = useState<SpeakingFeedback | null>(null);
+
+  const requestMicrophonePermission = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      // Stop the stream immediately, we just needed to request permission
+      stream.getTracks().forEach(track => track.stop());
+      setMicPermission("GRANTED");
+    } catch (err) {
+      console.error("Microphone permission denied:", err);
+      setMicPermission("DENIED");
+    }
+  };
 
   const startRecording = () => {
     setPhase("RECORDING"); // Triggers the useEffect for RECORDING
@@ -67,7 +80,8 @@ export function MicrophoneRecorder({
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Trạng thái ghi âm</span>
           <h4 className="text-base font-bold text-primary">
-            {phase === "IDLE" && "Sẵn sàng ghi âm. Nhấn nút bên dưới để bắt đầu."}
+            {phase === "IDLE" && micPermission !== "GRANTED" && "Vui lòng cấp quyền Micro để bắt đầu ghi âm."}
+            {phase === "IDLE" && micPermission === "GRANTED" && "Sẵn sàng ghi âm. Nhấn nút bên dưới để bắt đầu."}
             {phase === "RECORDING" && "Đang ghi âm... Gạo hãy nói tiếng Đức vào Micro"}
             {phase === "PROCESSING" && "KI đang phân tích phát âm & ngữ pháp..."}
             {phase === "DONE" && "Hoàn tất ghi âm & Đã phân tích xong"}
@@ -81,8 +95,31 @@ export function MicrophoneRecorder({
       </div>
 
       {/* Interactive Controls */}
-      <div className="flex items-center justify-center py-6">
-        {phase === "IDLE" && (
+      <div className="flex flex-col items-center justify-center py-6 gap-4">
+        {phase === "IDLE" && micPermission === "UNKNOWN" && (
+          <button
+            onClick={requestMicrophonePermission}
+            className="px-6 py-3 rounded-full bg-slate-800 hover:bg-slate-900 text-white font-extrabold text-xs shadow-md flex items-center gap-2 transition"
+          >
+            <Mic className="w-5 h-5" /> CẤP QUYỀN MICROPHONE
+          </button>
+        )}
+
+        {phase === "IDLE" && micPermission === "DENIED" && (
+          <div className="text-center space-y-2">
+            <div className="p-3 bg-red-50 border border-red-200 rounded-xl text-xs text-red-700 font-bold flex items-center gap-2">
+              <AlertCircle className="w-4 h-4" /> Bạn đã từ chối quyền truy cập Micro. Vui lòng cấp quyền trong cài đặt trình duyệt để tiếp tục.
+            </div>
+            <button
+              onClick={requestMicrophonePermission}
+              className="text-xs font-bold text-slate-500 hover:text-slate-800 underline"
+            >
+              Thử yêu cầu lại quyền Micro
+            </button>
+          </div>
+        )}
+
+        {phase === "IDLE" && micPermission === "GRANTED" && (
           <button
             onClick={startRecording}
             className="px-6 py-3 rounded-full bg-accent hover:bg-red-700 text-white font-extrabold text-xs shadow-lg flex items-center gap-2 transition"
@@ -115,7 +152,7 @@ export function MicrophoneRecorder({
           {/* Score Pills */}
           <div className="grid grid-cols-3 gap-3">
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center">
-              <span className="text-[10px] font-bold uppercase text-slate-500">Độ lưu khoát</span>
+              <span className="text-[10px] font-bold uppercase text-slate-500">Độ lưu loát</span>
               <p className="text-xl font-black text-primary">{feedback.fluencyScore}%</p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center">
