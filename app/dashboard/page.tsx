@@ -87,8 +87,8 @@ export default async function DashboardPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Top Section: Video + Greeting */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-        {/* Premium Video Box (Left on Desktop) */}
-        <div className="lg:col-span-3 flex justify-center w-2/3 sm:w-1/2 mx-auto lg:w-full overflow-hidden rounded-3xl shadow-lg h-full max-h-[300px]">
+        {/* Premium Video Box (Left on Desktop, Top on Mobile) */}
+        <div className="lg:col-span-3 flex justify-center w-full overflow-hidden rounded-3xl shadow-lg h-full max-h-[180px] sm:max-h-[220px] lg:max-h-[300px]">
           <video 
             src="/meovideo.mp4" 
             autoPlay 
