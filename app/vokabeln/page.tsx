@@ -207,20 +207,11 @@ export default function VocabularyDashboardPage() {
                 <div className="flex gap-2">
                   <Link
                     href={`/vokabeln/lernen/${deck.slug || deck.id}`}
-                    className="flex-1 py-2.5 rounded-xl bg-primary hover:bg-slate-800 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 transition shadow-sm"
+                    className="btn-3d flex-1 text-sm flex items-center justify-center"
+                    style={{ "--btn-bg": "#0f172a", "--btn-border": "#000000" } as React.CSSProperties}
                   >
-                    <Play className="w-3.5 h-3.5 fill-white" /> Học Deck này
+                    <Play className="w-4 h-4 fill-white" /> Học Deck này
                   </Link>
-
-                  {deck.isPublic && (
-                    <Link
-                      href={`/decks/${deck.slug}`}
-                      title="Xem trang chia sẻ công khai"
-                      className="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs flex items-center justify-center border border-slate-200 transition"
-                    >
-                      <Share2 className="w-4 h-4" />
-                    </Link>
-                  )}
                 </div>
               </div>
             </div>

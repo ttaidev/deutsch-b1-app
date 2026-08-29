@@ -318,17 +318,15 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
               <div className="grid grid-cols-2 gap-4">
                 <button
                   onClick={() => handleNextCard("AGAIN")}
-                  className="btn-3d w-full text-sm"
-                  style={{ "--btn-bg": "#ef4444", "--btn-border": "#b91c1c" } as React.CSSProperties}
+                  className="py-4 rounded-2xl bg-red-50 hover:bg-red-100 text-red-700 border-2 border-red-200 font-black text-sm flex items-center justify-center gap-2 shadow-sm transition hover:-translate-y-0.5"
                 >
-                  <ThumbsDown className="w-5 h-5" /> ❌ Chưa nhớ (Quên)
+                  <ThumbsDown className="w-5 h-5 text-red-600" /> ❌ Chưa nhớ (Quên)
                 </button>
                 <button
                   onClick={() => handleNextCard("GOOD")}
-                  className="btn-3d w-full text-sm"
-                  style={{ "--btn-bg": "#10b981", "--btn-border": "#047857" } as React.CSSProperties}
+                  className="py-4 rounded-2xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border-2 border-emerald-200 font-black text-sm flex items-center justify-center gap-2 shadow-sm transition hover:-translate-y-0.5"
                 >
-                  <ThumbsUp className="w-5 h-5" /> ✅ Đã nhớ từ này
+                  <ThumbsUp className="w-5 h-5 text-emerald-600" /> ✅ Đã nhớ từ này
                 </button>
               </div>
             </div>
