@@ -87,7 +87,8 @@ export default function LesenOverviewPage() {
 
                   <Link
                     href={`/lernen/lesen/${ex.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#4f46e5', '--btn-border': '#3730a3' } as React.CSSProperties}
                   >
                     Luyện ngay <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -140,7 +141,8 @@ export default function LesenOverviewPage() {
 
                   <Link
                     href={`/lernen/lesen/${ex.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#2563eb', '--btn-border': '#1e40af' } as React.CSSProperties}
                   >
                     Luyện ngay <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -193,7 +195,8 @@ export default function LesenOverviewPage() {
 
                   <Link
                     href={`/lernen/lesen/${ex.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#059669', '--btn-border': '#065f46' } as React.CSSProperties}
                   >
                     Luyện ngay <ArrowRight className="w-4 h-4" />
                   </Link>

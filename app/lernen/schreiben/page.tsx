@@ -64,7 +64,8 @@ export default function SchreibenOverviewPage() {
 
                   <Link
                     href={`/lernen/schreiben/${t.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#9333ea', '--btn-border': '#6b21a8' } as React.CSSProperties}
                   >
                     Viết ngay <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -113,7 +114,8 @@ export default function SchreibenOverviewPage() {
 
                   <Link
                     href={`/lernen/schreiben/${t.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#2563eb', '--btn-border': '#1e40af' } as React.CSSProperties}
                   >
                     Viết ngay <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -162,7 +164,8 @@ export default function SchreibenOverviewPage() {
 
                   <Link
                     href={`/lernen/schreiben/${t.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#059669', '--btn-border': '#065f46' } as React.CSSProperties}
                   >
                     Viết ngay <ArrowRight className="w-4 h-4" />
                   </Link>

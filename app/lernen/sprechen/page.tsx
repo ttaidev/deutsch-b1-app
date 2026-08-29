@@ -60,7 +60,8 @@ export default function SprechenOverviewPage() {
 
                   <Link
                     href={`/lernen/sprechen/${t.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#059669', '--btn-border': '#065f46' } as React.CSSProperties}
                   >
                     Luyện Nói <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -106,7 +107,8 @@ export default function SprechenOverviewPage() {
 
                   <Link
                     href={`/lernen/sprechen/${t.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#0d9488', '--btn-border': '#115e59' } as React.CSSProperties}
                   >
                     Luyện Nói <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -152,7 +154,8 @@ export default function SprechenOverviewPage() {
 
                   <Link
                     href={`/lernen/sprechen/${t.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#0891b2', '--btn-border': '#155e75' } as React.CSSProperties}
                   >
                     Luyện Nói <ArrowRight className="w-4 h-4" />
                   </Link>

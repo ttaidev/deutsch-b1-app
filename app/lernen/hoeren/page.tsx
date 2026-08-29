@@ -79,7 +79,8 @@ export default function HoerenOverviewPage() {
 
                   <Link
                     href={`/lernen/hoeren/${ex.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#f59e0b', '--btn-border': '#b45309' } as React.CSSProperties}
                   >
                     Luyện Nghe <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -132,7 +133,8 @@ export default function HoerenOverviewPage() {
 
                   <Link
                     href={`/lernen/hoeren/${ex.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#3b82f6', '--btn-border': '#1d4ed8' } as React.CSSProperties}
                   >
                     Luyện Nghe <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -185,7 +187,8 @@ export default function HoerenOverviewPage() {
 
                   <Link
                     href={`/lernen/hoeren/${ex.id}`}
-                    className="px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-xs flex items-center gap-1.5 transition shadow-md"
+                    className="btn-3d text-xs px-4 py-2.5"
+                    style={{ '--btn-bg': '#10b981', '--btn-border': '#047857' } as React.CSSProperties}
                   >
                     Luyện Nghe <ArrowRight className="w-4 h-4" />
                   </Link>
