@@ -227,16 +227,19 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
           const Icon = m.icon;
           const isActive = practiceMode === m.id;
           
-          // Color mappings for active/inactive states
-          const themeClasses = {
-            indigo: isActive ? "bg-indigo-500 text-white border-indigo-600 shadow-md shadow-indigo-200" : "bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100",
-            purple: isActive ? "bg-purple-500 text-white border-purple-600 shadow-md shadow-purple-200" : "bg-purple-50 text-purple-700 border-purple-200 hover:bg-purple-100",
-            emerald: isActive ? "bg-emerald-500 text-white border-emerald-600 shadow-md shadow-emerald-200" : "bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100",
-            rose: isActive ? "bg-rose-500 text-white border-rose-600 shadow-md shadow-rose-200" : "bg-rose-50 text-rose-700 border-rose-200 hover:bg-rose-100",
-            amber: isActive ? "bg-amber-500 text-white border-amber-600 shadow-md shadow-amber-200" : "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100",
-            cyan: isActive ? "bg-cyan-500 text-white border-cyan-600 shadow-md shadow-cyan-200" : "bg-cyan-50 text-cyan-700 border-cyan-200 hover:bg-cyan-100",
-            blue: isActive ? "bg-blue-500 text-white border-blue-600 shadow-md shadow-blue-200" : "bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100",
+          const btnStyles: any = {
+            indigo: { bg: "#6366f1", border: "#4f46e5" },
+            purple: { bg: "#a855f7", border: "#9333ea" },
+            emerald: { bg: "#10b981", border: "#059669" },
+            rose: { bg: "#f43f5e", border: "#e11d48" },
+            amber: { bg: "#f59e0b", border: "#d97706" },
+            cyan: { bg: "#06b6d4", border: "#0891b2" },
+            blue: { bg: "#3b82f6", border: "#2563eb" },
           };
+          const theme = btnStyles[m.theme];
+          const inlineStyle = isActive 
+            ? { "--btn-bg": theme.bg, "--btn-border": theme.border, "--btn-text": "#ffffff" }
+            : { "--btn-bg": "#f8fafc", "--btn-border": "#e2e8f0", "--btn-text": "#64748b" };
 
           return (
             <button
@@ -246,7 +249,8 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
                 setIsAnswerChecked(false);
                 setTextInput("");
               }}
-              className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-black transition-all border-b-4 active:border-b-0 active:translate-y-1 ${themeClasses[m.theme as keyof typeof themeClasses]}`}
+              className="btn-3d px-4 py-2.5 text-xs"
+              style={inlineStyle as React.CSSProperties}
             >
               <Icon className="w-4 h-4" />
               <span>{m.label}</span>
@@ -314,15 +318,17 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
               <div className="grid grid-cols-2 gap-4">
                 <button
                   onClick={() => handleNextCard("AGAIN")}
-                  className="py-4 rounded-2xl bg-red-50 hover:bg-red-100 text-red-700 border-2 border-red-200 font-black text-sm flex items-center justify-center gap-2 shadow-sm transition hover:-translate-y-0.5"
+                  className="btn-3d w-full text-sm"
+                  style={{ "--btn-bg": "#ef4444", "--btn-border": "#b91c1c" } as React.CSSProperties}
                 >
-                  <ThumbsDown className="w-5 h-5 text-red-600" /> ❌ Chưa nhớ (Quên)
+                  <ThumbsDown className="w-5 h-5" /> ❌ Chưa nhớ (Quên)
                 </button>
                 <button
                   onClick={() => handleNextCard("GOOD")}
-                  className="py-4 rounded-2xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border-2 border-emerald-200 font-black text-sm flex items-center justify-center gap-2 shadow-sm transition hover:-translate-y-0.5"
+                  className="btn-3d w-full text-sm"
+                  style={{ "--btn-bg": "#10b981", "--btn-border": "#047857" } as React.CSSProperties}
                 >
-                  <ThumbsUp className="w-5 h-5 text-emerald-600" /> ✅ Đã nhớ từ này
+                  <ThumbsUp className="w-5 h-5" /> ✅ Đã nhớ từ này
                 </button>
               </div>
             </div>
@@ -349,20 +355,22 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 {currentCard.options.map((opt: string, idx: number) => {
                   const isCorrectChoice = opt === currentCard.translation;
-                  let btnStyle = "bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100";
+                  let inlineStyle = { "--btn-bg": "#f8fafc", "--btn-border": "#e2e8f0", "--btn-text": "#334155" };
                   if (isAnswerChecked) {
-                    if (isCorrectChoice) btnStyle = "bg-emerald-50 text-emerald-800 border-emerald-300 font-bold";
-                    else btnStyle = "bg-slate-50 text-slate-400 opacity-60 border-slate-200";
+                    if (isCorrectChoice) inlineStyle = { "--btn-bg": "#10b981", "--btn-border": "#047857", "--btn-text": "#ffffff" };
+                    else inlineStyle = { "--btn-bg": "#f1f5f9", "--btn-border": "#cbd5e1", "--btn-text": "#94a3b8" };
                   }
 
                   return (
                     <button
                       key={idx}
                       onClick={() => {
+                        if (isAnswerChecked) return;
                         setIsAnswerChecked(true);
                         setIsCorrectInput(isCorrectChoice);
                       }}
-                      className={`p-4 rounded-2xl border text-xs font-bold text-left transition ${btnStyle}`}
+                      className="btn-3d w-full text-sm"
+                      style={inlineStyle as React.CSSProperties}
                     >
                       {opt}
                     </button>
@@ -374,7 +382,7 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
                 <div className="pt-2 flex justify-end">
                   <button
                     onClick={() => handleNextCard(isCorrectInput ? "GOOD" : "AGAIN")}
-                    className="px-6 py-3 rounded-2xl bg-primary hover:bg-slate-800 text-white font-extrabold text-xs shadow-md transition flex items-center gap-2"
+                    className="btn-3d w-full sm:w-auto text-sm"
                   >
                     Từ tiếp theo <ArrowRight className="w-4 h-4" />
                   </button>
@@ -407,7 +415,8 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
                   <button
                     onClick={() => handleCheckTextAnswer(practiceMode === "DE_TO_VI" ? currentCard.translation : currentCard.word)}
                     disabled={!textInput.trim()}
-                    className="w-full py-3 rounded-2xl bg-primary text-white font-bold text-xs shadow-md hover:bg-slate-800 disabled:opacity-50 transition"
+                    className="btn-3d w-full text-sm"
+                    style={{ "--btn-bg": "#1899D6", "--btn-border": "#147ab1" } as React.CSSProperties}
                   >
                     Kiểm tra đáp án
                   </button>
@@ -419,7 +428,7 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
                     </div>
                     <button
                       onClick={() => handleNextCard(isCorrectInput ? "GOOD" : "AGAIN")}
-                      className="w-full py-3 rounded-2xl bg-primary hover:bg-slate-800 text-white font-extrabold text-xs shadow-md transition flex items-center justify-center gap-2"
+                      className="btn-3d w-full text-sm"
                     >
                       Từ tiếp theo <ArrowRight className="w-4 h-4" />
                     </button>
@@ -458,7 +467,8 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
                   <button
                     onClick={() => handleCheckTextAnswer(currentCard.word)}
                     disabled={!textInput.trim()}
-                    className="w-full py-3 rounded-2xl bg-primary text-white font-bold text-xs shadow-md hover:bg-slate-800 disabled:opacity-50 transition"
+                    className="btn-3d w-full text-sm"
+                    style={{ "--btn-bg": "#1899D6", "--btn-border": "#147ab1" } as React.CSSProperties}
                   >
                     Kiểm tra phát âm nghe được
                   </button>
@@ -470,7 +480,7 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
                     </div>
                     <button
                       onClick={() => handleNextCard(isCorrectInput ? "GOOD" : "AGAIN")}
-                      className="w-full py-3 rounded-2xl bg-primary hover:bg-slate-800 text-white font-extrabold text-xs shadow-md transition flex items-center justify-center gap-2"
+                      className="btn-3d w-full text-sm"
                     >
                       Từ tiếp theo <ArrowRight className="w-4 h-4" />
                     </button>
@@ -510,7 +520,7 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
                     <p className="text-sm font-bold text-primary">"{transcriptResult}"</p>
                     <button
                       onClick={() => handleNextCard("GOOD")}
-                      className="w-full py-2.5 rounded-xl bg-primary text-white font-bold text-xs hover:bg-slate-800 transition"
+                      className="btn-3d w-full text-xs"
                     >
                       Từ tiếp theo ➔
                     </button>
@@ -539,15 +549,16 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
                 setRoundNumber(1);
                 setForgottenQueue([]);
               }}
-              className="px-6 py-3 rounded-2xl bg-slate-100 text-slate-700 font-bold text-xs hover:bg-slate-200 transition"
+              className="btn-3d text-sm"
+              style={{ "--btn-bg": "#f1f5f9", "--btn-border": "#cbd5e1", "--btn-text": "#334155" } as React.CSSProperties}
             >
               Học lại danh sách này
             </button>
             <Link
               href="/vokabeln"
-              className="px-6 py-3 rounded-2xl bg-primary text-white font-bold text-xs hover:bg-slate-800 transition"
+              className="btn-3d text-sm"
             >
-              Về Kho từ vựng
+              Quay về kho từ vựng
             </Link>
           </div>
         </div>
