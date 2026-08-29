@@ -227,19 +227,16 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
           const Icon = m.icon;
           const isActive = practiceMode === m.id;
           
-          const btnStyles: any = {
-            indigo: { bg: "#6366f1", border: "#4f46e5" },
-            purple: { bg: "#a855f7", border: "#9333ea" },
-            emerald: { bg: "#10b981", border: "#059669" },
-            rose: { bg: "#f43f5e", border: "#e11d48" },
-            amber: { bg: "#f59e0b", border: "#d97706" },
-            cyan: { bg: "#06b6d4", border: "#0891b2" },
-            blue: { bg: "#3b82f6", border: "#2563eb" },
+          // Color mappings for active/inactive states
+          const themeClasses = {
+            indigo: isActive ? "bg-indigo-500 text-white border-indigo-600 shadow-md shadow-indigo-200" : "bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100",
+            purple: isActive ? "bg-purple-500 text-white border-purple-600 shadow-md shadow-purple-200" : "bg-purple-50 text-purple-700 border-purple-200 hover:bg-purple-100",
+            emerald: isActive ? "bg-emerald-500 text-white border-emerald-600 shadow-md shadow-emerald-200" : "bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100",
+            rose: isActive ? "bg-rose-500 text-white border-rose-600 shadow-md shadow-rose-200" : "bg-rose-50 text-rose-700 border-rose-200 hover:bg-rose-100",
+            amber: isActive ? "bg-amber-500 text-white border-amber-600 shadow-md shadow-amber-200" : "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100",
+            cyan: isActive ? "bg-cyan-500 text-white border-cyan-600 shadow-md shadow-cyan-200" : "bg-cyan-50 text-cyan-700 border-cyan-200 hover:bg-cyan-100",
+            blue: isActive ? "bg-blue-500 text-white border-blue-600 shadow-md shadow-blue-200" : "bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100",
           };
-          const theme = btnStyles[m.theme];
-          const inlineStyle = isActive 
-            ? { "--btn-bg": theme.bg, "--btn-border": theme.border, "--btn-text": "#ffffff" }
-            : { "--btn-bg": "#f8fafc", "--btn-border": "#e2e8f0", "--btn-text": "#64748b" };
 
           return (
             <button
@@ -249,8 +246,7 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
                 setIsAnswerChecked(false);
                 setTextInput("");
               }}
-              className="btn-3d px-4 py-2.5 text-xs"
-              style={inlineStyle as React.CSSProperties}
+              className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-black transition-all border-b-4 active:border-b-0 active:translate-y-1 ${themeClasses[m.theme as keyof typeof themeClasses]}`}
             >
               <Icon className="w-4 h-4" />
               <span>{m.label}</span>
