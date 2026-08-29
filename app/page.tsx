@@ -192,6 +192,28 @@ export default function LandingPage() {
                   </div>
                 </div>
               </div>
+              
+              {/* Premium Video Box */}
+              <div className="mt-6 bg-white/40 backdrop-blur-xl rounded-3xl p-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/60 overflow-hidden relative group hover:shadow-[0_20px_40px_rgba(99,102,241,0.2)] transition-all duration-500">
+                <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                <div className="rounded-2xl overflow-hidden shadow-inner relative bg-black/5">
+                  <video 
+                    src="/meovideo.mp4" 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline
+                    className="w-full h-auto max-h-[250px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute top-3 left-3 bg-white/70 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/40 flex items-center gap-2 shadow-sm">
+                    <div className="relative flex h-2.5 w-2.5">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-rose-500"></span>
+                    </div>
+                    <span className="text-[10px] font-black text-slate-800 uppercase tracking-wider">Trải nghiệm thật</span>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
