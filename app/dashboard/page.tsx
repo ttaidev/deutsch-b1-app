@@ -121,25 +121,15 @@ export default async function DashboardPage() {
       </div>
 
       {/* Premium Video Box */}
-      <div className="bg-white/40 backdrop-blur-xl rounded-3xl p-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-200 overflow-hidden relative group hover:shadow-[0_20px_40px_rgba(99,102,241,0.2)] transition-all duration-500">
-        <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-        <div className="rounded-2xl overflow-hidden shadow-inner relative bg-black/5 flex justify-center w-full max-h-[300px]">
-          <video 
-            src="/meovideo.mp4" 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            className="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700"
-          />
-          <div className="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/60 flex items-center gap-2.5 shadow-sm">
-            <div className="relative flex h-3 w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-rose-500"></span>
-            </div>
-            <span className="text-xs font-black text-slate-800 uppercase tracking-wider">Động Lực Học Tập</span>
-          </div>
-        </div>
+      <div className="flex justify-center w-full max-h-[300px] overflow-hidden rounded-3xl shadow-lg mt-6 mb-6">
+        <video 
+          src="/meovideo.mp4" 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="w-full h-auto object-cover"
+        />
       </div>
 
       {/* Overview Metric Bar */}
