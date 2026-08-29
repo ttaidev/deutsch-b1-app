@@ -256,7 +256,7 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
       </div>
 
       {!sessionCompleted ? (
-        <div className="space-y-6">
+        <div key={currentCard.id} className="space-y-6 animate-card-slide">
           {/* Mode 1: Flashcard */}
           {practiceMode === "FLASHCARD" && (
             <div className="space-y-4">
