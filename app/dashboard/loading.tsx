@@ -11,13 +11,16 @@ import {
 
 export default function DashboardLoading() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 animate-pulse">
-      {/* Loading Message */}
-      <div className="bg-amber-50 text-amber-700 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 font-black text-sm border-2 border-amber-200/50 shadow-md">
-        <img src="/blue-cat.gif" alt="Loading..." className="w-20 h-20 object-contain rounded-xl" />
-        <div className="flex items-center gap-2">
-          <Sparkles className="w-5 h-5 text-amber-500 animate-spin" />
-          <span>ĐỢI TÍ NHÉ, WEB ĐANG ĐỒNG BỘ DỮ LIỆU...</span>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 animate-pulse relative">
+      {/* Centered Loading Overlay */}
+      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 bg-white/95 backdrop-blur-xl p-8 rounded-3xl flex flex-col items-center justify-center gap-4 border border-slate-200 shadow-2xl min-w-[320px]">
+        <img src="/blue-cat.gif" alt="Loading..." className="w-24 h-24 object-contain rounded-xl" />
+        <div className="flex flex-col items-center gap-2">
+          <div className="flex items-center gap-2 font-black text-amber-600">
+            <Sparkles className="w-5 h-5 text-amber-500 animate-spin" />
+            <span className="text-sm">ĐỢI TÍ NHÉ!</span>
+          </div>
+          <span className="text-xs font-bold text-slate-500 text-center">WEB ĐANG ĐỒNG BỘ DỮ LIỆU...</span>
         </div>
       </div>
 
