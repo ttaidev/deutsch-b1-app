@@ -104,7 +104,7 @@ export default async function DashboardPage() {
           <div className="space-y-2">
             <span className="text-xs font-bold uppercase tracking-wider text-purple-300">Bảng điều khiển cá nhân</span>
             <h1 className="text-3xl sm:text-4xl font-black tracking-tight">
-              Xin chào, {user.name} 👋
+              Hallo, {user.name} 👋
             </h1>
             <p className="text-sm text-purple-100 font-medium">
               Trình độ hiện tại: <span className="font-bold text-white px-2.5 py-0.5 rounded-full bg-rose-500 text-xs">Trình độ B1</span>. Hãy tiếp tục lộ trình ôn luyện!
