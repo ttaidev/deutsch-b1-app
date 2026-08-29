@@ -25,25 +25,23 @@ export default function SprechenTaskDetail({ params }: { params: { id: string } 
       {/* Header */}
       <div className="flex items-center justify-between border-b border-slate-200 pb-4">
         <Link href="/lernen/sprechen" className="flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-primary transition">
-          <ArrowLeft className="w-4 h-4" /> Quay lại danh sách Luyện phát âm
+          <ArrowLeft className="w-4 h-4" /> Zurück zur Sprech-Übersicht
         </Link>
         <span className="text-xs font-bold px-3 py-1 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-full">
-          Phát âm • {task.type}
+          Sprechen B1 • Teil 1
         </span>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-md space-y-4 text-center">
-        <h1 className="text-xl font-bold text-slate-500">{task.title}</h1>
-        <div className="py-6">
-          <p className="text-4xl font-black text-primary leading-snug">{task.targetText}</p>
-          <p className="text-sm text-slate-500 font-bold mt-4">{task.translation}</p>
+      <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-md space-y-4">
+        <h1 className="text-2xl font-bold text-primary">{task.title}</h1>
+        <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs leading-relaxed text-slate-700 font-medium whitespace-pre-line">
+          {task.prompt}
         </div>
       </div>
 
       {/* Microphone Component */}
       <MicrophoneRecorder
         promptTitle={task.title}
-        targetText={task.targetText}
         onComplete={async (feedback) => {
           try {
             await fetch('/api/progress', {
@@ -52,7 +50,7 @@ export default function SprechenTaskDetail({ params }: { params: { id: string } 
               body: JSON.stringify({
                 skill: "SPRECHEN",
                 exerciseId: task.id,
-                score: feedback.fluencyScore, // Lấy score phát âm làm score tổng
+                score: Math.round((feedback.fluencyScore + feedback.grammarScore + feedback.vocabularyScore) / 3),
                 maxScore: 100
               })
             });

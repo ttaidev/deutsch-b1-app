@@ -1,163 +1,284 @@
-export interface PronunciationTask {
+export interface SpeakingTask {
   id: string;
   title: string;
   level: string;
   topic: string;
-  type: "Từ vựng" | "Câu giao tiếp" | "Líu lưỡi";
-  targetText: string;
-  translation: string;
+  type: "Teil 1" | "Teil 2" | "Teil 3";
+  prompt: string;
   completed?: boolean;
   score?: string;
 }
 
-export const SPRECHEN_TASKS: PronunciationTask[] = [
-  // --- Từ vựng khó phát âm ---
+export const SPRECHEN_TASKS: SpeakingTask[] = [
+  // --- Teil 1 (7 Aufgaben) ---
   {
-    id: "aussprache-wort-1",
-    title: "Từ vựng: Entschuldigung",
-    level: "A1-B1",
-    topic: "Giao tiếp cơ bản",
-    type: "Từ vựng",
-    targetText: "Entschuldigung",
-    translation: "Xin lỗi",
-  },
-  {
-    id: "aussprache-wort-2",
-    title: "Từ vựng: Streichholzschächtelchen",
-    level: "B2",
-    topic: "Đố vui phát âm",
-    type: "Từ vựng",
-    targetText: "Streichholzschächtelchen",
-    translation: "Bao diêm nhỏ",
-  },
-  {
-    id: "aussprache-wort-3",
-    title: "Từ vựng: Sehenswürdigkeiten",
-    level: "A2",
-    topic: "Du lịch",
-    type: "Từ vựng",
-    targetText: "Sehenswürdigkeiten",
-    translation: "Các địa điểm tham quan",
-  },
-  {
-    id: "aussprache-wort-4",
-    title: "Từ vựng: Eichhörnchen",
-    level: "A2",
-    topic: "Động vật",
-    type: "Từ vựng",
-    targetText: "Eichhörnchen",
-    translation: "Con sóc",
-  },
-  {
-    id: "aussprache-wort-5",
-    title: "Từ vựng: Geschwindigkeit",
+    id: "sprechen-1-1",
+    title: "Teil 1: Gemeinsam etwas planen (Geburtstagsgeschenk)",
     level: "B1",
-    topic: "Giao thông",
-    type: "Từ vựng",
-    targetText: "Geschwindigkeit",
-    translation: "Tốc độ",
+    topic: "Freunde & Feste",
+    type: "Teil 1",
+    prompt: `Ihr gemeinsamer Freund Thomas feiert nächste Woche seinen 30. Geburtstag.
+Sie möchten zusammen mit Ihrem Sprachkurs-Partner ein schönes Geschenk organisieren.
+
+Sprechen Sie über folgende Punkte:
+1. Was wollen Sie schenken? (Ideen sammeln)
+2. Wie viel Geld soll ausgegeben werden?
+3. Wer kauft das Geschenk und wann übergebt ihr es?`,
   },
   {
-    id: "aussprache-wort-6",
-    title: "Từ vựng: Unabhängigkeit",
+    id: "sprechen-1-2",
+    title: "Teil 1: Eine Überraschungsparty planen",
     level: "B1",
-    topic: "Xã hội",
-    type: "Từ vựng",
-    targetText: "Unabhängigkeit",
-    translation: "Sự độc lập",
+    topic: "Freunde & Freizeit",
+    type: "Teil 1",
+    prompt: `Eine Freundin aus Ihrem Kurs hat die B1-Prüfung bestanden. 
+Sie möchten mit Ihrem Partner eine kleine Überraschungsparty für sie planen.
+
+Sprechen Sie über folgende Punkte:
+1. Wann und wo soll die Party stattfinden?
+2. Wen möchten Sie einladen?
+3. Essen und Getränke: Wer bringt was mit?`,
+  },
+  {
+    id: "sprechen-1-3",
+    title: "Teil 1: Einen Ausflug am Wochenende organisieren",
+    level: "B1",
+    topic: "Reisen & Natur",
+    type: "Teil 1",
+    prompt: `Sie und Ihr Partner haben am Wochenende frei und möchten einen Ausflug in die Natur machen.
+
+Sprechen Sie über folgende Punkte:
+1. Wohin soll der Ausflug gehen? (See, Berge, Wald...)
+2. Wie wollen Sie dorthin fahren? (Auto, Zug, Fahrrad...)
+3. Was müssen Sie mitnehmen?`,
+  },
+  {
+    id: "sprechen-1-4",
+    title: "Teil 1: Einen Besuch im Krankenhaus planen",
+    level: "B1",
+    topic: "Gesundheit & Hilfe",
+    type: "Teil 1",
+    prompt: `Ein gemeinsamer Kollege liegt im Krankenhaus. 
+Sie möchten ihn am Nachmittag zusammen besuchen.
+
+Sprechen Sie über folgende Punkte:
+1. Wann treffen Sie sich?
+2. Was möchten Sie als Geschenk mitbringen? (Blumen, Buch...)
+3. Wie lange wollen Sie bleiben?`,
+  },
+  {
+    id: "sprechen-1-5",
+    title: "Teil 1: Umzugshilfe organisieren",
+    level: "B1",
+    topic: "Wohnen & Alltag",
+    type: "Teil 1",
+    prompt: `Sie ziehen am nächsten Wochenende in eine neue Wohnung. 
+Bitten Sie Ihren Sprachpartner um Hilfe und planen Sie den Umzugstag.
+
+Sprechen Sie über folgende Punkte:
+1. Wann genau soll der Umzug starten?
+2. Was genau muss gemacht werden? (Möbel tragen, Auto fahren...)
+3. Was gibt es als Dankeschön zu essen/trinken?`,
+  },
+  {
+    id: "sprechen-1-6",
+    title: "Teil 1: Ein Abschiedsgeschenk für den Lehrer",
+    level: "B1",
+    topic: "Schule & Lernen",
+    type: "Teil 1",
+    prompt: `Ihr Deutschkurs geht bald zu Ende. 
+Sie möchten gemeinsam ein kleines Geschenk für den Lehrer kaufen.
+
+Sprechen Sie über folgende Punkte:
+1. Was für ein Geschenk ist passend?
+2. Wie sammeln Sie das Geld von den anderen Kursteilnehmern?
+3. Wann und wie wollen Sie das Geschenk überreichen?`,
+  },
+  {
+    id: "sprechen-1-7",
+    title: "Teil 1: Planung eines gemeinsamen Abendessens",
+    level: "B1",
+    topic: "Essen & Kochen",
+    type: "Teil 1",
+    prompt: `Sie möchten am Freitagabend gemeinsam mit Freunden kochen.
+
+Sprechen Sie über folgende Punkte:
+1. Was wollen Sie kochen? (Vorspeise, Hauptspeise, Dessert)
+2. Wer geht einkaufen und was wird gebraucht?
+3. Wo treffen Sie sich zum Kochen?`,
   },
 
-  // --- Câu giao tiếp ---
+  // --- Teil 2 (7 Aufgaben) ---
   {
-    id: "aussprache-satz-1",
-    title: "Câu giao tiếp: Đặt món",
-    level: "A1",
-    topic: "Nhà hàng",
-    type: "Câu giao tiếp",
-    targetText: "Ich hätte gerne einen Kaffee und ein Stück Kuchen, bitte.",
-    translation: "Cho tôi một ly cà phê và một miếng bánh ngọt.",
-  },
-  {
-    id: "aussprache-satz-2",
-    title: "Câu giao tiếp: Hỏi đường",
-    level: "A1",
-    topic: "Phương hướng",
-    type: "Câu giao tiếp",
-    targetText: "Können Sie mir sagen, wo der Bahnhof ist?",
-    translation: "Bạn có thể cho tôi biết ga tàu ở đâu không?",
-  },
-  {
-    id: "aussprache-satz-3",
-    title: "Câu giao tiếp: Tại nơi làm việc",
+    id: "sprechen-2-1",
+    title: "Teil 2: Präsentation - Haustiere im Alltag",
     level: "B1",
-    topic: "Công sở",
-    type: "Câu giao tiếp",
-    targetText: "Wir müssen dieses Projekt bis spätestens Freitag abschließen.",
-    translation: "Chúng ta phải hoàn thành dự án này chậm nhất là vào thứ sáu.",
+    topic: "Tiere & Alltag",
+    type: "Teil 2",
+    prompt: `Halten Sie eine kurze Präsentation zum Thema: "Sollten Kinder mit Haustieren aufwachsen?"
+
+Gehen Sie dabei auf folgende Punkte ein:
+- Ihre persönlichen Erfahrungen mit Haustieren.
+- Welche Rolle spielen Haustiere in Ihrem Heimatland?
+- Nennen Sie Vor- und Nachteile (z.B. Verantwortung lernen vs. Kosten/Zeit).
+- Ihre eigene Meinung zum Thema.`,
   },
   {
-    id: "aussprache-satz-4",
-    title: "Câu giao tiếp: Xin lỗi đi muộn",
-    level: "A2",
-    topic: "Công sở",
-    type: "Câu giao tiếp",
-    targetText: "Es tut mir leid, dass ich zu spät bin. Der Bus hatte Verspätung.",
-    translation: "Tôi xin lỗi vì đã đến muộn. Xe buýt bị trễ.",
-  },
-  {
-    id: "aussprache-satz-5",
-    title: "Câu giao tiếp: Bày tỏ ý kiến",
+    id: "sprechen-2-2",
+    title: "Teil 2: Präsentation - Einkaufen im Internet",
     level: "B1",
-    topic: "Thảo luận",
-    type: "Câu giao tiếp",
-    targetText: "Meiner Meinung nach ist das eine sehr gute Idee für unsere Zukunft.",
-    translation: "Theo ý kiến của tôi, đó là một ý tưởng rất hay cho tương lai của chúng ta.",
+    topic: "Konsum & Medien",
+    type: "Teil 2",
+    prompt: `Halten Sie eine kurze Präsentation zum Thema: "Online-Shopping vs. Geschäfte in der Stadt".
+
+Gehen Sie dabei auf folgende Punkte ein:
+- Ihre persönlichen Erfahrungen (Was kaufen Sie wo?).
+- Wie ist die Situation in Ihrem Heimatland?
+- Nennen Sie Vor- und Nachteile des Online-Shoppings (z.B. Bequemlichkeit vs. keine Beratung).
+- Ihre eigene Meinung zum Thema.`,
   },
   {
-    id: "aussprache-satz-6",
-    title: "Câu giao tiếp: Lời chúc",
-    level: "A2",
-    topic: "Xã hội",
-    type: "Câu giao tiếp",
-    targetText: "Ich wünsche dir viel Erfolg bei deiner Prüfung morgen!",
-    translation: "Chúc bạn nhiều thành công trong kỳ thi ngày mai!",
+    id: "sprechen-2-3",
+    title: "Teil 2: Präsentation - Leben auf dem Land oder in der Stadt",
+    level: "B1",
+    topic: "Wohnen & Umwelt",
+    type: "Teil 2",
+    prompt: `Halten Sie eine kurze Präsentation zum Thema: "Wo lebt es sich besser: In der Stadt oder auf dem Land?"
+
+Gehen Sie dabei auf folgende Punkte ein:
+- Ihre persönlichen Erfahrungen (Wo leben Sie aktuell?).
+- Wo wohnen die meisten Menschen in Ihrem Heimatland und warum?
+- Nennen Sie Vor- und Nachteile beider Wohnorte.
+- Ihre eigene Meinung zum Thema.`,
+  },
+  {
+    id: "sprechen-2-4",
+    title: "Teil 2: Präsentation - Fremdsprachen lernen",
+    level: "B1",
+    topic: "Lernen & Bildung",
+    type: "Teil 2",
+    prompt: `Halten Sie eine kurze Präsentation zum Thema: "Wie wichtig ist es, Fremdsprachen zu lernen?"
+
+Gehen Sie dabei auf folgende Punkte ein:
+- Ihre persönlichen Erfahrungen beim Sprachenlernen.
+- Welche Fremdsprachen lernt man typischerweise in Ihrem Heimatland?
+- Vor- und Nachteile (z.B. Karrierechancen vs. Zeitaufwand).
+- Ihre eigene Meinung zum Thema.`,
+  },
+  {
+    id: "sprechen-2-5",
+    title: "Teil 2: Präsentation - Soziale Netzwerke",
+    level: "B1",
+    topic: "Medien & Gesellschaft",
+    type: "Teil 2",
+    prompt: `Halten Sie eine kurze Präsentation zum Thema: "Brauchen wir soziale Netzwerke (Facebook, Instagram, etc.)?"
+
+Gehen Sie dabei auf folgende Punkte ein:
+- Ihre persönliche Nutzung von sozialen Medien.
+- Welche Rolle spielen soziale Netzwerke in Ihrem Heimatland?
+- Vor- und Nachteile (z.B. Kontakt zu Freunden vs. Datenschutz/Sucht).
+- Ihre eigene Meinung zum Thema.`,
+  },
+  {
+    id: "sprechen-2-6",
+    title: "Teil 2: Präsentation - Fast Food",
+    level: "B1",
+    topic: "Ernährung & Gesundheit",
+    type: "Teil 2",
+    prompt: `Halten Sie eine kurze Präsentation zum Thema: "Fast Food – Praktisch, aber ungesund?"
+
+Gehen Sie dabei auf folgende Punkte ein:
+- Wie oft und warum essen Sie Fast Food?
+- Ist Fast Food in Ihrem Heimatland sehr beliebt?
+- Vor- und Nachteile (z.B. Zeitersparnis vs. Gesundheitsrisiken).
+- Ihre eigene Meinung zum Thema.`,
+  },
+  {
+    id: "sprechen-2-7",
+    title: "Teil 2: Präsentation - Sport im Alltag",
+    level: "B1",
+    topic: "Gesundheit & Freizeit",
+    type: "Teil 2",
+    prompt: `Halten Sie eine kurze Präsentation zum Thema: "Ist täglicher Sport wirklich notwendig?"
+
+Gehen Sie dabei auf folgende Punkte ein:
+- Wie oft machen Sie selbst Sport?
+- Welche Sportarten sind in Ihrem Heimatland besonders beliebt?
+- Vor- und Nachteile von viel Sport (Gesundheit vs. Verletzungsgefahr/Stress).
+- Ihre eigene Meinung zum Thema.`,
   },
 
-  // --- Líu lưỡi (Zungenbrecher) ---
+  // --- Teil 3 (6 Aufgaben) ---
   {
-    id: "aussprache-zungen-1",
-    title: "Zungenbrecher: Blaukraut",
-    level: "B2",
-    topic: "Líu lưỡi",
-    type: "Líu lưỡi",
-    targetText: "Blaukraut bleibt Blaukraut und Brautkleid bleibt Brautkleid.",
-    translation: "Bắp cải xanh vẫn là bắp cải xanh và váy cưới vẫn là váy cưới.",
-  },
-  {
-    id: "aussprache-zungen-2",
-    title: "Zungenbrecher: Fischer Fritz",
+    id: "sprechen-3-1",
+    title: "Teil 3: Reagieren (Thema Haustiere)",
     level: "B1",
-    topic: "Líu lưỡi",
-    type: "Líu lưỡi",
-    targetText: "Fischers Fritz fischt frische Fische, frische Fische fischt Fischers Fritz.",
-    translation: "Anh ngư phủ Fritz đánh bắt cá tươi, cá tươi được anh ngư phủ Fritz đánh bắt.",
+    topic: "Tiere & Alltag",
+    type: "Teil 3",
+    prompt: `Ihr Partner hat gerade eine Präsentation über Haustiere gehalten. 
+Reagieren Sie darauf:
+
+- Geben Sie ein kurzes Feedback (z.B. "Deine Präsentation hat mir gut gefallen...").
+- Stellen Sie eine Frage zum Thema (z.B. "Hast du denn als Kind selbst ein Haustier gehabt?").`,
   },
   {
-    id: "aussprache-zungen-3",
-    title: "Zungenbrecher: Fliegen",
+    id: "sprechen-3-2",
+    title: "Teil 3: Reagieren (Thema Online-Shopping)",
     level: "B1",
-    topic: "Líu lưỡi",
-    type: "Líu lưỡi",
-    targetText: "Wenn Fliegen hinter Fliegen fliegen, fliegen Fliegen Fliegen nach.",
-    translation: "Khi những con ruồi bay sau những con ruồi, ruồi bay theo ruồi.",
+    topic: "Konsum & Medien",
+    type: "Teil 3",
+    prompt: `Ihr Partner hat gerade eine Präsentation über Online-Shopping gehalten. 
+Reagieren Sie darauf:
+
+- Geben Sie ein kurzes Feedback zu seiner Präsentation.
+- Stellen Sie eine Frage (z.B. "Hast du schon mal schlechte Erfahrungen mit einem Online-Shop gemacht?").`,
   },
   {
-    id: "aussprache-zungen-4",
-    title: "Zungenbrecher: Katzen kratzen",
-    level: "A2",
-    topic: "Líu lưỡi",
-    type: "Líu lưỡi",
-    targetText: "Katzen kratzen mit ihren Tatzen.",
-    translation: "Những con mèo cào bằng bàn chân của chúng.",
+    id: "sprechen-3-3",
+    title: "Teil 3: Reagieren (Thema Stadt oder Land)",
+    level: "B1",
+    topic: "Wohnen & Umwelt",
+    type: "Teil 3",
+    prompt: `Ihr Partner hat gerade eine Präsentation über das Leben in der Stadt und auf dem Land gehalten. 
+Reagieren Sie darauf:
+
+- Geben Sie ein kurzes Feedback (z.B. "Ich fand interessant, was du über... gesagt hast").
+- Stellen Sie eine Frage (z.B. "Könntest du dir vorstellen, später auf einem Bauernhof zu leben?").`,
+  },
+  {
+    id: "sprechen-3-4",
+    title: "Teil 3: Reagieren (Thema Fremdsprachen)",
+    level: "B1",
+    topic: "Lernen & Bildung",
+    type: "Teil 3",
+    prompt: `Ihr Partner hat gerade eine Präsentation über das Erlernen von Fremdsprachen gehalten. 
+Reagieren Sie darauf:
+
+- Geben Sie ein kurzes Feedback zur Struktur oder zum Inhalt.
+- Stellen Sie eine Frage (z.B. "Welche Sprache möchtest du in Zukunft noch lernen und warum?").`,
+  },
+  {
+    id: "sprechen-3-5",
+    title: "Teil 3: Reagieren (Thema Soziale Netzwerke)",
+    level: "B1",
+    topic: "Medien & Gesellschaft",
+    type: "Teil 3",
+    prompt: `Ihr Partner hat gerade eine Präsentation über soziale Netzwerke gehalten. 
+Reagieren Sie darauf:
+
+- Geben Sie ein kurzes, freundliches Feedback.
+- Stellen Sie eine Frage (z.B. "Glaubst du, dass wir in Zukunft ganz auf persönliche Treffen verzichten werden?").`,
+  },
+  {
+    id: "sprechen-3-6",
+    title: "Teil 3: Reagieren (Thema Fast Food)",
+    level: "B1",
+    topic: "Ernährung & Gesundheit",
+    type: "Teil 3",
+    prompt: `Ihr Partner hat gerade eine Präsentation über Fast Food gehalten. 
+Reagieren Sie darauf:
+
+- Geben Sie ein kurzes Feedback.
+- Stellen Sie eine Frage (z.B. "Was ist dein persönliches Lieblingsessen, wenn es mal schnell gehen muss?").`,
   }
 ];
