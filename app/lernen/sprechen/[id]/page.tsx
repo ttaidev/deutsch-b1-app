@@ -42,6 +42,7 @@ export default function SprechenTaskDetail({ params }: { params: { id: string } 
       {/* Microphone Component */}
       <MicrophoneRecorder
         promptTitle={task.title}
+        promptText={task.prompt}
         onComplete={async (feedback) => {
           try {
             await fetch('/api/progress', {

@@ -128,27 +128,74 @@ Disclaimer soll so lauten: "Hinweis: Dieses Feedback wird von KI generiert und e
  */
 export async function evaluateSpeaking(
   promptTitle: string,
+  promptText: string,
   userAudioOrTranscript: string
 ): Promise<SpeakingFeedback> {
-  const text = userAudioOrTranscript || "Ich denke, dass Sport ist sehr wichtig für die Gesundheit.";
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    throw new Error("GEMINI_API_KEY is not set in environment variables");
+  }
 
-  const corrections = [
-    {
-      original: "Ich denke, dass Sport ist sehr wichtig.",
-      corrected: "Ich denke, dass Sport sehr wichtig ist.",
-      explanation: "Verb am Ende nach 'dass'.",
-    },
-  ];
+  const ai = new GoogleGenAI({ apiKey });
+  const text = userAudioOrTranscript || "Ich denke, dass Sport ist sehr wichtig für die Gesundheit."; // Fallback if empty
 
-  return {
-    fluencyScore: 78,
-    grammarScore: 75,
-    vocabularyScore: 82,
-    transcript: text,
-    corrections,
-    overallFeedback: "Sehr gut gesprochen! Deine Aussprache ist verständlich. Achte auf die Satzstellung im Nebensatz.",
-    disclaimer: "Hinweis: Die Bewertung dient als Orientierung für deine B1-Übung.",
-  };
+  const systemInstruction = `Du bist ein strenger aber fairer Deutschlehrer, der auf Niveau B1 (Goethe/telc) unterrichtet. 
+Deine Aufgabe ist es, die mündliche Sprachausgabe (Transcript) eines Schülers zu bewerten. 
+Du bekommst:
+1. Den Titel der Aufgabe (Prompt Title)
+2. Die detaillierte Aufgabenstellung (Prompt Text)
+3. Das Transkript der gesprochenen Antwort (Transcript)
+
+Bewerte die Antwort nach folgenden Kriterien auf einer Skala von 0-100:
+- fluencyScore (Flüssigkeit/Aufgabenerfüllung): Wurde die Aufgabe inhaltlich erfüllt und wirkt der Text flüssig gesprochen?
+- grammarScore (Grammatik): Sind die Sätze grammatikalisch korrekt gebildet?
+- vocabularyScore (Wortschatz): Wird passender B1-Wortschatz verwendet?
+
+Erstelle auch eine Liste von Fehlern (corrections) mit Originalsatz (original), verbessertem Satz (corrected) und einer kurzen Erklärung auf Vietnamesisch (explanation).
+Gib abschließend ein allgemeines Feedback auf Vietnamesisch (overallFeedback).
+Disclaimer soll so lauten: "Hinweis: Dieses Feedback wird von KI generiert und ersetzt keinen echten Lehrer."
+`;
+
+  const prompt = `Titel: ${promptTitle}\nAufgabenstellung: ${promptText}\nTranskript der Antwort: ${text}`;
+
+  const response = await ai.models.generateContent({
+    model: "gemini-3.6-flash",
+    contents: prompt,
+    config: {
+      systemInstruction,
+      responseMimeType: "application/json",
+      responseSchema: {
+        type: Type.OBJECT,
+        properties: {
+          fluencyScore: { type: Type.INTEGER, description: "Score 0-100" },
+          grammarScore: { type: Type.INTEGER, description: "Score 0-100" },
+          vocabularyScore: { type: Type.INTEGER, description: "Score 0-100" },
+          transcript: { type: Type.STRING },
+          corrections: {
+            type: Type.ARRAY,
+            items: {
+              type: Type.OBJECT,
+              properties: {
+                original: { type: Type.STRING },
+                corrected: { type: Type.STRING },
+                explanation: { type: Type.STRING }
+              },
+              required: ["original", "corrected", "explanation"]
+            }
+          },
+          overallFeedback: { type: Type.STRING },
+          disclaimer: { type: Type.STRING }
+        },
+        required: ["fluencyScore", "grammarScore", "vocabularyScore", "transcript", "corrections", "overallFeedback", "disclaimer"]
+      }
+    }
+  });
+
+  if (response.text) {
+    return JSON.parse(response.text) as SpeakingFeedback;
+  }
+  
+  throw new Error("No response from AI");
 }
 
 export async function autoCompleteVocabulary(wordQuery: string): Promise<VocabularyAIEssence> {

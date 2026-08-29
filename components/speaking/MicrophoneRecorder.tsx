@@ -6,6 +6,7 @@ import { evaluateSpeaking, SpeakingFeedback } from "@/lib/ai/evaluator";
 
 interface MicrophoneRecorderProps {
   promptTitle: string;
+  promptText: string;
   prepSeconds?: number;
   recordSeconds?: number;
   onComplete?: (feedback: SpeakingFeedback) => void;
@@ -13,6 +14,7 @@ interface MicrophoneRecorderProps {
 
 export function MicrophoneRecorder({
   promptTitle,
+  promptText,
   onComplete,
 }: MicrophoneRecorderProps) {
   const [phase, setPhase] = useState<"IDLE" | "RECORDING" | "PROCESSING" | "DONE">("IDLE");
@@ -66,7 +68,7 @@ export function MicrophoneRecorder({
     setPhase("PROCESSING"); // Triggers useEffect cleanup, stopping the timer
 
     const sampleTranscript = transcript || "Ich denke, dass Sport ist sehr wichtig für die Gesundheit. Jeden Tag gehe ich im Park spazieren.";
-    const result = await evaluateSpeaking(promptTitle, sampleTranscript);
+    const result = await evaluateSpeaking(promptTitle, promptText, sampleTranscript);
 
     setFeedback(result);
     setPhase("DONE");
