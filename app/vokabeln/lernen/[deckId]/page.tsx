@@ -221,7 +221,6 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
           { id: "MC", label: "Trắc nghiệm", icon: HelpCircle, theme: "purple" },
           { id: "DE_TO_VI", label: "Đức ➔ Việt", icon: BookOpen, theme: "emerald" },
           { id: "VI_TO_DE", label: "Việt ➔ Đức", icon: PenTool, theme: "rose" },
-          { id: "FILL_BLANK", label: "Điền từ", icon: BookOpen, theme: "amber" },
           { id: "LISTENING", label: "Nghe ghi", icon: Headphones, theme: "cyan" },
           { id: "SPEAKING", label: "Phát âm", icon: Mic, theme: "blue" },
         ].map((m) => {
@@ -430,49 +429,6 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
             </div>
           )}
 
-          {/* Mode 5: Fill in Blank (Lückentext) */}
-          {practiceMode === "FILL_BLANK" && (
-            <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-lg space-y-6 text-center">
-              <span className="text-xs font-bold text-slate-400 uppercase">Điền từ vào câu ví dụ (Lückentext)</span>
-              <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-serif italic text-slate-800 leading-relaxed">
-                "{currentCard.missingSentence}"
-              </div>
-              <p className="text-xs text-slate-500 font-medium">Gợi ý nghĩa: {currentCard.translation}</p>
-
-              <div className="max-w-md mx-auto space-y-3">
-                <input
-                  type="text"
-                  value={textInput}
-                  onChange={(e) => setTextInput(e.target.value)}
-                  placeholder="Điền từ tiếng Đức bị thiếu..."
-                  className="w-full p-3.5 text-xs rounded-2xl bg-slate-50 border border-slate-200 text-center font-bold focus:ring-2 focus:ring-primary"
-                />
-
-                {!isAnswerChecked ? (
-                  <button
-                    onClick={() => handleCheckTextAnswer(currentCard.word)}
-                    disabled={!textInput.trim()}
-                    className="w-full py-3 rounded-2xl bg-primary text-white font-bold text-xs shadow-md hover:bg-slate-800 disabled:opacity-50 transition"
-                  >
-                    Kiểm tra
-                  </button>
-                ) : (
-                  <div className="space-y-3">
-                    <div className={`p-4 rounded-2xl border text-xs text-center space-y-1 ${isCorrectInput ? "bg-emerald-50 border-emerald-200 text-emerald-800" : "bg-red-50 border-red-200 text-red-800"}`}>
-                      <p className="font-bold">{isCorrectInput ? "Chính xác! 🎉" : "Chưa đúng!"}</p>
-                      <p>Từ cần điền: <span className="font-extrabold">{currentCard.word}</span></p>
-                    </div>
-                    <button
-                      onClick={() => handleNextCard(isCorrectInput ? "GOOD" : "AGAIN")}
-                      className="w-full py-3 rounded-2xl bg-primary hover:bg-slate-800 text-white font-extrabold text-xs shadow-md transition flex items-center justify-center gap-2"
-                    >
-                      Từ tiếp theo <ArrowRight className="w-4 h-4" />
-                    </button>
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
 
           {/* Mode 6: Listening Dictation (Hören) */}
           {practiceMode === "LISTENING" && (
