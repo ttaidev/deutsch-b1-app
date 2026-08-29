@@ -85,51 +85,54 @@ export default async function DashboardPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-      {/* Header Greeting & Overall Progress */}
-      <div className="bg-gradient-to-r from-indigo-900 via-purple-900 to-rose-900 rounded-3xl p-6 sm:p-8 text-white shadow-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-purple-800/50">
-        <div className="space-y-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-purple-300">Bảng điều khiển cá nhân</span>
-          <h1 className="text-3xl sm:text-4xl font-black tracking-tight">
-            Xin chào, {user.name} 👋
-          </h1>
-          <p className="text-sm text-purple-100 font-medium">
-            Trình độ hiện tại: <span className="font-bold text-white px-2.5 py-0.5 rounded-full bg-rose-500 text-xs">Trình độ B1</span>. Hãy tiếp tục lộ trình ôn luyện!
-          </p>
+      {/* Top Section: Video + Greeting */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        {/* Premium Video Box (Left on Desktop) */}
+        <div className="lg:col-span-3 flex justify-center w-full overflow-hidden rounded-3xl shadow-lg h-full">
+          <video 
+            src="/meovideo.mp4" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="w-full h-full object-cover"
+          />
         </div>
 
-        {/* Quick Stats Pills */}
-        <div className="flex flex-wrap items-center gap-3">
-          <div className="bg-white/10 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/15 text-center">
-            <span className="text-[10px] font-bold uppercase text-amber-300 block">Chuỗi học tập</span>
-            <div className="flex items-center gap-1 font-black text-amber-400 text-lg">
-              <Flame className="w-5 h-5 fill-amber-400" /> {user.streak} Ngày
-            </div>
+        {/* Header Greeting & Overall Progress (Right on Desktop) */}
+        <div className="lg:col-span-9 bg-gradient-to-r from-indigo-900 via-purple-900 to-rose-900 rounded-3xl p-6 sm:p-8 text-white shadow-2xl flex flex-col xl:flex-row items-start xl:items-center justify-between gap-6 border border-purple-800/50">
+          <div className="space-y-2">
+            <span className="text-xs font-bold uppercase tracking-wider text-purple-300">Bảng điều khiển cá nhân</span>
+            <h1 className="text-3xl sm:text-4xl font-black tracking-tight">
+              Xin chào, {user.name} 👋
+            </h1>
+            <p className="text-sm text-purple-100 font-medium">
+              Trình độ hiện tại: <span className="font-bold text-white px-2.5 py-0.5 rounded-full bg-rose-500 text-xs">Trình độ B1</span>. Hãy tiếp tục lộ trình ôn luyện!
+            </p>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/15 text-center">
-            <span className="text-[10px] font-bold uppercase text-emerald-300 block">Tổng XP</span>
-            <div className="flex items-center gap-1 font-black text-emerald-400 text-lg">
-              <Zap className="w-5 h-5 fill-emerald-400" /> {user.xp} XP
+          {/* Quick Stats Pills */}
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="bg-white/10 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/15 text-center">
+              <span className="text-[10px] font-bold uppercase text-amber-300 block">Chuỗi học tập</span>
+              <div className="flex items-center gap-1 font-black text-amber-400 text-lg">
+                <Flame className="w-5 h-5 fill-amber-400" /> {user.streak} Ngày
+              </div>
             </div>
-          </div>
 
-          <div className="bg-white/10 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/15 text-center">
-            <span className="text-[10px] font-bold uppercase text-rose-300 block">Độ sẵn sàng B1</span>
-            <div className="font-black text-white text-lg">{stats.overview.overallReadiness}%</div>
+            <div className="bg-white/10 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/15 text-center">
+              <span className="text-[10px] font-bold uppercase text-emerald-300 block">Tổng XP</span>
+              <div className="flex items-center gap-1 font-black text-emerald-400 text-lg">
+                <Zap className="w-5 h-5 fill-emerald-400" /> {user.xp} XP
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/15 text-center">
+              <span className="text-[10px] font-bold uppercase text-rose-300 block">Độ sẵn sàng B1</span>
+              <div className="font-black text-white text-lg">{stats.overview.overallReadiness}%</div>
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* Premium Video Box */}
-      <div className="flex justify-center w-full max-h-[300px] overflow-hidden rounded-3xl shadow-lg mt-6 mb-6">
-        <video 
-          src="/meovideo.mp4" 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="w-full h-auto object-cover"
-        />
       </div>
 
       {/* Overview Metric Bar */}
