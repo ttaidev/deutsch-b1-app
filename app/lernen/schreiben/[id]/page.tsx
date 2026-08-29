@@ -78,7 +78,7 @@ export default function SchreibenTaskDetail({ params }: { params: { id: string }
         <div className="lg:col-span-7 space-y-6">
           <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-md space-y-4">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-slate-700">Khung gõ bài viết của Gạo</span>
+              <span className="text-xs font-bold text-slate-700">Khung gõ bài viết của bạn</span>
               <div className={`text-xs font-extrabold px-3 py-1 rounded-full ${
                 wordCount >= task.minWords
                   ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
