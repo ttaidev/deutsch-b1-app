@@ -104,7 +104,7 @@ export default function LandingPage() {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-600 font-medium max-w-2xl leading-relaxed">
-                Rèn luyện tiếng Đức với hệ thống lộ trình thiết kế chuẩn form thi Goethe & telc B1. Đầy đủ Đọc, Nghe, Viết và Nói kết hợp chấm điểm bằng KI thông minh.
+                Rèn luyện tiếng Đức với hệ thống lộ trình thiết kế chuẩn form thi Goethe & telc B1. Đầy đủ Đọc, Nghe, Viết và Nói kết hợp chấm điểm bằng AI thông minh.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
