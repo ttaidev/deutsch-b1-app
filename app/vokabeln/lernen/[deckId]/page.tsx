@@ -215,17 +215,30 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
       )}
 
       {/* 7 Practice Modes Selector Bar */}
-      <div className="bg-white rounded-2xl p-2 border border-slate-200 shadow-sm flex items-center justify-between gap-1 overflow-x-auto">
+      <div className="bg-white rounded-3xl p-3 border-2 border-slate-100 shadow-sm flex flex-wrap items-center justify-center gap-2.5">
         {[
-          { id: "FLASHCARD", label: "Flashcard", icon: RefreshCw },
-          { id: "MC", label: "Trắc nghiệm", icon: HelpCircle },
-          { id: "DE_TO_VI", label: "Đức ➔ Việt", icon: BookOpen },
-          { id: "VI_TO_DE", label: "Việt ➔ Đức", icon: PenTool },
-          { id: "FILL_BLANK", label: "Điền từ", icon: BookOpen },
-          { id: "LISTENING", label: "Nghe ghi", icon: Headphones },
-          { id: "SPEAKING", label: "Phát âm", icon: Mic },
+          { id: "FLASHCARD", label: "Flashcard", icon: RefreshCw, theme: "indigo" },
+          { id: "MC", label: "Trắc nghiệm", icon: HelpCircle, theme: "purple" },
+          { id: "DE_TO_VI", label: "Đức ➔ Việt", icon: BookOpen, theme: "emerald" },
+          { id: "VI_TO_DE", label: "Việt ➔ Đức", icon: PenTool, theme: "rose" },
+          { id: "FILL_BLANK", label: "Điền từ", icon: BookOpen, theme: "amber" },
+          { id: "LISTENING", label: "Nghe ghi", icon: Headphones, theme: "cyan" },
+          { id: "SPEAKING", label: "Phát âm", icon: Mic, theme: "blue" },
         ].map((m) => {
           const Icon = m.icon;
+          const isActive = practiceMode === m.id;
+          
+          // Color mappings for active/inactive states
+          const themeClasses = {
+            indigo: isActive ? "bg-indigo-500 text-white border-indigo-600 shadow-md shadow-indigo-200" : "bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100",
+            purple: isActive ? "bg-purple-500 text-white border-purple-600 shadow-md shadow-purple-200" : "bg-purple-50 text-purple-700 border-purple-200 hover:bg-purple-100",
+            emerald: isActive ? "bg-emerald-500 text-white border-emerald-600 shadow-md shadow-emerald-200" : "bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100",
+            rose: isActive ? "bg-rose-500 text-white border-rose-600 shadow-md shadow-rose-200" : "bg-rose-50 text-rose-700 border-rose-200 hover:bg-rose-100",
+            amber: isActive ? "bg-amber-500 text-white border-amber-600 shadow-md shadow-amber-200" : "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100",
+            cyan: isActive ? "bg-cyan-500 text-white border-cyan-600 shadow-md shadow-cyan-200" : "bg-cyan-50 text-cyan-700 border-cyan-200 hover:bg-cyan-100",
+            blue: isActive ? "bg-blue-500 text-white border-blue-600 shadow-md shadow-blue-200" : "bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100",
+          };
+
           return (
             <button
               key={m.id}
@@ -234,13 +247,9 @@ export default function VocabularyPracticePage({ params }: { params: { deckId: s
                 setIsAnswerChecked(false);
                 setTextInput("");
               }}
-              className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-extrabold transition whitespace-nowrap ${
-                practiceMode === m.id
-                  ? "bg-primary text-white shadow-xs"
-                  : "text-slate-600 hover:bg-slate-100"
-              }`}
+              className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-black transition-all border-b-4 active:border-b-0 active:translate-y-1 ${themeClasses[m.theme as keyof typeof themeClasses]}`}
             >
-              <Icon className="w-3.5 h-3.5" />
+              <Icon className="w-4 h-4" />
               <span>{m.label}</span>
             </button>
           );
