@@ -208,7 +208,7 @@ export default function VocabularyDashboardPage() {
                   <Link
                     href={`/vokabeln/lernen/${deck.slug || deck.id}`}
                     className="btn-3d flex-1 text-sm flex items-center justify-center"
-                    style={{ "--btn-bg": "#0f172a", "--btn-border": "#000000" } as React.CSSProperties}
+                    style={{ "--btn-bg": "#10b981", "--btn-border": "#047857" } as React.CSSProperties}
                   >
                     <Play className="w-4 h-4 fill-white" /> Học Deck này
                   </Link>
