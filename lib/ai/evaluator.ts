@@ -123,31 +123,63 @@ Disclaimer soll so lauten: "Hinweis: Dieses Feedback wird von KI generiert und e
   throw new Error("No response from AI");
 }
 
-/**
- * Educational Speaking Evaluation
- */
-export async function evaluateSpeaking(
-  promptTitle: string,
-  userAudioOrTranscript: string
-): Promise<SpeakingFeedback> {
-  const text = userAudioOrTranscript || "Ich denke, dass Sport ist sehr wichtig für die Gesundheit.";
+export interface PronunciationFeedback {
+  score: number;
+  transcript: string;
+  target: string;
+  feedback: string;
+  disclaimer: string;
+}
 
-  const corrections = [
-    {
-      original: "Ich denke, dass Sport ist sehr wichtig.",
-      corrected: "Ich denke, dass Sport sehr wichtig ist.",
-      explanation: "Verb am Ende nach 'dass'.",
-    },
-  ];
+/**
+ * Educational Pronunciation Evaluation
+ */
+export async function evaluatePronunciation(
+  targetText: string,
+  transcript: string
+): Promise<PronunciationFeedback> {
+  const cleanTarget = targetText.toLowerCase().replace(/[.,!?]/g, "").trim();
+  const cleanTranscript = transcript.toLowerCase().replace(/[.,!?]/g, "").trim();
+
+  // Basic string comparison logic
+  let score = 0;
+  let feedbackText = "";
+
+  if (!cleanTranscript) {
+    score = 0;
+    feedbackText = "Không nhận diện được giọng nói. Vui lòng thử lại.";
+  } else if (cleanTranscript === cleanTarget) {
+    score = 100;
+    feedbackText = "Xuất sắc! Bạn phát âm hoàn toàn chính xác.";
+  } else {
+    // Check word by word matching
+    const targetWords = cleanTarget.split(" ");
+    const transcriptWords = cleanTranscript.split(" ");
+    let matchCount = 0;
+
+    targetWords.forEach(word => {
+      if (transcriptWords.includes(word)) {
+        matchCount++;
+      }
+    });
+
+    score = Math.round((matchCount / targetWords.length) * 100);
+
+    if (score > 80) {
+      feedbackText = "Rất tốt! Phát âm của bạn gần như hoàn hảo.";
+    } else if (score > 50) {
+      feedbackText = "Khá tốt. Có vài từ bạn cần phát âm rõ hơn.";
+    } else {
+      feedbackText = "Cần cố gắng hơn. Hãy nghe kỹ từ mẫu và thử lại.";
+    }
+  }
 
   return {
-    fluencyScore: 78,
-    grammarScore: 75,
-    vocabularyScore: 82,
-    transcript: text,
-    corrections,
-    overallFeedback: "Sehr gut gesprochen! Deine Aussprache ist verständlich. Achte auf die Satzstellung im Nebensatz.",
-    disclaimer: "Hinweis: Die Bewertung dient als Orientierung für deine B1-Übung.",
+    score,
+    transcript: transcript || "(Không có âm thanh)",
+    target: targetText,
+    feedback: feedbackText,
+    disclaimer: "Lưu ý: Đánh giá bằng AI (Speech Recognition) chỉ mang tính tham khảo.",
   };
 }
 

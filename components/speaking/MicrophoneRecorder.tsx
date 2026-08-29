@@ -2,23 +2,25 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Mic, Square, Play, RefreshCw, CheckCircle2, AlertCircle } from "lucide-react";
-import { evaluateSpeaking, SpeakingFeedback } from "@/lib/ai/evaluator";
+import { evaluatePronunciation, PronunciationFeedback } from "@/lib/ai/evaluator";
 
 interface MicrophoneRecorderProps {
-  promptTitle: string;
+  promptTitle: string; // Used for UI display mostly
+  targetText?: string; // The text the user needs to read
   prepSeconds?: number;
   recordSeconds?: number;
-  onComplete?: (feedback: SpeakingFeedback) => void;
+  onComplete?: (feedback: any) => void; // Keep generic to avoid breaking other usages temporarily if any, though we now pass PronunciationFeedback
 }
 
 export function MicrophoneRecorder({
   promptTitle,
+  targetText,
   onComplete,
 }: MicrophoneRecorderProps) {
   const [phase, setPhase] = useState<"IDLE" | "RECORDING" | "PROCESSING" | "DONE">("IDLE");
   const [micPermission, setMicPermission] = useState<"UNKNOWN" | "GRANTED" | "DENIED">("UNKNOWN");
   const [transcript, setTranscript] = useState("");
-  const [feedback, setFeedback] = useState<SpeakingFeedback | null>(null);
+  const [feedback, setFeedback] = useState<PronunciationFeedback | null>(null);
 
   const requestMicrophonePermission = async () => {
     try {
@@ -34,6 +36,7 @@ export function MicrophoneRecorder({
 
   const startRecording = () => {
     setPhase("RECORDING"); // Triggers the useEffect for RECORDING
+    setTranscript("");
 
     // Browser SpeechRecognition setup if available
     if (typeof window !== "undefined" && ("SpeechRecognition" in window || "webkitSpeechRecognition" in window)) {
@@ -65,12 +68,21 @@ export function MicrophoneRecorder({
 
     setPhase("PROCESSING"); // Triggers useEffect cleanup, stopping the timer
 
-    const sampleTranscript = transcript || "Ich denke, dass Sport ist sehr wichtig für die Gesundheit. Jeden Tag gehe ich im Park spazieren.";
-    const result = await evaluateSpeaking(promptTitle, sampleTranscript);
+    const finalTranscript = transcript || "";
+    // Note: If evaluatePronunciation takes (targetText, transcript)
+    const result = await evaluatePronunciation(targetText || promptTitle, finalTranscript);
 
     setFeedback(result);
     setPhase("DONE");
-    if (onComplete) onComplete(result);
+    if (onComplete) {
+      // Map it to old format just in case it's used elsewhere, but mainly we use score
+      onComplete({
+        fluencyScore: result.score,
+        grammarScore: result.score,
+        vocabularyScore: result.score,
+        transcript: result.transcript
+      });
+    }
   };
 
   return (
@@ -83,7 +95,7 @@ export function MicrophoneRecorder({
             {phase === "IDLE" && micPermission !== "GRANTED" && "Vui lòng cấp quyền Micro để bắt đầu ghi âm."}
             {phase === "IDLE" && micPermission === "GRANTED" && "Sẵn sàng ghi âm. Nhấn nút bên dưới để bắt đầu."}
             {phase === "RECORDING" && "Đang ghi âm... Gạo hãy nói tiếng Đức vào Micro"}
-            {phase === "PROCESSING" && "KI đang phân tích phát âm & ngữ pháp..."}
+            {phase === "PROCESSING" && "KI đang phân tích phát âm..."}
             {phase === "DONE" && "Hoàn tất ghi âm & Đã phân tích xong"}
           </h4>
         </div>
@@ -150,43 +162,25 @@ export function MicrophoneRecorder({
       {phase === "DONE" && feedback && (
         <div className="pt-4 border-t border-slate-100 space-y-4 animate-in fade-in">
           {/* Score Pills */}
-          <div className="grid grid-cols-3 gap-3">
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center">
-              <span className="text-[10px] font-bold uppercase text-slate-500">Độ lưu loát</span>
-              <p className="text-xl font-black text-primary">{feedback.fluencyScore}%</p>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center">
-              <span className="text-[10px] font-bold uppercase text-slate-500">Ngữ pháp</span>
-              <p className="text-xl font-black text-primary">{feedback.grammarScore}%</p>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center">
-              <span className="text-[10px] font-bold uppercase text-slate-500">Từ vựng</span>
-              <p className="text-xl font-black text-primary">{feedback.vocabularyScore}%</p>
+          <div className="flex justify-center">
+            <div className={`border rounded-full w-32 h-32 flex flex-col items-center justify-center text-center shadow-lg ${feedback.score >= 80 ? 'bg-emerald-50 border-emerald-200' : feedback.score >= 50 ? 'bg-amber-50 border-amber-200' : 'bg-red-50 border-red-200'}`}>
+              <span className="text-[10px] font-bold uppercase text-slate-500 mb-1">Độ chính xác</span>
+              <p className={`text-4xl font-black ${feedback.score >= 80 ? 'text-emerald-600' : feedback.score >= 50 ? 'text-amber-600' : 'text-red-600'}`}>
+                {feedback.score}%
+              </p>
             </div>
           </div>
+
+          <p className="text-center text-sm font-bold text-slate-700 my-4">{feedback.feedback}</p>
 
           {/* Transcript Box */}
           <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-            <span className="text-xs font-bold uppercase text-slate-400 block mb-1">Văn bản bài nói nhận diện được:</span>
-            <p className="text-xs text-slate-700 italic font-medium">"{feedback.transcript}"</p>
+            <span className="text-xs font-bold uppercase text-slate-400 block mb-1">Hệ thống nhận diện bạn đọc:</span>
+            <p className="text-base text-slate-800 font-medium">"{feedback.transcript}"</p>
           </div>
 
-          {/* Corrections */}
-          {feedback.corrections.length > 0 && (
-            <div className="space-y-2">
-              <span className="text-xs font-bold text-slate-700 block">Gợi ý sửa lỗi phát âm & ngữ pháp:</span>
-              {feedback.corrections.map((item, idx) => (
-                <div key={idx} className="p-3 bg-red-50 border border-red-200 rounded-xl text-xs space-y-1">
-                  <p className="text-red-700 font-medium line-through">Chưa chính xác: {item.original}</p>
-                  <p className="text-emerald-700 font-bold">Chuẩn tiếng Đức: {item.corrected}</p>
-                  <p className="text-slate-600 text-[11px] font-medium">{item.explanation}</p>
-                </div>
-              ))}
-            </div>
-          )}
-
-          <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl text-[11px] text-amber-800 flex items-start gap-2 font-medium">
-            <AlertCircle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+          <div className="p-3 bg-blue-50 border border-blue-200 rounded-xl text-[11px] text-blue-800 flex items-start gap-2 font-medium">
+            <AlertCircle className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
             <span>{feedback.disclaimer}</span>
           </div>
         </div>

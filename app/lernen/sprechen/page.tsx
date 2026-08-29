@@ -15,23 +15,23 @@ export default function SprechenOverviewPage() {
             <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-600 text-white flex items-center justify-center font-bold shadow-md">
               <Mic className="w-5 h-5" />
             </div>
-            <h1 className="text-3xl font-black text-slate-900">Kỹ năng Nói (Sprechen)</h1>
+            <h1 className="text-3xl font-black text-slate-900">Luyện phát âm (Aussprache)</h1>
           </div>
           <p className="text-sm text-slate-500 font-medium">
-            Luyện thu âm Micro và nhận đánh giá tự động từ Trí tuệ nhân tạo.
+            Luyện phát âm chuẩn xác các từ vựng và mẫu câu tiếng Đức với công nghệ nhận diện giọng nói AI.
           </p>
         </div>
       </div>
 
       <div className="space-y-12">
-        {/* Loại 1 */}
+        {/* Từ vựng */}
         <div className="space-y-4">
           <div>
-            <h2 className="text-xl font-black text-slate-900">Loại 1 (Teil 1)</h2>
-            <p className="text-sm text-slate-500 font-medium">Cùng nhau lên kế hoạch cho một sự kiện hoặc hoạt động</p>
+            <h2 className="text-xl font-black text-slate-900">Phát âm từ vựng</h2>
+            <p className="text-sm text-slate-500 font-medium">Luyện đọc các từ vựng tiếng Đức dễ phát âm sai</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {speakingTasks.filter(t => t.type === "Teil 1").map((t) => (
+            {speakingTasks.filter(t => t.type === "Từ vựng").map((t) => (
               <div
                 key={t.id}
                 className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all space-y-4 flex flex-col justify-between group hover:-translate-y-1"
@@ -44,8 +44,8 @@ export default function SprechenOverviewPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-black text-slate-900 leading-snug">{t.title}</h3>
-                    <p className="text-xs text-slate-500 font-bold mt-1">{t.topic}</p>
+                    <h3 className="text-lg font-black text-slate-900 leading-snug">{t.targetText}</h3>
+                    <p className="text-xs text-slate-500 font-bold mt-1">{t.translation}</p>
                   </div>
                 </div>
 
@@ -55,7 +55,7 @@ export default function SprechenOverviewPage() {
                       <CheckCircle2 className="w-4 h-4" /> {t.score}
                     </span>
                   ) : (
-                    <span className="text-xs font-bold text-slate-400">Chưa nói</span>
+                    <span className="text-xs font-bold text-slate-400">Chưa đọc</span>
                   )}
 
                   <Link
@@ -63,7 +63,7 @@ export default function SprechenOverviewPage() {
                     className="btn-3d text-xs px-4 py-2.5"
                     style={{ '--btn-bg': '#059669', '--btn-border': '#065f46' } as React.CSSProperties}
                   >
-                    Luyện Nói <ArrowRight className="w-4 h-4" />
+                    Luyện Đọc <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
@@ -71,14 +71,14 @@ export default function SprechenOverviewPage() {
           </div>
         </div>
 
-        {/* Loại 2 */}
+        {/* Câu giao tiếp */}
         <div className="space-y-4">
           <div>
-            <h2 className="text-xl font-black text-slate-900">Loại 2 (Teil 2)</h2>
-            <p className="text-sm text-slate-500 font-medium">Thuyết trình về một chủ đề cụ thể (có chia sẻ kinh nghiệm bản thân)</p>
+            <h2 className="text-xl font-black text-slate-900">Phát âm mẫu câu</h2>
+            <p className="text-sm text-slate-500 font-medium">Luyện ngữ điệu qua các câu giao tiếp hàng ngày</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {speakingTasks.filter(t => t.type === "Teil 2").map((t) => (
+            {speakingTasks.filter(t => t.type === "Câu giao tiếp").map((t) => (
               <div
                 key={t.id}
                 className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all space-y-4 flex flex-col justify-between group hover:-translate-y-1"
@@ -91,8 +91,8 @@ export default function SprechenOverviewPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-black text-slate-900 leading-snug">{t.title}</h3>
-                    <p className="text-xs text-slate-500 font-bold mt-1">{t.topic}</p>
+                    <h3 className="text-lg font-black text-slate-900 leading-snug">{t.targetText}</h3>
+                    <p className="text-xs text-slate-500 font-bold mt-1">{t.translation}</p>
                   </div>
                 </div>
 
@@ -102,7 +102,7 @@ export default function SprechenOverviewPage() {
                       <CheckCircle2 className="w-4 h-4" /> {t.score}
                     </span>
                   ) : (
-                    <span className="text-xs font-bold text-slate-400">Chưa nói</span>
+                    <span className="text-xs font-bold text-slate-400">Chưa đọc</span>
                   )}
 
                   <Link
@@ -110,7 +110,7 @@ export default function SprechenOverviewPage() {
                     className="btn-3d text-xs px-4 py-2.5"
                     style={{ '--btn-bg': '#0d9488', '--btn-border': '#115e59' } as React.CSSProperties}
                   >
-                    Luyện Nói <ArrowRight className="w-4 h-4" />
+                    Luyện Đọc <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
@@ -118,14 +118,14 @@ export default function SprechenOverviewPage() {
           </div>
         </div>
 
-        {/* Loại 3 */}
+        {/* Líu lưỡi */}
         <div className="space-y-4">
           <div>
-            <h2 className="text-xl font-black text-slate-900">Loại 3 (Teil 3)</h2>
-            <p className="text-sm text-slate-500 font-medium">Phản hồi và đặt câu hỏi về bài thuyết trình của đối tác</p>
+            <h2 className="text-xl font-black text-slate-900">Thử thách đọc nhanh (Zungenbrecher)</h2>
+            <p className="text-sm text-slate-500 font-medium">Luyện phản xạ và sự dẻo dai của cơ miệng</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {speakingTasks.filter(t => t.type === "Teil 3").map((t) => (
+            {speakingTasks.filter(t => t.type === "Líu lưỡi").map((t) => (
               <div
                 key={t.id}
                 className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all space-y-4 flex flex-col justify-between group hover:-translate-y-1"
@@ -138,8 +138,8 @@ export default function SprechenOverviewPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-black text-slate-900 leading-snug">{t.title}</h3>
-                    <p className="text-xs text-slate-500 font-bold mt-1">{t.topic}</p>
+                    <h3 className="text-lg font-black text-slate-900 leading-snug">{t.targetText}</h3>
+                    <p className="text-xs text-slate-500 font-bold mt-1">{t.translation}</p>
                   </div>
                 </div>
 
@@ -149,7 +149,7 @@ export default function SprechenOverviewPage() {
                       <CheckCircle2 className="w-4 h-4" /> {t.score}
                     </span>
                   ) : (
-                    <span className="text-xs font-bold text-slate-400">Chưa nói</span>
+                    <span className="text-xs font-bold text-slate-400">Chưa đọc</span>
                   )}
 
                   <Link
@@ -157,7 +157,7 @@ export default function SprechenOverviewPage() {
                     className="btn-3d text-xs px-4 py-2.5"
                     style={{ '--btn-bg': '#0891b2', '--btn-border': '#155e75' } as React.CSSProperties}
                   >
-                    Luyện Nói <ArrowRight className="w-4 h-4" />
+                    Luyện Đọc <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
