@@ -12,6 +12,12 @@ import {
 export default function DashboardLoading() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 animate-pulse">
+      {/* Loading Message */}
+      <div className="bg-amber-50 text-amber-700 p-4 rounded-2xl flex items-center justify-center gap-3 font-black text-sm border-2 border-amber-200/50 shadow-md">
+        <Sparkles className="w-5 h-5 text-amber-500 animate-spin" />
+        ĐỢI TÍ NHÉ, WEB ĐANG ĐỒNG BỘ DỮ LIỆU...
+      </div>
+
       {/* Header Skeleton - Vibrant Gradient */}
       <div className="bg-gradient-to-r from-indigo-900/70 via-purple-900/70 to-rose-900/70 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-purple-800/30 shadow-2xl">
         <div className="space-y-4 w-full md:w-1/2">
