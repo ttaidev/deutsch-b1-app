@@ -110,13 +110,15 @@ export default function LandingPage() {
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                 <Link
                   href="/dashboard"
-                  className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:opacity-95 text-white font-extrabold text-base shadow-xl shadow-purple-200 flex items-center justify-center gap-2.5 transition-all transform hover:-translate-y-0.5"
+                  className="btn-3d w-full sm:w-auto text-base"
+                  style={{ '--btn-bg': '#6366f1', '--btn-border': '#4338ca' } as React.CSSProperties}
                 >
                   Bắt đầu học ngay <ArrowRight className="w-5 h-5" />
                 </Link>
                 <Link
                   href="/pruefung"
-                  className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-extrabold text-base border-2 border-slate-200 shadow-md flex items-center justify-center gap-2 transition-all"
+                  className="btn-3d w-full sm:w-auto text-base text-slate-800"
+                  style={{ '--btn-bg': '#ffffff', '--btn-border': '#e2e8f0', '--btn-text': '#1e293b' } as React.CSSProperties}
                 >
                   <Award className="w-5 h-5 text-rose-500" />
                   Thi thử B1
@@ -292,7 +294,8 @@ export default function LandingPage() {
             <div className="pt-4">
               <Link
                 href="/vokabeln"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-white text-purple-900 font-extrabold text-sm hover:bg-slate-100 transition shadow-xl"
+                className="btn-3d text-sm"
+                style={{ '--btn-bg': '#ffffff', '--btn-border': '#f1f5f9', '--btn-text': '#581c87' } as React.CSSProperties}
               >
                 Mở kho từ vựng <ArrowRight className="w-4 h-4" />
               </Link>
@@ -333,7 +336,8 @@ export default function LandingPage() {
         <div>
           <Link
             href="/register"
-            className="inline-flex items-center gap-2 px-9 py-4 rounded-2xl bg-gradient-to-r from-rose-600 to-purple-600 hover:opacity-95 text-white font-extrabold text-base shadow-xl shadow-rose-200 transition transform hover:-translate-y-0.5"
+            className="btn-3d text-base"
+            style={{ '--btn-bg': '#e11d48', '--btn-border': '#9f1239' } as React.CSSProperties}
           >
             Đăng ký miễn phí ngay <ArrowRight className="w-5 h-5" />
           </Link>

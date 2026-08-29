@@ -35,6 +35,8 @@ export default async function DashboardPage() {
       href: "/lernen/lesen",
       icon: BookOpen,
       gradient: "from-blue-600 to-indigo-600",
+      bgHex: "#3b82f6",
+      borderHex: "#1d4ed8",
       color: "text-indigo-600 bg-indigo-50 border-indigo-200",
     },
     {
@@ -47,6 +49,8 @@ export default async function DashboardPage() {
       href: "/lernen/hoeren",
       icon: Headphones,
       gradient: "from-amber-500 to-orange-500",
+      bgHex: "#f59e0b",
+      borderHex: "#b45309",
       color: "text-amber-600 bg-amber-50 border-amber-200",
     },
     {
@@ -59,6 +63,8 @@ export default async function DashboardPage() {
       href: "/lernen/schreiben",
       icon: PenTool,
       gradient: "from-purple-600 to-pink-600",
+      bgHex: "#9333ea",
+      borderHex: "#6b21a8",
       color: "text-purple-600 bg-purple-50 border-purple-200",
     },
     {
@@ -71,6 +77,8 @@ export default async function DashboardPage() {
       href: "/lernen/sprechen",
       icon: Mic,
       gradient: "from-emerald-500 to-teal-600",
+      bgHex: "#10b981",
+      borderHex: "#047857",
       color: "text-emerald-600 bg-emerald-50 border-emerald-200",
     },
   ];
@@ -178,7 +186,8 @@ export default async function DashboardPage() {
 
                 <Link
                   href={skill.href}
-                  className={`w-full py-3 rounded-2xl bg-gradient-to-r ${skill.gradient} text-white font-extrabold text-xs flex items-center justify-center gap-1.5 transition shadow-md hover:opacity-95`}
+                  className="btn-3d w-full text-xs"
+                  style={{ '--btn-bg': skill.bgHex, '--btn-border': skill.borderHex } as React.CSSProperties}
                 >
                   Tiếp tục học <ArrowRight className="w-4 h-4" />
                 </Link>
