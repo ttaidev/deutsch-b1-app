@@ -2,7 +2,6 @@
 
 > A production-ready, commercial-grade German B1 Exam Preparation platform built with **Next.js 14 App Router**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, **Prisma ORM**, and **Supabase / PostgreSQL**.
 
-![Deutsch B1 Platform](https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&auto=format&fit=crop&q=80)
 
 ---
 
