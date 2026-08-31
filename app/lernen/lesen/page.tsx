@@ -18,7 +18,15 @@ export default function LesenOverviewPage() {
       return ex;
     });
     setExercises(updated);
-  }, []);
+  const [activeFilter, setActiveFilter] = useState("all");
+
+  const categoriesConfig = [
+    { id: 1, title: "Loại 1 (Teil 1)", desc: "Đọc hiểu: Chọn Đúng / Sai (Richtig / Falsch)", type: "Đúng / Sai", colorMain: "bg-indigo-50 text-indigo-700 border-indigo-200", colorText: "text-indigo-600", btnStyle: { '--btn-bg': '#4f46e5', '--btn-border': '#3730a3' } },
+    { id: 2, title: "Loại 2 (Teil 2)", desc: "Đọc hiểu: Trắc nghiệm (Multiple Choice A/B/C)", type: "Trắc nghiệm", colorMain: "bg-blue-50 text-blue-700 border-blue-200", colorText: "text-blue-600", btnStyle: { '--btn-bg': '#2563eb', '--btn-border': '#1e40af' } },
+    { id: 3, title: "Loại 3 (Teil 3)", desc: "Đọc hiểu: Ghép thông tin (Zuordnen)", type: "Ghép thông tin", colorMain: "bg-emerald-50 text-emerald-700 border-emerald-200", colorText: "text-emerald-600", btnStyle: { '--btn-bg': '#059669', '--btn-border': '#065f46' } },
+    { id: 4, title: "Loại 4 (Teil 4)", desc: "Đọc hiểu: Quan điểm (Ja / Nein)", type: "Ý kiến", colorMain: "bg-amber-50 text-amber-700 border-amber-200", colorText: "text-amber-600", btnStyle: { '--btn-bg': '#d97706', '--btn-border': '#b45309' } },
+    { id: 5, title: "Loại 5 (Teil 5)", desc: "Đọc hiểu: Quy định & Thông báo (Multiple Choice)", type: "Quy định & Thông báo", colorMain: "bg-rose-50 text-rose-700 border-rose-200", colorText: "text-rose-600", btnStyle: { '--btn-bg': '#e11d48', '--btn-border': '#be123c' } },
+  ];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
@@ -43,14 +51,27 @@ export default function LesenOverviewPage() {
         </div>
       </div>
 
+      {/* Categories Filter */}
+      <div className="flex gap-2 overflow-x-auto pb-2 hide-scrollbar">
+        <button
+          onClick={() => setActiveFilter("all")}
+          className={`px-4 py-2.5 rounded-xl text-sm font-bold border-2 whitespace-nowrap transition-all ${activeFilter === "all" ? "bg-indigo-600 text-white border-indigo-600 shadow-md" : "bg-white text-slate-600 border-slate-200 hover:border-indigo-300"}`}
+        >
+          Tất cả các dạng
+        </button>
+        {categoriesConfig.map(cat => (
+          <button
+            key={cat.id}
+            onClick={() => setActiveFilter(cat.id.toString())}
+            className={`px-4 py-2.5 rounded-xl text-sm font-bold border-2 whitespace-nowrap transition-all ${activeFilter === cat.id.toString() ? "bg-indigo-600 text-white border-indigo-600 shadow-md" : "bg-white text-slate-600 border-slate-200 hover:border-indigo-300"}`}
+          >
+            {cat.title}
+          </button>
+        ))}
+      </div>
+
       <div className="space-y-12">
-        {[
-          { id: 1, title: "Loại 1 (Teil 1)", desc: "Đọc hiểu: Chọn Đúng / Sai (Richtig / Falsch)", type: "Đúng / Sai", colorMain: "bg-indigo-50 text-indigo-700 border-indigo-200", colorText: "text-indigo-600", btnStyle: { '--btn-bg': '#4f46e5', '--btn-border': '#3730a3' } },
-          { id: 2, title: "Loại 2 (Teil 2)", desc: "Đọc hiểu: Trắc nghiệm (Multiple Choice A/B/C)", type: "Trắc nghiệm", colorMain: "bg-blue-50 text-blue-700 border-blue-200", colorText: "text-blue-600", btnStyle: { '--btn-bg': '#2563eb', '--btn-border': '#1e40af' } },
-          { id: 3, title: "Loại 3 (Teil 3)", desc: "Đọc hiểu: Ghép thông tin (Zuordnen)", type: "Ghép thông tin", colorMain: "bg-emerald-50 text-emerald-700 border-emerald-200", colorText: "text-emerald-600", btnStyle: { '--btn-bg': '#059669', '--btn-border': '#065f46' } },
-          { id: 4, title: "Loại 4 (Teil 4)", desc: "Đọc hiểu: Quan điểm (Ja / Nein)", type: "Ý kiến", colorMain: "bg-amber-50 text-amber-700 border-amber-200", colorText: "text-amber-600", btnStyle: { '--btn-bg': '#d97706', '--btn-border': '#b45309' } },
-          { id: 5, title: "Loại 5 (Teil 5)", desc: "Đọc hiểu: Quy định & Thông báo (Multiple Choice)", type: "Quy định & Thông báo", colorMain: "bg-rose-50 text-rose-700 border-rose-200", colorText: "text-rose-600", btnStyle: { '--btn-bg': '#e11d48', '--btn-border': '#be123c' } },
-        ].map(cat => (
+        {categoriesConfig.filter(c => activeFilter === "all" || activeFilter === c.id.toString()).map(cat => (
           <div key={cat.id} className="space-y-4">
             <div>
               <h2 className="text-xl font-black text-slate-900">{cat.title}</h2>
