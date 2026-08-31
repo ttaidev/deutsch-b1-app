@@ -44,10 +44,10 @@ export function Footer() {
             <h4 className="text-white font-bold text-xs uppercase tracking-wider mb-3">Phiên bản đặc biệt</h4>
             <div className="bg-gradient-to-br from-indigo-900/60 to-purple-900/60 p-4 rounded-2xl border border-indigo-700/50 text-xs text-indigo-100 space-y-2 shadow-lg">
               <div className="flex items-center gap-1.5 font-extrabold text-amber-300">
-                <Sparkles className="w-4 h-4" /> Dành riêng cho Gạo
+                <Sparkles className="w-4 h-4" /> Premium
               </div>
               <p className="text-[11px] leading-relaxed text-indigo-200">
-                Ứng dụng được thiết kế và xây dựng riêng cho <strong className="text-white">Gạo</strong> để luyện thi bằng B1 tiếng Đức thật hiệu quả và đạt điểm số cao nhất!
+                Ứng dụng được thiết kế và xây dựng để hỗ trợ luyện thi bằng B1 tiếng Đức thật hiệu quả!
               </p>
             </div>
           </div>
