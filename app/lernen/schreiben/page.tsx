@@ -31,11 +31,11 @@ export default function SchreibenOverviewPage() {
             <h2 className="text-xl font-black text-slate-900">Loại 1 (Teil 1)</h2>
             <p className="text-sm text-slate-500 font-medium">Email cá nhân khoảng 80 từ phản hồi lời mời hoặc yêu cầu</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="flex gap-6 overflow-x-auto pb-6 pt-2 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory hide-scrollbar">
             {tasks.filter(t => t.type === "Teil 1").map((t) => (
               <div
                 key={t.id}
-                className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all space-y-4 flex flex-col justify-between group hover:-translate-y-1"
+                className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all space-y-4 flex flex-col justify-between group hover:-translate-y-1 shrink-0 w-[320px] sm:w-[350px] snap-center"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
@@ -79,11 +79,11 @@ export default function SchreibenOverviewPage() {
             <h2 className="text-xl font-black text-slate-900">Loại 2 (Teil 2)</h2>
             <p className="text-sm text-slate-500 font-medium">Cho ý kiến về một chủ đề nào đó khoảng 80 từ</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="flex gap-6 overflow-x-auto pb-6 pt-2 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory hide-scrollbar">
             {tasks.filter(t => t.type === "Teil 2").map((t) => (
               <div
                 key={t.id}
-                className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all space-y-4 flex flex-col justify-between group hover:-translate-y-1"
+                className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all space-y-4 flex flex-col justify-between group hover:-translate-y-1 shrink-0 w-[320px] sm:w-[350px] snap-center"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
@@ -127,11 +127,11 @@ export default function SchreibenOverviewPage() {
             <h2 className="text-xl font-black text-slate-900">Loại 3 (Teil 3)</h2>
             <p className="text-sm text-slate-500 font-medium">Viết email trang trọng khoảng 40 từ</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="flex gap-6 overflow-x-auto pb-6 pt-2 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory hide-scrollbar">
             {tasks.filter(t => t.type === "Teil 3").map((t) => (
               <div
                 key={t.id}
-                className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all space-y-4 flex flex-col justify-between group hover:-translate-y-1"
+                className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all space-y-4 flex flex-col justify-between group hover:-translate-y-1 shrink-0 w-[320px] sm:w-[350px] snap-center"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
