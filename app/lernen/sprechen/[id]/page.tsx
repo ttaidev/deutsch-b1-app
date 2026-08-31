@@ -21,20 +21,25 @@ export default function SprechenTaskDetail({ params }: { params: { id: string } 
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10 relative">
+      {/* Decorative background blobs */}
+      <div className="fixed top-20 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10" />
+      <div className="fixed bottom-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl -z-10" />
+
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-slate-200 pb-4">
-        <Link href="/lernen/sprechen" className="flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-primary transition">
-          <ArrowLeft className="w-4 h-4" /> Zurück zur Sprech-Übersicht
+      <div className="flex items-center justify-between border-b border-slate-200/60 pb-5">
+        <Link href="/lernen/sprechen" className="flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors">
+          <ArrowLeft className="w-5 h-5" /> Zurück zur Sprech-Übersicht
         </Link>
-        <span className="text-xs font-bold px-3 py-1 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-full">
+        <span className="text-xs font-black px-4 py-1.5 bg-gradient-to-r from-emerald-400/10 to-teal-400/10 text-emerald-700 border border-emerald-200/50 rounded-full shadow-sm">
           Sprechen B1 • Teil 1
         </span>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-md space-y-4">
-        <h1 className="text-2xl font-bold text-primary">{task.title}</h1>
-        <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs leading-relaxed text-slate-700 font-medium whitespace-pre-line">
+      <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-8 border border-white/40 shadow-2xl shadow-slate-200/40 space-y-6 relative overflow-hidden group">
+        <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-primary to-accent rounded-l-3xl" />
+        <h1 className="text-3xl font-black text-slate-800 tracking-tight">{task.title}</h1>
+        <div className="p-6 bg-slate-50/80 rounded-2xl border border-slate-100 text-sm leading-relaxed text-slate-700 font-medium whitespace-pre-line shadow-inner">
           {task.prompt}
         </div>
       </div>
