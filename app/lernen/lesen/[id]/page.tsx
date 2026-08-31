@@ -144,11 +144,12 @@ export default function LesenExerciseDetail({ params }: { params: { id: string }
                   {q.id}. {q.question}
                 </p>
 
-                <div className="space-y-2">
+                <div className={exercise.questionType === "matching" ? "flex flex-wrap gap-2" : "space-y-2"}>
                   {q.options.map((opt) => {
                     const optKey = opt;
                     const isSelected = selectedAnswers[q.id] === optKey;
                     const isCorrectOpt = q.correct === optKey;
+                    const isMatching = exercise.questionType === "matching";
 
                     let style = "bg-white border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/50 hover:shadow-md hover:-translate-y-[1px] text-slate-700";
                     let circleStyle = "border-slate-300 bg-white group-hover:border-indigo-400";
@@ -168,6 +169,19 @@ export default function LesenExerciseDetail({ params }: { params: { id: string }
                         style = "bg-slate-50 border-slate-200 text-slate-400 opacity-60";
                         circleStyle = "border-slate-200 bg-slate-50";
                       }
+                    }
+
+                    if (isMatching) {
+                      return (
+                        <button
+                          key={optKey}
+                          onClick={() => handleSelectOption(q.id, optKey)}
+                          disabled={isSubmitted}
+                          className={`flex-1 min-w-[40px] max-w-[60px] h-12 rounded-xl border-2 text-[16px] font-bold transition-all duration-200 ease-out active:scale-[0.95] flex items-center justify-center ${style}`}
+                        >
+                          {opt}
+                        </button>
+                      );
                     }
 
                     return (

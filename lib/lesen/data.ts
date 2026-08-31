@@ -1,8 +1,10 @@
 import { LESEN_EXERCISES_T1 } from "./data_t1";
 import { LESEN_EXERCISES_T2 } from "./data_t2";
 import { LESEN_EXERCISES_T3 } from "./data_t3";
+import { LESEN_EXERCISES_T4 } from "./data_t4";
+import { LESEN_EXERCISES_T5 } from "./data_t5";
 
-export type QuestionType = "multiple_choice" | "true_false" | "ja_nein";
+export type QuestionType = "multiple_choice" | "true_false" | "ja_nein" | "matching";
 
 export interface Question {
   id: number;
@@ -154,83 +156,7 @@ Grüße, Tobias`,
       { id: 5, question: "Was wollen sie in München machen?", options: ["A) Ein Museum besuchen.", "B) Auf den Weihnachtsmarkt gehen.", "C) Verwandte treffen."], correct: "B) Auf den Weihnachtsmarkt gehen.", explanation: "Sie wollen unbedingt den Weihnachtsmarkt besuchen." },
       { id: 6, question: "Warum soll Stefan warme Kleidung einpacken?", options: ["A) Weil es im Hotel kalt ist.", "B) Weil es schneien soll.", "C) Weil die Heizung im Zug kaputt ist."], correct: "B) Weil es schneien soll.", explanation: "Tobias schreibt: 'es soll schneien!'." }
     ]
-  },
-
-  // --- LOẠI 3: CÓ / KHÔNG (Ja / Nein) ---
-  {
-    id: "lesen-jn-1",
-    title: "Teil 3: Umweltschutz im Büro",
-    level: "B1",
-    topic: "Umwelt & Arbeit",
-    duration: "15 Phút",
-    type: "Có / Không",
-    questionType: "ja_nein",
-    readingText: `Wichtige Informationen für alle Mitarbeiter zum Thema "Grünes Büro":
-Um unsere Umwelt zu schonen, möchten wir ab sofort einige Dinge in unserem Büroalltag ändern.
-1. Bitte drucken Sie Dokumente nur aus, wenn es wirklich notwendig ist. Benutzen Sie immer beide Seiten des Papiers (Doppelseitendruck).
-2. Schalten Sie Ihre Computer und Monitore nach der Arbeit vollständig aus. Der Standby-Modus verbraucht zu viel Strom.
-3. Wir haben in der Küche neue Mülleimer aufgestellt. Bitte trennen Sie Plastik, Papier und Restmüll.
-4. Wir stellen ab nächster Woche kostenloses Leitungswasser in Glasflaschen zur Verfügung. Bitte bringen Sie keine Plastikflaschen mehr mit.
-Wir danken für Ihre Mithilfe!`,
-    questions: [
-      { id: 1, question: "Dürfen die Mitarbeiter gar nichts mehr ausdrucken?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie dürfen ausdrucken, wenn es wirklich notwendig ist." },
-      { id: 2, question: "Soll das Papier auf beiden Seiten bedruckt werden?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Im Text steht: 'Benutzen Sie immer beide Seiten des Papiers'." },
-      { id: 3, question: "Ist der Standby-Modus nach der Arbeit erlaubt?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Nein, sie sollen die Computer vollständig ausschalten." },
-      { id: 4, question: "Muss der Müll in der Küche getrennt werden?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie sollen Plastik, Papier und Restmüll trennen." },
-      { id: 5, question: "Gibt es bald kostenloses Wasser für die Mitarbeiter?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Ab nächster Woche wird kostenloses Leitungswasser zur Verfügung gestellt." },
-      { id: 6, question: "Gibt es das Wasser in Plastikflaschen?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Das Wasser wird in Glasflaschen zur Verfügung gestellt." },
-      { id: 7, question: "Sind die Regeln ab sofort gültig?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Im Text steht: 'möchten wir ab sofort einige Dinge... ändern'." }
-    ]
-  },
-  {
-    id: "lesen-jn-2",
-    title: "Teil 3: Fitnessstudio Regeln",
-    level: "B1",
-    topic: "Sport & Gesundheit",
-    duration: "15 Phút",
-    type: "Có / Không",
-    questionType: "ja_nein",
-    readingText: `Liebe Mitglieder von "Fit & Gesund",
-bitte beachten Sie unsere neuen Hausregeln, die ab dem 1. März gelten:
-- Das Betreten der Trainingsfläche ist nur mit sauberen Sportschuhen erlaubt. Straßenschuhe sind verboten.
-- Bitte legen Sie beim Training immer ein Handtuch auf die Geräte, um Schweiß zu vermeiden.
-- Nach dem Gebrauch müssen die Gewichte wieder an ihren Platz geräumt werden.
-- Das Telefonieren auf der Trainingsfläche ist nicht gestattet. Wenn Sie telefonieren müssen, gehen Sie bitte in die Umkleidekabine oder in den Eingangsbereich.
-- Das Fitnessstudio schließt unter der Woche um 23 Uhr. Am Wochenende schließen wir bereits um 20 Uhr.`,
-    questions: [
-      { id: 1, question: "Darf man mit Schuhen trainieren, die man auf der Straße trägt?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Straßenschuhe sind verboten." },
-      { id: 2, question: "Braucht man ein Handtuch für die Geräte?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Man soll immer ein Handtuch auf die Geräte legen." },
-      { id: 3, question: "Räumt das Personal die Gewichte auf?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Nach dem Gebrauch müssen die Mitglieder die Gewichte selbst an ihren Platz räumen." },
-      { id: 4, question: "Darf man während des Trainings telefonieren?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Das Telefonieren auf der Trainingsfläche ist nicht gestattet." },
-      { id: 5, question: "Darf man in der Umkleidekabine telefonieren?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Zum Telefonieren soll man in die Umkleidekabine oder den Eingangsbereich gehen." },
-      { id: 6, question: "Kann man am Mittwoch um 22:30 Uhr noch trainieren?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Unter der Woche schließt das Studio erst um 23 Uhr." },
-      { id: 7, question: "Ist das Studio am Sonntag bis 23 Uhr geöffnet?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Am Wochenende schließt das Studio bereits um 20 Uhr." }
-    ]
-  },
-  {
-    id: "lesen-jn-3",
-    title: "Teil 3: Hausordnung für Studentenwohnheim",
-    level: "B1",
-    topic: "Wohnen & Regeln",
-    duration: "15 Phút",
-    type: "Có / Không",
-    questionType: "ja_nein",
-    readingText: `Hausordnung für alle Bewohner:
-1. Ruhezeiten: Von 22:00 Uhr bis 07:00 Uhr sowie sonntags ganztägig ist Lärm zu vermeiden. Musik darf nur in Zimmerlautstärke gehört werden.
-2. Gemeinschaftsküche: Jeder Bewohner muss sein eigenes Geschirr nach dem Essen sofort abwaschen. Der Herd ist nach Benutzung zu reinigen.
-3. Müll: Bitte bringen Sie Ihren Müll regelmäßig in die Container im Hof. Es ist verboten, Müllbeutel im Flur abzustellen.
-4. Haustiere: Das Halten von Hunden und Katzen ist in den Zimmern strikt verboten. Kleine Tiere (wie Fische) sind nach Absprache erlaubt.
-5. Fahrräder: Fahrräder dürfen nicht im Hausflur stehen. Bitte nutzen Sie den Fahrradkeller.`,
-    questions: [
-      { id: 1, question: "Darf man am Sonntagabend laut Musik hören?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sonntags ist ganztägig Lärm zu vermeiden." },
-      { id: 2, question: "Wird das Geschirr von einer Putzfrau abgewaschen?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Jeder Bewohner muss sein eigenes Geschirr sofort abwaschen." },
-      { id: 3, question: "Darf man Müllbeutel kurz im Flur abstellen?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Es ist verboten, Müllbeutel im Flur abzustellen." },
-      { id: 4, question: "Stehen die Müllcontainer im Gebäude?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Die Container befinden sich im Hof (also draußen)." },
-      { id: 5, question: "Sind Hunde im Wohnheim erlaubt?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Das Halten von Hunden und Katzen ist strikt verboten." },
-      { id: 6, question: "Sind Fische im Aquarium erlaubt?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Kleine Tiere wie Fische sind nach Absprache erlaubt." },
-      { id: 7, question: "Dürfen Fahrräder im Flur parken?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Fahrräder dürfen nicht im Hausflur stehen, sondern im Fahrradkeller." }
-    ]
   }
 ];
 
-LESEN_EXERCISES.push(...LESEN_EXERCISES_T1, ...LESEN_EXERCISES_T2, ...LESEN_EXERCISES_T3);
+LESEN_EXERCISES.push(...LESEN_EXERCISES_T1, ...LESEN_EXERCISES_T2, ...LESEN_EXERCISES_T3, ...LESEN_EXERCISES_T4, ...LESEN_EXERCISES_T5);
