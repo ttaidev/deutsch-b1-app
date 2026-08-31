@@ -3,42 +3,50 @@ import { ReadingExercise } from "./data";
 export const LESEN_EXERCISES_T5: ReadingExercise[] = [
   {
     id: "lesen-ru-1",
-    title: "Teil 5: Informationen für Hotelgäste",
+    title: "Teil 5: Hausordnung im Kurhotel",
     level: "B1",
     topic: "Urlaub & Reisen",
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Herzlich willkommen im Hotel "Seeblick"!
-Bitte beachten Sie die folgenden Informationen für einen angenehmen Aufenthalt:
-Das Frühstücksbuffet ist täglich von 07:00 bis 10:00 Uhr im Speisesaal im Erdgeschoss für Sie geöffnet. Wenn Sie vor 07:00 Uhr abreisen müssen, bereiten wir Ihnen gerne ein Lunchpaket vor. Bitte geben Sie in diesem Fall am Vorabend bis spätestens 20:00 Uhr an der Rezeption Bescheid.
-Die Nutzung unseres Wellnessbereichs (Sauna und Schwimmbad) ist im Zimmerpreis enthalten. Handtücher finden Sie auf Ihrem Zimmer. Bitte bringen Sie diese nach der Nutzung nicht wieder mit aufs Zimmer, sondern werfen Sie sie in die weißen Körbe am Ausgang des Wellnessbereichs. Der Bereich ist von 08:00 bis 22:00 Uhr geöffnet.
-Am Abreisetag bitten wir Sie, das Zimmer bis spätestens 11:00 Uhr freizugeben. Eine spätere Abreise (Late Check-out) ist auf Anfrage und gegen eine Gebühr von 20 Euro möglich. Bitte klären Sie dies einen Tag im Voraus mit der Rezeption.`,
+    readingText: `Hausordnung und Gästehinweise für das Kurhotel "Alpenblick"
+
+Sehr geehrte Gäste, wir heißen Sie in unserem Haus herzlich willkommen. Um allen Gästen einen erholsamen Aufenthalt zu garantieren, bitten wir um zwingende Beachtung der folgenden Richtlinien:
+
+1. Verpflegung: Das reichhaltige Frühstücksbuffet wird täglich von 07:00 bis 10:30 Uhr im großen Speisesaal serviert. Sollten Sie aufgrund einer frühen Abreise oder eines gebuchten Ausflugs vor 07:00 Uhr frühstücken wollen, bereiten wir Ihnen gerne ein umfangreiches Lunchpaket vor. Dies muss jedoch zwingend am Vorabend bis spätestens 19:00 Uhr an der Hauptrezeption angemeldet werden. Eine spätere Anmeldung kann aus organisatorischen Gründen leider nicht mehr berücksichtigt werden.
+
+2. Wellnessbereich: Die Nutzung der Saunalandschaft und des Hallenbads ist für alle Hotelgäste im regulären Zimmerpreis inkludiert. Spezielle Spa-Behandlungen wie Massagen müssen jedoch separat gebucht und bezahlt werden. Bademäntel und Handtücher finden Sie bei Ihrer Anreise in Ihrem Kleiderschrank. Bitte werfen Sie die benutzten Handtücher nach dem Besuch nicht auf den Boden im Zimmer, sondern ausschließlich in die dafür vorgesehenen weißen Auffangkörbe am Ausgang des Wellnessbereichs.
+
+3. Abreise: Am Tag Ihrer Abreise ist das Zimmer bis spätestens 10:30 Uhr vollständig zu räumen und die Zimmerkarte abzugeben. Ein sogenannter "Late Check-out" (Verlängerung bis 15:00 Uhr) ist nur bei geringer Auslastung des Hotels und nach vorheriger Absprache mit dem Management möglich. Hierfür wird eine Pauschalgebühr in Höhe von 35 Euro fällig.`,
     questions: [
-      { id: 1, question: "Was muss man tun, wenn man ganz früh am Morgen abreist?", options: ["A) Man muss am Morgen an der Rezeption anrufen.", "B) Man kann am Abend vorher ein Essenspaket bestellen.", "C) Man darf im Zimmer frühstücken."], correct: "B) Man kann am Abend vorher ein Essenspaket bestellen.", explanation: "Wenn Sie vor 07:00 Uhr abreisen... bereiten wir Ihnen gerne ein Lunchpaket vor. Bitte geben Sie... am Vorabend Bescheid." },
-      { id: 2, question: "Was kostet die Benutzung des Schwimmbads?", options: ["A) Nichts, es ist kostenlos.", "B) 20 Euro.", "C) Man muss für die Handtücher bezahlen."], correct: "A) Nichts, es ist kostenlos.", explanation: "Die Nutzung unseres Wellnessbereichs... ist im Zimmerpreis enthalten (kostenlos)." },
-      { id: 3, question: "Was sollen die Gäste mit den nassen Handtüchern machen?", options: ["A) Sie sollen sie im Zimmer trocknen.", "B) Sie sollen sie der Rezeption geben.", "C) Sie sollen sie in Körbe im Wellnessbereich werfen."], correct: "C) Sie sollen sie in Körbe im Wellnessbereich werfen.", explanation: "...werfen Sie sie in die weißen Körbe am Ausgang des Wellnessbereichs." },
-      { id: 4, question: "Unter welcher Bedingung kann man länger im Zimmer bleiben?", options: ["A) Wenn man extra bezahlt und vorher fragt.", "B) Wenn man krank ist.", "C) Es ist nicht möglich, man muss um 11 Uhr gehen."], correct: "A) Wenn man extra bezahlt und vorher fragt.", explanation: "Eine spätere Abreise... ist auf Anfrage (vorher fragen) und gegen eine Gebühr von 20 Euro (extra bezahlen) möglich." }
+      { id: 1, question: "Was muss ein Gast tun, wenn er sein Frühstück mitnehmen möchte?", options: ["A) Er muss sich am Morgen direkt an das Küchenpersonal wenden.", "B) Er muss dies am Abend vorher bis 19:00 Uhr an der Rezeption anmelden.", "C) Er darf einfach etwas vom Buffet in eine Tüte packen."], correct: "B) Er muss dies am Abend vorher bis 19:00 Uhr an der Rezeption anmelden.", explanation: "Dies muss jedoch zwingend am Vorabend bis spätestens 19:00 Uhr an der Hauptrezeption angemeldet werden." },
+      { id: 2, question: "Welche Dienstleistung im Wellnessbereich kostet extra Geld?", options: ["A) Das Schwimmen im Hallenbad.", "B) Die Benutzung der Sauna.", "C) Spezielle Spa-Behandlungen wie Massagen."], correct: "C) Spezielle Spa-Behandlungen wie Massagen.", explanation: "Spezielle Spa-Behandlungen wie Massagen müssen jedoch separat gebucht und bezahlt werden." },
+      { id: 3, question: "Wohin sollen die Gäste die nassen Handtücher bringen?", options: ["A) Sie sollen sie auf den Boden im Zimmer werfen.", "B) Sie sollen sie in weiße Körbe beim Wellnessbereich legen.", "C) Sie sollen sie dem Zimmermädchen persönlich geben."], correct: "B) Sie sollen sie in weiße Körbe beim Wellnessbereich legen.", explanation: "...sondern ausschließlich in die dafür vorgesehenen weißen Auffangkörbe am Ausgang des Wellnessbereichs." },
+      { id: 4, question: "Unter welcher Bedingung kann man sein Zimmer am Abreisetag länger behalten?", options: ["A) Wenn man extra bezahlt und es vorher mit dem Management klärt.", "B) Wenn man krank ist und eine Bestätigung vom Arzt hat.", "C) Das ist in diesem Hotel grundsätzlich niemals erlaubt."], correct: "A) Wenn man extra bezahlt und es vorher mit dem Management klärt.", explanation: "Ein... 'Late Check-out'... ist nur... nach vorheriger Absprache... möglich. Hierfür wird eine Pauschalgebühr... fällig." }
     ]
   },
   {
     id: "lesen-ru-2",
-    title: "Teil 5: Anmeldung zum Stadtlauf",
+    title: "Teil 5: Teilnahmebedingungen Stadtmarathon",
     level: "B1",
     topic: "Sport & Freizeit",
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Informationen zum 10. Münchener Stadtlauf
-Der diesjährige Stadtlauf findet am Sonntag, den 15. September statt. Es gibt Strecken über 5 km und 10 km sowie einen Kinderlauf über 1 km.
-Anmeldung: Die Anmeldung ist nur online über unsere Webseite bis zum 1. September möglich. Eine Anmeldung am Tag des Laufes ist nicht mehr möglich. Die Teilnahmegebühr beträgt 25 Euro für Erwachsene und 10 Euro für Kinder. Im Preis inbegriffen ist ein T-Shirt, das Sie bei der Abholung Ihrer Startnummer erhalten.
-Startnummern: Bitte holen Sie Ihre Startnummer am Samstag vor dem Lauf zwischen 10:00 und 18:00 Uhr im Rathaus ab. Vergessen Sie nicht, Ihren Personalausweis mitzubringen.
-Sicherheit: Während des Laufes sind die Straßen für den Autoverkehr gesperrt. Begleitpersonen dürfen die Strecke nicht mit Fahrrädern befahren. Sanitäter befinden sich alle 2 km am Streckenrand.`,
+    readingText: `Offizielle Teilnahmebedingungen für den 15. Münchener Stadtmarathon
+
+Wir freuen uns über Ihr Interesse an unserem jährlichen Sportevent. Um einen reibungslosen und sicheren Ablauf für die über 10.000 erwarteten Läufer zu gewährleisten, gelten folgende verbindliche Bestimmungen:
+
+Anmeldung und Gebühren: Die Registrierung für alle angebotenen Distanzen (5 km, 10 km und Halbmarathon) kann ausschließlich über unser gesichertes Online-Portal erfolgen. Anmeldeschluss ist der 1. September um 23:59 Uhr. Eine Nachmeldung am Tag des Laufes ist aus versicherungstechnischen Gründen strikt ausgeschlossen. Die reguläre Teilnahmegebühr beträgt 45 Euro für Erwachsene und 20 Euro für Minderjährige. In dieser Gebühr sind die Zeitmessung, die medizinische Versorgung auf der Strecke und das offizielle Teilnehmershirt inkludiert. Das Shirt wird zusammen mit den Startnummern ausgegeben.
+
+Abholung der Startunterlagen: Bitte holen Sie Ihre Startnummer zwingend am Samstag, dem Tag vor dem Lauf, zwischen 09:00 und 19:00 Uhr in der Haupthalle des Rathauses ab. Eine Abholung durch Dritte ist nur mit einer unterschriebenen Vollmacht und einer Ausweiskopie möglich.
+
+Sicherheitsrichtlinien: Während der gesamten Veranstaltung sind die Straßen der Innenstadt für jeglichen motorisierten Verkehr komplett gesperrt. Wir weisen ausdrücklich darauf hin, dass Begleitpersonen (Freunde, Familie) die Strecke auf keinen Fall mit Fahrrädern oder E-Scootern befahren dürfen, da dies eine enorme Verletzungsgefahr für die Läufer darstellt. Zuwiderhandlungen führen zur sofortigen Disqualifikation des begleiteten Läufers.`,
     questions: [
-      { id: 1, question: "Wie kann man sich für den Lauf anmelden?", options: ["A) Man kann sich nur im Internet anmelden.", "B) Man kann sich am Sonntag anmelden.", "C) Man muss ins Rathaus gehen."], correct: "A) Man kann sich nur im Internet anmelden.", explanation: "Die Anmeldung ist nur online über unsere Webseite... möglich." },
-      { id: 2, question: "Was bekommen alle Teilnehmer für ihr Geld?", options: ["A) Einen Gutschein für Sportkleidung.", "B) Ein T-Shirt.", "C) Eine Medaille."], correct: "B) Ein T-Shirt.", explanation: "Im Preis inbegriffen ist ein T-Shirt." },
-      { id: 3, question: "Wann und wo bekommt man seine Startnummer?", options: ["A) Am Sonntag vor dem Lauf.", "B) Am Samstag im Rathaus.", "C) Am Samstag im Internet."], correct: "B) Am Samstag im Rathaus.", explanation: "Bitte holen Sie Ihre Startnummer am Samstag... im Rathaus ab." },
-      { id: 4, question: "Welche Regel gilt für Familienmitglieder oder Freunde, die zuschauen?", options: ["A) Sie dürfen nicht mit dem Fahrrad auf der Laufstrecke fahren.", "B) Sie müssen auch 10 Euro bezahlen.", "C) Sie dürfen nicht mit dem Auto in die Stadt fahren."], correct: "A) Sie dürfen nicht mit dem Fahrrad auf der Laufstrecke fahren.", explanation: "Begleitpersonen dürfen die Strecke nicht mit Fahrrädern befahren." }
+      { id: 1, question: "Wie kann man sich für den Marathon registrieren?", options: ["A) Man muss am Tag des Laufes frühzeitig vor Ort sein.", "B) Man kann sich ausschließlich über das Internet anmelden.", "C) Man kann ein Formular im Rathaus ausfüllen."], correct: "B) Man kann sich ausschließlich über das Internet anmelden.", explanation: "Die Registrierung... kann ausschließlich über unser gesichertes Online-Portal erfolgen." },
+      { id: 2, question: "Was bekommen alle bezahlenden Teilnehmer unter anderem?", options: ["A) Ein Paar neue Laufschuhe von einem Sponsor.", "B) Ein offizielles Teilnehmershirt.", "C) Eine kostenlose Mahlzeit nach dem Lauf."], correct: "B) Ein offizielles Teilnehmershirt.", explanation: "In dieser Gebühr sind die Zeitmessung, die medizinische Versorgung auf der Strecke und das offizielle Teilnehmershirt inkludiert." },
+      { id: 3, question: "Was wird benötigt, wenn ein Freund die Startnummer für jemanden abholt?", options: ["A) Das ist nicht erlaubt, jeder muss selbst kommen.", "B) Ein Anruf des Läufers beim Veranstalter.", "C) Eine unterschriebene Vollmacht und eine Kopie des Ausweises."], correct: "C) Eine unterschriebene Vollmacht und eine Kopie des Ausweises.", explanation: "Eine Abholung durch Dritte ist nur mit einer unterschriebenen Vollmacht und einer Ausweiskopie möglich." },
+      { id: 4, question: "Welche strikte Regel gilt für Zuschauer und Freunde an der Strecke?", options: ["A) Sie dürfen nicht mit Fahrrädern auf der Strecke fahren.", "B) Sie müssen eine Gebühr von 20 Euro bezahlen.", "C) Sie dürfen keine Fotos von den Läufern machen."], correct: "A) Sie dürfen nicht mit Fahrrädern auf der Strecke fahren.", explanation: "...dass Begleitpersonen... die Strecke auf keinen Fall mit Fahrrädern... befahren dürfen." }
     ]
   },
   {
@@ -49,33 +57,42 @@ Sicherheit: Während des Laufes sind die Straßen für den Autoverkehr gesperrt.
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Hinweise zur Nutzung der Stadtbibliothek:
-Die Ausleihe von Büchern, CDs und DVDs ist für alle Bürger mit einem gültigen Bibliotheksausweis kostenlos. Die Leihfrist beträgt für Bücher 4 Wochen, für DVDs und CDs 2 Wochen. Wenn Sie Medien länger behalten möchten, können Sie die Frist online oder telefonisch um weitere 2 Wochen verlängern, sofern das Medium nicht von einem anderen Leser vorgemerkt wurde.
-Bei Überschreitung der Leihfrist fallen Mahngebühren an: 1,50 Euro pro Buch und Woche. In den Lesesälen ist das Essen und Telefonieren strengstens verboten. Getränke dürfen nur in verschließbaren Flaschen mitgebracht werden. Jacken und große Taschen müssen vor dem Betreten in die Schließfächer im Eingangsbereich eingeschlossen werden.`,
+    readingText: `Nutzungs- und Gebührenordnung der Zentralbibliothek:
+
+1. Ausleihe und Fristen: Die Ausleihe von Büchern, wissenschaftlichen Zeitschriften und audiovisuellen Medien (CDs, DVDs) ist für alle registrierten Bürger mit einem gültigen Bibliotheksausweis grundsätzlich kostenlos. Die reguläre Leihfrist beträgt für gedruckte Bücher exakt 4 Wochen, für alle audiovisuellen Medien jedoch nur 2 Wochen. Sollten Sie die Medien für Ihr Studium länger benötigen, können Sie die Frist online über Ihr Benutzerkonto um weitere 14 Tage verlängern. Dies ist jedoch strengstens untersagt, falls das entsprechende Medium in der Zwischenzeit von einem anderen Nutzer verbindlich reserviert (vorgemerkt) wurde.
+
+2. Gebühren bei Verspätung: Bitte achten Sie penibel auf das Rückgabedatum. Bei einer Überschreitung der Leihfrist fallen automatisch und ohne vorherige schriftliche Warnung Mahngebühren an: Diese belaufen sich auf 2,00 Euro pro Buch und angefangener Woche. Bei DVDs sind die Strafgebühren mit 3,00 Euro pro Woche deutlich höher.
+
+3. Verhalten in den Lesesälen: Um eine ruhige Arbeitsatmosphäre zu garantieren, ist das Führen von Telefonaten sowie der Konsum von geruchsintensiven Speisen in den Lesesälen absolut verboten. Ausnahmen gelten lediglich für Getränke, sofern diese in fest verschließbaren Behältern (z.B. Thermoskannen oder Trinkflaschen) transportiert werden. Mäntel, Jacken und Taschen, die größer als das DIN-A4-Format sind, dürfen nicht mit an die Arbeitsplätze genommen werden und müssen zwingend in den elektronischen Schließfächern im Foyer deponiert werden.`,
     questions: [
-      { id: 1, question: "Wie lange darf man DVDs normalerweise behalten?", options: ["A) 4 Wochen.", "B) 2 Wochen.", "C) So lange man will."], correct: "B) 2 Wochen.", explanation: "Die Leihfrist beträgt für Bücher 4 Wochen, für DVDs und CDs 2 Wochen." },
-      { id: 2, question: "Wann ist eine Verlängerung NICHT möglich?", options: ["A) Wenn man telefonisch anruft.", "B) Wenn jemand anderes das Buch reserviert (vorgemerkt) hat.", "C) Wenn man keinen Ausweis hat."], correct: "B) Wenn jemand anderes das Buch reserviert (vorgemerkt) hat.", explanation: "...sofern das Medium nicht von einem anderen Leser vorgemerkt wurde." },
-      { id: 3, question: "Was kostet es, wenn man ein Buch zu spät zurückgibt?", options: ["A) Es ist kostenlos.", "B) 1,50 Euro pro Tag.", "C) 1,50 Euro pro Woche und Buch."], correct: "C) 1,50 Euro pro Woche und Buch.", explanation: "Bei Überschreitung der Leihfrist fallen Mahngebühren an: 1,50 Euro pro Buch und Woche." },
-      { id: 4, question: "Was darf man in den Lesesaal mitnehmen?", options: ["A) Einen Apfel.", "B) Eine Wasserflasche, die man zumachen kann.", "C) Eine große Sporttasche."], correct: "B) Eine Wasserflasche, die man zumachen kann.", explanation: "Getränke dürfen nur in verschließbaren Flaschen mitgebracht werden." }
+      { id: 1, question: "Wie lange darf man DVDs und CDs ausleihen, bevor man sie verlängert?", options: ["A) Genau 4 Wochen.", "B) Nur 2 Wochen.", "C) So lange, wie man sie zum Lernen braucht."], correct: "B) Nur 2 Wochen.", explanation: "Die reguläre Leihfrist beträgt für gedruckte Bücher exakt 4 Wochen, für alle audiovisuellen Medien (CDs, DVDs) jedoch nur 2 Wochen." },
+      { id: 2, question: "Unter welcher Bedingung ist eine Fristverlängerung online nicht erlaubt?", options: ["A) Wenn man die Medien schon seit einem Jahr hat.", "B) Wenn ein anderer Leser das Buch oder die DVD bereits reserviert hat.", "C) Wenn man keine E-Mail-Adresse im System hinterlegt hat."], correct: "B) Wenn ein anderer Leser das Buch oder die DVD bereits reserviert hat.", explanation: "Dies ist jedoch strengstens untersagt, falls das entsprechende Medium... von einem anderen Nutzer verbindlich reserviert (vorgemerkt) wurde." },
+      { id: 3, question: "Was passiert, wenn man ein normales Buch eine Woche zu spät zurückgibt?", options: ["A) Man bekommt zuerst einen Warnbrief ohne Gebühren.", "B) Man muss eine Strafe von 3,00 Euro zahlen.", "C) Man muss eine automatische Mahngebühr von 2,00 Euro zahlen."], correct: "C) Man muss eine automatische Mahngebühr von 2,00 Euro zahlen.", explanation: "...fallen automatisch und ohne vorherige schriftliche Warnung Mahngebühren an: Diese belaufen sich auf 2,00 Euro pro Buch und angefangener Woche." },
+      { id: 4, question: "Welche Regel gilt für das Mitbringen von Getränken in den Lesesaal?", options: ["A) Getränke sind strengstens verboten.", "B) Man darf sie nur in Flaschen mitbringen, die man fest verschließen kann.", "C) Man darf nur Wasser mitbringen, keinen Kaffee."], correct: "B) Man darf sie nur in Flaschen mitbringen, die man fest verschließen kann.", explanation: "Ausnahmen gelten lediglich für Getränke, sofern diese in fest verschließbaren Behältern... transportiert werden." }
     ]
   },
   {
     id: "lesen-ru-4",
-    title: "Teil 5: Regeln im Studentenwohnheim",
+    title: "Teil 5: Hausordnung im Studentenwohnheim",
     level: "B1",
     topic: "Wohnen & Leben",
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Hausordnung des Studentenwohnheims "Campus Mitte":
-Wir bitten alle Bewohner um gegenseitige Rücksichtnahme. Die gesetzlichen Ruhezeiten zwischen 22:00 und 07:00 Uhr sowie sonntags ganztägig sind strikt einzuhalten. In dieser Zeit darf Musik nur auf Zimmerlautstärke gehört werden.
-Die Gemeinschaftsküchen sind nach jeder Benutzung selbstständig zu reinigen. Schmutziges Geschirr darf nicht auf den Tischen stehen gelassen werden. Der Müll ist regelmäßig in die Container im Innenhof zu bringen – bitte achten Sie auf die Mülltrennung (Papier, Plastik, Restmüll).
-Fahrräder dürfen aus Brandschutzgründen nicht in den Fluren oder im Treppenhaus abgestellt werden. Bitte nutzen Sie dafür den überdachten Fahrradständer vor dem Haus. Haustiere sind im gesamten Gebäude nicht gestattet.`,
+    readingText: `Zentrale Hausordnung des Studentenwohnheims "Campus Süd":
+
+Um ein harmonisches und konfliktfreies Zusammenleben von über 200 Studierenden aus verschiedenen Kulturen zu gewährleisten, ist die strikte Einhaltung der folgenden Hausordnung vertraglich vorgeschrieben:
+
+1. Lärmschutz und Ruhezeiten: Das Wohnheim ist kein Partyraum. Die gesetzlichen Ruhezeiten zwischen 22:00 und 07:00 Uhr, sowie an Sonn- und Feiertagen ganztägig, sind von allen Bewohnern kompromisslos einzuhalten. Während dieser Stunden dürfen Musik und Fernseher ausschließlich auf Zimmerlautstärke betrieben werden. Bei wiederholten massiven Ruhestörungen behält sich die Heimleitung vor, den Mietvertrag fristlos zu kündigen.
+
+2. Nutzung der Gemeinschaftsküchen: Die Küchen auf den jeweiligen Stockwerken sind Eigentum der Universität. Jeder Bewohner ist verpflichtet, Herd, Spüle und Arbeitsflächen nach jeder Benutzung selbstständig und gründlich zu reinigen. Schmutziges Geschirr darf unter keinen Umständen über Nacht auf den Tischen stehen gelassen werden. Eine beauftragte Reinigungsfirma putzt lediglich einmal wöchentlich die Fußböden. 
+
+3. Sicherheit und Brandschutz: Aus brandschutzrechtlichen Gründen ist das Abstellen von Fahrrädern, E-Scootern oder Möbeln in den Fluren und im gesamten Treppenhaus strengstens verboten. Diese Fluchtwege müssen immer frei bleiben. Bitte nutzen Sie für Ihre Fahrräder den beleuchteten, überdachten Fahrradständer direkt vor dem Haupteingang. Das Halten von Haustieren (mit Ausnahme von kleinen Fischen in Aquarien) ist im gesamten Gebäude aus hygienischen Gründen untersagt.`,
     questions: [
-      { id: 1, question: "Wann muss es im Wohnheim ruhig sein?", options: ["A) Nur am Sonntag.", "B) Nachts und am ganzen Sonntag.", "C) Jeden Tag von 22 bis 7 Uhr, außer am Wochenende."], correct: "B) Nachts und am ganzen Sonntag.", explanation: "Ruhezeiten zwischen 22:00 und 07:00 Uhr sowie sonntags ganztägig." },
-      { id: 2, question: "Wer putzt die Küche?", options: ["A) Eine Putzfrau am Wochenende.", "B) Die Studenten nach dem Kochen.", "C) Der Hausmeister."], correct: "B) Die Studenten nach dem Kochen.", explanation: "Die Gemeinschaftsküchen sind nach jeder Benutzung selbstständig zu reinigen." },
-      { id: 3, question: "Wo müssen die Fahrräder parken?", options: ["A) Im Treppenhaus.", "B) Im Innenhof bei den Müllcontainern.", "C) Vor dem Gebäude unter einem Dach."], correct: "C) Vor dem Gebäude unter einem Dach.", explanation: "Bitte nutzen Sie dafür den überdachten Fahrradständer vor dem Haus." },
-      { id: 4, question: "Darf man eine Katze im Zimmer halten?", options: ["A) Ja, wenn sie leise ist.", "B) Nein, Tiere sind verboten.", "C) Nur mit Erlaubnis des Hausmeisters."], correct: "B) Nein, Tiere sind verboten.", explanation: "Haustiere sind im gesamten Gebäude nicht gestattet." }
+      { id: 1, question: "Wann müssen die Studierenden im Wohnheim besonders leise sein?", options: ["A) Nur am Wochenende und in der Prüfungszeit.", "B) Täglich von 22 bis 7 Uhr und an Sonn- und Feiertagen den ganzen Tag.", "C) Jeden Tag von 22 bis 7 Uhr, außer am Samstag."], correct: "B) Täglich von 22 bis 7 Uhr und an Sonn- und Feiertagen den ganzen Tag.", explanation: "Die gesetzlichen Ruhezeiten zwischen 22:00 und 07:00 Uhr, sowie an Sonn- und Feiertagen ganztägig, sind... kompromisslos einzuhalten." },
+      { id: 2, question: "Wer ist hauptsächlich für die Sauberkeit der Küchen zuständig?", options: ["A) Eine Reinigungsfirma putzt jeden Abend alles sauber.", "B) Die Studierenden müssen nach dem Kochen selbst putzen.", "C) Der Hausmeister kontrolliert und putzt die Küche."], correct: "B) Die Studierenden müssen nach dem Kochen selbst putzen.", explanation: "Jeder Bewohner ist verpflichtet, Herd, Spüle und Arbeitsflächen nach jeder Benutzung selbstständig und gründlich zu reinigen." },
+      { id: 3, question: "Wo müssen die Fahrräder der Studenten geparkt werden?", options: ["A) In den Fluren vor den Zimmern.", "B) Vor dem Haupteingang in einem speziellen Fahrradständer.", "C) Im Treppenhaus, wenn es regnet."], correct: "B) Vor dem Haupteingang in einem speziellen Fahrradständer.", explanation: "Bitte nutzen Sie für Ihre Fahrräder den beleuchteten, überdachten Fahrradständer direkt vor dem Haupteingang." },
+      { id: 4, question: "Welche Haustiere sind in den Zimmern ausnahmsweise erlaubt?", options: ["A) Keine, alle Tiere sind absolut verboten.", "B) Nur kleine Hunde oder Katzen, die nicht bellen.", "C) Nur kleine Fische in einem Aquarium."], correct: "C) Nur kleine Fische in einem Aquarium.", explanation: "Das Halten von Haustieren (mit Ausnahme von kleinen Fischen in Aquarien) ist... untersagt." }
     ]
   },
   {
@@ -86,18 +103,20 @@ Fahrräder dürfen aus Brandschutzgründen nicht in den Fluren oder im Treppenha
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Offizielle Richtlinien der Stadt zur Mülltrennung:
-Um die Umwelt zu schützen und Recycling zu ermöglichen, ist eine strikte Mülltrennung gesetzlich vorgeschrieben. Bitte beachten Sie die korrekte Zuordnung:
-- Papiertonne (Blau): Nur für sauberes Papier, Pappe und Kartons. Achtung: Verschmutzte Papiere (z.B. benutzte Taschentücher oder fettige Pizzakartons) gehören nicht hierher!
-- Wertstofftonne (Gelb): Für alle Verpackungen aus Kunststoff, Metall und Aluminium (z.B. leere Joghurtbecher, Konservendosen, Plastikfolien). 
-- Biotonne (Braun): Ausschließlich für organische Abfälle wie Essensreste, Kaffeefilter und Gartenabfälle. Bitte verwenden Sie keine Plastiktüten zum Sammeln, auch keine sogenannten "kompostierbaren" Bio-Plastiktüten.
-- Restmüll (Schwarz): Für alle nicht recycelbaren Abfälle wie Windeln, Asche oder Staubsaugerbeutel.
-Altglas muss nach Farben sortiert in die öffentlichen Glascontainer (Standorte siehe Webseite) eingeworfen werden.`,
+    readingText: `Offizielle Richtlinien der Stadtverwaltung zur korrekten Mülltrennung:
+
+Um die Umwelt nachhaltig zu schützen und ein effizientes Recycling zu ermöglichen, ist eine strikte und fehlerfreie Mülltrennung in unserer Gemeinde gesetzlich vorgeschrieben. Bei gravierenden Verstößen können Bußgelder verhängt werden. Bitte beachten Sie dringend die folgende Zuordnung für Ihren Hausmüll:
+
+- Papiertonne (Blaue Tonne): Diese Tonne ist ausschließlich für sauberes Papier, Pappe, Zeitungen und Kartonagen vorgesehen. Achtung: Stark verschmutzte Papiere (wie zum Beispiel benutzte Papiertaschentücher, feuchte Küchenrollen oder fettige Pizzakartons) können nicht recycelt werden und gehören unter keinen Umständen hierher!
+- Wertstofftonne (Gelbe Tonne / Gelber Sack): Hier sammeln Sie alle Leichtverpackungen aus Kunststoff, Metall und Aluminium. Dazu zählen leere Joghurtbecher (bitte den Aluminiumdeckel vorher abziehen!), Konservendosen, Shampooflaschen und Plastikfolien. 
+- Biotonne (Braune Tonne): Diese Tonne ist reserviert für alle organischen und kompostierbaren Abfälle wie Obst- und Gemüsereste, Kaffeefilter, Eierschalen und Gartenabfälle. Bitte verwenden Sie zum Sammeln in der Küche keine normalen Plastiktüten. Auch die sogenannten "kompostierbaren" Bio-Plastiktüten aus dem Supermarkt sind in unserer Anlage verboten, da sie nicht schnell genug verrotten. Verwenden Sie Papiertüten oder wickeln Sie den Müll in Zeitungspapier.
+- Restmüll (Schwarze Tonne): Für alle Abfälle, die weder recycelt noch kompostiert werden können. Beispiele: Windeln, Asche, Staubsaugerbeutel oder kaputtes Porzellan.
+Altglas (Flaschen, Marmeladengläser) darf auf keinen Fall in den Hausmüll, sondern muss farblich getrennt (weiß, grün, braun) in die öffentlichen Glascontainer eingeworfen werden.`,
     questions: [
-      { id: 1, question: "Warum gibt es diese Richtlinien?", options: ["A) Um Geld zu sparen.", "B) Um die Umwelt zu schützen und Recycling zu ermöglichen.", "C) Weil die Müllabfuhr streikt."], correct: "B) Um die Umwelt zu schützen und Recycling zu ermöglichen.", explanation: "Um die Umwelt zu schützen und Recycling zu ermöglichen, ist eine strikte Mülltrennung gesetzlich vorgeschrieben." },
-      { id: 2, question: "Wohin kommt ein schmutziger, fettiger Pizzakarton?", options: ["A) In die Blaue Tonne (Papiertonne).", "B) In die Gelbe Tonne.", "C) Nicht in die Papiertonne."], correct: "C) Nicht in die Papiertonne.", explanation: "Verschmutzte Papiere (z.B. ... fettige Pizzakartons) gehören nicht hierher!" },
-      { id: 3, question: "Was ist bei der Biotonne wichtig?", options: ["A) Man darf auch Bio-Plastiktüten benutzen.", "B) Man darf gar keine Plastiktüten benutzen.", "C) Man darf Asche hineinwerfen."], correct: "B) Man darf gar keine Plastiktüten benutzen.", explanation: "Bitte verwenden Sie keine Plastiktüten zum Sammeln, auch keine sogenannten 'kompostierbaren' Bio-Plastiktüten." },
-      { id: 4, question: "Wo kann man leere Flaschen wegwerfen?", options: ["A) In die Schwarze Tonne.", "B) In die Gelbe Tonne.", "C) In spezielle öffentliche Container."], correct: "C) In spezielle öffentliche Container.", explanation: "Altglas muss nach Farben sortiert in die öffentlichen Glascontainer... eingeworfen werden." }
+      { id: 1, question: "Warum wurden diese strengen Richtlinien verfasst?", options: ["A) Um die Bürger finanziell durch Bußgelder zu bestrafen.", "B) Um die Umwelt zu schützen und effizientes Recycling zu ermöglichen.", "C) Weil die Müllabfuhr streikt und keinen Müll mehr abholt."], correct: "B) Um die Umwelt zu schützen und effizientes Recycling zu ermöglichen.", explanation: "Um die Umwelt nachhaltig zu schützen und ein effizientes Recycling zu ermöglichen, ist eine strikte... Mülltrennung... vorgeschrieben." },
+      { id: 2, question: "In welche Tonne gehört ein schmutziger, öliger Pizzakarton?", options: ["A) In die Blaue Tonne (Papiertonne).", "B) In die Braune Tonne (Biotonne).", "C) Er gehört nicht in die Blaue Tonne, da er verschmutzt ist."], correct: "C) Er gehört nicht in die Blaue Tonne, da er verschmutzt ist.", explanation: "Achtung: Stark verschmutzte Papiere (... fettige Pizzakartons)... gehören unter keinen Umständen hierher (in die Papiertonne)!" },
+      { id: 3, question: "Was ist beim Entsorgen von Biomüll besonders wichtig?", options: ["A) Man darf Bio-Plastiktüten aus dem Supermarkt benutzen.", "B) Man darf gar keine Plastiktüten verwenden, auch keine Bio-Plastiktüten.", "C) Man muss den Müll vorher in Alufolie einwickeln."], correct: "B) Man darf gar keine Plastiktüten verwenden, auch keine Bio-Plastiktüten.", explanation: "Auch die sogenannten 'kompostierbaren' Bio-Plastiktüten aus dem Supermarkt sind in unserer Anlage verboten..." },
+      { id: 4, question: "Wie und wo müssen leere Weinflaschen entsorgt werden?", options: ["A) Sie kommen einfach in die Schwarze Tonne.", "B) Sie kommen ungetrennt in die Gelbe Tonne.", "C) Sie müssen nach Farben sortiert in öffentliche Container auf der Straße."], correct: "C) Sie müssen nach Farben sortiert in öffentliche Container auf der Straße.", explanation: "Altglas... muss farblich getrennt (weiß, grün, braun) in die öffentlichen Glascontainer eingeworfen werden." }
     ]
   },
   {
@@ -108,39 +127,46 @@ Altglas muss nach Farben sortiert in die öffentlichen Glascontainer (Standorte 
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Rundschreiben an alle Mitarbeiter im Außendienst:
-Regeln für die Nutzung der Firmenfahrzeuge
-1. Die Firmenwagen dürfen ausschließlich für dienstliche Fahrten genutzt werden. Private Fahrten, auch kurze Fahrten nach Feierabend, sind strengstens untersagt und können zur Kündigung führen.
-2. Jeder Fahrer ist verpflichtet, vor Fahrtantritt den Zustand des Autos (Reifen, Licht) kurz zu prüfen.
-3. Nach jeder Fahrt muss das elektronische Fahrtenbuch im Auto ausgefüllt werden. Bitte tragen Sie den Kilometerstand und das Ziel ein.
-4. Tanken: Bitte nutzen Sie nur die Tankkarten, die im Handschuhfach liegen. Wir haben einen Vertrag mit der "Star"-Tankstelle. Tankrechnungen von anderen Tankstellen werden nur im Notfall von der Firma bezahlt.
-5. Das Auto muss am Ende des Tages vollgetankt auf dem Firmenparkplatz abgestellt werden.`,
+    readingText: `Verbindliche Richtlinien für die Nutzung von Firmenfahrzeugen (TechCorp GmbH):
+
+An alle Mitarbeiterinnen und Mitarbeiter im Außendienst,
+die Firma stellt Ihnen für Ihre tägliche Arbeit bei unseren Kunden moderne Firmenfahrzeuge zur Verfügung. Um Missbrauch vorzubeugen und die Wartungskosten zu kontrollieren, gelten ab sofort folgende strenge Dienstanweisungen:
+
+1. Ausschließliche Dienstnutzung: Die Firmenwagen dürfen unter keinen Umständen für private Zwecke genutzt werden. Selbst kurze Fahrten nach Feierabend (z. B. zum Supermarkt oder zum Abholen der Kinder) sind strengstens untersagt. Ein Verstoß gegen diese Regel wird als schwerwiegendes Fehlverhalten gewertet und kann zu einer fristlosen Kündigung führen. 
+
+2. Dokumentation: Jeder Fahrer ist verpflichtet, nach dem Beenden jeder einzelnen Fahrt das elektronische Fahrtenbuch, welches fest im Auto installiert ist, sorgfältig auszufüllen. Es müssen der genaue Kilometerstand, das angefahrene Ziel sowie der Name des besuchten Kunden eingetragen werden. 
+
+3. Tankregelungen: Bitte nutzen Sie zum Tanken der Fahrzeuge ausschließlich die Flotten-Tankkarten, die sich im Handschuhfach jedes Autos befinden. Unsere Firma hat einen exklusiven Großkundenvertrag mit der Tankstellenkette "Star". Das Tanken an anderen Tankstellen (z. B. Shell oder Aral) ist nur in absoluten Notfällen erlaubt. In diesem Fall müssen Sie die Quittung aufheben und einen Antrag auf Rückerstattung in der Buchhaltung einreichen.
+Am Ende jedes Arbeitstages muss das Fahrzeug vollgetankt auf dem gesicherten Firmenparkplatz abgestellt werden.`,
     questions: [
-      { id: 1, question: "Darf man mit dem Firmenauto am Wochenende einkaufen fahren?", options: ["A) Ja, wenn man das Benzin selbst zahlt.", "B) Nein, das ist streng verboten.", "C) Nur mit Erlaubnis des Chefs."], correct: "B) Nein, das ist streng verboten.", explanation: "Private Fahrten... sind strengstens untersagt." },
-      { id: 2, question: "Was muss man direkt nach der Fahrt machen?", options: ["A) Das Auto waschen.", "B) Den Chef anrufen.", "C) Informationen im Auto-Computer eintragen."], correct: "C) Informationen im Auto-Computer eintragen.", explanation: "Nach jeder Fahrt muss das elektronische Fahrtenbuch im Auto ausgefüllt werden." },
-      { id: 3, question: "Wo soll man am besten tanken?", options: ["A) Bei einer 'Star'-Tankstelle.", "B) Bei der billigsten Tankstelle.", "C) Bei einer Tankstelle im Ausland."], correct: "A) Bei einer 'Star'-Tankstelle.", explanation: "Wir haben einen Vertrag mit der 'Star'-Tankstelle." },
-      { id: 4, question: "Wie muss man das Auto am Abend verlassen?", options: ["A) Mit leerem Tank.", "B) Mit vollem Tank auf dem Firmenparkplatz.", "C) Man darf es mit nach Hause nehmen."], correct: "B) Mit vollem Tank auf dem Firmenparkplatz.", explanation: "Das Auto muss am Ende des Tages vollgetankt auf dem Firmenparkplatz abgestellt werden." }
+      { id: 1, question: "Darf ein Mitarbeiter mit dem Firmenauto nach der Arbeit kurz einkaufen fahren?", options: ["A) Ja, wenn er das Benzin aus eigener Tasche zahlt.", "B) Nein, das ist streng verboten und kann zur Kündigung führen.", "C) Ja, aber nur wenn der Supermarkt auf dem Weg liegt."], correct: "B) Nein, das ist streng verboten und kann zur Kündigung führen.", explanation: "Selbst kurze Fahrten nach Feierabend (z. B. zum Supermarkt...) sind strengstens untersagt. Ein Verstoß... kann zu einer fristlosen Kündigung führen." },
+      { id: 2, question: "Welche Pflicht hat der Fahrer direkt nach einer Dienstfahrt?", options: ["A) Er muss das Auto gründlich in der Waschanlage waschen.", "B) Er muss seinen Vorgesetzten anrufen und Bericht erstatten.", "C) Er muss wichtige Daten im elektronischen System des Autos eintragen."], correct: "C) Er muss wichtige Daten im elektronischen System des Autos eintragen.", explanation: "...nach dem Beenden jeder einzelnen Fahrt das elektronische Fahrtenbuch... sorgfältig auszufüllen. Es müssen... Kilometerstand... eingetragen werden." },
+      { id: 3, question: "Welche Regel gilt für das Tanken des Firmenwagens?", options: ["A) Man muss immer bei der 'Star'-Tankstelle tanken, Ausnahmen gibt es nur im Notfall.", "B) Man kann tanken, wo es am billigsten ist.", "C) Man muss das Benzin immer selbst bezahlen und bekommt das Geld am Monatsende zurück."], correct: "A) Man muss immer bei der 'Star'-Tankstelle tanken, Ausnahmen gibt es nur im Notfall.", explanation: "Unsere Firma hat einen exklusiven Großkundenvertrag mit der Tankstellenkette 'Star'. Das Tanken an anderen Tankstellen... ist nur in absoluten Notfällen erlaubt." },
+      { id: 4, question: "In welchem Zustand muss das Auto abends auf dem Firmenparkplatz abgestellt werden?", options: ["A) Mit komplett leerem Tank.", "B) Mit vollem Tank.", "C) Das Auto darf man abends mit nach Hause nehmen."], correct: "B) Mit vollem Tank.", explanation: "Am Ende jedes Arbeitstages muss das Fahrzeug vollgetankt auf dem gesicherten Firmenparkplatz abgestellt werden." }
     ]
   },
   {
     id: "lesen-ru-7",
-    title: "Teil 5: Regeln am Badesee",
+    title: "Teil 5: Regeln im Naturschutzgebiet",
     level: "B1",
     topic: "Freizeit & Natur",
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Badeordnung "Silbersee":
-Herzlich willkommen an unserem Badesee! Damit alle Gäste einen schönen Tag verbringen können, bitten wir Sie, folgende Regeln zu beachten:
-- Das Schwimmen ist nur im gekennzeichneten Bereich erlaubt. Hinter den roten Bojen beginnt ein Naturschutzgebiet, das nicht betreten oder beschwommen werden darf.
-- Grillen und offenes Feuer sind auf den Wiesen streng verboten. Bitte nutzen Sie dafür die festen Grillplätze am Kiosk.
-- Hunde sind am Hauptstrand nicht erlaubt. Für Gäste mit Hunden gibt es einen separaten Hundestrand im südlichen Teil des Sees. Dort dürfen die Tiere auch ohne Leine ins Wasser.
-- Bitte nehmen Sie Ihren Müll wieder mit oder werfen Sie ihn in die großen Mülleimer am Parkplatz. Wer Müll in der Natur liegen lässt, muss eine Strafe von 50 Euro zahlen.`,
+    readingText: `Besucherordnung für das Erholungs- und Naturschutzgebiet "Silbersee":
+
+Herzlich willkommen am Silbersee! Damit die empfindliche Natur geschützt wird und gleichzeitig alle Besucher einen erholsamen Tag verbringen können, ist den Anweisungen der Park-Ranger Folge zu leisten. Bitte beachten Sie zwingend die folgenden Vorschriften:
+
+1. Schwimmen und Wassersport: Das Schwimmen, Tauchen und Bootfahren ist ausschließlich in den speziell gekennzeichneten Bereichen am Hauptstrand erlaubt. Bitte beachten Sie die roten Schwimmbojen im Wasser. Hinter diesen Bojen im nördlichen Teil des Sees beginnt ein streng geschütztes Naturschutzgebiet für seltene Wasservögel. Dieses Gebiet darf unter keinen Umständen betreten oder beschwommen werden.
+
+2. Feuer und Grillen: Aufgrund der hohen Waldbrandgefahr im Sommer sind offene Feuer und das Grillen auf den Wiesen und im Wald absolut verboten. Wer grillen möchte, muss die gemauerten und fest installierten Grillplätze direkt neben dem Kiosk nutzen. Die Asche muss danach fachgerecht entsorgt werden.
+
+3. Mitführen von Tieren: Hunde sind am Hauptstrand und auf den Liegewiesen für Familien aus hygienischen Gründen nicht gestattet. Für Gäste, die ihren Hund mitbringen, haben wir jedoch einen separaten Hundestrand im südlichen Teil des Sees eingerichtet. Nur dort dürfen die Tiere auch ohne Leine ins Wasser laufen. Auf allen anderen Wegen im Park herrscht strikte Leinenpflicht. Wer Müll oder Hundekot in der Natur liegen lässt, muss mit einem Bußgeld von 50 Euro rechnen.`,
     questions: [
-      { id: 1, question: "Wo darf man schwimmen?", options: ["A) Überall im See.", "B) Nur vor den roten Bojen.", "C) Nur im Naturschutzgebiet."], correct: "B) Nur vor den roten Bojen.", explanation: "Hinter den roten Bojen beginnt ein Naturschutzgebiet, das nicht... beschwommen werden darf." },
-      { id: 2, question: "Darf man am See grillen?", options: ["A) Nein, das ist überall verboten.", "B) Ja, aber nur an speziellen Plätzen beim Kiosk.", "C) Ja, überall auf der Wiese."], correct: "B) Ja, aber nur an speziellen Plätzen beim Kiosk.", explanation: "Bitte nutzen Sie dafür die festen Grillplätze am Kiosk." },
-      { id: 3, question: "Was müssen Hundebesitzer beachten?", options: ["A) Sie müssen zu einem extra Strandabschnitt gehen.", "B) Hunde dürfen nicht ins Wasser.", "C) Sie dürfen mit dem Hund an den Hauptstrand."], correct: "A) Sie müssen zu einem extra Strandabschnitt gehen.", explanation: "Für Gäste mit Hunden gibt es einen separaten Hundestrand." },
-      { id: 4, question: "Was passiert, wenn man seinen Müll auf der Wiese liegen lässt?", options: ["A) Man darf nie wiederkommen.", "B) Man muss den ganzen Strand putzen.", "C) Man muss 50 Euro Strafe bezahlen."], correct: "C) Man muss 50 Euro Strafe bezahlen.", explanation: "Wer Müll in der Natur liegen lässt, muss eine Strafe von 50 Euro zahlen." }
+      { id: 1, question: "Wo ist das Schwimmen im Silbersee gestattet?", options: ["A) Überall, wo das Wasser tief genug ist.", "B) Nur vor den roten Bojen am Hauptstrand.", "C) Besonders gut im Naturschutzgebiet bei den Vögeln."], correct: "B) Nur vor den roten Bojen am Hauptstrand.", explanation: "Hinter diesen Bojen... beginnt ein... Naturschutzgebiet... Dieses Gebiet darf unter keinen Umständen... beschwommen werden." },
+      { id: 2, question: "Darf man am See ein Barbecue veranstalten?", options: ["A) Nein, das ist wegen der Waldbrandgefahr überall streng verboten.", "B) Ja, aber ausschließlich an den gemauerten Plätzen beim Kiosk.", "C) Ja, man darf überall auf der Wiese grillen, wenn man aufpasst."], correct: "B) Ja, aber ausschließlich an den gemauerten Plätzen beim Kiosk.", explanation: "Wer grillen möchte, muss die gemauerten und fest installierten Grillplätze direkt neben dem Kiosk nutzen." },
+      { id: 3, question: "Was ist die Regel für Hunde am Silbersee?", options: ["A) Hunde sind im gesamten Parkgelände verboten.", "B) Hunde dürfen am Hauptstrand frei herumlaufen.", "C) Es gibt einen extra Hundestrand, wo sie ohne Leine ins Wasser dürfen."], correct: "C) Es gibt einen extra Hundestrand, wo sie ohne Leine ins Wasser dürfen.", explanation: "...haben wir jedoch einen separaten Hundestrand... eingerichtet. Nur dort dürfen die Tiere auch ohne Leine ins Wasser laufen." },
+      { id: 4, question: "Welche Strafe droht, wenn man Abfall in die Natur wirft?", options: ["A) Man darf den Park nie wieder betreten.", "B) Man wird gezwungen, den ganzen Strand aufzuräumen.", "C) Man muss eine Geldstrafe in Höhe von 50 Euro bezahlen."], correct: "C) Man muss eine Geldstrafe in Höhe von 50 Euro bezahlen.", explanation: "Wer Müll oder Hundekot in der Natur liegen lässt, muss mit einem Bußgeld von 50 Euro rechnen." }
     ]
   },
   {
@@ -151,17 +177,20 @@ Herzlich willkommen an unserem Badesee! Damit alle Gäste einen schönen Tag ver
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Wichtige Fluggastinformationen der AeroAir:
-Bitte beachten Sie für Ihren bevorstehenden Flug unsere aktuellen Gepäck- und Sicherheitsbestimmungen:
-Check-in: Wir empfehlen, mindestens zwei Stunden vor der geplanten Abflugzeit am Schalter zu erscheinen. Das Boarding beginnt pünktlich 45 Minuten vor Abflug.
-Aufgabegepäck: Pro Passagier ist ein Koffer mit einem Maximalgewicht von 23 kg im Ticketpreis enthalten. Übergepäck muss am Schalter mit 15 Euro pro zusätzlichem Kilo bezahlt werden.
-Handgepäck: Jeder Fluggast darf ein Handgepäckstück (max. 8 kg) sowie einen kleinen persönlichen Gegenstand (z. B. Laptoptasche) mit in die Kabine nehmen.
-Flüssigkeiten: Im Handgepäck dürfen Flüssigkeiten nur in Behältern von maximal 100 ml mitgeführt werden. Diese müssen in einem durchsichtigen, wiederverschließbaren Plastikbeutel verpackt sein.`,
+    readingText: `Wichtige Fluggastinformationen der Fluggesellschaft AeroAir:
+
+Sehr geehrte Passagiere, bitte lesen Sie die folgenden Gepäck- und Sicherheitsbestimmungen für Ihren bevorstehenden internationalen Flug sorgfältig durch, um Verzögerungen bei der Sicherheitskontrolle zu vermeiden:
+
+Check-in und Boarding: Wir empfehlen dringend, dass Sie sich mindestens zwei Stunden vor der geplanten Abflugzeit an den Check-in-Schaltern in der Haupthalle einfinden. Die Schalter schließen pünktlich 45 Minuten vor Abflug. Passagiere, die danach eintreffen, verlieren ihren Anspruch auf Beförderung.
+
+Aufgabegepäck: Je nach gebuchtem Tarif gelten unterschiedliche Regeln. Im Standard-Tarif (Economy) ist pro Passagier ein großer Koffer mit einem Maximalgewicht von genau 23 kg im Ticketpreis enthalten. Falls Ihr Koffer schwerer sein sollte, gilt dies als Übergepäck. Dieses muss am Schalter mit einer Gebühr von 15 Euro pro zusätzlichem Kilo teuer bezahlt werden.
+
+Handgepäck und Sicherheitskontrolle: Jeder Fluggast darf ein Handgepäckstück (max. 8 kg) sowie einen kleinen persönlichen Gegenstand (z. B. Handtasche oder Laptoptasche) mit in die Flugzeugkabine nehmen. Bitte beachten Sie die strengen internationalen Regeln für Flüssigkeiten: Im Handgepäck dürfen Flüssigkeiten, Gels oder Cremes (wie Shampoo oder Zahnpasta) nur in kleinen Behältern von maximal 100 ml mitgeführt werden. All diese kleinen Behälter müssen zusammen in einem einzigen, durchsichtigen und wiederverschließbaren Plastikbeutel (max. 1 Liter Fassungsvermögen) verpackt sein und bei der Kontrolle unaufgefordert vorgezeigt werden.`,
     questions: [
-      { id: 1, question: "Wann sollten die Passagiere am Flughafen sein?", options: ["A) 45 Minuten vor dem Flug.", "B) Mindestens zwei Stunden vor dem Abflug.", "C) Genau zwei Stunden vorher."], correct: "B) Mindestens zwei Stunden vor dem Abflug.", explanation: "Wir empfehlen, mindestens zwei Stunden vor der geplanten Abflugzeit am Schalter zu erscheinen." },
-      { id: 2, question: "Wie viel schwer darf der Koffer sein, der im Preis dabei ist?", options: ["A) So schwer wie man möchte.", "B) Maximal 8 kg.", "C) Maximal 23 kg."], correct: "C) Maximal 23 kg.", explanation: "Pro Passagier ist ein Koffer mit einem Maximalgewicht von 23 kg im Ticketpreis enthalten." },
-      { id: 3, question: "Was kostet es, wenn der Koffer zu schwer ist?", options: ["A) Es ist kostenlos.", "B) 15 Euro für jedes Kilo zu viel.", "C) Man darf nicht mitfliegen."], correct: "B) 15 Euro für jedes Kilo zu viel.", explanation: "Übergepäck muss am Schalter mit 15 Euro pro zusätzlichem Kilo bezahlt werden." },
-      { id: 4, question: "Wie müssen Getränke oder Shampoos im Handgepäck eingepackt sein?", options: ["A) Sie dürfen gar nicht ins Handgepäck.", "B) In Flaschen, die größer als 100 ml sind.", "C) In Behältern bis 100 ml, in einer Plastiktüte."], correct: "C) In Behältern bis 100 ml, in einer Plastiktüte.", explanation: "Im Handgepäck dürfen Flüssigkeiten nur in Behältern von maximal 100 ml... Diese müssen in einem durchsichtigen... Plastikbeutel verpackt sein." }
+      { id: 1, question: "Wann sollten die Passagiere spätestens am Check-in-Schalter sein?", options: ["A) 45 Minuten vor dem Flug.", "B) Zwei Stunden vor dem Abflug.", "C) Genau drei Stunden vorher."], correct: "B) Zwei Stunden vor dem Abflug.", explanation: "Wir empfehlen dringend, dass Sie sich mindestens zwei Stunden vor der geplanten Abflugzeit an den Check-in-Schaltern... einfinden." },
+      { id: 2, question: "Wie viel darf das normale Reisegepäck (Koffer) im Economy-Tarif wiegen?", options: ["A) Es gibt keine Gewichtsbegrenzung.", "B) Maximal 8 kg.", "C) Maximal 23 kg."], correct: "C) Maximal 23 kg.", explanation: "Im Standard-Tarif (Economy) ist pro Passagier ein großer Koffer mit einem Maximalgewicht von genau 23 kg im Ticketpreis enthalten." },
+      { id: 3, question: "Was geschieht, wenn der Koffer 25 kg wiegt?", options: ["A) Der Koffer darf nicht mit ins Flugzeug.", "B) Man muss für die 2 kg zu viel eine Gebühr von insgesamt 30 Euro bezahlen.", "C) Es ist kostenlos, weil es nur 2 kg mehr sind."], correct: "B) Man muss für die 2 kg zu viel eine Gebühr von insgesamt 30 Euro bezahlen.", explanation: "Übergepäck... muss am Schalter mit einer Gebühr von 15 Euro pro zusätzlichem Kilo teuer bezahlt werden. (2 kg = 30 Euro)." },
+      { id: 4, question: "Wie müssen Kosmetikartikel (wie Shampoo) im Handgepäck transportiert werden?", options: ["A) Sie sind in der Kabine komplett verboten.", "B) In großen Flaschen, wenn sie gut verschlossen sind.", "C) In kleinen Behältern bis 100 ml, verpackt in einer durchsichtigen Plastiktüte."], correct: "C) In kleinen Behältern bis 100 ml, verpackt in einer durchsichtigen Plastiktüte.", explanation: "Im Handgepäck dürfen Flüssigkeiten... nur in kleinen Behältern von maximal 100 ml mitgeführt werden... zusammen in einem einzigen, durchsichtigen... Plastikbeutel." }
     ]
   },
   {
@@ -172,15 +201,20 @@ Flüssigkeiten: Im Handgepäck dürfen Flüssigkeiten nur in Behältern von maxi
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Wichtige Hinweise zur Bedienung des Kaffeevollautomaten "AromaPlus 3000":
-- Vor der ersten Benutzung: Füllen Sie den Wassertank bis zur MAX-Linie mit kaltem Wasser und lassen Sie das Gerät einmal komplett durchlaufen, ohne Kaffeebohnen einzufüllen. So reinigen Sie die Leitungen.
-- Kaffee zubereiten: Füllen Sie Kaffeebohnen in das obere Fach. Warnung: Verwenden Sie niemals gemahlenen Kaffee oder Instant-Kaffee! Dies zerstört das Mahlwerk. 
-- Reinigung: Die rote Kontrolllampe leuchtet auf, wenn das Gerät entkalkt werden muss. Verwenden Sie dafür nur den Original-Entkalker der Firma "Aroma". Essig oder andere Haushaltsmittel können die Maschine kaputt machen. Der Kaffeesatzbehälter muss jeden Abend geleert und gewaschen werden.`,
+    readingText: `Wichtige Betriebs- und Pflegehinweise für den Kaffeevollautomaten "AromaPlus 3000":
+
+Herzlichen Glückwunsch zum Kauf dieses hochwertigen Geräts. Um eine lange Lebensdauer der Maschine zu gewährleisten, lesen Sie bitte vor der Inbetriebnahme die folgenden Punkte genau durch:
+
+Inbetriebnahme (Vor der allerersten Benutzung): Bevor Sie den ersten Kaffee kochen können, müssen die internen Leitungen gereinigt werden. Füllen Sie dazu den Wassertank auf der Rückseite bis zur markierten MAX-Linie mit kaltem Leitungswasser. Schalten Sie das Gerät ein und drücken Sie die Spültaste, ohne vorher Kaffeebohnen in das Mahlwerk einzufüllen! Lassen Sie das Wasser einmal komplett durch das System laufen.
+
+Kaffeezubereitung: Füllen Sie frische Kaffeebohnen in das obere Fach. Warnung: Verwenden Sie unter keinen Umständen bereits gemahlenen Kaffee (Kaffeepulver) oder löslichen Instant-Kaffee! Das Einfüllen von Pulver verstopft das empfindliche Mahlwerk sofort und führt zum Verlust der Garantie. 
+
+Reinigung und Entkalkung: Die Maschine verfügt über ein automatisches Warnsystem. Sobald die rote Kontrolllampe auf dem Display aufleuchtet, muss das Gerät zwingend entkalkt werden. Verwenden Sie für diesen Vorgang ausschließlich den flüssigen Original-Entkalker der Firma "Aroma". Die Verwendung von aggressiven Haushaltsmitteln wie Essig oder Zitronensäure kann die Plastikschläuche im Inneren dauerhaft zerstören. Der Auffangbehälter für den nassen Kaffeesatz muss außerdem aus hygienischen Gründen jeden Abend geleert und mit warmem Wasser ausgewaschen werden, um Schimmelbildung zu vermeiden.`,
     questions: [
-      { id: 1, question: "Was muss man tun, bevor man den allerersten Kaffee kocht?", options: ["A) Man muss die Maschine mit Wasser spülen.", "B) Man muss speziellen Kaffee kaufen.", "C) Man muss die Maschine entkalken."], correct: "A) Man muss die Maschine mit Wasser spülen.", explanation: "Vor der ersten Benutzung: ... Gerät einmal komplett durchlaufen (lassen), ohne Kaffeebohnen..." },
-      { id: 2, question: "Welchen Kaffee darf man NICHT benutzen?", options: ["A) Kaffeebohnen.", "B) Gemahlenen Kaffee (Pulver).", "C) Teuren Kaffee."], correct: "B) Gemahlenen Kaffee (Pulver).", explanation: "Verwenden Sie niemals gemahlenen Kaffee... Dies zerstört das Mahlwerk." },
-      { id: 3, question: "Wann muss die Maschine entkalkt werden?", options: ["A) Jeden Abend.", "B) Wenn ein rotes Licht brennt.", "C) Jeden Monat."], correct: "B) Wenn ein rotes Licht brennt.", explanation: "Die rote Kontrolllampe leuchtet auf, wenn das Gerät entkalkt werden muss." },
-      { id: 4, question: "Womit darf man die Maschine entkalken?", options: ["A) Mit Essig aus der Küche.", "B) Mit jedem normalen Reinigungsmittel.", "C) Nur mit dem Mittel vom Hersteller."], correct: "C) Nur mit dem Mittel vom Hersteller.", explanation: "Verwenden Sie dafür nur den Original-Entkalker der Firma 'Aroma'." }
+      { id: 1, question: "Was ist bei der allerersten Benutzung des Geräts zu tun?", options: ["A) Man muss heißen Kaffee kochen, um die Maschine zu testen.", "B) Man muss die Maschine nur mit Wasser durchspülen, ohne Kaffee einzufüllen.", "C) Man muss die Maschine sofort mit Essig entkalken."], correct: "B) Man muss die Maschine nur mit Wasser durchspülen, ohne Kaffee einzufüllen.", explanation: "Füllen Sie dazu den Wassertank... mit kaltem Leitungswasser... drücken Sie die Spültaste, ohne vorher Kaffeebohnen... einzufüllen!" },
+      { id: 2, question: "Welche Art von Kaffee darf NICHT in die Maschine gefüllt werden?", options: ["A) Ganze Kaffeebohnen.", "B) Sehr stark geröstete Kaffeebohnen.", "C) Kaffeepulver oder Instant-Kaffee."], correct: "C) Kaffeepulver oder Instant-Kaffee.", explanation: "Warnung: Verwenden Sie unter keinen Umständen bereits gemahlenen Kaffee (Kaffeepulver) oder löslichen Instant-Kaffee!" },
+      { id: 3, question: "Wann weiß man, dass das Gerät entkalkt werden muss?", options: ["A) Man muss es jeden Freitag machen.", "B) Wenn ein rotes Licht auf dem Display leuchtet.", "C) Wenn der Kaffee nicht mehr gut schmeckt."], correct: "B) Wenn ein rotes Licht auf dem Display leuchtet.", explanation: "Sobald die rote Kontrolllampe auf dem Display aufleuchtet, muss das Gerät zwingend entkalkt werden." },
+      { id: 4, question: "Womit darf die Maschine entkalkt werden?", options: ["A) Mit normalem Essig aus dem Supermarkt.", "B) Mit Zitronensäure.", "C) Nur mit dem speziellen Mittel des Herstellers 'Aroma'."], correct: "C) Nur mit dem speziellen Mittel des Herstellers 'Aroma'.", explanation: "Verwenden Sie für diesen Vorgang ausschließlich den flüssigen Original-Entkalker der Firma 'Aroma'. Die Verwendung von... Essig... kann die Plastikschläuche... zerstören." }
     ]
   },
   {
@@ -191,18 +225,22 @@ Flüssigkeiten: Im Handgepäck dürfen Flüssigkeiten nur in Behältern von maxi
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Sicherheitsrichtlinien der Firma TechCorp: Verhalten im Brandfall
-Wenn Sie den Feueralarm (lauter Sirenenton) hören, bewahren Sie Ruhe. 
-1. Verlassen Sie sofort Ihren Arbeitsplatz. Nehmen Sie nur Ihre wichtigsten persönlichen Dinge (Handy, Schlüssel) mit. Schalten Sie den Computer nicht aus!
-2. Nutzen Sie auf keinen Fall die Aufzüge. Benutzen Sie die Treppenhäuser, um nach unten zu gelangen. Folgen Sie den grünen Notausgangs-Schildern.
-3. Helfen Sie Kollegen, die Schwierigkeiten beim Gehen haben.
-4. Gehen Sie direkt zum Sammelplatz. Dieser befindet sich auf dem großen Parkplatz hinter dem Gebäude (Zone B).
-5. Melden Sie sich dort sofort bei Ihrem Abteilungsleiter, damit kontrolliert werden kann, ob alle Mitarbeiter das Gebäude verlassen haben. Gehen Sie nicht nach Hause, bevor der Feuerwehr-Einsatzleiter Entwarnung gibt.`,
+    readingText: `Offizielle Sicherheits- und Evakuierungsrichtlinien der Firma TechCorp: Verhalten im Brandfall
+
+Die Sicherheit unserer Mitarbeiter hat oberste Priorität. Prägen Sie sich die folgenden Handlungsanweisungen gut ein. Wenn Sie den Feueralarm (einen extrem lauten, auf- und abschwellenden Sirenenton) hören, bewahren Sie unbedingt Ruhe und geraten Sie nicht in Panik. 
+
+1. Arbeitsplatz verlassen: Verlassen Sie sofort und zügig Ihren Arbeitsplatz. Nehmen Sie nur Ihre absolut wichtigsten persönlichen Wertgegenstände wie Handy, Geldbörse und Autoschlüssel mit. Verschwenden Sie keine Zeit damit, schwere Laptops einzupacken oder den Computer ordnungsgemäß herunterzufahren! Schließen Sie beim Verlassen des Büros die Türen, schließen Sie diese aber nicht mit dem Schlüssel ab.
+
+2. Fluchtwege: Nutzen Sie bei einem Feueralarm auf gar keinen Fall die elektrischen Aufzüge, da diese bei einem Stromausfall stecken bleiben können und dann zu einer tödlichen Falle werden. Benutzen Sie ausschließlich die ausgeschilderten Treppenhäuser, um nach unten ins Erdgeschoss zu gelangen. Folgen Sie immer den grünen, leuchtenden Notausgangs-Schildern an der Decke. Helfen Sie Kollegen, die Schwierigkeiten beim Gehen haben.
+
+3. Sammelplatz: Gehen Sie nach dem Verlassen des Gebäudes direkt und auf kürzestem Weg zum offiziellen Sammelplatz. Dieser befindet sich auf dem großen Mitarbeiterparkplatz hinter dem Gebäude (markiert als Zone B). Stellen Sie sich dort nicht auf die Straßen, um die anrückenden Feuerwehrfahrzeuge nicht zu blockieren.
+
+4. Anwesenheitskontrolle: Melden Sie sich auf dem Sammelplatz sofort bei Ihrem direkten Abteilungsleiter, damit anhand der Listen kontrolliert werden kann, ob alle Mitarbeiter das brennende Gebäude sicher verlassen haben. Gehen Sie unter keinen Umständen einfach nach Hause, bevor der Feuerwehr-Einsatzleiter offiziell Entwarnung gibt und den Einsatz für beendet erklärt.`,
     questions: [
-      { id: 1, question: "Was soll man tun, bevor man das Büro verlässt?", options: ["A) Den Computer herunterfahren.", "B) Nichts Wichtiges mitnehmen.", "C) Nur Schlüssel und Handy einstecken."], correct: "C) Nur Schlüssel und Handy einstecken.", explanation: "Nehmen Sie nur Ihre wichtigsten persönlichen Dinge (Handy, Schlüssel) mit." },
-      { id: 2, question: "Wie soll man das Gebäude verlassen?", options: ["A) Mit dem Aufzug.", "B) Über die Treppe.", "C) Durch das Fenster."], correct: "B) Über die Treppe.", explanation: "Nutzen Sie auf keinen Fall die Aufzüge. Benutzen Sie die Treppenhäuser..." },
-      { id: 3, question: "Wo sollen alle Mitarbeiter hingehen?", options: ["A) Auf die Straße vor dem Haus.", "B) Auf den Parkplatz hinter dem Haus.", "C) Nach Hause."], correct: "B) Auf den Parkplatz hinter dem Haus.", explanation: "Dieser befindet sich auf dem großen Parkplatz hinter dem Gebäude..." },
-      { id: 4, question: "Wann darf man nach dem Alarm nach Hause gehen?", options: ["A) Wenn man sich beim Chef gemeldet hat.", "B) Wenn die Feuerwehr sagt, dass es sicher ist.", "C) Sofort, wenn man auf dem Parkplatz ist."], correct: "B) Wenn die Feuerwehr sagt, dass es sicher ist.", explanation: "Gehen Sie nicht nach Hause, bevor der Feuerwehr-Einsatzleiter Entwarnung gibt." }
+      { id: 1, question: "Was sollen die Mitarbeiter tun, bevor sie das Büro verlassen?", options: ["A) Sie sollen den Computer ausschalten und alle Fenster öffnen.", "B) Sie sollen ihre schweren Laptops in die Taschen packen.", "C) Sie sollen nur kleine Wertsachen mitnehmen und keine Zeit verschwenden."], correct: "C) Sie sollen nur kleine Wertsachen mitnehmen und keine Zeit verschwenden.", explanation: "Nehmen Sie nur Ihre absolut wichtigsten persönlichen Wertgegenstände... mit. Verschwenden Sie keine Zeit damit, schwere Laptops einzupacken oder den Computer... herunterzufahren!" },
+      { id: 2, question: "Warum darf man bei einem Brand den Aufzug nicht benutzen?", options: ["A) Weil er zu langsam ist und nicht genug Platz für alle hat.", "B) Weil er bei einem Stromausfall stecken bleiben könnte.", "C) Weil der Aufzug nur für die Feuerwehr reserviert ist."], correct: "B) Weil er bei einem Stromausfall stecken bleiben könnte.", explanation: "...auf gar keinen Fall die elektrischen Aufzüge, da diese bei einem Stromausfall stecken bleiben können..." },
+      { id: 3, question: "Wo befindet sich der Ort, an dem sich alle treffen müssen (Sammelplatz)?", options: ["A) Auf der großen Straße direkt vor dem Haupteingang.", "B) Auf dem Parkplatz, der sich hinter dem Gebäude befindet.", "C) Im Erdgeschoss des Bürogebäudes."], correct: "B) Auf dem Parkplatz, der sich hinter dem Gebäude befindet.", explanation: "Dieser befindet sich auf dem großen Mitarbeiterparkplatz hinter dem Gebäude..." },
+      { id: 4, question: "Wann dürfen die Mitarbeiter nach dem Alarm nach Hause gehen?", options: ["A) Wenn sie sich beim Abteilungsleiter gemeldet haben.", "B) Erst wenn die Feuerwehr sagt, dass die Situation sicher ist.", "C) Sie dürfen sofort nach Hause gehen, sobald sie draußen sind."], correct: "B) Erst wenn die Feuerwehr sagt, dass die Situation sicher ist.", explanation: "Gehen Sie unter keinen Umständen einfach nach Hause, bevor der Feuerwehr-Einsatzleiter offiziell Entwarnung gibt..." }
     ]
   }
 ];
