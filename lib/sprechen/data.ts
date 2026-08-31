@@ -3,7 +3,7 @@ export interface SpeakingTask {
   title: string;
   level: string;
   topic: string;
-  type: "Teil 1" | "Teil 2" | "Teil 3";
+  type: "Teil 1" | "Teil 2";
   prompt: string;
   completed?: boolean;
   score?: string;
@@ -210,77 +210,4 @@ Gehen Sie dabei auf folgende Punkte ein:
 - Ihre eigene Meinung zum Thema.`,
   },
 
-  // --- Teil 3 (6 Aufgaben) ---
-  {
-    id: "sprechen-3-1",
-    title: "Teil 3: Reagieren (Thema Haustiere)",
-    level: "B1",
-    topic: "Tiere & Alltag",
-    type: "Teil 3",
-    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über Haustiere gehört. 
-Sprechen Sie Ihre Reaktion darauf ein:
-
-- Geben Sie ein kurzes Feedback (z.B. "Deine Präsentation hat mir gut gefallen...").
-- Stellen Sie eine Frage zum Thema (z.B. "Hast du denn als Kind selbst ein Haustier gehabt?").`,
-  },
-  {
-    id: "sprechen-3-2",
-    title: "Teil 3: Reagieren (Thema Online-Shopping)",
-    level: "B1",
-    topic: "Konsum & Medien",
-    type: "Teil 3",
-    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über Online-Shopping gehört. 
-Sprechen Sie Ihre Reaktion darauf ein:
-
-- Geben Sie ein kurzes Feedback zu der Präsentation.
-- Stellen Sie eine Frage (z.B. "Hast du schon mal schlechte Erfahrungen mit einem Online-Shop gemacht?").`,
-  },
-  {
-    id: "sprechen-3-3",
-    title: "Teil 3: Reagieren (Thema Stadt oder Land)",
-    level: "B1",
-    topic: "Wohnen & Umwelt",
-    type: "Teil 3",
-    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über das Leben in der Stadt und auf dem Land gehört. 
-Sprechen Sie Ihre Reaktion darauf ein:
-
-- Geben Sie ein kurzes Feedback (z.B. "Ich fand interessant, was du über... gesagt hast").
-- Stellen Sie eine Frage (z.B. "Könntest du dir vorstellen, später auf einem Bauernhof zu leben?").`,
-  },
-  {
-    id: "sprechen-3-4",
-    title: "Teil 3: Reagieren (Thema Fremdsprachen)",
-    level: "B1",
-    topic: "Lernen & Bildung",
-    type: "Teil 3",
-    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über das Erlernen von Fremdsprachen gehört. 
-Sprechen Sie Ihre Reaktion darauf ein:
-
-- Geben Sie ein kurzes Feedback zur Struktur oder zum Inhalt.
-- Stellen Sie eine Frage (z.B. "Welche Sprache möchtest du in Zukunft noch lernen und warum?").`,
-  },
-  {
-    id: "sprechen-3-5",
-    title: "Teil 3: Reagieren (Thema Soziale Netzwerke)",
-    level: "B1",
-    topic: "Medien & Gesellschaft",
-    type: "Teil 3",
-    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über soziale Netzwerke gehört. 
-Sprechen Sie Ihre Reaktion darauf ein:
-
-- Geben Sie ein kurzes, freundliches Feedback.
-- Stellen Sie eine Frage (z.B. "Glaubst du, dass wir in Zukunft ganz auf persönliche Treffen verzichten werden?").`,
-  },
-  {
-    id: "sprechen-3-6",
-    title: "Teil 3: Reagieren (Thema Fast Food)",
-    level: "B1",
-    topic: "Ernährung & Gesundheit",
-    type: "Teil 3",
-    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über Fast Food gehört. 
-Sprechen Sie Ihre Reaktion darauf ein:
-
-- Geben Sie ein kurzes Feedback.
-- Stellen Sie eine Frage (z.B. "Was ist dein persönliches Lieblingsessen, wenn es mal schnell gehen muss?").`,
-  }
 ];

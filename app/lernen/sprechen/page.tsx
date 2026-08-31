@@ -114,51 +114,6 @@ export default function SprechenOverviewPage() {
           </div>
         </div>
 
-        {/* Loại 3 */}
-        <div className="space-y-4">
-          <div>
-            <h2 className="text-xl font-black text-slate-900">Loại 3 (Teil 3)</h2>
-            <p className="text-sm text-slate-500 font-medium">Phản hồi và đặt câu hỏi về bài thuyết trình của đối tác</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {speakingTasks.filter(t => t.type === "Teil 3").map((t) => (
-              <div
-                key={t.id}
-                className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all space-y-4 flex flex-col justify-between group hover:-translate-y-1"
-              >
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-black px-3 py-0.5 rounded-full bg-cyan-50 text-cyan-700 border border-cyan-200">
-                      {t.level}
-                    </span>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-black text-slate-900 leading-snug">{t.title}</h3>
-                    <p className="text-xs text-slate-500 font-bold mt-1">{t.topic}</p>
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-                  {t.completed ? (
-                    <span className="text-xs font-extrabold text-emerald-600 flex items-center gap-1 bg-emerald-50 px-3 py-1 rounded-xl border border-emerald-200">
-                      <CheckCircle2 className="w-4 h-4" /> {t.score}
-                    </span>
-                  ) : null}
-
-                  <Link
-                    href={`/lernen/sprechen/${t.id}`}
-                    className="btn-3d text-xs px-4 py-2.5"
-                    style={{ '--btn-bg': '#0891b2', '--btn-border': '#155e75' } as React.CSSProperties}
-                  >
-                    Luyện Nói <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
       </div>
     </div>
   );
