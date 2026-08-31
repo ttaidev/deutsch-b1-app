@@ -51,16 +51,16 @@ Dein Thomas`,
     duration: "15 Phút",
     type: "Đúng / Sai",
     questionType: "true_false",
-    readingText: `Liebe Anna,
-weißt du noch, dass wir uns im neuen Fitnessstudio anmelden wollten? Ich war gestern dort und habe mich informiert. Es gibt im Moment ein tolles Angebot: Wenn wir uns zu zweit anmelden, zahlen wir im ersten halben Jahr nur die Hälfte! Das Studio ist riesig und bietet sogar Yogakurse am Abend an. Außerdem gibt es eine kleine Sauna. Der Vertrag läuft normalerweise für 12 Monate. Hättest du am Mittwochabend Zeit, mit mir hinzugehen? Dann könnten wir uns alles ansehen und gleich den Vertrag unterschreiben.
-Deine Lisa`,
+    readingText: `Forenbeitrag von Lisa (Thema: Fitnessstudio Partner gesucht):
+Hallo Leute! Ich möchte mich gerne im neuen Fitnessstudio "Fit&Gesund" in der Innenstadt anmelden. Ich war gestern schon dort und habe mich informiert. Es gibt im Moment ein tolles Angebot: Wenn man sich zu zweit anmeldet, zahlt man im ersten halben Jahr nur die Hälfte! Das Studio ist riesig und bietet sogar Yogakurse am Abend an. Außerdem gibt es eine kleine Sauna zum Entspannen. 
+Der Vertrag läuft normalerweise für 12 Monate. Hätte jemand von euch Lust, sich mit mir zusammen anzumelden? Wir könnten uns am Mittwochabend dort treffen, uns alles ansehen und gleich den Vertrag unterschreiben. Meldet euch bei mir!`,
     questions: [
       { id: 1, question: "Lisa hat sich schon im Fitnessstudio angemeldet.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie hat sich nur informiert, nicht angemeldet." },
-      { id: 2, question: "Es gibt einen Rabatt für Paare/Freunde.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Wenn sie sich zu zweit anmelden, zahlen sie weniger." },
+      { id: 2, question: "Es gibt einen Rabatt, wenn man sich zu zweit anmeldet.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Wenn man sich zu zweit anmeldet, zahlt man weniger." },
       { id: 3, question: "Der Rabatt gilt für das ganze Jahr.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Der Rabatt gilt nur im ersten halben Jahr." },
       { id: 4, question: "Yogakurse finden nur morgens statt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Das Studio bietet Yogakurse am Abend an." },
       { id: 5, question: "Der Vertrag muss für mindestens ein Jahr abgeschlossen werden.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Der Vertrag läuft normalerweise für 12 Monate." },
-      { id: 6, question: "Lisa möchte, dass Anna am Mittwoch mitkommt.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie fragt: 'Hättest du am Mittwochabend Zeit, mit mir hinzugehen?'" }
+      { id: 6, question: "Lisa sucht jemanden, der am Mittwoch mit ihr dorthin geht.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie fragt im Forum nach jemandem, der sich mit ihr zusammen anmeldet und sich am Mittwochabend treffen kann." }
     ]
   },
   {
@@ -71,13 +71,14 @@ Deine Lisa`,
     duration: "15 Phút",
     type: "Đúng / Sai",
     questionType: "true_false",
-    readingText: `Liebe Kursteilnehmer des B1-Kurses,
-leider muss ich Ihnen mitteilen, dass Herr Müller, Ihr Deutschlehrer, diese Woche wegen einer Grippe krankgeschrieben ist. Der Unterricht am Dienstag und Donnerstag fällt deshalb aus. Wir versuchen, für die nächste Woche eine Vertretung zu organisieren, falls Herr Müller noch nicht gesund ist. Bitte nutzen Sie die freie Zeit, um die Hausaufgaben auf Seite 45 im Arbeitsbuch zu erledigen. Am Montag können Sie Ihre Ergebnisse dann im Sekretariat abgeben. Wir bitten um Ihr Verständnis und wünschen Herrn Müller gute Besserung.
-Das Sprachschul-Team`,
+    readingText: `Sprachschul-Blog: Neues aus dem B1-Kurs
+Hallo Mitschüler! Leider hat das Sekretariat heute mitgeteilt, dass Herr Müller, unser Deutschlehrer, diese Woche wegen einer Grippe krankgeschrieben ist. Der Unterricht am Dienstag und Donnerstag fällt deshalb leider aus. Die Schule versucht, für die nächste Woche eine Vertretung zu organisieren, falls Herr Müller noch nicht gesund ist. 
+Wir sollen die freie Zeit nutzen, um die Hausaufgaben auf Seite 45 im Arbeitsbuch zu erledigen. Am Montag können wir unsere Ergebnisse dann im Sekretariat abgeben. Ich hoffe wirklich, dass Herr Müller bald wieder gesund wird. Bis nächste Woche!
+Euer Kurssprecher, Jan`,
     questions: [
       { id: 1, question: "Herr Müller hat einen Unfall gehabt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er ist wegen einer Grippe krankgeschrieben." },
       { id: 2, question: "In dieser Woche gibt es keinen Deutschunterricht.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Der Unterricht am Dienstag und Donnerstag fällt aus." },
-      { id: 3, question: "Es gibt diese Woche schon eine Vertretung.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Sprachschule versucht erst für die nächste Woche eine Vertretung zu organisieren." },
+      { id: 3, question: "Es gibt diese Woche schon eine Vertretung.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Schule versucht erst für die nächste Woche eine Vertretung zu organisieren." },
       { id: 4, question: "Die Schüler sollen zu Hause üben.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie sollen die Hausaufgaben auf Seite 45 im Arbeitsbuch erledigen." },
       { id: 5, question: "Die Hausaufgaben werden am Montag kontrolliert.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Am Montag können die Ergebnisse im Sekretariat abgegeben werden." },
       { id: 6, question: "Herr Müller kommt sicher nächste Woche wieder.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Es ist nicht sicher ('falls Herr Müller noch nicht gesund ist')." }

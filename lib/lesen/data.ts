@@ -38,10 +38,9 @@ export const LESEN_EXERCISES: ReadingExercise[] = [
     duration: "15 Phút",
     type: "Đúng / Sai",
     questionType: "true_false",
-    readingText: `Lieber Markus,
-ich habe endlich eine neue Wohnung gefunden! Sie liegt im Zentrum von Berlin, direkt neben einem großen Park. Die Wohnung hat 3 Zimmer, einen Balkon und ist sehr hell. Die Miete ist nicht zu teuer, nur 800 Euro kalt. Nächste Woche am Samstag ziehe ich um. Kannst du mir vielleicht beim Umzug helfen? Ich habe einen Transporter gemietet und wir fangen um 9 Uhr morgens an. Abends lade ich alle Helfer zum Pizzaessen ein.
-Liebe Grüße,
-Dein Julian`,
+    readingText: `Blog von Julian: Mein Umzug nach Berlin
+Hallo Leute! Ich habe endlich eine neue Wohnung gefunden! Sie liegt im Zentrum von Berlin, direkt neben einem großen Park. Die Wohnung hat 3 Zimmer, einen Balkon und ist sehr hell. Die Miete ist für Berlin nicht zu teuer, nur 800 Euro kalt. Nächste Woche am Samstag ziehe ich um. 
+Wer von euch hat Zeit und Lust, mir beim Umzug zu helfen? Ich habe bereits einen Transporter gemietet und wir fangen um 9 Uhr morgens an. Abends lade ich natürlich alle Helfer zum Pizzaessen ein. Schreibt mir einfach in die Kommentare!`,
     questions: [
       { id: 1, question: "Julian hat eine neue Wohnung auf dem Land gefunden.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Wohnung liegt im Zentrum von Berlin, nicht auf dem Land." },
       { id: 2, question: "Die Wohnung kostet 800 Euro ohne Nebenkosten.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "'800 Euro kalt' bedeutet ohne Nebenkosten." },
@@ -59,16 +58,16 @@ Dein Julian`,
     duration: "15 Phút",
     type: "Đúng / Sai",
     questionType: "true_false",
-    readingText: `Liebe Eltern,
-wir laden Sie herzlich zu unserem diesjährigen Sommerfest an der Goethe-Schule ein. Das Fest findet am 15. Juli von 14:00 bis 18:00 Uhr auf dem Schulhof statt. Es gibt viele Aktivitäten für die Kinder, wie zum Beispiel Kinderschminken, Dosenwerfen und ein kleines Theaterstück, das von der Klasse 3b aufgeführt wird. Für das leibliche Wohl ist ebenfalls gesorgt: Der Elternbeirat verkauft Kaffee, Kuchen und Würstchen. Die Einnahmen gehen an ein Projekt für neue Spielgeräte. Wir freuen uns auf Ihr Kommen!
-Die Schulleitung`,
+    readingText: `Schul-Blog von Max: Rückblick auf unser Schulfest
+Hallo zusammen! Gestern war unser großes Sommerfest an der Goethe-Schule und es war ein voller Erfolg. Das Fest fand von 14:00 bis 18:00 Uhr auf dem Schulhof statt. Es gab so viele Aktivitäten für uns Schüler, wie zum Beispiel Kinderschminken und Dosenwerfen. Das Highlight war das kleine Theaterstück, das von der Klasse 3b aufgeführt wurde – sie haben echt toll gespielt!
+Für das leibliche Wohl war auch gesorgt: Die Eltern haben Kaffee, Kuchen und Würstchen verkauft. Die Einnahmen gehen an ein Projekt für neue Spielgeräte auf unserem Pausenhof. Nächstes Jahr bin ich auf jeden Fall wieder dabei!`,
     questions: [
-      { id: 1, question: "Das Fest findet am Abend statt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Es findet von 14:00 bis 18:00 Uhr statt, also am Nachmittag." },
-      { id: 2, question: "Das Sommerfest ist auf dem Schulhof.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Im Text steht: 'auf dem Schulhof'." },
-      { id: 3, question: "Alle Klassen führen ein Theaterstück auf.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Nur die Klasse 3b führt ein Theaterstück auf." },
-      { id: 4, question: "Essen und Trinken sind kostenlos.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Der Elternbeirat verkauft Kaffee, Kuchen und Würstchen (die Einnahmen gehen an ein Projekt)." },
+      { id: 1, question: "Das Fest fand am Abend statt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Es fand von 14:00 bis 18:00 Uhr statt, also am Nachmittag." },
+      { id: 2, question: "Das Sommerfest war auf dem Schulhof.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Im Text steht: 'auf dem Schulhof'." },
+      { id: 3, question: "Alle Klassen haben ein Theaterstück aufgeführt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Nur die Klasse 3b hat ein Theaterstück aufgeführt." },
+      { id: 4, question: "Essen und Trinken auf dem Fest waren kostenlos.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Eltern haben Kaffee, Kuchen und Würstchen verkauft (also musste man bezahlen)." },
       { id: 5, question: "Das gesammelte Geld wird für neues Spielzeug ausgegeben.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Die Einnahmen gehen an ein Projekt für neue Spielgeräte." },
-      { id: 6, question: "Der Brief wurde von den Schülern geschrieben.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Der Brief wurde von der Schulleitung geschrieben." }
+      { id: 6, question: "Der Text wurde von der Schulleitung geschrieben.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Der Text ist ein Blogbeitrag von einem Schüler (Max)." }
     ]
   },
   {
@@ -79,17 +78,17 @@ Die Schulleitung`,
     duration: "15 Phút",
     type: "Đúng / Sai",
     questionType: "true_false",
-    readingText: `Hallo Maria,
-stell dir vor, ich habe endlich einen Job gefunden! Ich arbeite jetzt als Krankenpflegerin im Stadtkrankenhaus. Die Arbeit ist anstrengend, aber sie macht mir großen Spaß. Meine Schicht beginnt meistens schon um 6 Uhr morgens, deshalb muss ich sehr früh aufstehen. Die Kollegen sind alle sehr nett und hilfsbereit. Nächsten Monat muss ich das erste Mal an einem Wochenende arbeiten. Darauf freue ich mich nicht so sehr, aber das gehört zum Job dazu. Wollen wir uns am Freitagabend auf einen Kaffee treffen?
-Liebe Grüße,
-Anna`,
+    readingText: `Forenbeitrag von Anna (Thema: Erster Job):
+Hallo zusammen, ich muss euch etwas erzählen! Ich habe endlich einen Job gefunden und arbeite jetzt als Krankenpflegerin im Stadtkrankenhaus. Die Arbeit ist wirklich anstrengend, aber sie macht mir großen Spaß. Meine Schicht beginnt meistens schon um 6 Uhr morgens, deshalb muss ich sehr früh aufstehen. Die Kollegen sind zum Glück alle sehr nett und hilfsbereit. 
+Nächsten Monat muss ich das erste Mal an einem Wochenende arbeiten. Darauf freue ich mich nicht so sehr, aber das gehört zum Job im Krankenhaus eben dazu. Wie war eigentlich eure erste Arbeitswoche?
+Liebe Grüße, Anna`,
     questions: [
-      { id: 1, question: "Anna arbeitet als Ärztin.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie arbeitet als Krankenpflegerin." },
+      { id: 1, question: "Anna arbeitet als Ärztin im Krankenhaus.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie arbeitet als Krankenpflegerin." },
       { id: 2, question: "Anna findet die Arbeit sehr entspannend.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie sagt, die Arbeit ist 'anstrengend'." },
       { id: 3, question: "Anna beginnt ihre Arbeit oft am frühen Morgen.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Ihre Schicht beginnt meistens um 6 Uhr morgens." },
       { id: 4, question: "Anna hat unfreundliche Kollegen.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Kollegen sind sehr nett und hilfsbereit." },
       { id: 5, question: "Anna freut sich sehr auf die Arbeit am Wochenende.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie sagt: 'Darauf freue ich mich nicht so sehr'." },
-      { id: 6, question: "Anna möchte sich mit Maria am Wochenende treffen.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie schlägt vor, sich am Freitagabend (also vor dem Wochenende) zu treffen." }
+      { id: 6, question: "Anna möchte von anderen wissen, wie ihre erste Arbeitswoche war.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie fragt im Forum: 'Wie war eigentlich eure erste Arbeitswoche?'" }
     ]
   },
 
