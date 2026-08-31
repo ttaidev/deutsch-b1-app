@@ -20,12 +20,12 @@ Als kleine Entschuldigung und als Versuch der Wiedergutmachung habe ich heute de
 Viele Grüße,
 Ihre Julia (Wohnung 8)`,
     questions: [
-      { id: 1, question: "Julia hat von Anfang an geplant, zu Hause zu feiern.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie hatte eigentlich vorgehabt, die Feier in ein Restaurant zu verlegen, musste dann aber spontan zu Hause feiern." },
-      { id: 2, question: "Einige Nachbarn haben sich während der Feier bemerkbar gemacht.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie schreibt: 'Einige von Ihnen haben sogar an die Wand geklopft'." },
-      { id: 3, question: "Julia hat den Kuchen in einem Café bestellt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie hat den ganzen Nachmittag in der Küche gestanden und selbst gebacken." },
-      { id: 4, question: "Die Nachbarn sind für heute Nachmittag eingeladen.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie sind 'am kommenden Sonntag ab 16 Uhr' eingeladen, nicht heute." },
-      { id: 5, question: "Julia wohnt im zweiten Stockwerk.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie lädt die Nachbarn 'zu mir in den 2. Stock' ein." },
-      { id: 6, question: "Julia wohnt schon sehr lange in dem Haus.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie sagt: '...da ich ja erst vor drei Monaten hier eingezogen bin'." }
+      { id: 1, question: "Julia hat von Anfang an geplant, zu Hause zu feiern.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie hatte eigentlich vorgehabt, die Feier in ein Restaurant zu verlegen, musste dann aber spontan zu Hause feiern. (Cô ấy vốn định chuyển tiệc ra nhà hàng, nhưng sau đó phải tổ chức ở nhà một cách tự phát do bị hủy bàn.)" },
+      { id: 2, question: "Einige Nachbarn haben sich während der Feier bemerkbar gemacht.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie schreibt: 'Einige von Ihnen haben sogar an die Wand geklopft'. (Cô ấy viết: 'Vài người trong số các bạn thậm chí đã gõ vào tường'.)" },
+      { id: 3, question: "Julia hat den Kuchen in einem Café bestellt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie hat den ganzen Nachmittag in der Küche gestanden und selbst gebacken. (Cô ấy đã đứng cả buổi chiều trong bếp và tự nướng bánh.)" },
+      { id: 4, question: "Die Nachbarn sind für heute Nachmittag eingeladen.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie sind 'am kommenden Sonntag ab 16 Uhr' eingeladen, nicht heute. (Họ được mời vào '16h Chủ Nhật tới', không phải hôm nay.)" },
+      { id: 5, question: "Julia wohnt im zweiten Stockwerk.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie lädt die Nachbarn 'zu mir in den 2. Stock' ein. (Cô ấy mời hàng xóm 'lên tầng 2 chỗ tôi'.)" },
+      { id: 6, question: "Julia wohnt schon sehr lange in dem Haus.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie sagt: '...da ich ja erst vor drei Monaten hier eingezogen bin'. (Cô ấy nói: '...bởi vì tôi cũng mới chuyển đến đây 3 tháng trước'.)" }
     ]
   },
   {
@@ -47,12 +47,12 @@ Aber wir lassen uns die Urlaubsstimmung nicht verderben. Morgen fahren wir mit d
 Bis bald,
 Euer Thomas`,
     questions: [
-      { id: 1, question: "Thomas und seine Frau hatten eine entspannte Anreise.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er sagt, sie sind 'nach einer langen, anstrengenden Fahrt endlich hier im Hotel angekommen'." },
-      { id: 2, question: "Das Wetter ist so schlecht, wie die App es vorhergesagt hat.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er schreibt: '...aber das Wetter ist einfach traumhaft. Jeden Tag über 30 Grad...'." },
-      { id: 3, question: "Sie können mit den Handys besonders im Dunkeln gute Fotos machen.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er sagt, dass die Fotoqualität der Handys 'vor allem, wenn wir abends im Dunkeln fotografieren wollen' nicht so gut ist." },
-      { id: 4, question: "Sie reisen mit dem Auto weiter nach Neapel.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie fahren 'mit dem Schnellzug', da ihnen der Verkehr für einen Mietwagen zu chaotisch ist." },
-      { id: 5, question: "Sie bleiben in Neapel für drei Tage.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Er schreibt: '...bleiben dort für drei Tage'." },
-      { id: 6, question: "Der Flug nach Deutschland startet am Sonntagmorgen.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie fliegen 'am Sonntagabend direkt zurück nach Deutschland'." }
+      { id: 1, question: "Thomas und seine Frau hatten eine entspannte Anreise.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er sagt, sie sind 'nach einer langen, anstrengenden Fahrt endlich hier im Hotel angekommen'. (Anh ấy nói rằng họ đến khách sạn 'sau một chuyến lái xe dài và mệt mỏi'.)" },
+      { id: 2, question: "Das Wetter ist so schlecht, wie die App es vorhergesagt hat.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er schreibt: '...aber das Wetter ist einfach traumhaft. Jeden Tag über 30 Grad...'. (Anh ấy viết: '...nhưng thời tiết tuyệt đẹp. Mỗi ngày trên 30 độ...'.)" },
+      { id: 3, question: "Sie können mit den Handys besonders im Dunkeln gute Fotos machen.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er sagt, dass die Fotoqualität der Handys 'vor allem, wenn wir abends im Dunkeln fotografieren wollen' nicht so gut ist. (Anh ấy nói chất lượng ảnh chụp từ điện thoại không tốt lắm 'nhất là khi muốn chụp ảnh vào buổi tối trong bóng tối'.)" },
+      { id: 4, question: "Sie reisen mit dem Auto weiter nach Neapel.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie fahren 'mit dem Schnellzug', da ihnen der Verkehr für einen Mietwagen zu chaotisch ist. (Họ đi bằng 'tàu cao tốc', vì giao thông ở đó quá hỗn loạn để thuê xe tự lái.)" },
+      { id: 5, question: "Sie bleiben in Neapel für drei Tage.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Er schreibt: '...bleiben dort für drei Tage'. (Anh ấy viết: '...ở lại đó trong ba ngày'.)" },
+      { id: 6, question: "Der Flug nach Deutschland startet am Sonntagmorgen.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie fliegen 'am Sonntagabend direkt zurück nach Deutschland'. (Họ bay 'bay thẳng về Đức vào tối Chủ Nhật'.)" }
     ]
   },
   {
@@ -71,12 +71,12 @@ Der Grund, warum ich euch schreibe, ist folgender: Es gibt im Moment ein absolut
 
 Der Vertrag läuft dort standardmäßig für 12 Monate, eine kürzere Laufzeit bieten sie leider nicht an. Hätte jemand von euch Lust, Zeit und Motivation, sich mit mir zusammen dort anzumelden und vielleicht ein- bis zweimal pro Woche gemeinsam zu trainieren? Wir könnten uns am kommenden Mittwochabend direkt vor dem Studio treffen, uns alles in Ruhe ansehen und bei Gefallen gleich den Vertrag unterschreiben. Meldet euch bitte per Direktnachricht bei mir!`,
     questions: [
-      { id: 1, question: "Lisa sucht im Forum nach einem Fitness-Trainer.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie sucht nach einem Partner, um sich gemeinsam anzumelden und den Rabatt zu nutzen." },
-      { id: 2, question: "Der Rabatt gilt für die gesamte Vertragslaufzeit von einem Jahr.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Der Rabatt (die Hälfte zahlen) gilt nur 'im ersten halben Jahr'." },
-      { id: 3, question: "Yogakurse kosten in diesem Studio zusätzlich Geld.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Das Studio bietet 'sogar kostenlose Yogakurse' an." },
-      { id: 4, question: "Lisa trainiert am liebsten tagsüber, da sie abends arbeitet.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie arbeitet tagsüber im Büro und findet die Kurse am späten Abend 'ideal'." },
-      { id: 5, question: "Das Studio bietet keine Verträge für nur 6 Monate an.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Der Vertrag läuft 'standardmäßig für 12 Monate, eine kürzere Laufzeit bieten sie leider nicht an'." },
-      { id: 6, question: "Lisa bittet Interessenten, ihr eine direkte Nachricht zu schreiben.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie schreibt: 'Meldet euch bitte per Direktnachricht bei mir!'." }
+      { id: 1, question: "Lisa sucht im Forum nach einem Fitness-Trainer.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie sucht nach einem Partner, um sich gemeinsam anzumelden und den Rabatt zu nutzen. (Cô ấy đang tìm một đối tác để cùng đăng ký nhằm nhận ưu đãi, không phải tìm huấn luyện viên.)" },
+      { id: 2, question: "Der Rabatt gilt für die gesamte Vertragslaufzeit von einem Jahr.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Der Rabatt (die Hälfte zahlen) gilt nur 'im ersten halben Jahr'. (Khuyến mãi trả nửa giá chỉ áp dụng trong 'nửa năm đầu'.)" },
+      { id: 3, question: "Yogakurse kosten in diesem Studio zusätzlich Geld.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Das Studio bietet 'sogar kostenlose Yogakurse' an. (Phòng tập cung cấp 'các lớp Yoga miễn phí'.)" },
+      { id: 4, question: "Lisa trainiert am liebsten tagsüber, da sie abends arbeitet.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie arbeitet tagsüber im Büro und findet die Kurse am späten Abend 'ideal'. (Cô ấy làm việc văn phòng ban ngày nên thấy các lớp tối muộn là 'lý tưởng'.)" },
+      { id: 5, question: "Das Studio bietet keine Verträge für nur 6 Monate an.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Der Vertrag läuft 'standardmäßig für 12 Monate, eine kürzere Laufzeit bieten sie leider nicht an'. (Hợp đồng có 'thời hạn chuẩn là 12 tháng, họ không cung cấp thời hạn ngắn hơn'.)" },
+      { id: 6, question: "Lisa bittet Interessenten, ihr eine direkte Nachricht zu schreiben.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie schreibt: 'Meldet euch bitte per Direktnachricht bei mir!'. (Cô ấy viết: 'Vui lòng nhắn tin trực tiếp cho tôi!'.)" }
     ]
   },
   {
@@ -97,12 +97,12 @@ Damit wir den Anschluss nicht verlieren, sollen wir die unerwartet freie Zeit nu
 
 Euer Kurssprecher, Jan`,
     questions: [
-      { id: 1, question: "Herr Müller hat sich beim Sport verletzt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er ist 'wegen einer schweren Grippe komplett krankgeschrieben', nicht wegen Sport." },
-      { id: 2, question: "Der Test zu den Präpositionen findet am Donnerstag statt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Der Test 'wird nun auf unbestimmte Zeit verschoben'." },
-      { id: 3, question: "Die Schule hat bereits einen neuen Lehrer für nächste Woche gefunden.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Schule 'bemüht sich derzeit intensiv darum', eine Vertretung zu organisieren." },
-      { id: 4, question: "Die Schüler müssen zwei verschiedene Aufgaben zu Hause erledigen.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie müssen die Aufgaben auf Seite 45 machen UND einen kurzen Text schreiben." },
-      { id: 5, question: "Jan findet die Hausaufgaben sehr einfach und wenig.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er schreibt: 'Ich finde das ehrlich gesagt ein bisschen viel Arbeit für zu Hause'." },
-      { id: 6, question: "Die Hausaufgaben sollen am Montag im Sekretariat abgegeben werden.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Am kommenden Montag können wir unsere gesammelten Ergebnisse... im Sekretariat in ein spezielles Fach legen." }
+      { id: 1, question: "Herr Müller hat sich beim Sport verletzt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er ist 'wegen einer schweren Grippe komplett krankgeschrieben', nicht wegen Sport. (Thầy nghỉ ốm do 'bị cúm nặng', không phải do chơi thể thao.)" },
+      { id: 2, question: "Der Test zu den Präpositionen findet am Donnerstag statt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Der Test 'wird nun auf unbestimmte Zeit verschoben'. (Bài kiểm tra 'sẽ bị hoãn lại vô thời hạn'.)" },
+      { id: 3, question: "Die Schule hat bereits einen neuen Lehrer für nächste Woche gefunden.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Schule 'bemüht sich derzeit intensiv darum', eine Vertretung zu organisieren. (Trường học 'hiện đang nỗ lực hết sức' để sắp xếp giáo viên dạy thay, chưa tìm được.)" },
+      { id: 4, question: "Die Schüler müssen zwei verschiedene Aufgaben zu Hause erledigen.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie müssen die Aufgaben auf Seite 45 machen UND einen kurzen Text schreiben. (Họ phải làm bài tập trang 45 VÀ viết một bài văn ngắn.)" },
+      { id: 5, question: "Jan findet die Hausaufgaben sehr einfach und wenig.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Er schreibt: 'Ich finde das ehrlich gesagt ein bisschen viel Arbeit für zu Hause'. (Anh ấy viết: 'Thành thực mà nói tôi thấy có hơi nhiều bài tập về nhà'.)" },
+      { id: 6, question: "Die Hausaufgaben sollen am Montag im Sekretariat abgegeben werden.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Am kommenden Montag können wir unsere gesammelten Ergebnisse... im Sekretariat in ein spezielles Fach legen. (Thứ Hai tới, học sinh có thể nộp bài tập vào một ngăn chuyên dụng ở văn phòng.)" }
     ]
   },
   {
@@ -124,12 +124,12 @@ Da wir wissen, dass Sie derzeit noch in einem anderen Arbeitsverhältnis stehen,
 Mit freundlichen Grüßen,
 Klaus Schmidt (Personalchef)`,
     questions: [
-      { id: 1, question: "Frau Nguyen bekommt genau die Stelle, für die sie sich beworben hat.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Stelle im Stadtzentrum ist schon vergeben. Sie bekommt eine Position in der Filiale am Südbahnhof angeboten." },
-      { id: 2, question: "Herr Schmidt war von der Erfahrung von Frau Nguyen sehr beeindruckt.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Ihre Unterlagen und Erfahrung haben sie 'so sehr überzeugt'." },
-      { id: 3, question: "Das Gespräch findet direkt in einer der Bäckereien statt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Das Gespräch findet 'in unserer Hauptverwaltung in der Goethestraße (nicht in die Bäckerei selbst!)' statt." },
-      { id: 4, question: "Frau Nguyen soll zwei wichtige Dokumente zum Gespräch mitbringen.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie soll ein 'aktuelles Gesundheitszeugnis' sowie das 'Original-Abschlusszeugnis' mitbringen." },
-      { id: 5, question: "Frau Nguyen ist im Moment ohne Arbeit.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Im Text steht: 'Da wir wissen, dass Sie derzeit noch in einem anderen Arbeitsverhältnis stehen...'." },
-      { id: 6, question: "Frau Nguyen kann den Termin auf den späten Nachmittag verschieben lassen.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Wenn der Termin am Vormittag nicht passt, kann sie anrufen, um 'nach einem Termin am späten Nachmittag' zu suchen." }
+      { id: 1, question: "Frau Nguyen bekommt genau die Stelle, für die sie sich beworben hat.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Stelle im Stadtzentrum ist schon vergeben. Sie bekommt eine Position in der Filiale am Südbahnhof angeboten. (Vị trí ở trung tâm thành phố đã có người khác làm, nên cô ấy được đề nghị làm ở chi nhánh ga Nam.)" },
+      { id: 2, question: "Herr Schmidt war von der Erfahrung von Frau Nguyen sehr beeindruckt.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Ihre Unterlagen und Erfahrung haben sie 'so sehr überzeugt'. (Hồ sơ và kinh nghiệm của cô ấy đã 'vô cùng thuyết phục' được họ.)" },
+      { id: 3, question: "Das Gespräch findet direkt in einer der Bäckereien statt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Das Gespräch findet 'in unserer Hauptverwaltung in der Goethestraße (nicht in die Bäckerei selbst!)' statt. (Cuộc phỏng vấn diễn ra ở trụ sở chính, không phải tại tiệm bánh.)" },
+      { id: 4, question: "Frau Nguyen soll zwei wichtige Dokumente zum Gespräch mitbringen.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie soll ein 'aktuelles Gesundheitszeugnis' sowie das 'Original-Abschlusszeugnis' mitbringen. (Cô ấy cần mang theo giấy khám sức khỏe và bằng tốt nghiệp gốc.)" },
+      { id: 5, question: "Frau Nguyen ist im Moment ohne Arbeit.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Im Text steht: 'Da wir wissen, dass Sie derzeit noch in einem anderen Arbeitsverhältnis stehen...'. (Trong văn bản có nói: 'Vì chúng tôi biết rằng hiện tại bạn vẫn đang làm việc ở nơi khác...'.)" },
+      { id: 6, question: "Frau Nguyen kann den Termin auf den späten Nachmittag verschieben lassen.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Wenn der Termin am Vormittag nicht passt, kann sie anrufen, um 'nach einem Termin am späten Nachmittag' zu suchen. (Nếu lịch sáng không hợp, cô ấy có thể gọi để hẹn lại một lịch vào chiều muộn.)" }
     ]
   },
   {
@@ -151,12 +151,12 @@ Hättest du vielleicht am Freitagabend nach deiner Schicht im Restaurant kurz Ze
 Verzweifelte Grüße,
 Deine Sophie`,
     questions: [
-      { id: 1, question: "Sophie hat sich lange nicht bei Felix gemeldet, weil ihr Internet kaputt ist.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie entschuldigt sich, dass sie sich lange nicht gemeldet hat, aber das Internet ist erst 'seit gestern Nachmittag' kaputt." },
-      { id: 2, question: "Sophie hat noch nichts unternommen, um das Problem selbst zu lösen.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie hat den Router mehrfach vom Strom genommen, neu gestartet und alle Kabel überprüft." },
-      { id: 3, question: "Sophie kann die Hausarbeit nicht einfach auf dem Handy schreiben.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie braucht das Internet am PC zum Recherchieren und ihr 'Handy-Datenvolumen ist schon aufgebraucht'." },
-      { id: 4, question: "Felix arbeitet nebenbei in einem Restaurant.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sophie fragt, ob er 'am Freitagabend nach deiner Schicht im Restaurant' Zeit hat." },
-      { id: 5, question: "Sophie lädt Felix als Dankeschön zum Essen in ein Restaurant ein.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie schreibt: '...koche ich uns auch gerne dein Lieblingsessen', also kocht sie selbst zu Hause." },
-      { id: 6, question: "Die Lichter am Router sind komplett aus.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Kontrolllichter 'blinken ununterbrochen rot und piepen manchmal'." }
+      { id: 1, question: "Sophie hat sich lange nicht bei Felix gemeldet, weil ihr Internet kaputt ist.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie entschuldigt sich, dass sie sich lange nicht gemeldet hat, aber das Internet ist erst 'seit gestern Nachmittag' kaputt. (Cô ấy xin lỗi vì lâu không liên lạc, nhưng mạng Internet chỉ mới hỏng 'từ chiều hôm qua' thôi.)" },
+      { id: 2, question: "Sophie hat noch nichts unternommen, um das Problem selbst zu lösen.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie hat den Router mehrfach vom Strom genommen, neu gestartet und alle Kabel überprüft. (Cô ấy đã ngắt điện router nhiều lần, khởi động lại và kiểm tra tất cả các dây cáp.)" },
+      { id: 3, question: "Sophie kann die Hausarbeit nicht einfach auf dem Handy schreiben.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sie braucht das Internet am PC zum Recherchieren und ihr 'Handy-Datenvolumen ist schon aufgebraucht'. (Cô ấy cần Internet trên máy tính để tra cứu, và gói cước 4G trên điện thoại của cô ấy thì đã cạn kiệt.)" },
+      { id: 4, question: "Felix arbeitet nebenbei in einem Restaurant.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Sophie fragt, ob er 'am Freitagabend nach deiner Schicht im Restaurant' Zeit hat. (Sophie hỏi xem anh ấy có rảnh vào 'tối thứ sáu sau ca làm việc ở nhà hàng' không.)" },
+      { id: 5, question: "Sophie lädt Felix als Dankeschön zum Essen in ein Restaurant ein.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie schreibt: '...koche ich uns auch gerne dein Lieblingsessen', also kocht sie selbst zu Hause. (Cô ấy viết: '...tớ rất sẵn lòng nấu món cậu thích', tức là cô ấy tự nấu ở nhà.)" },
+      { id: 6, question: "Die Lichter am Router sind komplett aus.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Kontrolllichter 'blinken ununterbrochen rot und piepen manchmal'. (Các đèn báo vẫn đang 'nháy đỏ liên tục và thỉnh thoảng kêu bíp bíp'.)" }
     ]
   },
   {
@@ -179,12 +179,12 @@ Bitte gebt uns unbedingt bis Ende Juli Bescheid, ob ihr kommt, damit wir das Ess
 Wir freuen uns riesig auf euch!
 Laura und Tim`,
     questions: [
-      { id: 1, question: "Laura und Tim empfehlen ihren Gästen, mit dem eigenen Auto zur Kirche zu fahren.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie raten davon ab, weil es an der Kirche nur wenige Parkplätze gibt (besser mit den öffentlichen Verkehrsmitteln)." },
-      { id: 2, question: "Die Feier findet im selben Gebäude wie die Trauung statt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Trauung ist in der Kirche, die Feier in der Gaststätte (zehn Gehminuten entfernt)." },
-      { id: 3, question: "Es gibt auf der Feier ein Buffet und Musik von einer Live-Band.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Es ist für 'hervorragendes Essen in Form eines riesigen Buffets... und natürlich eine tolle Live-Band' gesorgt." },
-      { id: 4, question: "Gäste sollen sich bei Tim melden, wenn sie eine Rede halten möchten.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie sollen sich 'heimlich an meine Schwester Maria' wenden." },
-      { id: 5, question: "Laura und Tim wünschen sich zur Hochzeit eine neue Kaffeemaschine.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie wünschen sich keine Haushaltsgeräte, sondern einen finanziellen Beitrag für ihre Flitterwochen." },
-      { id: 6, question: "Die Gäste müssen bis Ende August auf die Einladung antworten.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie müssen 'unbedingt bis Ende Juli Bescheid' geben." }
+      { id: 1, question: "Laura und Tim empfehlen ihren Gästen, mit dem eigenen Auto zur Kirche zu fahren.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie raten davon ab, weil es an der Kirche nur wenige Parkplätze gibt (besser mit den öffentlichen Verkehrsmitteln). (Họ không khuyến khích vì nhà thờ có rất ít chỗ đỗ xe, tốt nhất nên đi phương tiện công cộng.)" },
+      { id: 2, question: "Die Feier findet im selben Gebäude wie die Trauung statt.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Die Trauung ist in der Kirche, die Feier in der Gaststätte (zehn Gehminuten entfernt). (Lễ cưới ở nhà thờ, còn tiệc ăn mừng thì ở một nhà hàng cách đó mười phút đi bộ.)" },
+      { id: 3, question: "Es gibt auf der Feier ein Buffet und Musik von einer Live-Band.", options: ["Richtig", "Falsch"], correct: "Richtig", explanation: "Es ist für 'hervorragendes Essen in Form eines riesigen Buffets... und natürlich eine tolle Live-Band' gesorgt. (Có 'đồ ăn tuyệt ngon dưới dạng một bữa tiệc buffet khổng lồ... và tất nhiên là một ban nhạc sống tuyệt vời'.)" },
+      { id: 4, question: "Gäste sollen sich bei Tim melden, wenn sie eine Rede halten möchten.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie sollen sich 'heimlich an meine Schwester Maria' wenden. (Khách muốn đọc diễn văn thì nên bí mật liên hệ với Maria, em gái của cô dâu.)" },
+      { id: 5, question: "Laura und Tim wünschen sich zur Hochzeit eine neue Kaffeemaschine.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie wünschen sich keine Haushaltsgeräte, sondern einen finanziellen Beitrag für ihre Flitterwochen. (Họ không muốn được tặng đồ gia dụng, mà muốn nhận được sự đóng góp tài chính cho tuần trăng mật của mình.)" },
+      { id: 6, question: "Die Gäste müssen bis Ende August auf die Einladung antworten.", options: ["Richtig", "Falsch"], correct: "Falsch", explanation: "Sie müssen 'unbedingt bis Ende Juli Bescheid' geben. (Khách mời phải báo lại kết quả tham dự 'chậm nhất là vào cuối tháng 7', chứ không phải tháng 8.)" }
     ]
   }
 ];

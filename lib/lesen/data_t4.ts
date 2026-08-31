@@ -23,13 +23,13 @@ Lukas: "Die Luft in der Stadt ist so schlecht. Wir sollten alle Straßen im Zent
 6. Tom (31): "In anderen europäischen Städten funktioniert das doch auch super! Schaut euch mal Kopenhagen oder Amsterdam an. Da fahren fast nur Fahrräder und die Lebensqualität ist viel höher. Wir sollten diesem Beispiel sofort folgen."
 7. Anna (42): "Ich verstehe die Diskussion nicht. Die meisten Leute fahren sowieso nur alleine in riesigen Autos spazieren. Wir brauchen keine Autos, um Brötchen zu holen. Die Innenstädte müssen wieder den Menschen gehören!"`,
     questions: [
-      { id: 1, question: "Ist Maria für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Maria ist dagegen, weil sie im Schichtdienst arbeitet und auf ihr Auto angewiesen ist." },
-      { id: 2, question: "Ist Paul für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Paul ist dafür, weil es sicherer für seine Kinder ist." },
-      { id: 3, question: "Ist Lisa für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Lisa ist dagegen, weil sie Angst hat, dass weniger Kunden in ihr Geschäft kommen." },
-      { id: 4, question: "Ist Jan für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Jan ist dafür, er möchte den Platz für Parks und Cafés nutzen." },
-      { id: 5, question: "Ist Sarah für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sarah ist dagegen, um alte und behinderte Menschen nicht zu benachteiligen." },
-      { id: 6, question: "Ist Tom für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Tom ist dafür und nennt Kopenhagen und Amsterdam als positive Beispiele." },
-      { id: 7, question: "Ist Anna für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Anna ist dafür, weil sie findet, dass die Innenstädte wieder den Menschen gehören müssen." }
+      { id: 1, question: "Ist Maria für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Maria ist dagegen, weil sie im Schichtdienst arbeitet und auf ihr Auto angewiesen ist. (Maria phản đối vì cô ấy làm việc theo ca và phụ thuộc vào ô tô của mình.)" },
+      { id: 2, question: "Ist Paul für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Paul ist dafür, weil es sicherer für seine Kinder ist. (Paul ủng hộ vì nó an toàn hơn cho các con của anh ấy.)" },
+      { id: 3, question: "Ist Lisa für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Lisa ist dagegen, weil sie Angst hat, dass weniger Kunden in ihr Geschäft kommen. (Lisa phản đối vì sợ ít khách hàng đến cửa hàng của mình hơn.)" },
+      { id: 4, question: "Ist Jan für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Jan ist dafür, er möchte den Platz für Parks und Cafés nutzen. (Jan ủng hộ, cậu ấy muốn dùng không gian đó cho công viên và quán cà phê.)" },
+      { id: 5, question: "Ist Sarah für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sarah ist dagegen, um alte und behinderte Menschen nicht zu benachteiligen. (Sarah phản đối để không gây bất lợi cho người già và người khuyết tật.)" },
+      { id: 6, question: "Ist Tom für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Tom ist dafür und nennt Kopenhagen und Amsterdam als positive Beispiele. (Tom ủng hộ và lấy Copenhagen cũng như Amsterdam làm ví dụ tích cực.)" },
+      { id: 7, question: "Ist Anna für ein Autoverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Anna ist dafür, weil sie findet, dass die Innenstädte wieder den Menschen gehören müssen. (Anna ủng hộ vì cô ấy cho rằng khu trung tâm thành phố phải một lần nữa thuộc về con người.)" }
     ]
   },
   {
@@ -51,13 +51,13 @@ Sind die Personen der Meinung, dass Jugendliche neben der Schule jobben sollten?
 6. Laura (15): "Meine Eltern wollen, dass ich arbeite, aber ich sehe das gar nicht ein. Wenn ich acht Stunden in der Schule bin und dann noch Hausaufgaben mache, bin ich fertig. Das Wochenende ist zum Ausruhen da!"
 7. Herr Klein (Arbeitgeber): "Wir stellen gerne Schüler als Aushilfen ein. Sie bringen frischen Wind ins Team und lernen früh, wie der Arbeitsalltag funktioniert. Das ist eine wichtige Vorbereitung auf das spätere Berufsleben."`,
     questions: [
-      { id: 1, question: "Ist Markus für Schülerjobs?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Markus jobbt selbst und findet es gut, um den Umgang mit Geld zu lernen." },
-      { id: 2, question: "Ist Frau Müller für Schülerjobs?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie ist dagegen, weil die Schüler dann müde in der Schule sind." },
-      { id: 3, question: "Ist Sabine für Schülerjobs?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sabine findet es toll, weil ihr Sohn dadurch selbstständiger wird." },
-      { id: 4, question: "Ist Herr Bauer für Schülerjobs?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Herr Bauer meint, Jugendliche brauchen ihre Freizeit und Arbeit schade der Gesundheit." },
-      { id: 5, question: "Ist Felix für Schülerjobs?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Felix ist dafür, weil praktische Erfahrung wichtig ist." },
-      { id: 6, question: "Ist Laura für Schülerjobs?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Laura ist dagegen, weil sie nach der Schule keine Energie mehr für Arbeit hat." },
-      { id: 7, question: "Ist Herr Klein für Schülerjobs?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er ist dafür, weil es eine gute Vorbereitung auf das spätere Berufsleben ist." }
+      { id: 1, question: "Ist Markus für Schülerjobs?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Markus jobbt selbst und findet es gut, um den Umgang mit Geld zu lernen. (Bản thân Markus đi làm thêm và thấy điều đó rất tốt để học cách tiêu tiền.)" },
+      { id: 2, question: "Ist Frau Müller für Schülerjobs?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie ist dagegen, weil die Schüler dann müde in der Schule sind. (Cô ấy phản đối vì như vậy học sinh sẽ mệt mỏi ở trường.)" },
+      { id: 3, question: "Ist Sabine für Schülerjobs?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sabine findet es toll, weil ihr Sohn dadurch selbstständiger wird. (Sabine thấy điều đó thật tuyệt vì nhờ thế con trai cô ấy trở nên tự lập hơn.)" },
+      { id: 4, question: "Ist Herr Bauer für Schülerjobs?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Herr Bauer meint, Jugendliche brauchen ihre Freizeit und Arbeit schade der Gesundheit. (Bác sĩ Bauer cho rằng thanh thiếu niên cần thời gian rảnh rỗi và làm việc sẽ có hại cho sức khỏe.)" },
+      { id: 5, question: "Ist Felix für Schülerjobs?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Felix ist dafür, weil praktische Erfahrung wichtig ist. (Felix ủng hộ vì kinh nghiệm thực tế rất quan trọng.)" },
+      { id: 6, question: "Ist Laura für Schülerjobs?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Laura ist dagegen, weil sie nach der Schule keine Energie mehr für Arbeit hat. (Laura phản đối vì sau giờ học cô ấy không còn sức để làm việc nữa.)" },
+      { id: 7, question: "Ist Herr Klein für Schülerjobs?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er ist dafür, weil es eine gute Vorbereitung auf das spätere Berufsleben ist. (Ông ấy ủng hộ vì đó là sự chuẩn bị tốt cho cuộc sống đi làm sau này.)" }
     ]
   },
   {
@@ -79,13 +79,13 @@ Sind die Personen der Meinung, dass Schulnoten abgeschafft werden sollten? Wähl
 6. Sarah (Arbeitgeberin): "Wenn Bewerber ohne Noten zu mir kommen, weiß ich überhaupt nicht, woran ich bin. Textzeugnisse sind oft so kompliziert geschrieben, dass niemand sie wirklich versteht."
 7. Tim (14): "Ich hasse es, wenn der Lehrer die Arbeiten zurückgibt und alle vergleichen. Wer eine 5 hat, wird ausgelacht. Ohne Noten wäre die Stimmung in der Klasse viel entspannter."`,
     questions: [
-      { id: 1, question: "Ist Anna für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie findet Noten machen Angst und will lieber Feedbackgespräche." },
-      { id: 2, question: "Ist Herr Weber für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er meint, Noten sind wichtig für die Vergleichbarkeit." },
-      { id: 3, question: "Ist Julia für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie will Kinder motivieren statt sie mit Noten zu bestrafen." },
-      { id: 4, question: "Ist Max für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er lernt nur wegen der Noten und findet den Konkurrenzkampf gut." },
-      { id: 5, question: "Ist Professor Fischer für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er meint, Noten behindern das Lernen und fordert Alternativen." },
-      { id: 6, question: "Ist Sarah für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie braucht Noten, um Bewerber einschätzen zu können." },
-      { id: 7, question: "Ist Tim für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er meint, ohne Noten wäre die Stimmung entspannter." }
+      { id: 1, question: "Ist Anna für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie findet Noten machen Angst und will lieber Feedbackgespräche. (Cô ấy thấy điểm số gây sợ hãi và thích các cuộc trò chuyện phản hồi (đánh giá) chi tiết hơn.)" },
+      { id: 2, question: "Ist Herr Weber für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er meint, Noten sind wichtig für die Vergleichbarkeit. (Ông ấy cho rằng điểm số là quan trọng để có thể so sánh được.)" },
+      { id: 3, question: "Ist Julia für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie will Kinder motivieren statt sie mit Noten zu bestrafen. (Cô ấy muốn khích lệ trẻ em thay vì trừng phạt chúng bằng điểm số.)" },
+      { id: 4, question: "Ist Max für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er lernt nur wegen der Noten und findet den Konkurrenzkampf gut. (Cậu ấy học chỉ vì điểm số và thấy sự cạnh tranh là tốt.)" },
+      { id: 5, question: "Ist Professor Fischer für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er meint, Noten behindern das Lernen und fordert Alternativen. (Ông ấy cho rằng điểm số cản trở việc học và yêu cầu phải có các giải pháp thay thế.)" },
+      { id: 6, question: "Ist Sarah für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie braucht Noten, um Bewerber einschätzen zu können. (Cô ấy cần điểm số để có thể đánh giá các ứng viên xin việc.)" },
+      { id: 7, question: "Ist Tim für die Abschaffung von Schulnoten?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er meint, ohne Noten wäre die Stimmung entspannter. (Cậu ấy cho rằng không có điểm số thì không khí trong lớp sẽ thoải mái hơn.)" }
     ]
   },
   {
@@ -107,13 +107,13 @@ Sind die Personen für ein Verbot von Fast Food an Schulen? Wählen Sie "Ja" (da
 6. Herr Klein (Arzt): "Die Gesundheit der Kinder muss an erster Stelle stehen. Zucker und Fett in diesen Mengen machen krank. Schulen müssen hier hart durchgreifen."
 7. Lisa (17): "Es nervt, dass Erwachsene uns immer vorschreiben wollen, was gut für uns ist. Wenn ich Lust auf Pommes habe, will ich sie auch in der Pause essen dürfen."`,
     questions: [
-      { id: 1, question: "Ist Frau Schmidt für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie meint, Schulen sollten nur gesundes Essen anbieten." },
-      { id: 2, question: "Ist Lukas für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er meint, ein Verbot bringt nichts, da er es sich woanders kauft." },
-      { id: 3, question: "Ist Herr Wagner für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er hat es bereits abgeschafft und findet die Entscheidung richtig." },
-      { id: 4, question: "Ist Maria für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie ist gegen Verbote und für Aufklärung." },
-      { id: 5, question: "Ist Jan für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er liebt Pizza und findet, Fast Food ab und zu schadet nicht." },
-      { id: 6, question: "Ist Herr Klein für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er meint, Schulen müssen hart durchgreifen wegen der Gesundheit." },
-      { id: 7, question: "Ist Lisa für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie will selbst entscheiden, was sie isst, auch in der Pause." }
+      { id: 1, question: "Ist Frau Schmidt für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie meint, Schulen sollten nur gesundes Essen anbieten. (Cô ấy cho rằng các trường học chỉ nên phục vụ thức ăn lành mạnh.)" },
+      { id: 2, question: "Ist Lukas für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er meint, ein Verbot bringt nichts, da er es sich woanders kauft. (Cậu ấy cho rằng lệnh cấm chẳng mang lại lợi ích gì vì cậu ấy sẽ mua nó ở nơi khác.)" },
+      { id: 3, question: "Ist Herr Wagner für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er hat es bereits abgeschafft und findet die Entscheidung richtig. (Ông ấy đã xóa bỏ món ăn nhanh (khỏi trường) và thấy quyết định đó là đúng đắn.)" },
+      { id: 4, question: "Ist Maria für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie ist gegen Verbote und für Aufklärung. (Cô ấy chống lại các lệnh cấm và ủng hộ việc giáo dục.)" },
+      { id: 5, question: "Ist Jan für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er liebt Pizza und findet, Fast Food ab und zu schadet nicht. (Cậu ấy yêu Pizza và thấy thỉnh thoảng ăn đồ ăn nhanh cũng không hại gì.)" },
+      { id: 6, question: "Ist Herr Klein für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er meint, Schulen müssen hart durchgreifen wegen der Gesundheit. (Ông ấy cho rằng các trường học phải có biện pháp cứng rắn vì lý do sức khỏe.)" },
+      { id: 7, question: "Ist Lisa für ein Verbot von Fast Food?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie will selbst entscheiden, was sie isst, auch in der Pause. (Cô ấy muốn tự quyết định mình ăn gì, kể cả trong giờ nghỉ giải lao.)" }
     ]
   },
   {
@@ -135,13 +135,13 @@ Sind die Personen für ein komplettes Verbot von Tierversuchen in der Kosmetikin
 6. Klaus (Chemiker): "Computermodelle sind gut, aber sie können einen echten Organismus nicht perfekt simulieren. Für komplett neue chemische Verbindungen brauchen wir noch Tierversuche."
 7. Sarah (Tierrechtsaktivistin): "Tiere empfinden Schmerz genauso wie wir. Niemand hat das Recht, sie für menschliche Eitelkeit einzusperren und zu quälen. Schluss damit!"`,
     questions: [
-      { id: 1, question: "Ist Anna für ein Verbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie findet es grausam und fordert ein Verbot." },
-      { id: 2, question: "Ist Herr Dr. Müller für ein Verbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er meint, die Sicherheit der Menschen geht vor und Tests sind nötig." },
-      { id: 3, question: "Ist Julia für ein Verbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie kauft nur tierversuchsfrei und will, dass es gesetzlich gestoppt wird." },
-      { id: 4, question: "Ist Frau Braun für ein Verbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie ist gegen ein Verbot in Europa, weil Firmen sonst abwandern." },
-      { id: 5, question: "Ist Max für ein Verbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er findet es für Kosmetik unnötig und falsch." },
-      { id: 6, question: "Ist Klaus für ein Verbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er meint, wir brauchen noch Tierversuche für neue Chemikalien." },
-      { id: 7, question: "Ist Sarah für ein Verbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie verurteilt Tierversuche als Quälerei und fordert ein Ende." }
+      { id: 1, question: "Ist Anna für ein Verbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie findet es grausam und fordert ein Verbot. (Cô ấy thấy nó tàn nhẫn và đòi hỏi một lệnh cấm.)" },
+      { id: 2, question: "Ist Herr Dr. Müller für ein Verbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er meint, die Sicherheit der Menschen geht vor und Tests sind nötig. (Ông ấy cho rằng sự an toàn của con người được đặt lên hàng đầu và các cuộc thử nghiệm là cần thiết.)" },
+      { id: 3, question: "Ist Julia für ein Verbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie kauft nur tierversuchsfrei und will, dass es gesetzlich gestoppt wird. (Cô ấy chỉ mua các sản phẩm không thử nghiệm trên động vật và muốn điều đó bị ngăn chặn bằng luật pháp.)" },
+      { id: 4, question: "Ist Frau Braun für ein Verbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie ist gegen ein Verbot in Europa, weil Firmen sonst abwandern. (Cô ấy phản đối lệnh cấm ở Châu Âu vì nếu không các công ty sẽ chuyển ra nước ngoài.)" },
+      { id: 5, question: "Ist Max für ein Verbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er findet es für Kosmetik unnötig und falsch. (Cậu ấy thấy điều đó đối với mỹ phẩm là không cần thiết và sai trái.)" },
+      { id: 6, question: "Ist Klaus für ein Verbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er meint, wir brauchen noch Tierversuche für neue Chemikalien. (Ông ấy cho rằng chúng ta vẫn cần thử nghiệm trên động vật đối với các hóa chất mới.)" },
+      { id: 7, question: "Ist Sarah für ein Verbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie verurteilt Tierversuche als Quälerei und fordert ein Ende. (Cô ấy lên án các cuộc thử nghiệm trên động vật là sự tra tấn và yêu cầu chấm dứt nó.)" }
     ]
   },
   {
@@ -163,13 +163,13 @@ Sind die Personen der Meinung, dass Busse und Bahnen für alle kostenlos sein so
 6. Frau Meyer (Wirtschaftsexpertin): "Kostenlos ist nie etwas. Die Kosten werden auf alle Bürger umgelegt, auch auf die, die auf dem Land leben und gar keinen Bus haben. Das ist sehr ungerecht."
 7. Julian (22): "In anderen Ländern wie Luxemburg funktioniert das doch schon! Es spart so viel Zeit, weil man keine Tickets mehr kontrollieren muss. Ich bin absolut dafür."`,
     questions: [
-      { id: 1, question: "Ist Peter dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er warnt vor massiven Steuererhöhungen." },
-      { id: 2, question: "Ist Lisa dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie findet es fantastisch, da Tickets oft zu teuer sind." },
-      { id: 3, question: "Ist Herr Wagner dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er fürchtet überfüllte Busse, Chaos und Stress." },
-      { id: 4, question: "Ist Anna dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie sieht es als Anreiz für Klimaschutz und saubere Luft." },
-      { id: 5, question: "Ist Klaus dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Es würde sein Budget entlasten und er würde es öfter nutzen." },
-      { id: 6, question: "Ist Frau Meyer dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie findet es ungerecht, weil Menschen auf dem Land auch zahlen müssten." },
-      { id: 7, question: "Ist Julian dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er findet, es spart Zeit (keine Kontrollen) und verweist auf Luxemburg." }
+      { id: 1, question: "Ist Peter dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er warnt vor massiven Steuererhöhungen. (Ông ấy cảnh báo về sự gia tăng thuế ồ ạt.)" },
+      { id: 2, question: "Ist Lisa dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie findet es fantastisch, da Tickets oft zu teuer sind. (Cô ấy thấy điều đó thật tuyệt vời, vì giá vé thường quá đắt.)" },
+      { id: 3, question: "Ist Herr Wagner dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er fürchtet überfüllte Busse, Chaos und Stress. (Ông ấy sợ các chuyến xe buýt sẽ quá tải, gây hỗn loạn và căng thẳng.)" },
+      { id: 4, question: "Ist Anna dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie sieht es als Anreiz für Klimaschutz und saubere Luft. (Cô ấy coi đây là một động lực để bảo vệ khí hậu và làm sạch không khí.)" },
+      { id: 5, question: "Ist Klaus dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Es würde sein Budget entlasten und er würde es öfter nutzen. (Nó sẽ làm giảm bớt gánh nặng ngân sách cho ông ấy và ông ấy sẽ sử dụng nó thường xuyên hơn.)" },
+      { id: 6, question: "Ist Frau Meyer dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie findet es ungerecht, weil Menschen auf dem Land auch zahlen müssten. (Cô ấy thấy nó bất công vì những người sống ở nông thôn cũng sẽ phải trả tiền (qua thuế).)" },
+      { id: 7, question: "Ist Julian dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er findet, es spart Zeit (keine Kontrollen) und verweist auf Luxemburg. (Cậu ấy thấy nó giúp tiết kiệm thời gian (không cần kiểm soát vé) và lấy Luxembourg làm ví dụ.)" }
     ]
   },
   {
@@ -191,13 +191,13 @@ Sind die Personen der Meinung, dass Kinder schon im Kindergarten Fremdsprachen (
 6. Frau Bauer (Grundschullehrerin): "Das Problem ist, dass in den Grundschulen oft wieder bei Null angefangen wird. Die Kinder aus dem bilingualen Kindergarten langweilen sich dann. Das Konzept ist nicht ausgereift."
 7. Lisa (Studentin): "Ich wünschte, ich hätte schon als kleines Kind Englisch gelernt! Ich tue mich heute so schwer mit der Grammatik. Frühförderung ist absolut sinnvoll."`,
     questions: [
-      { id: 1, question: "Ist Sabine dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie meint, kleine Kinder lernen spielerisch und früh ist besser." },
-      { id: 2, question: "Ist Herr Müller dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er möchte sich erst auf die Muttersprache (Deutsch) konzentrieren." },
-      { id: 3, question: "Ist Dr. Lehmann dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie sieht in den ersten Jahren die Grundlagen für Mehrsprachigkeit." },
-      { id: 4, question: "Ist Klaus dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er findet es übertrieben und will, dass Kinder nur spielen ohne Druck." },
-      { id: 5, question: "Ist Maria dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie sieht Englisch als Muss und sieht riesige Vorteile." },
-      { id: 6, question: "Ist Frau Bauer dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie hält das Konzept für nicht ausgereift, weil Kinder sich in der Grundschule langweilen." },
-      { id: 7, question: "Ist Lisa dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie wünscht sich, sie hätte früher Englisch gelernt, Frühförderung ist sinnvoll." }
+      { id: 1, question: "Ist Sabine dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie meint, kleine Kinder lernen spielerisch und früh ist besser. (Cô ấy cho rằng trẻ nhỏ học một cách vui vẻ tự nhiên và học sớm thì tốt hơn.)" },
+      { id: 2, question: "Ist Herr Müller dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er möchte sich erst auf die Muttersprache (Deutsch) konzentrieren. (Ông ấy muốn tập trung vào tiếng mẹ đẻ (tiếng Đức) trước.)" },
+      { id: 3, question: "Ist Dr. Lehmann dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie sieht in den ersten Jahren die Grundlagen für Mehrsprachigkeit. (Bà ấy cho rằng những năm đầu đời tạo nền tảng cho việc nói nhiều ngôn ngữ.)" },
+      { id: 4, question: "Ist Klaus dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er findet es übertrieben und will, dass Kinder nur spielen ohne Druck. (Anh ấy thấy điều đó là thái quá và muốn trẻ chỉ chơi đùa mà không phải chịu áp lực.)" },
+      { id: 5, question: "Ist Maria dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie sieht Englisch als Muss und sieht riesige Vorteile. (Cô ấy coi tiếng Anh là điều bắt buộc và thấy những lợi thế to lớn.)" },
+      { id: 6, question: "Ist Frau Bauer dafür?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie hält das Konzept für nicht ausgereift, weil Kinder sich in der Grundschule langweilen. (Cô ấy cho rằng ý tưởng này chưa hoàn thiện, vì sau đó trẻ em sẽ thấy chán học ở trường tiểu học.)" },
+      { id: 7, question: "Ist Lisa dafür?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie wünscht sich, sie hätte früher Englisch gelernt, Frühförderung ist sinnvoll. (Cô ấy ước mình đã học tiếng Anh sớm hơn, giáo dục sớm là rất có ý nghĩa.)" }
     ]
   },
   {
@@ -219,13 +219,13 @@ Sind die Personen der Meinung, dass die 4-Tage-Woche (bei gleichem Gehalt) für 
 6. Herr Wagner (Politiker): "Wir haben ohnehin schon Fachkräftemangel. Wenn jetzt alle nur noch vier Tage arbeiten, wer erledigt dann die restliche Arbeit? Krankenhäuser und Pflegeheime würden kollabieren."
 7. Anna (32): "Island hat es erfolgreich getestet. Die Produktivität ist geblieben oder sogar gestiegen, während die Zufriedenheit der Menschen enorm gewachsen ist. Wir müssen das ausprobieren!"`,
     questions: [
-      { id: 1, question: "Ist Thomas für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er findet es einen Traum und erwartet mehr Motivation und Gesundheit." },
-      { id: 2, question: "Ist Frau Klein für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie sieht es in der Gastronomie als nicht finanzierbar an." },
-      { id: 3, question: "Ist Julia für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie meint, es senkt Stress und Burnout-Raten." },
-      { id: 4, question: "Ist Herr Schmidt für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er warnt vor einem Zusammenbruch der Wirtschaft und weniger Produktion." },
-      { id: 5, question: "Ist Max für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er glaubt, in 4 Tagen schafft man genauso viel Arbeit konzentrierter." },
-      { id: 6, question: "Ist Herr Wagner für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er sieht Probleme wegen Fachkräftemangel, besonders in Krankenhäusern." },
-      { id: 7, question: "Ist Anna für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie verweist auf erfolgreiche Tests in Island und will es ausprobieren." }
+      { id: 1, question: "Ist Thomas für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er findet es einen Traum und erwartet mehr Motivation und Gesundheit. (Anh ấy coi đó là một giấc mơ và kỳ vọng sẽ có nhiều động lực cũng như sức khỏe hơn.)" },
+      { id: 2, question: "Ist Frau Klein für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie sieht es in der Gastronomie als nicht finanzierbar an. (Cô ấy cho rằng điều đó không khả thi về mặt tài chính trong ngành ẩm thực.)" },
+      { id: 3, question: "Ist Julia für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie meint, es senkt Stress und Burnout-Raten. (Cô ấy cho rằng nó giúp giảm căng thẳng và tỷ lệ kiệt sức.)" },
+      { id: 4, question: "Ist Herr Schmidt für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er warnt vor einem Zusammenbruch der Wirtschaft und weniger Produktion. (Ông ấy cảnh báo về sự sụp đổ của nền kinh tế và việc sản xuất ít đi.)" },
+      { id: 5, question: "Ist Max für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er glaubt, in 4 Tagen schafft man genauso viel Arbeit konzentrierter. (Cậu ấy tin rằng người ta có thể hoàn thành khối lượng công việc y như vậy trong 4 ngày nếu làm việc tập trung hơn.)" },
+      { id: 6, question: "Ist Herr Wagner für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er sieht Probleme wegen Fachkräftemangel, besonders in Krankenhäusern. (Ông ấy nhìn thấy những vấn đề do thiếu hụt lao động lành nghề, đặc biệt là trong các bệnh viện.)" },
+      { id: 7, question: "Ist Anna für die 4-Tage-Woche?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie verweist auf erfolgreiche Tests in Island und will es ausprobieren. (Cô ấy nhắc đến các cuộc thử nghiệm thành công ở Iceland và muốn thử nghiệm nó.)" }
     ]
   },
   {
@@ -247,13 +247,13 @@ Sind die Personen der Meinung, dass Smartphones in der Schule komplett verboten 
 6. Tom (Schülersprecher): "Ein striktes Verbot macht Handys nur noch interessanter. Man kann Schüler nicht von der modernen Welt abschotten. Wir brauchen klare Regeln, aber kein komplettes Verbot."
 7. Herr Klein (Vater): "Als ich zur Schule ging, gab es so etwas auch nicht und wir haben es überlebt. Handys sind reines Spielzeug und haben in einer Bildungseinrichtung nichts verloren."`,
     questions: [
-      { id: 1, question: "Ist Herr Müller für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er will die Kommunikation fördern, weil alle nur auf Bildschirme starren." },
-      { id: 2, question: "Ist Jan für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er findet es lächerlich und will Handys für die Recherche nutzen." },
-      { id: 3, question: "Ist Lisa für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie sieht es als Schutz vor heimlichen Fotos und Cybermobbing." },
-      { id: 4, question: "Ist Sarah für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie braucht es für Stundenpläne und Kontakt zu Eltern." },
-      { id: 5, question: "Ist Frau Bauer für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie meint, Handys lenken ab und gehören ausgeschaltet." },
-      { id: 6, question: "Ist Tom für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er ist für klare Regeln, aber gegen ein komplettes Verbot." },
-      { id: 7, question: "Ist Herr Klein für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er sieht Handys als Spielzeug, die in der Schule nichts verloren haben." }
+      { id: 1, question: "Ist Herr Müller für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er will die Kommunikation fördern, weil alle nur auf Bildschirme starren. (Ông ấy muốn thúc đẩy giao tiếp, vì tất cả học sinh chỉ cắm mặt vào màn hình.)" },
+      { id: 2, question: "Ist Jan für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er findet es lächerlich und will Handys für die Recherche nutzen. (Cậu ấy thấy nó nực cười và muốn sử dụng điện thoại để tra cứu.)" },
+      { id: 3, question: "Ist Lisa für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie sieht es als Schutz vor heimlichen Fotos und Cybermobbing. (Cô ấy coi đây là sự bảo vệ khỏi việc chụp ảnh lén và bắt nạt trên mạng.)" },
+      { id: 4, question: "Ist Sarah für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie braucht es für Stundenpläne und Kontakt zu Eltern. (Cô ấy cần nó để xem thời khóa biểu và liên lạc với phụ huynh.)" },
+      { id: 5, question: "Ist Frau Bauer für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie meint, Handys lenken ab und gehören ausgeschaltet. (Cô ấy cho rằng điện thoại gây mất tập trung và phải bị tắt đi.)" },
+      { id: 6, question: "Ist Tom für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er ist für klare Regeln, aber gegen ein komplettes Verbot. (Cậu ấy ủng hộ các quy định rõ ràng, nhưng phản đối lệnh cấm hoàn toàn.)" },
+      { id: 7, question: "Ist Herr Klein für ein Handyverbot?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er sieht Handys als Spielzeug, die in der Schule nichts verloren haben. (Ông ấy xem điện thoại như đồ chơi, những thứ không có chỗ trong một cơ sở giáo dục.)" }
     ]
   },
   {
@@ -275,13 +275,13 @@ Sind die Personen der Meinung, dass Supermärkte und Geschäfte auch am Sonntag 
 6. Sabine (Verkäuferin): "Bitte nicht! Ich arbeite sowieso schon oft genug am Samstag. Wenn ich sonntags auch noch ranmuss, sehe ich meine Kinder ja gar nicht mehr am Wochenende."
 7. Herr Klein (Geschäftsmann): "Der Online-Handel schläft nie. Wenn der stationäre Einzelhandel überleben will, muss er sich anpassen. Sonntags haben die Menschen Zeit zum Bummeln, das würde unsere Umsätze retten."`,
     questions: [
-      { id: 1, question: "Ist Anna für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie hat wegen ihres Schichtdienstes samstags oft keine Zeit zum Einkaufen." },
-      { id: 2, question: "Ist Herr Weber für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er betont den Sonntag als Ruhetag für die Familien der Verkäufer." },
-      { id: 3, question: "Ist Julian für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er würde als Student gerne am Sonntag arbeiten, um Geld zu verdienen." },
-      { id: 4, question: "Ist Frau Meier für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie sieht den Sonntag als Tag der Besinnung und Kultur." },
-      { id: 5, question: "Ist Max für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er findet geschlossene Geschäfte als Tourist nervig." },
-      { id: 6, question: "Ist Sabine für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie will am Sonntag Zeit für ihre Kinder haben." },
-      { id: 7, question: "Ist Herr Klein für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er will am Sonntag öffnen, um gegen den Online-Handel zu bestehen." }
+      { id: 1, question: "Ist Anna für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Sie hat wegen ihres Schichtdienstes samstags oft keine Zeit zum Einkaufen. (Cô ấy thường không có thời gian mua sắm vào thứ Bảy do làm việc theo ca.)" },
+      { id: 2, question: "Ist Herr Weber für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Er betont den Sonntag als Ruhetag für die Familien der Verkäufer. (Ông ấy nhấn mạnh ngày Chủ Nhật là ngày nghỉ ngơi cho gia đình của những người bán hàng.)" },
+      { id: 3, question: "Ist Julian für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er würde als Student gerne am Sonntag arbeiten, um Geld zu verdienen. (Là một sinh viên, cậu ấy rất muốn làm việc vào Chủ Nhật để kiếm tiền.)" },
+      { id: 4, question: "Ist Frau Meier für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie sieht den Sonntag als Tag der Besinnung und Kultur. (Cô ấy coi ngày Chủ Nhật là ngày của sự suy ngẫm và văn hóa.)" },
+      { id: 5, question: "Ist Max für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er findet geschlossene Geschäfte als Tourist nervig. (Là một khách du lịch, anh ấy thấy các cửa hàng đóng cửa thật phiền toái.)" },
+      { id: 6, question: "Ist Sabine für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Nein", explanation: "Sie will am Sonntag Zeit für ihre Kinder haben. (Cô ấy muốn dành thời gian cho các con vào Chủ Nhật.)" },
+      { id: 7, question: "Ist Herr Klein für offene Geschäfte am Sonntag?", options: ["Ja", "Nein"], correct: "Ja", explanation: "Er will am Sonntag öffnen, um gegen den Online-Handel zu bestehen. (Ông ấy muốn mở cửa vào Chủ Nhật để cạnh tranh với thương mại trực tuyến.)" }
     ]
   }
 ];
