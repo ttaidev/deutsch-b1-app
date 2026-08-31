@@ -7,39 +7,39 @@ export interface RecommendationItem {
   badge: string;
 }
 
-export interface WeaknessItem {
+export interface GoalItem {
   id: string;
   topic: string;
-  accuracy: number; // percentage e.g. 58%
-  reason: string;
+  progress: number; // percentage e.g. 58%
+  description: string;
 }
 
 export async function getPersonalizedRecommendations(userId: string) {
-  // Analytical default weaknesses for B1 level practice
-  const weaknesses: WeaknessItem[] = [
+  // Analytical default goals for B1 level practice
+  const goals: GoalItem[] = [
     {
-      id: "w1",
-      topic: "Konjunktiv II (Wünsche & Höflichkeit)",
-      accuracy: 55,
-      reason: "Häufige Fehler in Grammatik-Quizzes",
+      id: "g1",
+      topic: "Hoàn thành 3 bài luyện nghe",
+      progress: 33,
+      description: "Đã làm 1/3 bài trong tuần này",
     },
     {
-      id: "w2",
-      topic: "Hören – Teil 2 (Radiobeiträge)",
-      accuracy: 62,
-      reason: "Letzte Übung mit 62% abgeschlossen",
+      id: "g2",
+      topic: "Luyện tập nói 2 bài Teil 1",
+      progress: 50,
+      description: "Đã làm 1/2 bài trong tuần này",
     },
     {
-      id: "w3",
-      topic: "Relativsätze im Dativ",
-      accuracy: 64,
-      reason: "Empfohlene Wiederholung",
+      id: "g3",
+      topic: "Đạt 80% trở lên bài đọc hiểu",
+      progress: 0,
+      description: "Mục tiêu bài kiểm tra cuối tuần",
     },
     {
-      id: "w4",
-      topic: "Wortschatz – Arbeit & Beruf",
-      accuracy: 70,
-      reason: "12 Vokabeln warten auf Fälligkeit",
+      id: "g4",
+      topic: "Ôn tập 20 từ vựng chủ đề Công việc",
+      progress: 75,
+      description: "Đã ôn tập 15/20 từ",
     },
   ];
 
@@ -54,10 +54,10 @@ export async function getPersonalizedRecommendations(userId: string) {
     },
     {
       id: "r2",
-      title: "Übe Grammatik: Konjunktiv II",
-      subtitle: "Erklärungen + 8 interaktive Quizfragen",
-      category: "GRAMMAR",
-      actionUrl: "/grammatik/konjunktiv-2",
+      title: "Luyện nói Teil 1: Lên kế hoạch",
+      subtitle: "Ghi âm & nhận đánh giá phát âm từ AI",
+      category: "SPRECHEN",
+      actionUrl: "/lernen/sprechen",
       badge: "Empfohlen",
     },
     {
@@ -78,5 +78,5 @@ export async function getPersonalizedRecommendations(userId: string) {
     },
   ];
 
-  return { weaknesses, recommendations };
+  return { goals, recommendations };
 }
