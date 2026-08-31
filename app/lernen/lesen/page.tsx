@@ -18,6 +18,8 @@ export default function LesenOverviewPage() {
       return ex;
     });
     setExercises(updated);
+  }, []);
+
   const [activeFilter, setActiveFilter] = useState("all");
 
   const categoriesConfig = [
