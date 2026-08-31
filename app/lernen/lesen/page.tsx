@@ -54,7 +54,7 @@ export default function LesenOverviewPage() {
       </div>
 
       {/* Categories Filter */}
-      <div className="flex gap-2 overflow-x-auto pb-2 hide-scrollbar">
+      <div className="flex gap-2 overflow-x-auto pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 hide-scrollbar">
         <button
           onClick={() => setActiveFilter("all")}
           className={`px-4 py-2.5 rounded-xl text-sm font-bold border-2 whitespace-nowrap transition-all ${activeFilter === "all" ? "bg-indigo-600 text-white border-indigo-600 shadow-md" : "bg-white text-slate-600 border-slate-200 hover:border-indigo-300"}`}
@@ -79,7 +79,7 @@ export default function LesenOverviewPage() {
               <h2 className="text-xl font-black text-slate-900">{cat.title}</h2>
               <p className="text-sm text-slate-500 font-medium">{cat.desc}</p>
             </div>
-            <div className="flex gap-6 overflow-x-auto pb-6 pt-2 snap-x snap-mandatory hide-scrollbar">
+            <div className="flex gap-6 overflow-x-auto pb-6 pt-2 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory hide-scrollbar">
               {exercises.filter(ex => ex.type === cat.type).map((ex) => (
                 <div
                   key={ex.id}
