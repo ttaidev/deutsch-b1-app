@@ -18,7 +18,7 @@ export const SPRECHEN_TASKS: SpeakingTask[] = [
     topic: "Freunde & Feste",
     type: "Teil 1",
     prompt: `Ihr gemeinsamer Freund Thomas feiert nächste Woche seinen 30. Geburtstag.
-Sie möchten zusammen mit Ihrem Sprachkurs-Partner ein schönes Geschenk organisieren.
+Sie möchten ein schönes Geschenk organisieren. Hinterlassen Sie einem anderen Freund eine Sprachnachricht, um das Geschenk zu planen.
 
 Sprechen Sie über folgende Punkte:
 1. Was wollen Sie schenken? (Ideen sammeln)
@@ -32,7 +32,7 @@ Sprechen Sie über folgende Punkte:
     topic: "Freunde & Freizeit",
     type: "Teil 1",
     prompt: `Eine Freundin aus Ihrem Kurs hat die B1-Prüfung bestanden. 
-Sie möchten mit Ihrem Partner eine kleine Überraschungsparty für sie planen.
+Sie möchten eine kleine Überraschungsparty für sie planen. Hinterlassen Sie einem anderen Kursteilnehmer eine Sprachnachricht.
 
 Sprechen Sie über folgende Punkte:
 1. Wann und wo soll die Party stattfinden?
@@ -45,7 +45,8 @@ Sprechen Sie über folgende Punkte:
     level: "B1",
     topic: "Reisen & Natur",
     type: "Teil 1",
-    prompt: `Sie und Ihr Partner haben am Wochenende frei und möchten einen Ausflug in die Natur machen.
+    prompt: `Sie haben am Wochenende frei und möchten einen Ausflug in die Natur machen. 
+Hinterlassen Sie einem Freund eine Sprachnachricht, um den Ausflug zu planen.
 
 Sprechen Sie über folgende Punkte:
 1. Wohin soll der Ausflug gehen? (See, Berge, Wald...)
@@ -59,7 +60,7 @@ Sprechen Sie über folgende Punkte:
     topic: "Gesundheit & Hilfe",
     type: "Teil 1",
     prompt: `Ein gemeinsamer Kollege liegt im Krankenhaus. 
-Sie möchten ihn am Nachmittag zusammen besuchen.
+Sie möchten ihn am Nachmittag besuchen. Hinterlassen Sie einer anderen Kollegin eine Sprachnachricht zur Planung.
 
 Sprechen Sie über folgende Punkte:
 1. Wann treffen Sie sich?
@@ -73,7 +74,7 @@ Sprechen Sie über folgende Punkte:
     topic: "Wohnen & Alltag",
     type: "Teil 1",
     prompt: `Sie ziehen am nächsten Wochenende in eine neue Wohnung. 
-Bitten Sie Ihren Sprachpartner um Hilfe und planen Sie den Umzugstag.
+Hinterlassen Sie einem Freund eine Sprachnachricht, bitten Sie ihn um Hilfe und planen Sie den Umzugstag.
 
 Sprechen Sie über folgende Punkte:
 1. Wann genau soll der Umzug starten?
@@ -87,7 +88,7 @@ Sprechen Sie über folgende Punkte:
     topic: "Schule & Lernen",
     type: "Teil 1",
     prompt: `Ihr Deutschkurs geht bald zu Ende. 
-Sie möchten gemeinsam ein kleines Geschenk für den Lehrer kaufen.
+Sie möchten ein kleines Geschenk für den Lehrer kaufen. Hinterlassen Sie einem Mitschüler eine Sprachnachricht, um das zu planen.
 
 Sprechen Sie über folgende Punkte:
 1. Was für ein Geschenk ist passend?
@@ -100,7 +101,8 @@ Sprechen Sie über folgende Punkte:
     level: "B1",
     topic: "Essen & Kochen",
     type: "Teil 1",
-    prompt: `Sie möchten am Freitagabend gemeinsam mit Freunden kochen.
+    prompt: `Sie möchten am Freitagabend gemeinsam mit Freunden kochen. 
+Hinterlassen Sie einem Freund eine Sprachnachricht, um den Abend zu planen.
 
 Sprechen Sie über folgende Punkte:
 1. Was wollen Sie kochen? (Vorspeise, Hauptspeise, Dessert)
@@ -215,8 +217,8 @@ Gehen Sie dabei auf folgende Punkte ein:
     level: "B1",
     topic: "Tiere & Alltag",
     type: "Teil 3",
-    prompt: `Ihr Partner hat gerade eine Präsentation über Haustiere gehalten. 
-Reagieren Sie darauf:
+    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über Haustiere gehört. 
+Sprechen Sie Ihre Reaktion darauf ein:
 
 - Geben Sie ein kurzes Feedback (z.B. "Deine Präsentation hat mir gut gefallen...").
 - Stellen Sie eine Frage zum Thema (z.B. "Hast du denn als Kind selbst ein Haustier gehabt?").`,
@@ -227,10 +229,10 @@ Reagieren Sie darauf:
     level: "B1",
     topic: "Konsum & Medien",
     type: "Teil 3",
-    prompt: `Ihr Partner hat gerade eine Präsentation über Online-Shopping gehalten. 
-Reagieren Sie darauf:
+    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über Online-Shopping gehört. 
+Sprechen Sie Ihre Reaktion darauf ein:
 
-- Geben Sie ein kurzes Feedback zu seiner Präsentation.
+- Geben Sie ein kurzes Feedback zu der Präsentation.
 - Stellen Sie eine Frage (z.B. "Hast du schon mal schlechte Erfahrungen mit einem Online-Shop gemacht?").`,
   },
   {
@@ -239,8 +241,8 @@ Reagieren Sie darauf:
     level: "B1",
     topic: "Wohnen & Umwelt",
     type: "Teil 3",
-    prompt: `Ihr Partner hat gerade eine Präsentation über das Leben in der Stadt und auf dem Land gehalten. 
-Reagieren Sie darauf:
+    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über das Leben in der Stadt und auf dem Land gehört. 
+Sprechen Sie Ihre Reaktion darauf ein:
 
 - Geben Sie ein kurzes Feedback (z.B. "Ich fand interessant, was du über... gesagt hast").
 - Stellen Sie eine Frage (z.B. "Könntest du dir vorstellen, später auf einem Bauernhof zu leben?").`,
@@ -251,8 +253,8 @@ Reagieren Sie darauf:
     level: "B1",
     topic: "Lernen & Bildung",
     type: "Teil 3",
-    prompt: `Ihr Partner hat gerade eine Präsentation über das Erlernen von Fremdsprachen gehalten. 
-Reagieren Sie darauf:
+    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über das Erlernen von Fremdsprachen gehört. 
+Sprechen Sie Ihre Reaktion darauf ein:
 
 - Geben Sie ein kurzes Feedback zur Struktur oder zum Inhalt.
 - Stellen Sie eine Frage (z.B. "Welche Sprache möchtest du in Zukunft noch lernen und warum?").`,
@@ -263,8 +265,8 @@ Reagieren Sie darauf:
     level: "B1",
     topic: "Medien & Gesellschaft",
     type: "Teil 3",
-    prompt: `Ihr Partner hat gerade eine Präsentation über soziale Netzwerke gehalten. 
-Reagieren Sie darauf:
+    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über soziale Netzwerke gehört. 
+Sprechen Sie Ihre Reaktion darauf ein:
 
 - Geben Sie ein kurzes, freundliches Feedback.
 - Stellen Sie eine Frage (z.B. "Glaubst du, dass wir in Zukunft ganz auf persönliche Treffen verzichten werden?").`,
@@ -275,8 +277,8 @@ Reagieren Sie darauf:
     level: "B1",
     topic: "Ernährung & Gesundheit",
     type: "Teil 3",
-    prompt: `Ihr Partner hat gerade eine Präsentation über Fast Food gehalten. 
-Reagieren Sie darauf:
+    prompt: `Stellen Sie sich vor, Sie haben gerade eine Präsentation über Fast Food gehört. 
+Sprechen Sie Ihre Reaktion darauf ein:
 
 - Geben Sie ein kurzes Feedback.
 - Stellen Sie eine Frage (z.B. "Was ist dein persönliches Lieblingsessen, wenn es mal schnell gehen muss?").`,
