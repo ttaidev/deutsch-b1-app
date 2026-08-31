@@ -80,24 +80,24 @@ Fahrräder dürfen aus Brandschutzgründen nicht in den Fluren oder im Treppenha
   },
   {
     id: "lesen-ru-5",
-    title: "Teil 5: Informationen zur Mülltrennung",
+    title: "Teil 5: Abfallentsorgung in der Gemeinde",
     level: "B1",
     topic: "Umwelt & Alltag",
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Liebe Mieter,
-leider mussten wir in letzter Zeit feststellen, dass der Müll in unserer Wohnanlage oft falsch sortiert wird. Dies führt zu höheren Kosten für uns alle. Bitte beachten Sie deshalb folgende Regeln:
-- Blaue Tonne: Hier gehört nur sauberes Papier, Pappe und Zeitungen hinein. Keine Pizzakartons mit Essensresten!
-- Gelbe Tonne (oder Gelber Sack): Für Verpackungen aus Plastik, Metall und Aluminium (z.B. Joghurtbecher, Konservendosen).
-- Braune Tonne (Biotonne): Für Küchenabfälle, Kaffeefilter und Gartenabfälle. Bitte werfen Sie hier keine Plastiktüten hinein, auch keine "Bio-Plastiktüten".
-- Schwarze Tonne (Restmüll): Alles, was nicht recycelt werden kann, wie z.B. Windeln, Asche oder Staubsaugerbeutel.
-Glasflaschen (weiß, grün, braun) bringen Sie bitte zu den öffentlichen Glascontainern an der Ecke Schillerstraße. Vielen Dank für Ihre Mithilfe!`,
+    readingText: `Offizielle Richtlinien der Stadt zur Mülltrennung:
+Um die Umwelt zu schützen und Recycling zu ermöglichen, ist eine strikte Mülltrennung gesetzlich vorgeschrieben. Bitte beachten Sie die korrekte Zuordnung:
+- Papiertonne (Blau): Nur für sauberes Papier, Pappe und Kartons. Achtung: Verschmutzte Papiere (z.B. benutzte Taschentücher oder fettige Pizzakartons) gehören nicht hierher!
+- Wertstofftonne (Gelb): Für alle Verpackungen aus Kunststoff, Metall und Aluminium (z.B. leere Joghurtbecher, Konservendosen, Plastikfolien). 
+- Biotonne (Braun): Ausschließlich für organische Abfälle wie Essensreste, Kaffeefilter und Gartenabfälle. Bitte verwenden Sie keine Plastiktüten zum Sammeln, auch keine sogenannten "kompostierbaren" Bio-Plastiktüten.
+- Restmüll (Schwarz): Für alle nicht recycelbaren Abfälle wie Windeln, Asche oder Staubsaugerbeutel.
+Altglas muss nach Farben sortiert in die öffentlichen Glascontainer (Standorte siehe Webseite) eingeworfen werden.`,
     questions: [
-      { id: 1, question: "Warum gibt es diesen Brief?", options: ["A) Weil neue Mülltonnen gekauft wurden.", "B) Weil die Mieter den Müll nicht richtig trennen.", "C) Weil der Müll nicht mehr abgeholt wird."], correct: "B) Weil die Mieter den Müll nicht richtig trennen.", explanation: "...feststellen, dass der Müll in unserer Wohnanlage oft falsch sortiert wird." },
-      { id: 2, question: "Wohin kommt ein schmutziger Pizzakarton?", options: ["A) In die Blaue Tonne.", "B) In die Gelbe Tonne.", "C) Nicht in die Papiertonne (Blaue Tonne)."], correct: "C) Nicht in die Papiertonne (Blaue Tonne).", explanation: "Blaue Tonne... Keine Pizzakartons mit Essensresten!" },
-      { id: 3, question: "Was ist bei der Biotonne wichtig?", options: ["A) Man darf auch Bio-Plastiktüten benutzen.", "B) Man darf gar kein Plastik hineinwerfen.", "C) Man darf Asche hineinwerfen."], correct: "B) Man darf gar kein Plastik hineinwerfen.", explanation: "Bitte werfen Sie hier keine Plastiktüten hinein, auch keine 'Bio-Plastiktüten'." },
-      { id: 4, question: "Wo kann man leere Weinflaschen wegwerfen?", options: ["A) In die Schwarze Tonne.", "B) In die Gelbe Tonne.", "C) In spezielle Container auf der Straße."], correct: "C) In spezielle Container auf der Straße.", explanation: "Glasflaschen... bringen Sie bitte zu den öffentlichen Glascontainern an der Ecke Schillerstraße." }
+      { id: 1, question: "Warum gibt es diese Richtlinien?", options: ["A) Um Geld zu sparen.", "B) Um die Umwelt zu schützen und Recycling zu ermöglichen.", "C) Weil die Müllabfuhr streikt."], correct: "B) Um die Umwelt zu schützen und Recycling zu ermöglichen.", explanation: "Um die Umwelt zu schützen und Recycling zu ermöglichen, ist eine strikte Mülltrennung gesetzlich vorgeschrieben." },
+      { id: 2, question: "Wohin kommt ein schmutziger, fettiger Pizzakarton?", options: ["A) In die Blaue Tonne (Papiertonne).", "B) In die Gelbe Tonne.", "C) Nicht in die Papiertonne."], correct: "C) Nicht in die Papiertonne.", explanation: "Verschmutzte Papiere (z.B. ... fettige Pizzakartons) gehören nicht hierher!" },
+      { id: 3, question: "Was ist bei der Biotonne wichtig?", options: ["A) Man darf auch Bio-Plastiktüten benutzen.", "B) Man darf gar keine Plastiktüten benutzen.", "C) Man darf Asche hineinwerfen."], correct: "B) Man darf gar keine Plastiktüten benutzen.", explanation: "Bitte verwenden Sie keine Plastiktüten zum Sammeln, auch keine sogenannten 'kompostierbaren' Bio-Plastiktüten." },
+      { id: 4, question: "Wo kann man leere Flaschen wegwerfen?", options: ["A) In die Schwarze Tonne.", "B) In die Gelbe Tonne.", "C) In spezielle öffentliche Container."], correct: "C) In spezielle öffentliche Container.", explanation: "Altglas muss nach Farben sortiert in die öffentlichen Glascontainer... eingeworfen werden." }
     ]
   },
   {
@@ -145,24 +145,23 @@ Herzlich willkommen an unserem Badesee! Damit alle Gäste einen schönen Tag ver
   },
   {
     id: "lesen-ru-8",
-    title: "Teil 5: Informationen zur Klassenfahrt",
+    title: "Teil 5: Gepäckbestimmungen am Flughafen",
     level: "B1",
-    topic: "Schule & Reisen",
+    topic: "Reisen & Verkehr",
     duration: "15 Phút",
     type: "Quy định & Thông báo",
     questionType: "multiple_choice",
-    readingText: `Elternbrief: Klassenfahrt der 8. Klassen nach Berlin
-Liebe Eltern,
-vom 10. bis 14. Mai fahren wir mit den achten Klassen nach Berlin. Bitte beachten Sie folgende organisatorische Hinweise:
-Die Abfahrt ist am Montag um 08:00 Uhr vom Schulhof. Bitte sorgen Sie dafür, dass Ihr Kind spätestens um 07:45 Uhr am Bus ist. 
-Koffer: Jeder Schüler darf nur einen Koffer (max. 15 kg) und ein Handgepäckstück für den Bus mitnehmen.
-Taschengeld: Wir empfehlen ein Taschengeld von höchstens 50 Euro für die ganze Woche. Das Essen und alle Eintrittsgelder für Museen sind bereits im Reisepreis bezahlt. Das Taschengeld ist nur für Souvenirs oder ein Eis zwischendurch gedacht.
-Smartphones: Handys dürfen mitgenommen werden, müssen aber während des Programms am Tag in der Tasche bleiben. Sie dürfen nur abends in der Jugendherberge genutzt werden.`,
+    readingText: `Wichtige Fluggastinformationen der AeroAir:
+Bitte beachten Sie für Ihren bevorstehenden Flug unsere aktuellen Gepäck- und Sicherheitsbestimmungen:
+Check-in: Wir empfehlen, mindestens zwei Stunden vor der geplanten Abflugzeit am Schalter zu erscheinen. Das Boarding beginnt pünktlich 45 Minuten vor Abflug.
+Aufgabegepäck: Pro Passagier ist ein Koffer mit einem Maximalgewicht von 23 kg im Ticketpreis enthalten. Übergepäck muss am Schalter mit 15 Euro pro zusätzlichem Kilo bezahlt werden.
+Handgepäck: Jeder Fluggast darf ein Handgepäckstück (max. 8 kg) sowie einen kleinen persönlichen Gegenstand (z. B. Laptoptasche) mit in die Kabine nehmen.
+Flüssigkeiten: Im Handgepäck dürfen Flüssigkeiten nur in Behältern von maximal 100 ml mitgeführt werden. Diese müssen in einem durchsichtigen, wiederverschließbaren Plastikbeutel verpackt sein.`,
     questions: [
-      { id: 1, question: "Wann sollen die Schüler am Montag da sein?", options: ["A) Um 08:00 Uhr.", "B) Vor 07:45 Uhr.", "C) Genau um 07:45 Uhr."], correct: "B) Vor 07:45 Uhr.", explanation: "spätestens um 07:45 Uhr am Bus ist (also vor oder um 07:45)." },
-      { id: 2, question: "Wie viel Gepäck darf ein Schüler mitbringen?", options: ["A) So viel er tragen kann.", "B) Einen großen Koffer und einen Rucksack.", "C) Nur einen Koffer bis 15 kg."], correct: "B) Einen großen Koffer und einen Rucksack.", explanation: "einen Koffer (max. 15 kg) und ein Handgepäckstück (Rucksack)." },
-      { id: 3, question: "Wofür ist das Taschengeld gedacht?", options: ["A) Für das Essen und Museen.", "B) Für die Fahrt im Bus.", "C) Für private Dinge wie Souvenirs."], correct: "C) Für private Dinge wie Souvenirs.", explanation: "Das Taschengeld ist nur für Souvenirs oder ein Eis zwischendurch gedacht." },
-      { id: 4, question: "Wann dürfen die Schüler ihr Handy benutzen?", options: ["A) Den ganzen Tag.", "B) Nur abends im Hotel/in der Jugendherberge.", "C) Gar nicht."], correct: "B) Nur abends im Hotel/in der Jugendherberge.", explanation: "Sie dürfen nur abends in der Jugendherberge genutzt werden." }
+      { id: 1, question: "Wann sollten die Passagiere am Flughafen sein?", options: ["A) 45 Minuten vor dem Flug.", "B) Mindestens zwei Stunden vor dem Abflug.", "C) Genau zwei Stunden vorher."], correct: "B) Mindestens zwei Stunden vor dem Abflug.", explanation: "Wir empfehlen, mindestens zwei Stunden vor der geplanten Abflugzeit am Schalter zu erscheinen." },
+      { id: 2, question: "Wie viel schwer darf der Koffer sein, der im Preis dabei ist?", options: ["A) So schwer wie man möchte.", "B) Maximal 8 kg.", "C) Maximal 23 kg."], correct: "C) Maximal 23 kg.", explanation: "Pro Passagier ist ein Koffer mit einem Maximalgewicht von 23 kg im Ticketpreis enthalten." },
+      { id: 3, question: "Was kostet es, wenn der Koffer zu schwer ist?", options: ["A) Es ist kostenlos.", "B) 15 Euro für jedes Kilo zu viel.", "C) Man darf nicht mitfliegen."], correct: "B) 15 Euro für jedes Kilo zu viel.", explanation: "Übergepäck muss am Schalter mit 15 Euro pro zusätzlichem Kilo bezahlt werden." },
+      { id: 4, question: "Wie müssen Getränke oder Shampoos im Handgepäck eingepackt sein?", options: ["A) Sie dürfen gar nicht ins Handgepäck.", "B) In Flaschen, die größer als 100 ml sind.", "C) In Behältern bis 100 ml, in einer Plastiktüte."], correct: "C) In Behältern bis 100 ml, in einer Plastiktüte.", explanation: "Im Handgepäck dürfen Flüssigkeiten nur in Behältern von maximal 100 ml... Diese müssen in einem durchsichtigen... Plastikbeutel verpackt sein." }
     ]
   },
   {

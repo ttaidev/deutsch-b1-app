@@ -96,65 +96,59 @@ Anna`,
   // --- LOẠI 2: TRẮC NGHIỆM A/B/C (Multiple Choice) ---
   {
     id: "lesen-mc-1",
-    title: "Teil 2: Einladung zum Firmenjubiläum",
+    title: "Teil 2: Die 4-Tage-Woche in Deutschland",
     level: "B1",
     topic: "Arbeit & Beruf",
     duration: "15 Phút",
     type: "Trắc nghiệm",
     questionType: "multiple_choice",
-    readingText: `Sehr geehrte Mitarbeiterinnen und Mitarbeiter,
-unser Unternehmen feiert nächsten Monat sein 25-jähriges Bestehen. Aus diesem Anlass möchten wir Sie alle herzlich zu einer großen Jubiläumsfeier einladen. Die Feier findet am Freitag, den 20. Oktober, ab 18 Uhr im großen Saal des Hotels "Vier Jahreszeiten" statt.
-Es wird ein reichhaltiges Buffet geben und für die musikalische Unterhaltung sorgt eine Live-Band. Bitte geben Sie bis zum 5. Oktober in der Personalabteilung Bescheid, ob Sie kommen können und ob Sie in Begleitung erscheinen. Wir freuen uns auf einen unvergesslichen Abend mit Ihnen!
-Mit freundlichen Grüßen,
-Die Geschäftsführung`,
+    readingText: `Wirtschaftsblatt: Immer mehr deutsche Unternehmen testen ein neues Arbeitsmodell: die 4-Tage-Woche bei vollem Lohnausgleich. Laut einer aktuellen Studie der Universität Münster haben bereits über 150 Firmen in Deutschland dieses Modell eingeführt.
+Die Ergebnisse des ersten Testjahres sind überraschend positiv. Obwohl die Mitarbeiter einen Tag weniger arbeiten, ist die Produktion in 80 Prozent der Firmen gleich geblieben oder sogar leicht gestiegen. Viele Angestellte berichten von weniger Stress und einer besseren Balance zwischen Familie und Beruf. Experten warnen jedoch, dass dieses Modell nicht für alle Branchen geeignet ist, insbesondere nicht für Krankenhäuser oder die Gastronomie, wo rund um die Uhr Personal benötigt wird.`,
     questions: [
-      { id: 1, question: "Warum wird gefeiert?", options: ["A) Weil die Firma 25 Jahre alt wird.", "B) Weil ein neues Hotel eröffnet wird.", "C) Weil ein neuer Chef kommt."], correct: "A) Weil die Firma 25 Jahre alt wird.", explanation: "Das Unternehmen feiert sein 25-jähriges Bestehen." },
-      { id: 2, question: "Wo findet die Feier statt?", options: ["A) Im Büro der Firma.", "B) In einem Hotel.", "C) In einem Restaurant."], correct: "B) In einem Hotel.", explanation: "Die Feier findet im Hotel 'Vier Jahreszeiten' statt." },
-      { id: 3, question: "Wann beginnt die Veranstaltung?", options: ["A) Am Morgen.", "B) Am Nachmittag.", "C) Am Abend."], correct: "C) Am Abend.", explanation: "Die Feier beginnt ab 18 Uhr (Abend)." },
-      { id: 4, question: "Was gibt es zu essen?", options: ["A) Nur Kuchen und Kaffee.", "B) Ein Menü mit drei Gängen.", "C) Ein Buffet."], correct: "C) Ein Buffet.", explanation: "Im Text steht: 'Es wird ein reichhaltiges Buffet geben'." },
-      { id: 5, question: "Bis wann muss man sich anmelden?", options: ["A) Bis zum 20. Oktober.", "B) Bis zum 5. Oktober.", "C) Am selben Tag."], correct: "B) Bis zum 5. Oktober.", explanation: "Man muss bis zum 5. Oktober in der Personalabteilung Bescheid geben." },
-      { id: 6, question: "Darf man jemanden zur Feier mitbringen?", options: ["A) Ja, man darf eine Begleitung mitbringen.", "B) Nein, nur Mitarbeiter sind eingeladen.", "C) Das steht nicht im Text."], correct: "A) Ja, man darf eine Begleitung mitbringen.", explanation: "Die Anmeldung fragt: 'ob Sie in Begleitung erscheinen'." }
+      { id: 1, question: "Was ist das neue Arbeitsmodell?", options: ["A) 4 Tage arbeiten, aber weniger Geld verdienen.", "B) 4 Tage arbeiten und das gleiche Geld verdienen.", "C) 5 Tage arbeiten und mehr Urlaub bekommen."], correct: "B) 4 Tage arbeiten und das gleiche Geld verdienen.", explanation: "Im Text steht: 'die 4-Tage-Woche bei vollem Lohnausgleich'." },
+      { id: 2, question: "Wie viele Firmen machen laut Studie schon mit?", options: ["A) Etwa 50 Firmen.", "B) Über 150 Firmen.", "C) 80 Prozent aller Firmen."], correct: "B) Über 150 Firmen.", explanation: "Laut einer aktuellen Studie... haben bereits über 150 Firmen... dieses Modell eingeführt." },
+      { id: 3, question: "Was passierte mit der Produktion in den meisten Firmen?", options: ["A) Sie ist stark gesunken.", "B) Sie ist gleich geblieben oder gestiegen.", "C) Sie hat sich verdoppelt."], correct: "B) Sie ist gleich geblieben oder gestiegen.", explanation: "...ist die Produktion in 80 Prozent der Firmen gleich geblieben oder sogar leicht gestiegen." },
+      { id: 4, question: "Welchen Vorteil nennen viele Mitarbeiter?", options: ["A) Sie haben weniger Stress.", "B) Sie verdienen mehr Geld.", "C) Sie bekommen einen Firmenwagen."], correct: "A) Sie haben weniger Stress.", explanation: "Viele Angestellte berichten von weniger Stress..." },
+      { id: 5, question: "Für wen ist das Modell laut Experten nicht gut?", options: ["A) Für Büromitarbeiter.", "B) Für Menschen mit Familie.", "C) Für Krankenhäuser und Restaurants."], correct: "C) Für Krankenhäuser und Restaurants.", explanation: "Experten warnen jedoch, dass dieses Modell nicht für alle Branchen geeignet ist, insbesondere nicht für Krankenhäuser oder die Gastronomie..." },
+      { id: 6, question: "Was ist die Hauptaussage des Textes?", options: ["A) Die 4-Tage-Woche funktioniert gut, aber nicht überall.", "B) Niemand in Deutschland möchte mehr arbeiten.", "C) Alle Firmen in Deutschland müssen das Modell übernehmen."], correct: "A) Die 4-Tage-Woche funktioniert gut, aber nicht überall.", explanation: "Der Text zeigt, dass es in vielen Firmen gut funktioniert (positiv), aber Experten warnen, dass es nicht für alle Branchen passt." }
     ]
   },
   {
     id: "lesen-mc-2",
-    title: "Teil 2: Neuer Sprachkurs",
+    title: "Teil 2: Immer mehr Erwachsene lernen Sprachen",
     level: "B1",
     topic: "Bildung & Sprachen",
     duration: "15 Phút",
     type: "Trắc nghiệm",
     questionType: "multiple_choice",
-    readingText: `Liebe Kursteilnehmer,
-wir freuen uns, Ihnen mitteilen zu können, dass unser neues Kursprogramm für das Wintersemester online ist. Ab November bieten wir neue Intensivkurse für Deutsch auf dem B2-Niveau an. Die Kurse finden dreimal pro Woche statt: montags, mittwochs und freitags von 18 bis 20 Uhr.
-Die Kosten betragen 250 Euro für den gesamten Kurs (Dauer: 8 Wochen). Für Studenten gibt es einen Rabatt von 20 Prozent. Wenn Sie sich bis Ende Oktober anmelden, erhalten Sie zusätzlich das Lehrbuch kostenlos. Anmeldungen sind über unsere Webseite oder direkt im Sekretariat möglich.`,
+    readingText: `Bildung aktuell: Nicht nur Kinder und Jugendliche, sondern auch immer mehr Erwachsene in Deutschland drücken wieder die Schulbank. Volkshochschulen (VHS) melden für dieses Jahr einen Rekord bei den Anmeldungen für Fremdsprachenkurse.
+Der Grund dafür ist oft der Beruf: Viele Firmen arbeiten heute international und erwarten von ihren Mitarbeitern gute Englisch- oder Spanischkenntnisse. Aber auch das Reisen spielt eine Rolle. Immer mehr Menschen über 50 Jahre lernen Sprachen wie Italienisch oder Französisch, um im Urlaub besser mit Einheimischen sprechen zu können. Um dem Trend gerecht zu werden, bieten die Schulen nun auch vermehrt Online-Kurse am Wochenende an.`,
     questions: [
-      { id: 1, question: "Für welches Niveau sind die neuen Kurse?", options: ["A) Für Anfänger (A1).", "B) Für das B1-Niveau.", "C) Für das B2-Niveau."], correct: "C) Für das B2-Niveau.", explanation: "Die neuen Intensivkurse sind für Deutsch auf dem B2-Niveau." },
-      { id: 2, question: "Wie oft findet der Kurs statt?", options: ["A) Einmal pro Woche.", "B) Dreimal pro Woche.", "C) Jeden Tag."], correct: "B) Dreimal pro Woche.", explanation: "Die Kurse finden dreimal pro Woche statt (montags, mittwochs, freitags)." },
-      { id: 3, question: "Wann beginnt der Unterricht?", options: ["A) Um 18 Uhr.", "B) Um 20 Uhr.", "C) Um 16 Uhr."], correct: "A) Um 18 Uhr.", explanation: "Die Kurse finden von 18 bis 20 Uhr statt." },
-      { id: 4, question: "Wer muss weniger bezahlen?", options: ["A) Arbeitslose.", "B) Studenten.", "C) Kinder."], correct: "B) Studenten.", explanation: "Für Studenten gibt es einen Rabatt von 20 Prozent." },
-      { id: 5, question: "Wie lange dauert ein Kurs insgesamt?", options: ["A) 8 Tage.", "B) 8 Wochen.", "C) 8 Monate."], correct: "B) 8 Wochen.", explanation: "Die Dauer beträgt 8 Wochen." },
-      { id: 6, question: "Was bekommen frühe Anmelder gratis?", options: ["A) Ein Wörterbuch.", "B) Einen zweiten Kurs.", "C) Ein Lehrbuch."], correct: "C) Ein Lehrbuch.", explanation: "Wer sich bis Ende Oktober anmeldet, erhält das Lehrbuch kostenlos." }
+      { id: 1, question: "Wer lernt laut dem Text wieder mehr Sprachen?", options: ["A) Nur Kinder.", "B) Erwachsene in Deutschland.", "C) Nur Studenten."], correct: "B) Erwachsene in Deutschland.", explanation: "Der Text sagt: '...auch immer mehr Erwachsene in Deutschland drücken wieder die Schulbank'." },
+      { id: 2, question: "Wo gibt es besonders viele neue Anmeldungen?", options: ["A) An Universitäten.", "B) An Volkshochschulen (VHS).", "C) In privaten Sprachschulen im Ausland."], correct: "B) An Volkshochschulen (VHS).", explanation: "Volkshochschulen (VHS) melden für dieses Jahr einen Rekord..." },
+      { id: 3, question: "Warum lernen viele jüngere Erwachsene Sprachen?", options: ["A) Weil sie im Ausland studieren wollen.", "B) Wegen ihres Berufs (die Firmen erwarten es).", "C) Weil sie auswandern möchten."], correct: "B) Wegen ihres Berufs (die Firmen erwarten es).", explanation: "Der Grund dafür ist oft der Beruf: Viele Firmen... erwarten von ihren Mitarbeitern gute...kenntnisse." },
+      { id: 4, question: "Welchen Grund haben viele Menschen über 50 Jahre?", options: ["A) Sie wollen sich im Urlaub mit Einheimischen unterhalten.", "B) Sie wollen eine neue Arbeit finden.", "C) Sie möchten das Gehirn trainieren."], correct: "A) Sie wollen sich im Urlaub mit Einheimischen unterhalten.", explanation: "...um im Urlaub besser mit Einheimischen sprechen zu können." },
+      { id: 5, question: "Welche Sprachen werden von den Älteren oft gelernt?", options: ["A) Englisch und Spanisch.", "B) Italienisch und Französisch.", "C) Chinesisch und Japanisch."], correct: "B) Italienisch und Französisch.", explanation: "Immer mehr Menschen über 50 Jahre lernen Sprachen wie Italienisch oder Französisch..." },
+      { id: 6, question: "Wie reagieren die Schulen auf den Trend?", options: ["A) Sie machen die Kurse billiger.", "B) Sie bieten mehr Online-Kurse am Wochenende an.", "C) Sie bauen neue Gebäude."], correct: "B) Sie bieten mehr Online-Kurse am Wochenende an.", explanation: "Um dem Trend gerecht zu werden, bieten die Schulen nun auch vermehrt Online-Kurse am Wochenende an." }
     ]
   },
   {
     id: "lesen-mc-3",
-    title: "Teil 2: Reise nach München",
+    title: "Teil 2: Ökotourismus in den Alpen",
     level: "B1",
-    topic: "Reisen & Verkehr",
+    topic: "Reisen & Umwelt",
     duration: "15 Phút",
     type: "Trắc nghiệm",
     questionType: "multiple_choice",
-    readingText: `Hallo Stefan,
-ich habe heute endlich die Zugtickets nach München für unser Wochenende im Dezember gebucht. Da wir frühzeitig gebucht haben, war es sehr günstig: Nur 45 Euro für uns beide zusammen! Der Zug fährt am Freitagnachmittag um 15:30 Uhr ab und wir sind gegen 19 Uhr in München.
-Ich habe auch schon ein kleines Hotel in der Nähe des Marienplatzes reserviert. Wir sollten unbedingt den Weihnachtsmarkt besuchen, von dem du so viel geschwärmt hast. Pack warme Kleidung ein, es soll schneien! Ruf mich an, wenn du Zeit hast, damit wir die Details besprechen können.
-Grüße, Tobias`,
+    readingText: `Reisemagazin: Der Tourismus in den Alpen verändert sich. Immer mehr Urlauber interessieren sich für sogenannten "Ökotourismus". Statt in riesigen Hotels mit Poollandschaften zu übernachten, wählen viele Gäste kleine Bio-Bauernhöfe oder klimaneutrale Pensionen.
+Diese neue Art des Reisens schont nicht nur die Natur, sondern stärkt auch die lokale Wirtschaft. Die Touristen kaufen Käse direkt beim Bauernhof und nutzen den öffentlichen Nahverkehr statt des eigenen Autos. Einige Gemeinden in Bayern haben deshalb begonnen, kostenlose Bustickets für Touristen anzubieten. Experten glauben, dass dieser umweltfreundliche Trend in den nächsten Jahren weiter wachsen wird, da die Menschen bewusster leben möchten.`,
     questions: [
-      { id: 1, question: "Wie reisen Tobias und Stefan nach München?", options: ["A) Mit dem Auto.", "B) Mit dem Flugzeug.", "C) Mit dem Zug."], correct: "C) Mit dem Zug.", explanation: "Tobias schreibt, dass er 'Zugtickets' gebucht hat." },
-      { id: 2, question: "Warum war die Fahrt billig?", options: ["A) Weil sie früh gebucht haben.", "B) Weil sie Studenten sind.", "C) Weil sie am Wochenende fahren."], correct: "A) Weil sie früh gebucht haben.", explanation: "Im Text steht: 'Da wir frühzeitig gebucht haben, war es sehr günstig'." },
-      { id: 3, question: "Wann kommen sie ungefähr in München an?", options: ["A) Am Freitag um 15:30 Uhr.", "B) Am Freitag um 19:00 Uhr.", "C) Am Samstagmorgen."], correct: "B) Am Freitag um 19:00 Uhr.", explanation: "Der Zug kommt gegen 19 Uhr in München an." },
-      { id: 4, question: "Wo liegt das Hotel?", options: ["A) In der Nähe des Bahnhofs.", "B) Direkt am Flughafen.", "C) Beim Marienplatz."], correct: "C) Beim Marienplatz.", explanation: "Tobias hat ein Hotel in der Nähe des Marienplatzes reserviert." },
-      { id: 5, question: "Was wollen sie in München machen?", options: ["A) Ein Museum besuchen.", "B) Auf den Weihnachtsmarkt gehen.", "C) Verwandte treffen."], correct: "B) Auf den Weihnachtsmarkt gehen.", explanation: "Sie wollen unbedingt den Weihnachtsmarkt besuchen." },
-      { id: 6, question: "Warum soll Stefan warme Kleidung einpacken?", options: ["A) Weil es im Hotel kalt ist.", "B) Weil es schneien soll.", "C) Weil die Heizung im Zug kaputt ist."], correct: "B) Weil es schneien soll.", explanation: "Tobias schreibt: 'es soll schneien!'." }
+      { id: 1, question: "Was ist das Hauptthema des Artikels?", options: ["A) Der Bau von großen Hotels.", "B) Umweltfreundlicher Tourismus in den Alpen.", "C) Eine neue Käsesorte aus Bayern."], correct: "B) Umweltfreundlicher Tourismus in den Alpen.", explanation: "Es geht um Ökotourismus in den Alpen." },
+      { id: 2, question: "Wo schlafen viele Touristen lieber?", options: ["A) Auf kleinen Bio-Bauernhöfen.", "B) Im Auto.", "C) In großen Hotels mit Pools."], correct: "A) Auf kleinen Bio-Bauernhöfen.", explanation: "...wählen viele Gäste kleine Bio-Bauernhöfe oder klimaneutrale Pensionen." },
+      { id: 3, question: "Wem hilft der Ökotourismus laut Text?", options: ["A) Nur der Natur.", "B) Nur den großen Firmen.", "C) Der Natur und der lokalen Wirtschaft."], correct: "C) Der Natur und der lokalen Wirtschaft.", explanation: "Diese neue Art des Reisens schont nicht nur die Natur, sondern stärkt auch die lokale Wirtschaft." },
+      { id: 4, question: "Woher bekommen die Touristen ihren Käse?", options: ["A) Aus dem Supermarkt.", "B) Direkt vom Bauernhof.", "C) Sie bringen ihn von zu Hause mit."], correct: "B) Direkt vom Bauernhof.", explanation: "Die Touristen kaufen Käse direkt beim Bauernhof..." },
+      { id: 5, question: "Was bekommen Touristen in einigen bayerischen Gemeinden geschenkt?", options: ["A) Ein kostenloses Busticket.", "B) Ein kostenloses Frühstück.", "C) Einen Mietwagen."], correct: "A) Ein kostenloses Busticket.", explanation: "Einige Gemeinden... haben begonnen, kostenlose Bustickets für Touristen anzubieten." },
+      { id: 6, question: "Wie sehen Experten die Zukunft dieses Trends?", options: ["A) Sie denken, er wird bald enden.", "B) Sie glauben, er wird weiter wachsen.", "C) Sie glauben, er ist zu teuer."], correct: "B) Sie glauben, er wird weiter wachsen.", explanation: "Experten glauben, dass dieser umweltfreundliche Trend in den nächsten Jahren weiter wachsen wird..." }
     ]
   }
 ];
