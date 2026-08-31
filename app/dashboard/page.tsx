@@ -215,7 +215,7 @@ export default async function DashboardPage() {
       {/* Personalized Recommendations & Weaknesses */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Left: Gợi ý dành riêng cho bạn */}
-        <div className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 border-2 border-slate-100 shadow-lg space-y-4">
+        <div className="lg:col-span-12 bg-white rounded-3xl p-6 sm:p-8 border-2 border-slate-100 shadow-lg space-y-4">
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-black text-slate-900 flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-purple-600" /> Gợi ý học tập dành riêng cho bạn
@@ -243,34 +243,6 @@ export default async function DashboardPage() {
                 </div>
                 <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-purple-600 group-hover:translate-x-1 transition-transform shrink-0" />
               </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* Right: Mục tiêu tuần này */}
-        <div className="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 border-2 border-slate-100 shadow-lg space-y-4">
-          <h3 className="text-lg font-black text-slate-900 flex items-center gap-2">
-            <TrendingUp className="w-5 h-5 text-emerald-500" /> Mục tiêu tuần này
-          </h3>
-
-          <div className="space-y-3">
-            {goals.map((goal) => (
-              <div key={goal.id} className="p-4 rounded-2xl border border-emerald-200 bg-emerald-50/60 space-y-2">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-extrabold text-slate-900">{goal.topic}</span>
-                  <span className="text-[10px] font-black text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full">
-                    {goal.progress}%
-                  </span>
-                </div>
-                {/* Progress bar */}
-                <div className="w-full h-1.5 bg-emerald-200/50 rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-emerald-500 rounded-full transition-all duration-500"
-                    style={{ width: `${goal.progress}%` }}
-                  />
-                </div>
-                <p className="text-[11px] text-slate-600 font-medium">{goal.description}</p>
-              </div>
             ))}
           </div>
         </div>

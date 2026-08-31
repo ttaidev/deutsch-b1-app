@@ -46,11 +46,11 @@ export async function getPersonalizedRecommendations(userId: string) {
   const recommendations: RecommendationItem[] = [
     {
       id: "r1",
-      title: "Wiederhole 15 Wörter aus 'Arbeit & Beruf'",
-      subtitle: "Nutze das Spaced Repetition Flashcard System",
+      title: "Ôn tập 15 từ vựng chủ đề 'Công việc & Nghề nghiệp'",
+      subtitle: "Sử dụng hệ thống thẻ ghi nhớ ngắt quãng (Spaced Repetition)",
       category: "VOCABULARY",
       actionUrl: "/vokabeln",
-      badge: "Dringend",
+      badge: "Khẩn cấp",
     },
     {
       id: "r2",
@@ -58,23 +58,23 @@ export async function getPersonalizedRecommendations(userId: string) {
       subtitle: "Ghi âm & nhận đánh giá phát âm từ AI",
       category: "SPRECHEN",
       actionUrl: "/lernen/sprechen",
-      badge: "Empfohlen",
+      badge: "Đề xuất",
     },
     {
       id: "r3",
-      title: "Starte Hören Teil 2: 'Arbeitswelt im Wandel'",
-      subtitle: "Audioaufnahme mit Transkript & Diktat-Modus",
+      title: "Luyện nghe Teil 2: 'Thế giới việc làm đang thay đổi'",
+      subtitle: "Bản thu âm kèm phụ đề & chế độ nghe chép chính tả",
       category: "HOEREN",
       actionUrl: "/lernen/hoeren",
-      badge: "Training",
+      badge: "Đang luyện",
     },
     {
       id: "r4",
-      title: "Schreibe B1 Aufgabe: Formaler Beschwerdebrief",
-      subtitle: "Erhalte sofortiges KI-Feedback & Grammatik-Check",
+      title: "Viết luận B1: Thư phàn nàn trang trọng",
+      subtitle: "Nhận phản hồi ngay lập tức từ AI & kiểm tra ngữ pháp",
       category: "SCHREIBEN",
       actionUrl: "/lernen/schreiben",
-      badge: "Prüfungstipp",
+      badge: "Mẹo thi",
     },
   ];
 
