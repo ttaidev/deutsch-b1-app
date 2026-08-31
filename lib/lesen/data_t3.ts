@@ -10,7 +10,7 @@ export const LESEN_EXERCISES_T3: ReadingExercise[] = [
     type: "Ghép thông tin",
     questionType: "matching",
     readingText: `Lesen Sie die Situationen 1 bis 5 und die Anzeigen A bis F aus verschiedenen Medien.
-Wählen Sie: Welche Anzeige passt zu welcher Situation? Sie können jede Anzeige nur einmal verwenden. Die Anzeige aus dem Beispiel können Sie nicht mehr verwenden. Für eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie "X".
+Wählen Sie: Welche Anzeige passt zu welcher Situation? Sie können jede Anzeige nur einmal verwenden. Die Anzeige aus dem Beispiel können Sie nicht mehr verwenden. Für eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie "0".
 
 Anzeigen:
 
@@ -21,11 +21,11 @@ D) VHS Computerkurs: "Computer für Senioren". Lernen Sie ganz entspannt den Umg
 E) Tandem-Partner gesucht: Ich (Spanier, 25) suche jemanden, der mit mir Deutsch spricht. Biete dafür Spanisch. Treffen 1-2 Mal pro Woche auf einen Kaffee.
 F) Volkshochschule: Wochenend-Workshop "Kreatives Schreiben". Sie schreiben gerne Geschichten? Lernen Sie Techniken für bessere Texte. Samstag und Sonntag, 10 - 16 Uhr.`,
     questions: [
-      { id: 1, question: "Maria arbeitet Vollzeit bis 17 Uhr und möchte ihr Englisch verbessern.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "A", explanation: "Anzeige A bietet Abendkurse ab 18:00 Uhr für Englisch an, was perfekt für Vollzeitarbeitende ist." },
-      { id: 2, question: "Carlos möchte sich auf die Deutsch-B1-Prüfung vorbereiten. Er hat den ganzen Tag Zeit.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "C", explanation: "Anzeige C bietet Intensivkurse am Vormittag und bereitet auf Goethe-Zertifikate vor." },
-      { id: 3, question: "Herr Schmidt ist 70 Jahre alt und möchte lernen, wie man E-Mails schreibt.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "D", explanation: "Anzeige D richtet sich an Senioren und lehrt E-Mails und Internet." },
-      { id: 4, question: "Lena möchte in ihrer Freizeit kostenlos Spanisch üben und dafür beim Deutschlernen helfen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "E", explanation: "Anzeige E ist ein Tandem-Angebot für Spanisch und Deutsch." },
-      { id: 5, question: "Julian sucht einen neuen Job und braucht Hilfe beim Schreiben des Lebenslaufs.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "B", explanation: "Anzeige B hilft bei Bewerbungen und optimiert Lebensläufe." }
+      { id: 1, question: "Maria arbeitet Vollzeit bis 17 Uhr und möchte ihr Englisch verbessern.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "A", explanation: "Anzeige A bietet Abendkurse ab 18:00 Uhr für Englisch an, was perfekt für Vollzeitarbeitende ist." },
+      { id: 2, question: "Carlos möchte sich auf die Deutsch-B1-Prüfung vorbereiten. Er hat den ganzen Tag Zeit.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "C", explanation: "Anzeige C bietet Intensivkurse am Vormittag und bereitet auf Goethe-Zertifikate vor." },
+      { id: 3, question: "Herr Schmidt ist 70 Jahre alt und möchte lernen, wie man E-Mails schreibt.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "D", explanation: "Anzeige D richtet sich an Senioren und lehrt E-Mails und Internet." },
+      { id: 4, question: "Lena möchte in ihrer Freizeit kostenlos Spanisch üben und dafür beim Deutschlernen helfen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "E", explanation: "Anzeige E ist ein Tandem-Angebot für Spanisch und Deutsch." },
+      { id: 5, question: "Julian sucht einen neuen Job und braucht Hilfe beim Schreiben des Lebenslaufs.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "B", explanation: "Anzeige B hilft bei Bewerbungen und optimiert Lebensläufe." }
     ]
   },
   {
@@ -37,7 +37,7 @@ F) Volkshochschule: Wochenend-Workshop "Kreatives Schreiben". Sie schreiben gern
     type: "Ghép thông tin",
     questionType: "matching",
     readingText: `Lesen Sie die Situationen 1 bis 5 und die Anzeigen A bis F aus verschiedenen Medien.
-Welche Anzeige passt zu welcher Situation? Wählen Sie "X", wenn es keine passende Anzeige gibt.
+Welche Anzeige passt zu welcher Situation? Wählen Sie "0", wenn es keine passende Anzeige gibt.
 
 Anzeigen:
 
@@ -48,11 +48,11 @@ D) Tennisclub Blau-Weiß: Wir suchen neue Mitglieder! Schnupperkurs für Anfäng
 E) Tanzschule Rhythmus: Salsa, Tango, Walzer. Neue Kurse für Paare beginnen nächsten Monat. Anmeldung nur paarweise möglich!
 F) Kletterhalle "Gipfelstürmer": Bouldern und Klettern für alle Niveaus. Ausrüstung kann gemietet werden. Täglich 10 bis 22 Uhr.`,
     questions: [
-      { id: 1, question: "Tim und Sarah sind ein Paar und möchten einen Tanzkurs machen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "E", explanation: "Anzeige E bietet Kurse für Paare an." },
-      { id: 2, question: "Lukas ist Student und möchte nachts trainieren, weil er tagsüber arbeitet.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "B", explanation: "Anzeige B ist 24 Stunden geöffnet und bietet Studentenrabatt." },
-      { id: 3, question: "Familie Müller (Eltern und zwei Kinder) möchte am Wochenende etwas gemeinsam im Wasser machen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "C", explanation: "Anzeige C bietet ein Schwimmbad mit Kinderbecken und Familienkarten." },
-      { id: 4, question: "Anna sucht eine Sportart, die sie draußen machen kann, möchte aber kein Geld ausgeben.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "A", explanation: "Anzeige A ist Yoga im Park und komplett kostenlos." },
-      { id: 5, question: "Max möchte lernen, wie man Fußball spielt, hat aber noch nie gespielt.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "X", explanation: "Keine der Anzeigen bietet Fußball an. Daher X." }
+      { id: 1, question: "Tim und Sarah sind ein Paar und möchten einen Tanzkurs machen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "E", explanation: "Anzeige E bietet Kurse für Paare an." },
+      { id: 2, question: "Lukas ist Student und möchte nachts trainieren, weil er tagsüber arbeitet.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "B", explanation: "Anzeige B ist 24 Stunden geöffnet und bietet Studentenrabatt." },
+      { id: 3, question: "Familie Müller (Eltern und zwei Kinder) möchte am Wochenende etwas gemeinsam im Wasser machen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "C", explanation: "Anzeige C bietet ein Schwimmbad mit Kinderbecken und Familienkarten." },
+      { id: 4, question: "Anna sucht eine Sportart, die sie draußen machen kann, möchte aber kein Geld ausgeben.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "A", explanation: "Anzeige A ist Yoga im Park und komplett kostenlos." },
+      { id: 5, question: "Max möchte lernen, wie man Fußball spielt, hat aber noch nie gespielt.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "0", explanation: "Keine der Anzeigen bietet Fußball an. Daher X." }
     ]
   },
   {
@@ -73,11 +73,11 @@ D) Blumenhaus Flora: Frische Blumensträuße, Zimmerpflanzen und Gartenzubehör.
 E) Spielzeugland: Alles für Kinder! Von Holzspielzeug bis zu den neuesten Videospielen. Jeden Mittwoch 10% Rabatt auf Brettspiele.
 F) Feinkost Meyer: Spezialitäten aus aller Welt. Hochwertige Weine, Käse und Schokolade. Wir stellen Ihnen individuelle Geschenkkörbe zusammen.`,
     questions: [
-      { id: 1, question: "Lisa sucht ein persönliches Geschenk für ihre Mutter, das schön duftet.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "C", explanation: "Anzeige C bietet handgemachte Seifen und Kerzen, was gut duftet und ein schönes Geschenk ist." },
-      { id: 2, question: "Tom braucht einen neuen Computer für die Uni, hat aber nicht viel Geld.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "B", explanation: "Anzeige B hat einen Ausverkauf mit Laptops bis zu 50% reduziert." },
-      { id: 3, question: "Frau Schmidt möchte einen schönen Korb mit Wein und Käse verschenken.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "F", explanation: "Feinkost Meyer bietet Wein, Käse und individuelle Geschenkkörbe." },
-      { id: 4, question: "Markus sucht einen seltenen Roman aus dem 19. Jahrhundert.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "A", explanation: "Das Antiquariat kauft und verkauft gebrauchte, alte Bücher." },
-      { id: 5, question: "Jana sucht ein neues Fahrrad für ihren Sohn zum Geburtstag.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "X", explanation: "Keine Anzeige verkauft Fahrräder. Spielzeugland (E) hat nur Spielzeug." }
+      { id: 1, question: "Lisa sucht ein persönliches Geschenk für ihre Mutter, das schön duftet.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "C", explanation: "Anzeige C bietet handgemachte Seifen und Kerzen, was gut duftet und ein schönes Geschenk ist." },
+      { id: 2, question: "Tom braucht einen neuen Computer für die Uni, hat aber nicht viel Geld.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "B", explanation: "Anzeige B hat einen Ausverkauf mit Laptops bis zu 50% reduziert." },
+      { id: 3, question: "Frau Schmidt möchte einen schönen Korb mit Wein und Käse verschenken.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "F", explanation: "Feinkost Meyer bietet Wein, Käse und individuelle Geschenkkörbe." },
+      { id: 4, question: "Markus sucht einen seltenen Roman aus dem 19. Jahrhundert.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "A", explanation: "Das Antiquariat kauft und verkauft gebrauchte, alte Bücher." },
+      { id: 5, question: "Jana sucht ein neues Fahrrad für ihren Sohn zum Geburtstag.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "0", explanation: "Keine Anzeige verkauft Fahrräder. Spielzeugland (E) hat nur Spielzeug." }
     ]
   },
   {
@@ -98,11 +98,11 @@ D) Jugendherberge City: Günstig übernachten mitten in der Stadt. Mehrbettzimme
 E) Pension "Zum roten Apfel": Ruhige Zimmer auf einem Bauernhof. Helfen Sie bei der Ernte oder entspannen Sie im Garten. Perfekt für Familien mit kleinen Kindern.
 F) Wellness-Ressort Waldessa: Erholung pur für Paare. Täglich Yoga, Massagen und gesundes Essen inklusive. Keine Haustiere erlaubt.`,
     questions: [
-      { id: 1, question: "Familie Weber (2 Erwachsene, 2 Kinder) möchte in den Bergen Skifahren und ihren Hund mitnehmen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "B", explanation: "Anzeige B ist eine Wohnung für 4 Personen am Skilift und erlaubt Hunde." },
-      { id: 2, question: "Tim (20) und Lukas (21) reisen mit dem Rucksack durch Deutschland und haben wenig Geld.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "D", explanation: "Die Jugendherberge (D) ist günstig und ideal für Rucksacktouristen." },
-      { id: 3, question: "Herr Klein möchte ein ruhiges Wochenende ohne Kinder am See verbringen und luxuriös essen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "A", explanation: "Hotel Seeblick (A) ist am Wasser, hat ein Gourmetrestaurant und erlaubt keine Kinder." },
-      { id: 4, question: "Sarah und Tom suchen ein Hotel in der Innenstadt, das auch einen Pool hat.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "X", explanation: "Keines der Stadthotels bietet einen Pool. Jugendherberge (D) hat keinen Pool." },
-      { id: 5, question: "Familie Bauer möchte mit ihren kleinen Kindern einen entspannten Urlaub in der Natur machen, wo die Kinder Tiere sehen können.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "E", explanation: "Pension 'Zum roten Apfel' ist auf einem Bauernhof und perfekt für kleine Kinder." }
+      { id: 1, question: "Familie Weber (2 Erwachsene, 2 Kinder) möchte in den Bergen Skifahren und ihren Hund mitnehmen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "B", explanation: "Anzeige B ist eine Wohnung für 4 Personen am Skilift und erlaubt Hunde." },
+      { id: 2, question: "Tim (20) und Lukas (21) reisen mit dem Rucksack durch Deutschland und haben wenig Geld.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "D", explanation: "Die Jugendherberge (D) ist günstig und ideal für Rucksacktouristen." },
+      { id: 3, question: "Herr Klein möchte ein ruhiges Wochenende ohne Kinder am See verbringen und luxuriös essen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "A", explanation: "Hotel Seeblick (A) ist am Wasser, hat ein Gourmetrestaurant und erlaubt keine Kinder." },
+      { id: 4, question: "Sarah und Tom suchen ein Hotel in der Innenstadt, das auch einen Pool hat.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "0", explanation: "Keines der Stadthotels bietet einen Pool. Jugendherberge (D) hat keinen Pool." },
+      { id: 5, question: "Familie Bauer möchte mit ihren kleinen Kindern einen entspannten Urlaub in der Natur machen, wo die Kinder Tiere sehen können.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "E", explanation: "Pension 'Zum roten Apfel' ist auf einem Bauernhof und perfekt für kleine Kinder." }
     ]
   },
   {
@@ -123,11 +123,11 @@ D) Nachhilfe-Institut "Schlaumeier": Suchen Studenten für Nachhilfe in Mathe un
 E) Bäckerei Krümel: Suchen Bäcker/in in Vollzeit. Arbeitsbeginn ist nachts um 3 Uhr. Wir bieten ein tolles Team und faire Bezahlung.
 F) Hundesalon Bello: Suchen jemanden, der Hunde liebt und sie baden und pflegen kann. Teilzeit, 20 Stunden pro Woche. Vormittags.`,
     questions: [
-      { id: 1, question: "Lisa studiert tagsüber und sucht einen Nebenjob für den Abend.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "C", explanation: "Der Supermarkt sucht Aushilfen für abends ab 18 Uhr." },
-      { id: 2, question: "Max ist Programmierer und sucht eine feste Stelle, bei der er auch von zu Hause arbeiten kann.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "B", explanation: "TechPro sucht Softwareentwickler in Vollzeit mit Home-Office." },
-      { id: 3, question: "Anna liebt Tiere und hat jeden Vormittag Zeit, weil ihre Kinder in der Schule sind.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "F", explanation: "Der Hundesalon sucht jemanden für vormittags (Teilzeit)." },
-      { id: 4, question: "Lukas studiert Mathematik und möchte nachmittags etwas Geld dazuverdienen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "D", explanation: "Das Nachhilfe-Institut sucht Studenten für Mathe am Nachmittag." },
-      { id: 5, question: "Herr Meier sucht eine Stelle als Automechaniker in Vollzeit.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "X", explanation: "Es gibt keine Anzeige für Automechaniker." }
+      { id: 1, question: "Lisa studiert tagsüber und sucht einen Nebenjob für den Abend.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "C", explanation: "Der Supermarkt sucht Aushilfen für abends ab 18 Uhr." },
+      { id: 2, question: "Max ist Programmierer und sucht eine feste Stelle, bei der er auch von zu Hause arbeiten kann.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "B", explanation: "TechPro sucht Softwareentwickler in Vollzeit mit Home-Office." },
+      { id: 3, question: "Anna liebt Tiere und hat jeden Vormittag Zeit, weil ihre Kinder in der Schule sind.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "F", explanation: "Der Hundesalon sucht jemanden für vormittags (Teilzeit)." },
+      { id: 4, question: "Lukas studiert Mathematik und möchte nachmittags etwas Geld dazuverdienen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "D", explanation: "Das Nachhilfe-Institut sucht Studenten für Mathe am Nachmittag." },
+      { id: 5, question: "Herr Meier sucht eine Stelle als Automechaniker in Vollzeit.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "0", explanation: "Es gibt keine Anzeige für Automechaniker." }
     ]
   },
   {
@@ -148,11 +148,11 @@ D) Umzugsunternehmen "Starke Jungs": Wir helfen beim Umzug! Vom Packen der Karto
 E) Änderungsschneiderei Nadel & Faden: Hose zu lang? Reißverschluss kaputt? Wir reparieren Ihre Kleidung schnell und günstig.
 F) Reinigung "Blitzblank": Wir reinigen Ihre Anzüge, Hemden und Teppiche. Kostenloser Abhol- und Bringservice in der ganzen Stadt.`,
     questions: [
-      { id: 1, question: "Klaus zieht in eine neue Wohnung und braucht Hilfe beim Tragen der Möbel.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "D", explanation: "Das Umzugsunternehmen hilft beim Tragen und Möbelaufbau." },
-      { id: 2, question: "Marias neue Jeans ist etwas zu lang und muss gekürzt werden.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "E", explanation: "Die Änderungsschneiderei kürzt Hosen." },
-      { id: 3, question: "Tom hat ein Problem: Sein Laptop geht nicht mehr an.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "B", explanation: "Der PC-Doktor repariert Computer und Laptops." },
-      { id: 4, question: "Frau Müller möchte, dass ihr Garten aufgeräumt und der Rasen gemäht wird.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "X", explanation: "Es gibt keine Anzeige für Gartenservice." },
-      { id: 5, question: "Herr Schmidt hat Kaffeeflecken auf seinem teuren Anzug und möchte ihn säubern lassen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "F", explanation: "Die Reinigung 'Blitzblank' reinigt Anzüge." }
+      { id: 1, question: "Klaus zieht in eine neue Wohnung und braucht Hilfe beim Tragen der Möbel.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "D", explanation: "Das Umzugsunternehmen hilft beim Tragen und Möbelaufbau." },
+      { id: 2, question: "Marias neue Jeans ist etwas zu lang und muss gekürzt werden.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "E", explanation: "Die Änderungsschneiderei kürzt Hosen." },
+      { id: 3, question: "Tom hat ein Problem: Sein Laptop geht nicht mehr an.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "B", explanation: "Der PC-Doktor repariert Computer und Laptops." },
+      { id: 4, question: "Frau Müller möchte, dass ihr Garten aufgeräumt und der Rasen gemäht wird.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "0", explanation: "Es gibt keine Anzeige für Gartenservice." },
+      { id: 5, question: "Herr Schmidt hat Kaffeeflecken auf seinem teuren Anzug und möchte ihn säubern lassen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "F", explanation: "Die Reinigung 'Blitzblank' reinigt Anzüge." }
     ]
   },
   {
@@ -173,11 +173,11 @@ D) Sportverein Fit&Aktiv: Neue Volleyballmannschaft sucht Spieler! Training imme
 E) Kunstakademie: Malkurs "Aquarell". Lernen Sie entspannt malen. Pinsel und Farben werden gestellt. Jeden Montagnachmittag.
 F) Sprachschule Lingua: Spanisch für den Urlaub. Kompaktkurs an 4 Abenden. Lernen Sie das Wichtigste für Ihre Reise nach Spanien oder Südamerika.`,
     questions: [
-      { id: 1, question: "Felix möchte ein Instrument lernen und sucht einen Lehrer für sich allein.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "C", explanation: "Die Musikschule bietet Einzelunterricht für Instrumente." },
-      { id: 2, question: "Laura reist nächsten Monat nach Madrid und möchte vorher ein bisschen die Sprache lernen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "F", explanation: "Die Sprachschule bietet einen Spanisch-Kompaktkurs für den Urlaub an." },
-      { id: 3, question: "Thomas möchte lernen, wie man asiatisches Essen zubereitet.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "A", explanation: "Die Kochschule bietet einen Sushikurs (asiatisches Essen) an." },
-      { id: 4, question: "Maria hat sich eine neue Kamera gekauft und möchte lernen, wie man sie richtig benutzt.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "B", explanation: "Das Fotostudio bietet einen Fotografie-Workshop an." },
-      { id: 5, question: "Lukas sucht einen Malkurs, bei dem er am Wochenende mit Ölfarben malen kann.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "X", explanation: "Die Kunstakademie (E) bietet Aquarell am Montag an, nicht am Wochenende und nicht mit Ölfarben." }
+      { id: 1, question: "Felix möchte ein Instrument lernen und sucht einen Lehrer für sich allein.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "C", explanation: "Die Musikschule bietet Einzelunterricht für Instrumente." },
+      { id: 2, question: "Laura reist nächsten Monat nach Madrid und möchte vorher ein bisschen die Sprache lernen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "F", explanation: "Die Sprachschule bietet einen Spanisch-Kompaktkurs für den Urlaub an." },
+      { id: 3, question: "Thomas möchte lernen, wie man asiatisches Essen zubereitet.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "A", explanation: "Die Kochschule bietet einen Sushikurs (asiatisches Essen) an." },
+      { id: 4, question: "Maria hat sich eine neue Kamera gekauft und möchte lernen, wie man sie richtig benutzt.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "B", explanation: "Das Fotostudio bietet einen Fotografie-Workshop an." },
+      { id: 5, question: "Lukas sucht einen Malkurs, bei dem er am Wochenende mit Ölfarben malen kann.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "0", explanation: "Die Kunstakademie (E) bietet Aquarell am Montag an, nicht am Wochenende und nicht mit Ölfarben." }
     ]
   },
   {
@@ -198,11 +198,11 @@ D) Café Süßschnabel: Selbstgebackene Torten, Kuchen und Kaffeespezialitäten.
 E) Fischrestaurant "Nordseebrise": Frischer Fisch und Meeresfrüchte direkt vom Hafen. Mit großer Außenterrasse und Blick auf den Fluss.
 F) Imbiss "Curry-König": Wenn es schnell gehen muss! Currywurst, Pommes und Döner. Bis tief in die Nacht geöffnet. Ideal nach der Party!`,
     questions: [
-      { id: 1, question: "Julian isst kein Fleisch und möchte heute Abend gesund essen gehen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "B", explanation: "Das Veggie-Haus ist 100% vegetarisch/vegan und bietet gesundes Essen." },
-      { id: 2, question: "Anna und Peter haben Sonntagvormittag Zeit und wollen ausgiebig frühstücken.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "D", explanation: "Das Café Süßschnabel bietet ein Frühstücksbuffet am Sonntagmorgen." },
-      { id: 3, question: "Lukas hat großen Hunger auf ein richtiges Stück Fleisch.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "C", explanation: "Das Steakhaus bietet riesige Steaks für Fleischfans." },
-      { id: 4, question: "Familie Müller möchte am Abend draußen sitzen und Lachs essen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "E", explanation: "Das Fischrestaurant bietet frischen Fisch und eine Außenterrasse." },
-      { id: 5, question: "Sarah möchte heute Mittag chinesisch essen gehen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "X", explanation: "Keines der Restaurants bietet chinesisches Essen an." }
+      { id: 1, question: "Julian isst kein Fleisch und möchte heute Abend gesund essen gehen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "B", explanation: "Das Veggie-Haus ist 100% vegetarisch/vegan und bietet gesundes Essen." },
+      { id: 2, question: "Anna und Peter haben Sonntagvormittag Zeit und wollen ausgiebig frühstücken.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "D", explanation: "Das Café Süßschnabel bietet ein Frühstücksbuffet am Sonntagmorgen." },
+      { id: 3, question: "Lukas hat großen Hunger auf ein richtiges Stück Fleisch.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "C", explanation: "Das Steakhaus bietet riesige Steaks für Fleischfans." },
+      { id: 4, question: "Familie Müller möchte am Abend draußen sitzen und Lachs essen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "E", explanation: "Das Fischrestaurant bietet frischen Fisch und eine Außenterrasse." },
+      { id: 5, question: "Sarah möchte heute Mittag chinesisch essen gehen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "0", explanation: "Keines der Restaurants bietet chinesisches Essen an." }
     ]
   },
   {
@@ -223,11 +223,11 @@ D) Konzerthalle: Das Symphonieorchester spielt Werke von Mozart und Beethoven. F
 E) Comedy-Club: Lachen bis der Bauch weh tut! Drei Comedians testen ihr neues Programm. Getränke an der Bar. Einlass ab 18 Jahren.
 F) Kinderfest im Zoo: Kinderschminken, Hüpfburg und Fütterung der Pinguine. Sonntag von 11 bis 16 Uhr. Kinder bis 12 Jahre haben freien Eintritt!`,
     questions: [
-      { id: 1, question: "Herr und Frau Schmidt lieben klassische Musik und möchten sich schick anziehen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "D", explanation: "Die Konzerthalle spielt Mozart/Beethoven und bittet um elegante Abendgarderobe." },
-      { id: 2, question: "Tim sucht nach einem günstigen, alten Fahrrad für die Uni.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "C", explanation: "Auf dem Flohmarkt gibt es gebrauchte Dinge zum Trödeln." },
-      { id: 3, question: "Familie Klein sucht ein Programm für den Sonntag, das ihren kleinen Kindern Spaß macht.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "F", explanation: "Das Kinderfest im Zoo ist am Sonntag und ideal für kleine Kinder." },
-      { id: 4, question: "Lisa (19) und ihre Freunde möchten abends Unterhaltung haben und viel lachen.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "E", explanation: "Der Comedy-Club bietet viel zu lachen und ist ab 18 Jahren." },
-      { id: 5, question: "Markus interessiert sich für moderne Kunst und sucht eine Galerie.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "X", explanation: "Es gibt keine Anzeige für eine moderne Kunstgalerie (A ist ein historisches Museum)." }
+      { id: 1, question: "Herr und Frau Schmidt lieben klassische Musik und möchten sich schick anziehen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "D", explanation: "Die Konzerthalle spielt Mozart/Beethoven und bittet um elegante Abendgarderobe." },
+      { id: 2, question: "Tim sucht nach einem günstigen, alten Fahrrad für die Uni.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "C", explanation: "Auf dem Flohmarkt gibt es gebrauchte Dinge zum Trödeln." },
+      { id: 3, question: "Familie Klein sucht ein Programm für den Sonntag, das ihren kleinen Kindern Spaß macht.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "F", explanation: "Das Kinderfest im Zoo ist am Sonntag und ideal für kleine Kinder." },
+      { id: 4, question: "Lisa (19) und ihre Freunde möchten abends Unterhaltung haben und viel lachen.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "E", explanation: "Der Comedy-Club bietet viel zu lachen und ist ab 18 Jahren." },
+      { id: 5, question: "Markus interessiert sich für moderne Kunst und sucht eine Galerie.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "0", explanation: "Es gibt keine Anzeige für eine moderne Kunstgalerie (A ist ein historisches Museum)." }
     ]
   },
   {
@@ -248,11 +248,11 @@ D) Seniorenresidenz "Abendrot": Betreutes Wohnen für Menschen ab 65 Jahren. Bar
 E) Bürofläche zu vermieten: 150 qm im Industriegebiet. Hell, modern, mit Teeküche. Perfekt für Start-ups oder kleine Firmen. Ausreichend Parkplätze.
 F) Ferienhaus am Meer: Gemütliches Haus an der Ostsee für den Sommerurlaub zu vermieten. Platz für 4 Personen. 10 Minuten zum Strand.`,
     questions: [
-      { id: 1, question: "Lena ist Studentin, hat wenig Geld und sucht Anschluss, weil sie neu in der Stadt ist.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "B", explanation: "Die WG ist günstig (400 Euro) und bietet Anschluss ('Wir kochen oft zusammen')." },
-      { id: 2, question: "Familie Bauer möchte nicht mehr zur Miete wohnen, sondern Eigentum erwerben.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "C", explanation: "Das Haus im Grünen steht zum Verkauf ('zu verkaufen')." },
-      { id: 3, question: "Herr Neumann (75) kann nicht mehr so gut laufen und braucht im Alltag etwas Hilfe.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "D", explanation: "Die Seniorenresidenz bietet betreutes Wohnen, barrierefrei." },
-      { id: 4, question: "Julian gründet eine Software-Firma und sucht Räume für seine 5 Mitarbeiter.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "E", explanation: "Die Bürofläche ist perfekt für Firmen und Start-ups." },
-      { id: 5, question: "Sarah sucht eine kleine Wohnung für sich und ihren Hund im Zentrum.", options: ["A", "B", "C", "D", "E", "F", "X"], correct: "X", explanation: "Anzeige A ist im Zentrum, erlaubt aber keine Haustiere." }
+      { id: 1, question: "Lena ist Studentin, hat wenig Geld und sucht Anschluss, weil sie neu in der Stadt ist.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "B", explanation: "Die WG ist günstig (400 Euro) und bietet Anschluss ('Wir kochen oft zusammen')." },
+      { id: 2, question: "Familie Bauer möchte nicht mehr zur Miete wohnen, sondern Eigentum erwerben.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "C", explanation: "Das Haus im Grünen steht zum Verkauf ('zu verkaufen')." },
+      { id: 3, question: "Herr Neumann (75) kann nicht mehr so gut laufen und braucht im Alltag etwas Hilfe.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "D", explanation: "Die Seniorenresidenz bietet betreutes Wohnen, barrierefrei." },
+      { id: 4, question: "Julian gründet eine Software-Firma und sucht Räume für seine 5 Mitarbeiter.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "E", explanation: "Die Bürofläche ist perfekt für Firmen und Start-ups." },
+      { id: 5, question: "Sarah sucht eine kleine Wohnung für sich und ihren Hund im Zentrum.", options: ["A", "B", "C", "D", "E", "F", "0"], correct: "0", explanation: "Anzeige A ist im Zentrum, erlaubt aber keine Haustiere." }
     ]
   }
 ];
