@@ -13,17 +13,17 @@ export const SPRECHEN_TASKS: SpeakingTask[] = [
   // --- Teil 1 (7 Aufgaben) ---
   {
     id: "sprechen-1-1",
-    title: "Teil 1: Gemeinsam etwas planen (Geburtstagsgeschenk)",
+    title: "Teil 1: Ein Geburtstagsgeschenk planen",
     level: "B1",
     topic: "Freunde & Feste",
     type: "Teil 1",
-    prompt: `Ihr gemeinsamer Freund Thomas feiert nächste Woche seinen 30. Geburtstag.
+    prompt: `Ihr Freund Thomas feiert nächste Woche seinen 30. Geburtstag.
 Sie möchten ein schönes Geschenk organisieren. Hinterlassen Sie einem anderen Freund eine Sprachnachricht, um das Geschenk zu planen.
 
 Sprechen Sie über folgende Punkte:
-1. Was wollen Sie schenken? (Ideen sammeln)
+1. Was möchten Sie ihm schenken? (Ideen sammeln)
 2. Wie viel Geld soll ausgegeben werden?
-3. Wer kauft das Geschenk und wann übergebt ihr es?`,
+3. Wann werden Sie das Geschenk kaufen und übergeben?`,
   },
   {
     id: "sprechen-1-2",
@@ -37,7 +37,7 @@ Sie möchten eine kleine Überraschungsparty für sie planen. Hinterlassen Sie e
 Sprechen Sie über folgende Punkte:
 1. Wann und wo soll die Party stattfinden?
 2. Wen möchten Sie einladen?
-3. Essen und Getränke: Wer bringt was mit?`,
+3. Was möchten Sie an Essen und Getränken organisieren?`,
   },
   {
     id: "sprechen-1-3",
@@ -59,11 +59,11 @@ Sprechen Sie über folgende Punkte:
     level: "B1",
     topic: "Gesundheit & Hilfe",
     type: "Teil 1",
-    prompt: `Ein gemeinsamer Kollege liegt im Krankenhaus. 
+    prompt: `Ein Kollege liegt im Krankenhaus. 
 Sie möchten ihn am Nachmittag besuchen. Hinterlassen Sie einer anderen Kollegin eine Sprachnachricht zur Planung.
 
 Sprechen Sie über folgende Punkte:
-1. Wann treffen Sie sich?
+1. Wann möchten Sie ihn besuchen?
 2. Was möchten Sie als Geschenk mitbringen? (Blumen, Buch...)
 3. Wie lange wollen Sie bleiben?`,
   },
@@ -78,7 +78,7 @@ Hinterlassen Sie einem Freund eine Sprachnachricht, bitten Sie ihn um Hilfe und 
 
 Sprechen Sie über folgende Punkte:
 1. Wann genau soll der Umzug starten?
-2. Was genau muss gemacht werden? (Möbel tragen, Auto fahren...)
+2. Wobei genau brauchen Sie Hilfe? (Möbel tragen, Auto fahren...)
 3. Was gibt es als Dankeschön zu essen/trinken?`,
   },
   {
@@ -97,17 +97,17 @@ Sprechen Sie über folgende Punkte:
   },
   {
     id: "sprechen-1-7",
-    title: "Teil 1: Planung eines gemeinsamen Abendessens",
+    title: "Teil 1: Planung eines Abendessens",
     level: "B1",
     topic: "Essen & Kochen",
     type: "Teil 1",
-    prompt: `Sie möchten am Freitagabend gemeinsam mit Freunden kochen. 
+    prompt: `Sie möchten am Freitagabend Freunde zum Kochen einladen. 
 Hinterlassen Sie einem Freund eine Sprachnachricht, um den Abend zu planen.
 
 Sprechen Sie über folgende Punkte:
 1. Was wollen Sie kochen? (Vorspeise, Hauptspeise, Dessert)
-2. Wer geht einkaufen und was wird gebraucht?
-3. Wo treffen Sie sich zum Kochen?`,
+2. Was muss noch eingekauft werden?
+3. Um wie viel Uhr sollen die Freunde kommen?`,
   },
 
   // --- Teil 2 (7 Aufgaben) ---

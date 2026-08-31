@@ -28,7 +28,7 @@ export default function SprechenOverviewPage() {
         <div className="space-y-4">
           <div>
             <h2 className="text-xl font-black text-slate-900">Loại 1 (Teil 1)</h2>
-            <p className="text-sm text-slate-500 font-medium">Cùng nhau lên kế hoạch cho một sự kiện hoặc hoạt động</p>
+            <p className="text-sm text-slate-500 font-medium">Lên kế hoạch và đưa ra đề xuất cho một sự kiện hoặc hoạt động</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {speakingTasks.filter(t => t.type === "Teil 1").map((t) => (
