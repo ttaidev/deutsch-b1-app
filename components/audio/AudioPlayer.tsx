@@ -13,7 +13,6 @@ export function AudioPlayer({ audioUrl, transcript, ttsFallbackText }: AudioPlay
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(100); 
-  const [speed, setSpeed] = useState(1);
   const [isMuted, setIsMuted] = useState(false);
   const [showTranscript, setShowTranscript] = useState(false);
 
@@ -45,7 +44,7 @@ export function AudioPlayer({ audioUrl, transcript, ttsFallbackText }: AudioPlay
     charIndexOffsetRef.current = adjustedIndex;
     const utterance = new SpeechSynthesisUtterance(textToSpeak);
     utterance.lang = "de-DE";
-    utterance.rate = speed;
+    utterance.rate = 1;
     
     // Mute by setting volume to 0
     utterance.volume = isMuted ? 0 : 1;
@@ -68,7 +67,7 @@ export function AudioPlayer({ audioUrl, transcript, ttsFallbackText }: AudioPlay
       interval = setInterval(() => {
         setCurrentTime((prev) => {
           // Assume ~15 chars per second at 1x speed
-          const charsPerSec = 15 * speed;
+          const charsPerSec = 15;
           const charsPer100ms = charsPerSec / 10;
           const next = prev + charsPer100ms;
           if (next >= fullText.length) {
@@ -79,7 +78,7 @@ export function AudioPlayer({ audioUrl, transcript, ttsFallbackText }: AudioPlay
       }, 100);
     }
     return () => clearInterval(interval);
-  }, [isPlaying, audioUrl, speed, fullText.length]);
+  }, [isPlaying, audioUrl, fullText.length]);
 
   const togglePlay = () => {
     if (audioRef.current && audioUrl) {
@@ -113,19 +112,6 @@ export function AudioPlayer({ audioUrl, transcript, ttsFallbackText }: AudioPlay
       }
     }
   };
-
-  const handleSpeedChange = () => {
-    const speeds = [0.75, 1, 1.25];
-    const nextSpeed = speeds[(speeds.indexOf(speed) + 1) % speeds.length];
-    setSpeed(nextSpeed);
-    if (audioRef.current) {
-      audioRef.current.playbackRate = nextSpeed;
-    } else {
-      if (isPlaying) {
-        speakText(currentTime); // Restart with new speed
-      }
-    }
-  };
   
   const handleMuteChange = () => {
     setIsMuted(!isMuted);
@@ -154,7 +140,7 @@ export function AudioPlayer({ audioUrl, transcript, ttsFallbackText }: AudioPlay
     let secs = value;
     if (isCharIndex) {
       // Estimate time: rate 1 = ~15 chars/sec
-      secs = value / (15 * speed);
+      secs = value / 15;
     }
     if (isNaN(secs) || !isFinite(secs)) secs = 0;
     const m = Math.floor(secs / 60);
@@ -195,14 +181,6 @@ export function AudioPlayer({ audioUrl, transcript, ttsFallbackText }: AudioPlay
             className="p-2.5 rounded-full text-slate-600 hover:bg-slate-100 transition shrink-0"
           >
             <RotateCcw className="w-4 h-4" />
-          </button>
-
-          {/* Speed Selector */}
-          <button
-            onClick={handleSpeedChange}
-            className="px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 font-bold text-xs border border-slate-200 hover:bg-slate-200 transition shrink-0"
-          >
-            Tốc độ {speed}x
           </button>
         </div>
 
